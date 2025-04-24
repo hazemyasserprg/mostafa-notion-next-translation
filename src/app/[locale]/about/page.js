@@ -1,8 +1,8 @@
 import { MdEmail } from "react-icons/md";
-import aboutImg from "@/src/public/mostafa/mostafa.webp";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import aboutImg from "/public/mostafa/mostafa.webp";
 
 export async function generateMetadata({ params }) {
   const { locale } = params;
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
       url: "https://mostafayasser.com/about",
       images: [
         {
-          url: "@/src/public/mostafa/mostafa.webp",
+          url: "/mostafa/mostafa.webp",
           width: 800,
           height: 600,
           alt: "Mostafa Yasser",
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: ["@/src/public/mostafa/mostafa.webp"],
+      images: ["/mostafa/mostafa.webp"],
     },
   };
 }

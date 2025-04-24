@@ -5,7 +5,6 @@ import { hasLocale } from "next-intl";
 import { routing } from "@/src/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 
-import { Analytics } from "@vercel/analytics/react";
 import Navigation from "@/src/app/[locale]/_components/Navigation";
 import Footer from "@/src/app/[locale]/_components/Footer";
 import "@/src/app/[locale]/_styles/globals.css";
@@ -101,13 +100,15 @@ export default async function LocaleLayout({ children, params }) {
           `}
         </Script>
       </head>
-      <body className="bg-black text-white min-h-screen flex flex-col">
+      <body
+        className="bg-black text-white min-h-screen flex flex-col"
+        cz-shortcut-listen="true"
+      >
         <NextIntlClientProvider locale={locale}>
           <Navigation />
           <main className="flex-1 px-2 sm:px-8 py-26">{children}</main>
           <Footer />
         </NextIntlClientProvider>
-        <Analytics />
       </body>
     </html>
   );
