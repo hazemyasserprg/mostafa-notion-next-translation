@@ -1,0 +1,53 @@
+{
+  "title": "Privacy Policy",
+  "effectiveDate": "Effective Date: April 8, 2025",
+  "section1": {
+    "title": "1. Introduction",
+    "content": "Welcome to Mostafa Yasser. This Privacy Policy outlines how we collect, use, and protect your personal information. By using our website, you agree to the collection and use of information in accordance with this policy."
+  },
+  "section2": {
+    "title": "2. Information We Collect",
+    "content": [
+      {
+        "label": "Personal Information:",
+        "value": " Name, email address, etc."
+      },
+      {
+        "label": "Usage Data:",
+        "value": " Information about how you interact with our website."
+      },
+      {
+        "label": "Cookies:",
+        "value": " We use cookies to enhance user experience."
+      }
+    ]
+  },
+  "section3": {
+    "title": "3. How We Use Your Information",
+    "content": [
+      "To improve our website and services.",
+      "To send promotional emails and updates.",
+      "To respond to customer support inquiries."
+    ]
+  },
+  "section4": {
+    "title": "4. Data Security",
+    "content": "We take appropriate measures to protect your personal information, but please note that no method of transmission over the internet or method of electronic storage is 100% secure."
+  },
+  "section5": {
+    "title": "5. Your Rights",
+    "content": "You have the right to access, correct, and delete your personal information. You may also opt out of receiving promotional emails."
+  },
+  "section6": {
+    "title": "6. Changes to This Policy",
+    "content": "We may update our Privacy Policy from time to time. Any changes will be posted on this page with the updated date."
+  },
+  "section7": {
+    "title": "7. Contact Us",
+    "content": ""
+  },
+  "contact": {
+    "title": "7. Contact Us",
+    "text": "If you have any questions about this Privacy Policy, please contact us at"
+  }
+}

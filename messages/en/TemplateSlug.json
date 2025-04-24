@@ -1,0 +1,119 @@
+{
+  "Quran Tracker Premium": {
+    "name": "Quran Tracker Premium",
+    "description": "Track Quran recitation, memorization & Tafsir in one powerful Notion template. Stay motivated, reflect deeply, and elevate your Quran journey.",
+    "price": "$8",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/quran-tracker-559",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/1.webp"
+  },
+  "90-Day Challenge Premium": {
+    "name": "90-Day Challenge Premium",
+    "description": "Transform your habits in 90 days with this Notion template! Track progress, stay motivated, and build better routines with ease.",
+    "price": "$5",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/90-day-challenge-883",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/2.webp"
+  },
+  "Priority Compass": {
+    "name": "Priority Compass",
+    "description": "Master your time and boost your productivity with the Priority Compass, a clean and powerful Notion template inspired by the Eisenhower Matrix. This system helps you identify what truly matters and act on it effectively.",
+    "price": "$2",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/prioritycompass",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/12.webp"
+  },
+  "TaskMaster": {
+    "name": "TaskMaster",
+    "description": "Stay on top of your tasks with this powerful Notion template designed for seamless organization and productivity. Whether you're managing daily tasks, weekly plans, or long-term goals, TaskMaster keeps everything in one place.",
+    "price": "$2",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/taskmaster",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/13.webp"
+  },
+  "Ibadat Tracker": {
+    "name": "Ibadat Tracker",
+    "description": "Track your daily worship, earn badges, and stay motivated with the Ibadat Tracker Notion template. Stay consistent and elevate your spiritual journey.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/ibadat-tracker",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/3.webp"
+  },
+  "Quran Tracker": {
+    "name": "Quran Tracker",
+    "description": "Track Quran recitation, memorization & Tafsir in one powerful Notion template. Stay motivated, reflect deeply, and elevate your Quran journey.",
+    "price": "$0",
+    "checkoutLink": "https://www.notion.com/templates/qurantracker",
+    "checkout": "Checkout",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/4.webp"
+  },
+  "Study Planner": {
+    "name": "Study Planner",
+    "description": "Stay organized and on track with the Minimalist Study Planner! Manage courses, track progress, and meet deadlines with this clean, customizable Notion template.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/study-planner-654",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/5.webp"
+  },
+  "Weekly Planner": {
+    "name": "Weekly Planner",
+    "description": "Plan and prioritize your week with the Minimalist Weekly Planner! Stay organized, hit deadlines, and maximize productivity with this clean Notion template.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/weekly-planner-888",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/6.webp"
+  },
+  "Habit Tracker": {
+    "name": "Habit Tracker",
+    "description": "Track and build habits with the Minimalist Habit Tracker! Stay consistent, visualize progress, and achieve your goals with this simple, customizable Notion template.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/habit-tracker-615",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/7.webp"
+  },
+  "Reading Tracker": {
+    "name": "Reading Tracker",
+    "description": "Track your reading journey with the Minimalist Book Tracker! Stay organized, monitor progress, and capture insights in a clean, distraction-free Notion template.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/reading-tracker-663",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/8.webp"
+  },
+  "90-Day Challenge": {
+    "name": "90-Day Challenge",
+    "description": "Transform your habits in 90 days with this Notion template! Track progress, stay motivated, and build better routines with ease.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/90-day-challenge-959",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/9.webp"
+  },
+  "Quran Memorization": {
+    "name": "Quran Memorization",
+    "description": "Master Quran memorization with the Five Fortresses method! Track progress, stay accountable, and boost retention with this structured Notion template.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/memorizing-the-quran",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/10.webp"
+  },
+  "Ramadan Tracker": {
+    "name": "Ramadan Tracker",
+    "description": "Track your Ramadan experience with this useful Notion template. Stay motivated, stay organized, and reflect on your journey during this blessed month.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/ramadan-tracker-931",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/11.webp"
+  }
+}

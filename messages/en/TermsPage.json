@@ -1,0 +1,49 @@
+{
+  "title": "Terms and Conditions",
+  "effectiveDate": "Effective Date: April 8, 2025",
+
+  "section1": {
+    "title": "1. Introduction",
+    "content": "Welcome to Mostafa Yasser. By accessing and using this website, you agree to comply with the following terms and conditions."
+  },
+
+  "section2": {
+    "title": "2. Use of the Website",
+    "content": "You agree to use this website only for lawful purposes and in accordance with these terms. You are prohibited from using the website in any way that could damage, disable, or impair the website's functionality."
+  },
+
+  "section3": {
+    "title": "3. Intellectual Property",
+    "content": "All content on this website, including text, graphics, logos, and images, is the property of Mostafa Yasser and is protected by copyright laws."
+  },
+
+  "section4": {
+    "title": "4. Limitations of Liability",
+    "content": "We are not liable for any damages arising from the use or inability to use this website. You use the website at your own risk."
+  },
+
+  "section5": {
+    "title": "5. Privacy",
+    "content": "Your use of this website is also governed by our Privacy Policy, which outlines how we collect and use your personal data."
+  },
+
+  "section6": {
+    "title": "6. Governing Law",
+    "content": "These Terms and Conditions are governed by the laws of Egypt, and any disputes will be resolved in the courts located in Cairo."
+  },
+
+  "section7": {
+    "title": "7. Changes to Terms",
+    "content": "We may update these Terms and Conditions at any time. The latest version will be posted on this page with the updated date."
+  },
+
+  "section8": {
+    "title": "8. Contact Us",
+    "content": "If you have any questions regarding these Terms and Conditions, please contact us at"
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "text": "contactmostafayasser@gmail.com"
+  }
+}
