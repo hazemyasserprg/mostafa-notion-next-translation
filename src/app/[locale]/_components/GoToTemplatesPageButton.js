@@ -2,9 +2,12 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import { useLocale } from "next-intl";
 
 function GoToTemplatesPageButton({ text }) {
+  const locale = useLocale();
+
   return (
     <div className="flex justify-center mt-6 sm:mt-10 relative z-10 px-4">
       <motion.div
@@ -29,7 +32,11 @@ function GoToTemplatesPageButton({ text }) {
             transition-all duration-300 cursor-pointer"
         >
           {text}
-          <BsArrowRight className="ml-1 sm:ml-2" />
+          {locale === "ar" ? (
+            <BsArrowLeft className="ml-1 sm:ml-2" />
+          ) : (
+            <BsArrowRight className="ml-1 sm:ml-2" />
+          )}
           <div className="absolute inset-0 rounded-full border border-white/10 pointer-events-none" />
           <div className="absolute left-1/2 top-0 w-32 sm:w-40 h-32 sm:h-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10 blur-2xl opacity-50 pointer-events-none" />
         </motion.div>
