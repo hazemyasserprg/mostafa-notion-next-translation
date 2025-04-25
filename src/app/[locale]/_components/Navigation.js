@@ -55,13 +55,28 @@ export default function Navigation() {
                 </Link>
               );
             })}
-            {(pathname === "/en" || pathname === "/ar") && <LanguageSwitcher />}
+            <div
+              className={`transition-opacity duration-300 ${
+                pathname === "/en" || pathname === "/ar"
+                  ? "opacity-100"
+                  : "opacity-0 pointer-events-none"
+              }`}
+            >
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* Hamburger Icon */}
           <div className="lg:hidden flex justify-between items-center w-full px-2">
-            {(pathname === "/en" || pathname === "/ar") && <LanguageSwitcher />}
-
+            <div
+              className={`transition-opacity duration-300 ${
+                pathname === "/en" || pathname === "/ar"
+                  ? "opacity-100"
+                  : "opacity-0 pointer-events-none"
+              }`}
+            >
+              <LanguageSwitcher />
+            </div>
             <Link href={`/${locale}`}>
               <p className="mx-auto px-0.5 font-bold text-xl uppercase mt-0.5">
                 {t("MOSTAFA")}
