@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import Navigation from "@/src/app/[locale]/_components/Navigation";
 import Footer from "@/src/app/[locale]/_components/Footer";
 import "@/src/app/[locale]/_styles/globals.css";
+import LocaleRedirect from "@/src/app/[locale]/_components/LocaleRedirect";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -104,6 +105,7 @@ export default async function LocaleLayout({ children, params }) {
         className="bg-black text-white min-h-screen flex flex-col"
         cz-shortcut-listen="true"
       >
+        <LocaleRedirect locale={locale} />
         <NextIntlClientProvider locale={locale}>
           <Navigation />
           <main className="flex-1 px-2 sm:px-8 py-26">{children}</main>

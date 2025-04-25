@@ -18,6 +18,10 @@ export default function LanguageSwitcher() {
   const switchTo = locales[currentLocale];
 
   const handleClick = () => {
+    // Save the new locale to localStorage
+    localStorage.setItem("locale", switchTo);
+
+    // Navigate to the new locale
     router.push(pathname, { locale: switchTo });
   };
 
