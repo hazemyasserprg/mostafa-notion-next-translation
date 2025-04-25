@@ -12,13 +12,14 @@ export default function Navigation() {
   const t = useTranslations("Navigation");
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const locale = pathname.split("/")[1];
 
   const links = [
-    { name: t("HOME"), to: "/" },
-    { name: t("TEMPLATES"), to: "/templates" },
-    { name: t("BLOGS"), to: "/blog" },
-    { name: t("CONTACT"), to: "/contact" },
-    { name: t("ABOUT_ME"), to: "/about" },
+    { name: t("HOME"), to: "" },
+    { name: t("TEMPLATES"), to: "templates" },
+    { name: t("BLOGS"), to: "blog" },
+    { name: t("CONTACT"), to: "contact" },
+    { name: t("ABOUT_ME"), to: "about" },
   ];
 
   return (
@@ -26,7 +27,7 @@ export default function Navigation() {
       <BlurText duration={1}>
         <div className="flex justify-between items-center mx-auto max-w-7xl">
           <Link
-            href="/"
+            href={`/${locale}`}
             className="hidden lg:flex items-center gap-2 pl-1 mt-0.5"
           >
             <Image
@@ -40,17 +41,20 @@ export default function Navigation() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-6">
-            {links.map((link, index) => (
-              <Link
-                href={link.to}
-                key={index}
-                className={`hover:text-main transition duration-300 ${
-                  pathname === link.to ? "text-main" : ""
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {links.map((link, index) => {
+              const href = `/${locale}${link.to ? `/${link.to}` : ""}`;
+              return (
+                <Link
+                  href={href}
+                  key={index}
+                  className={`hover:text-main transition duration-300 ${
+                    pathname === href ? "text-main" : ""
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
             <LanguageSwitcher />
           </div>
 
@@ -58,16 +62,14 @@ export default function Navigation() {
           <div className="lg:hidden flex justify-between items-center w-full px-2">
             <LanguageSwitcher />
 
-            <Link href="/">
+            <Link href={`/${locale}`}>
               <p className="mx-auto px-0.5 font-bold text-xl uppercase mt-0.5">
                 {t("MOSTAFA")}
               </p>
             </Link>
 
             <div
-              className={`relative flex flex-col justify-center items-center space-y-1 z-50 ${
-                menuOpen ? "" : ""
-              }`}
+              className="relative flex flex-col justify-center items-center space-y-1 z-50"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <div
@@ -96,18 +98,21 @@ export default function Navigation() {
           }`}
         >
           <div className="flex flex-col items-center space-y-6">
-            {links.map((link, index) => (
-              <Link
-                href={link.to}
-                key={index}
-                className={`text-2xl font-semibold ${
-                  pathname === link.to ? "text-main" : ""
-                }`}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {links.map((link, index) => {
+              const href = `/${locale}${link.to ? `/${link.to}` : ""}`;
+              return (
+                <Link
+                  href={href}
+                  key={index}
+                  className={`text-2xl font-semibold ${
+                    pathname === href ? "text-main" : ""
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </BlurText>

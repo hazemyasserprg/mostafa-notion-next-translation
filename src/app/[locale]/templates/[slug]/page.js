@@ -74,7 +74,6 @@ export async function generateMetadata({ params }) {
   };
 }
 
-// Static paths for the templates
 export async function generateStaticParams() {
   return templatesData.map((template) => ({
     slug: template.slug,
@@ -85,7 +84,9 @@ export default function TemplateDetails({ params }) {
   const t = useTranslations("TemplateSlug");
   const template = templatesData.find((b) => b.slug === params.slug);
 
-  if (!template) return notFound();
+  if (!template) {
+    return notFound();
+  }
 
   return (
     <BlurText>

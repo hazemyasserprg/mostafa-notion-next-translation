@@ -2,7 +2,7 @@ import Image from "next/image";
 import blogsData from "@/src/app/[locale]/_data/blogsData";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 import ReactMarkdown from "react-markdown";
-import { createTranslator, useTranslations } from "next-intl"; // Import the useTranslations hook
+import { createTranslator, useTranslations } from "next-intl";
 import { notFound } from "next/navigation";
 import arMessages from "@/messages/ar/BlogSlug.json";
 import enMessages from "@/messages/en/BlogSlug.json";
@@ -102,7 +102,7 @@ export default function BlogDetails({ params }) {
   };
 
   if (!blog) {
-    return notFound(); // Handle the case where the blog is not found
+    return notFound();
   }
 
   return (
@@ -137,7 +137,7 @@ export default function BlogDetails({ params }) {
             </h1>
             <Image
               src={t(`${blog.title}.image`)}
-              alt={blog.title}
+              alt={t(`${blog.title}.title`)}
               width={800}
               height={450}
               className="w-full rounded-2xl mb-10"
