@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
 
   const description = isArabic
     ? t(`${blog.title}.title`) ??
-      "اكتشف آخر مقالات مصطفى ياسر حول نوتيون والإنتاجية."
+      "اكتشف آخر مقالات مصطفى ياسر حول نوشن والإنتاجية."
     : "Explore the latest articles by Mostafa Yasser on Notion, productivity, and digital organization.";
 
   const url = `https://mostafayasser.com/blog/${slug}`;
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
     keywords: isArabic
       ? [
           t(`${blog.title}.title`),
-          "مدونة نوتيون",
+          "مدونة نوشن",
           "الإنتاجية",
           "تنظيم رقمي",
           "مقالات مصطفى ياسر",

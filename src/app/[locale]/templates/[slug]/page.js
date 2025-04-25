@@ -17,12 +17,12 @@ export async function generateMetadata({ params }) {
   const t = createTranslator({ locale, messages });
 
   const title = isArabic
-    ? `${t(`${template.name}.name`)} | قالب نوتيون من مصطفى ياسر`
+    ? `${t(`${template.name}.name`)} | قالب نوشن من مصطفى ياسر`
     : `${t(`${template.name}.name`)} | Notion Template by Mostafa Yasser`;
 
   const description = isArabic
     ? t(`${template.name}.description`) ??
-      "اكتشف قالب نوتيون مصمم بعناية لتحسين إنتاجيتك وتنظيم حياتك الرقمية."
+      "اكتشف قالب نوشن مصمم بعناية لتحسين إنتاجيتك وتنظيم حياتك الرقمية."
     : "Discover a Notion template carefully designed to improve your productivity and organize your digital life.";
 
   const url = `https://mostafayasser.com/templates/${slug}`;
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }) {
     keywords: isArabic
       ? [
           t(`${template.name}.name`),
-          "قالب نوتيون",
-          "نوتيون إنتاجية",
+          "قالب نوشن",
+          "نوشن إنتاجية",
           "تنظيم رقمي",
           "مصطفى ياسر",
         ]

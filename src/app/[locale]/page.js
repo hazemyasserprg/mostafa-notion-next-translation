@@ -13,17 +13,17 @@ export async function generateMetadata({ params }) {
 
   return {
     title: isArabic
-      ? "قوالب نوتيون الشاملة | مصطفى ياسر"
+      ? "قوالب نوشن الشاملة | مصطفى ياسر"
       : "All-in-One Notion Templates | Mostafa Yasser",
     description: isArabic
-      ? "اكتشف قوالب نوتيون القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
+      ? "اكتشف قوالب نوشن القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
       : "Discover powerful and simple Notion templates designed to organize your life, build better habits, and improve productivity.",
     openGraph: {
       title: isArabic
-        ? "قوالب نوتيون الشاملة | مصطفى ياسر"
+        ? "قوالب نوشن الشاملة | مصطفى ياسر"
         : "All-in-One Notion Templates | Mostafa Yasser",
       description: isArabic
-        ? "اكتشف قوالب نوتيون القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
+        ? "اكتشف قوالب نوشن القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
         : "Discover powerful and simple Notion templates designed to organize your life, build better habits, and improve productivity.",
       type: "website",
       url: "https://mostafayasser.com",
@@ -32,17 +32,17 @@ export async function generateMetadata({ params }) {
           url: "@/src/public/thumbnails/ENThumbnails/2.webp",
           width: 800,
           height: 600,
-          alt: isArabic ? "قوالب نوتيون" : "Notion Templates",
+          alt: isArabic ? "قوالب نوشن" : "Notion Templates",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
       title: isArabic
-        ? "قوالب نوتيون الشاملة | مصطفى ياسر"
+        ? "قوالب نوشن الشاملة | مصطفى ياسر"
         : "All-in-One Notion Templates | Mostafa Yasser",
       description: isArabic
-        ? "اكتشف قوالب نوتيون القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
+        ? "اكتشف قوالب نوشن القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
         : "Discover powerful and simple Notion templates designed to organize your life, build better habits, and improve productivity.",
       images: ["@/src/public/thumbnails/ENThumbnails/2.webp"],
     },

@@ -9,19 +9,19 @@ export async function generateMetadata({ params }) {
 
   return {
     title: isArabic
-      ? "قوالب نوتيون | مصطفى ياسر"
+      ? "قوالب نوشن | مصطفى ياسر"
       : "Notion Templates | Mostafa Yasser",
     description: isArabic
-      ? "اكتشف قوالب نوتيون المميزة المصممة لمساعدتك على البقاء منظمًا ومنتجًا وملهمًا. استعرض أحدث التصاميم وارتقِ بتنظيمك الرقمي."
+      ? "اكتشف قوالب نوشن المميزة المصممة لمساعدتك على البقاء منظمًا ومنتجًا وملهمًا. استعرض أحدث التصاميم وارتقِ بتنظيمك الرقمي."
       : "Discover premium Notion templates designed to help you stay organized, productive, and inspired. Explore my latest creations and boost your digital workflow.",
     keywords: isArabic
       ? [
-          "قوالب نوتيون",
+          "قوالب نوشن",
           "قوالب إنتاجية",
-          "تنظيم نوتيون",
+          "تنظيم نوشن",
           "قوالب مصطفى ياسر",
-          "لوحة تحكم نوتيون",
-          "قوالب نوتيون مجانية",
+          "لوحة تحكم نوشن",
+          "قوالب نوشن مجانية",
         ]
       : [
           "Notion templates",
@@ -33,10 +33,10 @@ export async function generateMetadata({ params }) {
         ],
     openGraph: {
       title: isArabic
-        ? "قوالب نوتيون | مصطفى ياسر"
+        ? "قوالب نوشن | مصطفى ياسر"
         : "Notion Templates | Mostafa Yasser",
       description: isArabic
-        ? "استكشف مجموعة من قوالب نوتيون المصممة لتعزيز إنتاجيتك وتنظيم حياتك."
+        ? "استكشف مجموعة من قوالب نوشن المصممة لتعزيز إنتاجيتك وتنظيم حياتك."
         : "Explore a curated collection of Notion templates crafted to enhance your productivity and streamline your life.",
       url: "https://mostafayasser.com/templates",
       siteName: "Mostafa Yasser",
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
           width: 1200,
           height: 630,
           alt: isArabic
-            ? "معاينة قوالب نوتيون من مصطفى ياسر"
+            ? "معاينة قوالب نوشن من مصطفى ياسر"
             : "Mostafa Yasser Notion Templates Preview",
         },
       ],
@@ -55,10 +55,10 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: isArabic
-        ? "قوالب نوتيون | مصطفى ياسر"
+        ? "قوالب نوشن | مصطفى ياسر"
         : "Notion Templates | Mostafa Yasser",
       description: isArabic
-        ? "حافظ على تنظيمك وإنتاجيتك مع قوالب نوتيون المصممة خصيصًا من مصطفى ياسر."
+        ? "حافظ على تنظيمك وإنتاجيتك مع قوالب نوشن المصممة خصيصًا من مصطفى ياسر."
         : "Stay organized and productive with these custom-designed Notion templates by Mostafa Yasser.",
       images: ["@/src/public/thumbnails/ENThumbnails/2.webp"],
     },

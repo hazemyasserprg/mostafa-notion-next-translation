@@ -9,15 +9,15 @@ export async function generateMetadata({ params }) {
   const isArabic = locale === "ar";
 
   const title = isArabic
-    ? "اتصل بنا | مصطفى ياسر | قوالب نوتيون والعمل المخصص"
+    ? "اتصل بنا | مصطفى ياسر | قوالب نوشن والعمل المخصص"
     : "Contact | Mostafa Yasser | Notion Templates & Custom Work";
 
   const description = isArabic
-    ? "تواصل مع مصطفى ياسر للحصول على قوالب نوتيون مخصصة، التعاون، فرص التسويق بالعمولة، أو أي استفسارات. دعونا نعمل معًا لتنظيم حياتك الرقمية."
+    ? "تواصل مع مصطفى ياسر للحصول على قوالب نوشن مخصصة، التعاون، فرص التسويق بالعمولة، أو أي استفسارات. دعونا نعمل معًا لتنظيم حياتك الرقمية."
     : "Reach out to Mostafa Yasser for custom Notion templates, collaborations, affiliate opportunities, or any inquiries. Let's work together to organize your digital life.";
 
   const openGraphDescription = isArabic
-    ? "راسل مصطفى ياسر مباشرة للحصول على قالب نوتيون مخصص، بدء التعاون، أو الانضمام إلى برنامج التسويق بالعمولة."
+    ? "راسل مصطفى ياسر مباشرة للحصول على قالب نوشن مخصص، بدء التعاون، أو الانضمام إلى برنامج التسويق بالعمولة."
     : "Message Mostafa Yasser directly to get a custom Notion template, start a collaboration, or join the affiliate program.";
 
   return {
@@ -26,11 +26,11 @@ export async function generateMetadata({ params }) {
     keywords: isArabic
       ? [
           "اتصل بمصطفى ياسر",
-          "قالب نوتيون مخصص",
-          "التعاون مع نوتيون",
-          "برنامج التسويق بالعمولة نوتيون",
-          "خبير نوتيون",
-          "توظيف مصمم نوتيون",
+          "قالب نوشن مخصص",
+          "التعاون مع نوشن",
+          "برنامج التسويق بالعمولة نوشن",
+          "خبير نوشن",
+          "توظيف مصمم نوشن",
         ]
       : [
           "Contact Mostafa Yasser",
@@ -58,10 +58,10 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: isArabic
-        ? "اتصل بمصطفى ياسر – دعونا نصنع شيئًا في نوتيون"
+        ? "اتصل بمصطفى ياسر – دعونا نصنع شيئًا في نوشن"
         : "Contact Mostafa Yasser – Let’s Create Something in Notion",
       description: isArabic
-        ? "هل ترغب في قالب نوتيون مخصص أو التعاون مع مصطفى ياسر؟ دعونا نتواصل!"
+        ? "هل ترغب في قالب نوشن مخصص أو التعاون مع مصطفى ياسر؟ دعونا نتواصل!"
         : "Want a custom Notion template or to collaborate with Mostafa Yasser? Let’s connect!",
       images: ["@/src/app/[locale]/icon.png"],
     },

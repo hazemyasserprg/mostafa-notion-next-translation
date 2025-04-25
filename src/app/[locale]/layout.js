@@ -28,21 +28,21 @@ export async function generateMetadata({ params }) {
   return {
     title: {
       template: isArabic
-        ? "%s | قوالب نوتيون من مصطفى ياسر"
+        ? "%s | قوالب نوشن من مصطفى ياسر"
         : "%s | Notion Templates by Mostafa Yasser",
       default: isArabic
-        ? "مصطفى ياسر | قوالب نوتيون لتنظيم حياتك"
+        ? "مصطفى ياسر | قوالب نوشن لتنظيم حياتك"
         : "Mostafa Yasser | Notion Templates to Organize Your Life",
     },
     description: isArabic
-      ? "استكشف قوالب نوتيون المصممة بعناية لتعزيز الإنتاجية وتنظيم سير عملك وجعل حياتك أكثر وضوحًا. من تصميم مصطفى ياسر."
+      ? "استكشف قوالب نوشن المصممة بعناية لتعزيز الإنتاجية وتنظيم سير عملك وجعل حياتك أكثر وضوحًا. من تصميم مصطفى ياسر."
       : "Explore beautifully crafted Notion templates designed to boost productivity, streamline your workflow, and bring clarity to your life. Created by Mostafa Yasser.",
     openGraph: {
       title: isArabic
-        ? "مصطفى ياسر | قوالب نوتيون لتنظيم حياتك"
+        ? "مصطفى ياسر | قوالب نوشن لتنظيم حياتك"
         : "Mostafa Yasser | Notion Templates to Organize Your Life",
       description: isArabic
-        ? "عزز إنتاجيتك مع قوالب نوتيون الاحترافية من مصطفى ياسر. بسيطة وفعالة وجميلة."
+        ? "عزز إنتاجيتك مع قوالب نوشن الاحترافية من مصطفى ياسر. بسيطة وفعالة وجميلة."
         : "Boost your productivity with premium Notion templates by Mostafa Yasser. Simple, effective, and beautifully designed.",
       url: "https://mostafayasser.com",
       siteName: "Mostafa Yasser",
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
           width: 1200,
           height: 630,
           alt: isArabic
-            ? "مصطفى ياسر - قوالب نوتيون"
+            ? "مصطفى ياسر - قوالب نوشن"
             : "Mostafa Yasser - Notion Templates",
         },
       ],
@@ -61,10 +61,10 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: isArabic
-        ? "مصطفى ياسر | قوالب نوتيون"
+        ? "مصطفى ياسر | قوالب نوشن"
         : "Mostafa Yasser | Notion Templates",
       description: isArabic
-        ? "اكتشف قوالب نوتيون لتنظيم حياتك وزيادة إنتاجيتك. من تصميم مصطفى ياسر."
+        ? "اكتشف قوالب نوشن لتنظيم حياتك وزيادة إنتاجيتك. من تصميم مصطفى ياسر."
         : "Discover Notion templates that organize your life and boost productivity. Built by Mostafa Yasser.",
       creator: "@engmsyasser",
       images: ["/icon.png"],

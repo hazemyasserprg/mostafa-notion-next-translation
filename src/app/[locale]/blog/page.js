@@ -11,15 +11,15 @@ export async function generateMetadata({ params }) {
   const isArabic = locale === "ar";
 
   const title = isArabic
-    ? "المدونة | مصطفى ياسر | نصائح نوتيون، الإنتاجية، والتصميم"
+    ? "المدونة | مصطفى ياسر | نصائح نوشن، الإنتاجية، والتصميم"
     : "Blog | Mostafa Yasser | Notion Tips, Productivity, & Design";
 
   const description = isArabic
-    ? "اكتشف أحدث مقالاتي حول قوالب نوتيون، حلول الإنتاجية، سير العمل الرقمي، واستراتيجيات الأعمال عبر الإنترنت."
+    ? "اكتشف أحدث مقالاتي حول قوالب نوشن، حلول الإنتاجية، سير العمل الرقمي، واستراتيجيات الأعمال عبر الإنترنت."
     : "Explore my latest blog posts on Notion templates, productivity hacks, digital workflows, and online business strategies.";
 
   const openGraphDescription = isArabic
-    ? "اكتشف رؤى وأفكار قابلة للتنفيذ لتحسين مساحة عمل نوتيون وزيادة إنتاجيتك الرقمية."
+    ? "اكتشف رؤى وأفكار قابلة للتنفيذ لتحسين مساحة عمل نوشن وزيادة إنتاجيتك الرقمية."
     : "Discover actionable insights and ideas to level up your Notion workspace and digital productivity.";
 
   return {
@@ -27,13 +27,13 @@ export async function generateMetadata({ params }) {
     description,
     keywords: isArabic
       ? [
-          "مدونة نوتيون",
+          "مدونة نوشن",
           "مدونة الإنتاجية",
           "مقالات مصطفى ياسر",
-          "دروس نوتيون",
+          "دروس نوشن",
           "نصائح التنظيم الرقمي",
-          "رؤى خبير نوتيون",
-          "تخطيط الحياة باستخدام نوتيون",
+          "رؤى خبير نوشن",
+          "تخطيط الحياة باستخدام نوشن",
         ]
       : [
           "Notion blog",
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: isArabic ? "مدونة مصطفى ياسر" : "Blog by Mostafa Yasser",
       description: isArabic
-        ? "استكشف أحدث المقالات حول نوتيون والإنتاجية والأنظمة الرقمية."
+        ? "استكشف أحدث المقالات حول نوشن والإنتاجية والأنظمة الرقمية."
         : "Explore the latest articles on Notion, productivity, and digital systems.",
       images: ["@/src/app/public/blogs/NotionBlogOne.webp"],
     },
