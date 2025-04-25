@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { Oswald, Tajawal } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
@@ -8,7 +7,6 @@ import { NextIntlClientProvider } from "next-intl";
 import Navigation from "@/src/app/[locale]/_components/Navigation";
 import Footer from "@/src/app/[locale]/_components/Footer";
 import "@/src/app/[locale]/_styles/globals.css";
-import LocaleRedirect from "@/src/app/[locale]/_components/LocaleRedirect";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -87,25 +85,10 @@ export default async function LocaleLayout({ children, params }) {
       dir={dir}
       className={locale === "ar" ? tajawal.className : oswald.className}
     >
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-KZRKNHCJSW"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-KZRKNHCJSW');
-          `}
-        </Script>
-      </head>
       <body
         className="bg-black text-white min-h-screen flex flex-col"
         cz-shortcut-listen="true"
       >
-        <LocaleRedirect locale={locale} />
         <NextIntlClientProvider locale={locale}>
           <Navigation />
           <main className="flex-1 px-2 sm:px-8 py-26">{children}</main>
