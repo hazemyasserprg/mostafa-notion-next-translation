@@ -1,11 +1,12 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 
 export default function TemplateDetailsClient({ template }) {
   const t = useTranslations("TemplateSlug");
+  const locale = useLocale();
 
   return (
     <BlurText>
@@ -25,7 +26,11 @@ export default function TemplateDetailsClient({ template }) {
           <p className="text-xl md:text-2xl mt-2 text-main">
             {t(`${template.name}.price`)}
           </p>
-          <p className="text-base md:text-lg text-muted mt-4">
+          <p
+            className={`text-base md:text-lg text-muted mt-4 ${
+              locale === "ar" ? "text-right" : "text-left"
+            }`}
+          >
             {t(`${template.name}.description`)}
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start items-center mt-8 gap-4">
