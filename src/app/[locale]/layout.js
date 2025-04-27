@@ -27,9 +27,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: {
-      template: isArabic
-        ? "%s | قوالب نوشن من مصطفى ياسر"
-        : "%s | Notion Templates by Mostafa Yasser",
+      template: isArabic ? "%s" : "%s",
       default: isArabic
         ? "مصطفى ياسر | قوالب نوشن لتنظيم حياتك"
         : "Mostafa Yasser | Notion Templates to Organize Your Life",
