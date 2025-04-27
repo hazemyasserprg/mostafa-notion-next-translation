@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       "اكتشف قالب نوشن مصمم بعناية لتحسين إنتاجيتك وتنظيم حياتك الرقمية."
     : "Discover a Notion template carefully designed to improve your productivity and organize your digital life.";
 
-  const url = `https://mostafayasser.com/templates/${slug}`;
+  const url = `https://mostafayasser.com//${locale}/templates/${slug}`;
 
   return {
     title,

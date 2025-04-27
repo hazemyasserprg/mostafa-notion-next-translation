@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import blogsData from "@/src/app/[locale]/_data/blogsData";
@@ -73,6 +73,7 @@ export async function generateMetadata({ params }) {
 function Blogs() {
   const t = useTranslations("BlogsPage");
   const tt = useTranslations("BlogSlug");
+  const locale = useLocale();
 
   return (
     <BlurText>
@@ -89,7 +90,7 @@ function Blogs() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
               {blogsData.map((blog) => (
                 <Link
-                  href={`/blog/${blog.slug}`}
+                  href={`/${locale}/blog/${blog.slug}`}
                   key={blog.id}
                   className="rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-[1.01] hover:-translate-y-2 overflow-hidden ease-in-out hover:shadow-main"
                 >

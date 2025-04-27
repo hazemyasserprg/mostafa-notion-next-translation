@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Suspense } from "react";
 import Loader from "@/src/app/[locale]/_components/Loader";
 import templatesData from "@/src/app/[locale]/_data/templatesData";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 function TemplateList({ filter }) {
   const t = useTranslations("TemplateSlug");
+  const locale = useLocale();
 
   let filteredTemplates;
 
@@ -33,7 +34,7 @@ function TemplateList({ filter }) {
         {filteredTemplates.map((template) => (
           <Link
             key={template.id}
-            href={`/templates/${template.slug}`}
+            href={`/${locale}/templates/${template.slug}`}
             className="relative rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-[1.01] hover:-translate-y-2 overflow-hidden ease-in-out cursor-pointer hover:shadow-main"
           >
             {/* 💰 Price Label */}
