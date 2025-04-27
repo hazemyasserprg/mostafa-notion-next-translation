@@ -18,7 +18,7 @@ function Footer() {
 
   return (
     <AnimatedInView threshold={0.3}>
-      <div className="max-w-7xl mx-auto px-6 py-40 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-6 pt-40 pb-18 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="space-y-6">
           <div className="space-y-4">
             <h4 className="text-main font-semibold text-lg md:text-xl">
