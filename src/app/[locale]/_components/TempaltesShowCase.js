@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import GoToTemplatesPageButton from "@/src/app/[locale]/_components/GoToTemplatesPageButton";
 import { useLocale, useTranslations } from "next-intl";
+import AnimatedInView from "./AnimatedInView";
 
 const templates = {
   lifeChanging: [
@@ -140,9 +141,9 @@ export default function TemplatesShowcase() {
             {t("unlockDescription")}
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 mt-8">
           {renderTemplates(templates.lifeChanging)}
-        </div>
+        </AnimatedInView>
       </div>
 
       <div className="mt-4">
@@ -154,9 +155,9 @@ export default function TemplatesShowcase() {
             {t("popularDescription")}
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8">
           {renderTemplates(templates.moreTemplates)}
-        </div>
+        </AnimatedInView>
       </div>
 
       <div className="mt-4">
@@ -168,9 +169,12 @@ export default function TemplatesShowcase() {
             {t("moreDescription")}
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView
+          threshold={0.01}
+          className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
+        >
           {renderTemplates(templates.largeCollection)}
-        </div>
+        </AnimatedInView>
       </div>
 
       <GoToTemplatesPageButton text={t("showMore")} />
