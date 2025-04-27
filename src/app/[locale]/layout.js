@@ -107,7 +107,7 @@ export default async function LocaleLayout({ children, params }) {
       >
         <NextIntlClientProvider locale={locale}>
           <Navigation />
-          <main className="flex-1 px-2 sm:px-8 py-26">{children}</main>
+          <main className="flex-1 px-2 sm:px-8 pt-26">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>
