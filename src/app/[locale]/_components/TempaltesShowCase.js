@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import GoToTemplatesPageButton from "@/src/app/[locale]/_components/GoToTemplatesPageButton";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const templates = {
   lifeChanging: [
@@ -97,12 +97,13 @@ const templates = {
 export default function TemplatesShowcase() {
   const t = useTranslations("TemplatesShowcase");
   const tt = useTranslations("TemplateSlug");
+  const locale = useLocale();
 
   const renderTemplates = (list) =>
     list.map((template) => (
       <Link
         key={template.id}
-        href={`/templates/${template.slug}`}
+        href={`/${locale}/templates/${template.slug}`}
         className="relative rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-[1.01] hover:-translate-y-2 overflow-hidden ease-in-out cursor-pointer hover:shadow-main"
       >
         {/* {template.premium && (
