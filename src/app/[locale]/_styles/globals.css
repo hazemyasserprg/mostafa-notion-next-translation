@@ -49,7 +49,7 @@ section:target {
 }
 
 .scrollbar-container {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: #d7b180 #f5f5f5;
 
   -webkit-overflow-scrolling: touch;
