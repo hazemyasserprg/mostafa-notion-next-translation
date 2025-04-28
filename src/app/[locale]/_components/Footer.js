@@ -1,4 +1,4 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { RiNotionFill } from "react-icons/ri";
 import {
   BsFacebook,
@@ -15,7 +15,6 @@ import AnimatedInView from "./AnimatedInView";
 
 function Footer() {
   const t = useTranslations("Footer");
-  const locale = useLocale();
 
   return (
     <AnimatedInView threshold={0.3}>

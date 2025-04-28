@@ -142,7 +142,10 @@ export default function TemplatesShowcase() {
             {t("unlockDescription")}
           </p>
         </div>
-        <AnimatedInView className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView
+          threshold={0.1}
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8"
+        >
           {renderTemplates(templates.lifeChanging)}
         </AnimatedInView>
       </div>
@@ -156,7 +159,10 @@ export default function TemplatesShowcase() {
             {t("popularDescription")}
           </p>
         </div>
-        <AnimatedInView className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView
+          threshold={0.1}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
+        >
           {renderTemplates(templates.moreTemplates)}
         </AnimatedInView>
       </div>
