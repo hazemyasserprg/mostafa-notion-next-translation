@@ -135,12 +135,16 @@ export default function TemplatesShowcase() {
     <div className="w-full px-6 py-12 sm:mt-12 mt-10 text-center flex flex-col gap-5 sm:gap-20">
       <div className="mt-20">
         <div className="text-center max-w-3xl mx-auto px-2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-            {t("unlockTitle")}
-          </h2>
-          <p className="text-secondary mt-2 text-base sm:text-lg md:text-xl">
-            {t("unlockDescription")}
-          </p>
+          <AnimatedInView threshold={0.1}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+              {t("unlockTitle")}
+            </h2>
+          </AnimatedInView>
+          <AnimatedInView threshold={0.1}>
+            <p className="text-secondary mt-2 text-base sm:text-lg md:text-xl">
+              {t("unlockDescription")}
+            </p>
+          </AnimatedInView>
         </div>
         <AnimatedInView
           threshold={0.1}
@@ -152,12 +156,16 @@ export default function TemplatesShowcase() {
 
       <div className="mt-4">
         <div className="text-center max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-            {t("popularTitle")}
-          </h2>
-          <p className="text-secondary mt-2 text-base sm:text-lg md:text-xl">
-            {t("popularDescription")}
-          </p>
+          <AnimatedInView threshold={0.1}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+              {t("popularTitle")}
+            </h2>
+          </AnimatedInView>
+          <AnimatedInView threshold={0.1}>
+            <p className="text-secondary mt-2 text-base sm:text-lg md:text-xl">
+              {t("popularDescription")}
+            </p>
+          </AnimatedInView>
         </div>
         <AnimatedInView
           threshold={0.1}
@@ -169,12 +177,16 @@ export default function TemplatesShowcase() {
 
       <div className="mt-4">
         <div className="text-center max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-            {t("moreTitle")}
-          </h2>
-          <p className="text-secondary mt-2 text-base sm:text-lg md:text-xl">
-            {t("moreDescription")}
-          </p>
+          <AnimatedInView threshold={0.1}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+              {t("moreTitle")}
+            </h2>
+          </AnimatedInView>
+          <AnimatedInView threshold={0.1}>
+            <p className="text-secondary mt-2 text-base sm:text-lg md:text-xl">
+              {t("moreDescription")}
+            </p>
+          </AnimatedInView>
         </div>
         <AnimatedInView
           threshold={0.01}

@@ -8,14 +8,19 @@ function AnimatedInView({ children, threshold = 0.3, className = "" }) {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => setIsInView(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
       { threshold }
     );
 
     if (ref.current) observer.observe(ref.current);
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      observer.disconnect();
     };
   }, [threshold]);
 
