@@ -119,6 +119,7 @@ export default function TemplatesShowcase() {
             alt={`Template ${tt(`${template.name}.name`)}`}
             width={800}
             height={800}
+            className="object-cover w-full h-full"
           />
         </div>
         <h3 className="mt-3 text-sm sm:text-xl md:text-2xl font-semibold">
@@ -141,7 +142,7 @@ export default function TemplatesShowcase() {
             {t("unlockDescription")}
           </p>
         </div>
-        <AnimatedInView className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8">
           {renderTemplates(templates.lifeChanging)}
         </AnimatedInView>
       </div>
@@ -155,7 +156,7 @@ export default function TemplatesShowcase() {
             {t("popularDescription")}
           </p>
         </div>
-        <AnimatedInView className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8">
+        <AnimatedInView className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8">
           {renderTemplates(templates.moreTemplates)}
         </AnimatedInView>
       </div>
@@ -171,7 +172,7 @@ export default function TemplatesShowcase() {
         </div>
         <AnimatedInView
           threshold={0.01}
-          className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
         >
           {renderTemplates(templates.largeCollection)}
         </AnimatedInView>

@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { RiNotionFill } from "react-icons/ri";
 import {
   BsFacebook,
@@ -15,6 +15,7 @@ import AnimatedInView from "./AnimatedInView";
 
 function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <AnimatedInView threshold={0.3}>
@@ -189,7 +190,10 @@ function Footer() {
         <div className="h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent mb-6" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pb-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+      <div
+        className="max-w-7xl mx-auto px-6 pb-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400"
+        dir="ltr"
+      >
         <p className="text-center md:text-left">{t("copyright")}</p>
         <p className="text-center md:text-right">
           {t("developedBy")}{" "}

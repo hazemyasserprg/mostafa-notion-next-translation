@@ -30,6 +30,7 @@ export default function TemplateCard({ template, index }) {
               alt={`Template ${t(`${template.name}.name`)}`}
               width={400}
               height={400}
+              className="object-cover w-full h-full"
             />
           </div>
           <h3 className="mt-3 text-base font-semibold sm:text-lg md:text-xl">
