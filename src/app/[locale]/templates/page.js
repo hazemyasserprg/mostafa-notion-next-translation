@@ -42,7 +42,9 @@ export async function generateMetadata({ params }) {
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: "@/src/public/thumbnails/ENThumbnails/2.webp",
+          url: isArabic
+            ? "thumbnails/ARThumbnails/2.webp"
+            : "thumbnails/ENThumbnails/2.webp",
           width: 1200,
           height: 630,
           alt: isArabic
@@ -60,7 +62,11 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "حافظ على تنظيمك وإنتاجيتك مع قوالب نوشن المصممة خصيصًا من مصطفى ياسر."
         : "Stay organized and productive with these custom-designed Notion templates by Mostafa Yasser.",
-      images: ["@/src/public/thumbnails/ENThumbnails/2.webp"],
+      images: [
+        isArabic
+          ? "thumbnails/ARThumbnails/2.webp"
+          : "thumbnails/ENThumbnails/2.webp",
+      ],
     },
   };
 }
