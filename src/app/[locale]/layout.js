@@ -42,11 +42,11 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "عزز إنتاجيتك مع قوالب نوشن الاحترافية من مصطفى ياسر. بسيطة وفعالة وجميلة."
         : "Boost your productivity with premium Notion templates by Mostafa Yasser. Simple, effective, and beautifully designed.",
-      url: "https://mostafayasser.com",
+      url: `https://mostafayasser.com/${locale}`,
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: "/icon.png",
+          url: isArabic ? "/metaData/ar/1.webp" : "/metaData/en/1.webp",
           width: 1200,
           height: 630,
           alt: isArabic
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
         ? "اكتشف قوالب نوشن لتنظيم حياتك وزيادة إنتاجيتك. من تصميم مصطفى ياسر."
         : "Discover Notion templates that organize your life and boost productivity. Built by Mostafa Yasser.",
       creator: "@engmsyasser",
-      images: ["/icon.png"],
+      images: [isArabic ? "/metaData/ar/1.webp" : "/metaData/en/1.webp"],
     },
   };
 }
