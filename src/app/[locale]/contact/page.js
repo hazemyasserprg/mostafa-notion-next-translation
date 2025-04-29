@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: "@/src/app/[locale]/icon.png",
+          url: "../icon.png",
           width: 1200,
           height: 630,
           alt: isArabic ? "اتصل بمصطفى ياسر" : "Contact Mostafa Yasser",
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "هل ترغب في قالب نوشن مخصص أو التعاون مع مصطفى ياسر؟ دعونا نتواصل!"
         : "Want a custom Notion template or to collaborate with Mostafa Yasser? Let’s connect!",
-      images: ["@/src/app/[locale]/icon.png"],
+      images: ["../icon.png"],
     },
   };
 }
