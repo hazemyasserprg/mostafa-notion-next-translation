@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
       title: isArabic ? "عن مصطفى ياسر" : "About Mostafa Yasser",
       description,
       type: "profile",
-      url: "https://mostafayasser.com/about",
+      url: `https://mostafayasser.com/${locale}/about`,
       images: [
         {
           url: "/mostafa/mostafa.webp",
