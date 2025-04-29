@@ -38,7 +38,7 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "استكشف مجموعة من قوالب نوشن المصممة لتعزيز إنتاجيتك وتنظيم حياتك."
         : "Explore a curated collection of Notion templates crafted to enhance your productivity and streamline your life.",
-      url: "https://mostafayasser.com/templates",
+      url: `https://mostafayasser.com/${locale}/templates`,
       siteName: "Mostafa Yasser",
       images: [
         {
