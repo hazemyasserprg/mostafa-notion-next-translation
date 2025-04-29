@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description: openGraphDescription,
-      url: "https://mostafayasser.com/blog",
+      url: `https://mostafayasser.com/${locale}/blog`,
       siteName: "Mostafa Yasser",
       images: [
         {
