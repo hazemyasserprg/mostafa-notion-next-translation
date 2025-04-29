@@ -29,7 +29,9 @@ export async function generateMetadata({ params }) {
       url: "https://mostafayasser.com",
       images: [
         {
-          url: "@/src/public/thumbnails/ENThumbnails/2.webp",
+          url: isArabic
+            ? "/public/metaData/ar/1.webp"
+            : "/public/metaData/en/1.webp",
           width: 800,
           height: 600,
           alt: isArabic ? "قوالب نوشن" : "Notion Templates",
@@ -44,7 +46,9 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "اكتشف قوالب نوشن القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
         : "Discover powerful and simple Notion templates designed to organize your life, build better habits, and improve productivity.",
-      images: ["@/src/public/thumbnails/ENThumbnails/2.webp"],
+      images: [
+        isArabic ? "/public/metaData/ar/1.webp" : "/public/metaData/en/1.webp",
+      ],
     },
   };
 }
