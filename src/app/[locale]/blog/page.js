@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: "@/src/app/public/blogs/NotionBlogOne.webp",
+          url: "/blogs/ENBlogs/1.webp",
           width: 1200,
           height: 630,
           alt: isArabic ? "مدونة مصطفى ياسر" : "Mostafa Yasser Blog",
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "استكشف أحدث المقالات حول نوشن والإنتاجية والأنظمة الرقمية."
         : "Explore the latest articles on Notion, productivity, and digital systems.",
-      images: ["@/src/app/public/blogs/NotionBlogOne.webp"],
+      images: ["/blogs/ENBlogs/1.webp"],
     },
   };
 }
