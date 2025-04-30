@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: isArabic ? `/metaData/ar/1.webp` : `/metaData/en/1.webp`,
+          url: isArabic ? `metaData/ar/1.webp` : `metaData/en/1.webp`,
           width: 1200,
           height: 630,
           alt: isArabic
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
         ? "اكتشف قوالب نوشن لتنظيم حياتك وزيادة إنتاجيتك. من تصميم مصطفى ياسر."
         : "Discover Notion templates that organize your life and boost productivity. Built by Mostafa Yasser.",
       creator: "@engmsyasser",
-      images: [isArabic ? `/metaData/ar/1.webp` : `/metaData/en/1.webp`],
+      images: [isArabic ? `metaData/ar/1.webp` : `metaData/en/1.webp`],
     },
   };
 }
