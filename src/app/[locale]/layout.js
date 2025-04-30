@@ -22,7 +22,7 @@ const tajawal = Tajawal({
 });
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params;
+  const { locale } = params;
   const isArabic = locale === "ar";
 
   return {
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "عزز إنتاجيتك مع قوالب نوشن الاحترافية من مصطفى ياسر. بسيطة وفعالة وجميلة."
         : "Boost your productivity with premium Notion templates by Mostafa Yasser. Simple, effective, and beautifully designed.",
-      url: `https://mostafayasser.com/${locale}/`,
+      url: `https://mostafayasser.com/${locale}`,
       siteName: "Mostafa Yasser",
       images: [
         {
