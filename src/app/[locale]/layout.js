@@ -22,9 +22,8 @@ const tajawal = Tajawal({
 });
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isArabic = locale === "ar";
-  const baseUrl = "https://www.mostafayasser.com";
 
   return {
     title: {
@@ -43,13 +42,11 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "عزز إنتاجيتك مع قوالب نوشن الاحترافية من مصطفى ياسر. بسيطة وفعالة وجميلة."
         : "Boost your productivity with premium Notion templates by Mostafa Yasser. Simple, effective, and beautifully designed.",
-      url: baseUrl,
+      url: `https://mostafayasser.com`,
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: isArabic
-            ? `${baseUrl}/metaData/ar/1.webp`
-            : `${baseUrl}/metaData/en/1.webp`,
+          url: isArabic ? `/metaData/ar/1.webp` : `/metaData/en/1.webp`,
           width: 1200,
           height: 630,
           alt: isArabic
@@ -68,11 +65,7 @@ export async function generateMetadata({ params }) {
         ? "اكتشف قوالب نوشن لتنظيم حياتك وزيادة إنتاجيتك. من تصميم مصطفى ياسر."
         : "Discover Notion templates that organize your life and boost productivity. Built by Mostafa Yasser.",
       creator: "@engmsyasser",
-      images: [
-        isArabic
-          ? `${baseUrl}/metaData/ar/1.webp`
-          : `${baseUrl}/metaData/en/1.webp`,
-      ],
+      images: [isArabic ? `/metaData/ar/1.webp` : `/metaData/en/1.webp`],
     },
   };
 }
