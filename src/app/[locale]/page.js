@@ -10,6 +10,7 @@ import GoToTemplatesPageButton from "@/src/app/[locale]/_components/GoToTemplate
 export async function generateMetadata({ params }) {
   const { locale } = params;
   const isArabic = locale === "ar";
+  const baseUrl = "https://www.mostafayasser.com";
 
   return {
     title: isArabic
@@ -26,10 +27,12 @@ export async function generateMetadata({ params }) {
         ? "اكتشف قوالب نوشن القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
         : "Discover powerful and simple Notion templates designed to organize your life, build better habits, and improve productivity.",
       type: "website",
-      url: `https://mostafayasser.com/${locale}`,
+      url: `${baseUrl}/${locale}`,
       images: [
         {
-          url: isArabic ? "/metaData/ar/1.webp" : "/metaData/en/1.webp",
+          url: isArabic
+            ? `${baseUrl}/metaData/ar/1.webp`
+            : `${baseUrl}/metaData/en/1.webp`,
           width: 800,
           height: 600,
           alt: isArabic ? "قوالب نوشن" : "Notion Templates",
@@ -44,7 +47,11 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "اكتشف قوالب نوشن القوية والبسيطة المصممة لتنظيم حياتك، وبناء عادات أفضل، وزيادة الإنتاجية."
         : "Discover powerful and simple Notion templates designed to organize your life, build better habits, and improve productivity.",
-      images: [isArabic ? "/metaData/ar/1.webp" : "/metaData/en/1.webp"],
+      images: [
+        isArabic
+          ? `${baseUrl}/metaData/ar/1.webp`
+          : `${baseUrl}/metaData/en/1.webp`,
+      ],
     },
   };
 }
