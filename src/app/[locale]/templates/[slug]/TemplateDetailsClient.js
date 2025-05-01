@@ -63,7 +63,7 @@ export default function TemplateDetailsClient({ template }) {
                     {t(`${template.name}.checkout`)}
                   </span>
                 </a>
-                <button
+                {/* <button
                   onClick={() => setShowMore(true)} // Trigger to show the "More Details"
                   className="cursor-pointer relative inline-block overflow-hidden px-6 py-3 font-medium text-white bg-black rounded-full group shadow-secondary"
                 >
@@ -72,7 +72,7 @@ export default function TemplateDetailsClient({ template }) {
                   <span className="relative block text-lg transform transition-all duration-300 ease-in-out group-hover:text-main">
                     {t(`${template.name}.moreDetails`)}
                   </span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
