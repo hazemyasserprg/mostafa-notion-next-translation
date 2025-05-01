@@ -28,7 +28,7 @@ export default function TemplateDetailsClient({ template }) {
             />
             <div className="w-full lg:w-1/3 flex flex-col justify-start items-center lg:items-start text-center lg:text-left">
               <h1
-                className={`text-2xl md:text-4xl font-bold mb-1  ${
+                className={`text-2xl md:text-4xl font-bold mb-1 text-center ${
                   locale === "ar" ? "lg:text-right" : "lg:text-left"
                 }`}
               >
@@ -38,7 +38,7 @@ export default function TemplateDetailsClient({ template }) {
                 {t(`${template.name}.price`)}
               </p>
               <p
-                className={`text-base md:text-lg text-muted mt-4 ${
+                className={`text-base md:text-lg text-muted mt-4 text-center ${
                   locale === "ar" ? "lg:text-right" : "lg:text-left"
                 }`}
               >
