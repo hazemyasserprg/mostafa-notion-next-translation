@@ -28,22 +28,35 @@ export default function TemplateDetailsClient({ template }) {
             />
             <div className="w-full lg:w-1/3 flex flex-col justify-start items-center lg:items-start text-center lg:text-left">
               <h1
-                className={`text-2xl md:text-4xl font-bold mb-1 text-center ${
-                  locale === "ar" ? "lg:text-right" : "lg:text-left"
+                className={`text-2xl md:text-4xl font-bold mb-1 ${
+                  locale === "ar"
+                    ? "text-center lg:text-right"
+                    : "text-center lg:text-left"
                 }`}
               >
                 {t(`${template.name}.name`)}
               </h1>
-              <p className="text-xl md:text-2xl mt-2 text-main">
+
+              <p
+                className={`text-xl md:text-2xl mt-2 text-main ${
+                  locale === "ar"
+                    ? "text-center lg:text-right"
+                    : "text-center lg:text-left"
+                }`}
+              >
                 {t(`${template.name}.price`)}
               </p>
+
               <p
-                className={`text-base md:text-lg text-muted mt-4 text-center ${
-                  locale === "ar" ? "lg:text-right" : "lg:text-left"
+                className={`text-base md:text-lg text-muted mt-4 ${
+                  locale === "ar"
+                    ? "text-center lg:text-right"
+                    : "text-center lg:text-left"
                 }`}
               >
                 {t(`${template.name}.description`)}
               </p>
+
               <div className="flex flex-wrap justify-center lg:justify-start items-center mt-8 gap-4">
                 <a
                   href={t(`${template.name}.checkoutLink`)}
