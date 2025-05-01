@@ -29,7 +29,7 @@ export default function TemplateDetailsClient({ template }) {
             <div className="w-full lg:w-1/3 flex flex-col justify-start items-center lg:items-start text-center lg:text-left">
               <h1
                 className={`text-2xl md:text-4xl font-bold mb-1  ${
-                  locale === "ar" ? "text-right" : "text-left"
+                  locale === "ar" ? "lg:text-right" : "lg:text-left"
                 }`}
               >
                 {t(`${template.name}.name`)}
