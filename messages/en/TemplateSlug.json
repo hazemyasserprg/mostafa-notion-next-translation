@@ -2,7 +2,7 @@
   "Quran Tracker Premium": {
     "name": "Quran Tracker Premium",
     "description": "Track Quran recitation, memorization & Tafsir in one powerful Notion template. Stay motivated, reflect deeply, and elevate your Quran journey.",
-    "price": "$8",
+    "price": "$10",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/quran-tracker-559",
     "moreDetails": "More Details",
@@ -11,7 +11,7 @@
   "90-Day Challenge Premium": {
     "name": "90-Day Challenge Premium",
     "description": "Transform your habits in 90 days with this Notion template! Track progress, stay motivated, and build better routines with ease.",
-    "price": "$5",
+    "price": "$3",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/90-day-challenge-883",
     "moreDetails": "More Details",
@@ -20,7 +20,7 @@
   "Priority Compass": {
     "name": "Priority Compass",
     "description": "Master your time and boost your productivity with the Priority Compass, a clean and powerful Notion template inspired by the Eisenhower Matrix. This system helps you identify what truly matters and act on it effectively.",
-    "price": "$2",
+    "price": "$0",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/prioritycompass",
     "moreDetails": "More Details",
@@ -115,5 +115,50 @@
     "checkoutLink": "https://www.notion.com/templates/ramadan-tracker-931",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/11.webp"
+  },
+  "Notion Starter Pack": {
+    "name": "Notion Starter Pack",
+    "description": "Get started with Notion using this handpicked collection of free, beginner-friendly templates created by Mostafa Yasser — a Notion expert and productivity creator. This Starter Pack includes essential tools to help you plan, track, and stay productive in your daily life.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/mostafa-starter-pack",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/15.webp"
+  },
+  "Idea Flow - Team Edition": {
+    "name": "Idea Flow - Team Edition",
+    "description": "Elevate your team’s productivity with Idea Flow – Team Edition, a powerful Notion template designed to streamline collaborative idea management. This all-in-one system transforms raw concepts into successful outcomes by fostering discussion, enabling informed decisions, and ensuring seamless execution. Built for clarity and collaboration, it empowers teams to stay aligned and focused.",
+    "price": "$7",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/ideaflowteam",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/14.webp"
+  },
+  "StudyHub": {
+    "name": "StudyHub",
+    "description": "StudyHub is the ultimate Notion template built for students who want full control over their academic journey — from organizing courses and assignments to setting personal goals and tracking daily habits",
+    "price": "Soon",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/studyhub0",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/17.webp"
+  },
+  "Idea Flow – Solo Edition": {
+    "name": "Idea Flow – Solo Edition",
+    "description": "Transform your ideas into actionable outcomes with Idea Flow – Solo Edition, the ultimate all-in-one system for managing and organizing your personal ideas. Designed for simplicity and clarity, this Notion template ensures no idea gets lost by guiding you through structured stages—from raw thoughts to completed projects.",
+    "price": "$4.5",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/ideaflow",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/16.webp"
+  },
+  "Notion Me": {
+    "name": "Notion ME",
+    "description": "Create a professional personal homepage using Notion. Notion Me is a clean, elegant template designed for creators, freelancers, and professionals who want to showcase their identity, services, and latest work — all in one place.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/personal-profile",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/18.webp"
   }
 }

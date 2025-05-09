@@ -4,18 +4,17 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
-import MoreDetails from "@/src/app/[locale]/_components/MoreDetails"; // Assuming MoreDetails is the new content component.
+import MoreDetails from "@/src/app/[locale]/_components/MoreDetails";
 import AnimatedInView from "@/src/app/[locale]/_components/AnimatedInView";
 
 export default function TemplateDetailsClient({ template }) {
   const t = useTranslations("TemplateSlug");
   const locale = useLocale();
-  const [showMore, setShowMore] = useState(false); // State to toggle between the template details and more details.
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <BlurText>
       <AnimatedInView>
-        {/* Display the image and text content if `showMore` is false */}
         {!showMore ? (
           <div className="min-h-screen px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row lg:gap-10 gap-5 items-start">
             <Image
@@ -52,17 +51,20 @@ export default function TemplateDetailsClient({ template }) {
               </p>
 
               <div className="flex flex-wrap justify-center lg:justify-start items-center mt-8 gap-4">
-                <a
-                  href={t(`${template.name}.checkoutLink`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative inline-block overflow-hidden px-6 py-3 font-medium text-black bg-white rounded-full group shadow-lg hover:shadow-gray-300/50 hover:scale-105 transition-all duration-500 ease-in-out"
-                >
-                  <span className="absolute top-0 left-0 w-full h-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-all duration-500 ease-in-out origin-left" />
-                  <span className="relative block text-lg transform transition-all duration-300 ease-in-out group-hover:text-white">
-                    {t(`${template.name}.checkout`)}
-                  </span>
-                </a>
+                {t(`${template.name}.price`) !== "Soon" &&
+                  t(`${template.name}.price`) !== "قريب" && (
+                    <a
+                      href={t(`${template.name}.checkoutLink`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative inline-block overflow-hidden px-6 py-3 font-medium text-black bg-white rounded-full group shadow-lg hover:shadow-gray-300/50 hover:scale-105 transition-all duration-500 ease-in-out"
+                    >
+                      <span className="absolute top-0 left-0 w-full h-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-all duration-500 ease-in-out origin-left" />
+                      <span className="relative block text-lg transform transition-all duration-300 ease-in-out group-hover:text-white">
+                        {t(`${template.name}.checkout`)}
+                      </span>
+                    </a>
+                  )}
                 {/* <button
                   onClick={() => setShowMore(true)} // Trigger to show the "More Details"
                   className="cursor-pointer relative inline-block overflow-hidden px-6 py-3 font-medium text-white bg-black rounded-full group shadow-secondary"

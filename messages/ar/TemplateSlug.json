@@ -2,7 +2,7 @@
   "Quran Tracker Premium": {
     "name": "متتبع القرآن | النسخة المميزة",
     "description": "تتبع تلاوة القرآن، والحفظ، والتفسير في قالب نوشن قوي واحد. حافظ على تحفيزك، وتأمل بعمق، ورفع تجربتك مع القرآن.",
-    "price": "$8",
+    "price": "$10",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/786dd007-922a-4df6-ac87-8519b528061f",
     "moreDetails": "مزيد من التفاصيل",
@@ -11,7 +11,7 @@
   "90-Day Challenge Premium": {
     "name": "تحدي الـ 90 يوم | النسخة المميزة",
     "description": "حوّل عاداتك في 90 يومًا مع قالب نوشن هذا! تتبع التقدم، حافظ على التحفيز، وبناء روتين أفضل بسهولة.",
-    "price": "$5",
+    "price": "$3",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/a4124b51-0a23-4250-94c3-2a301de47edb",
     "moreDetails": "مزيد من التفاصيل",
@@ -20,7 +20,7 @@
   "Priority Compass": {
     "name": "بوصلة الأولويات",
     "description": "قالب بوصلة الأولويات على نوشن مستوحى من مصفوفة آيزنهاور الشهيرة، وهو مصمم لمساعدتك على اتخاذ قرارات سريعة، والتفريق بين المهم والعاجل. سيساعدك هذا القالب على تقليل التوتر وزيادة الإنتاجية من خلال تصنيف ذكي للمهام في 4 مربعات واضحة، مع واجهة أنيقة وتركيز على الفعل.",
-    "price": "$2",
+    "price": "$0",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/d7020424-f605-4ce2-96cc-05a536577eb7",
     "moreDetails": "مزيد من التفاصيل",
@@ -115,5 +115,50 @@
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/49c2f8de-1251-4c0a-88fd-be21cfbf08e0",
     "moreDetails": "مزيد من التفاصيل",
     "image": "/thumbnails/ARThumbnails/11.webp"
+  },
+  "Notion Starter Pack": {
+    "name": "باقة البداية لنوشن",
+    "description": "ابدأ مع نوشن باستخدام هذه المجموعة المختارة من القوالب المجانية، المصممة خصيصًا للمبتدئين من قبل مصطفى ياسر — خبير نوشن ومنشئ محتوى في مجال الإنتاجية تتضمن باقة البداية هذه أدوات أساسية لمساعدتك على التخطيط، التتبع، والحفاظ على إنتاجيتك في حياتك اليومية.",
+    "price": "$0",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/checkout",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/15.webp"
+  },
+  "Idea Flow - Team Edition": {
+    "name": "مولد الأفكار - نسخة الفريق",
+    "description": "ارفع إنتاجية فريقك مع مولد الأفكار – نسخة الفريق، قالب قوي من نوشن مصمم لتنظيم إدارة الأفكار التعاونية. يحول هذا النظام الشامل الأفكار الخام إلى نتائج ناجحة من خلال تعزيز النقاش، تمكين القرارات المدروسة، وضمان التنفيذ السلس. مصمم للوضوح والتعاون، يمكّن الفرق من البقاء متوافقة ومركزة.",
+    "price": "$7",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/checkout",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/14.webp"
+  },
+  "StudyHub": {
+    "name": "مركز الدراسة",
+    "description": "مركز الدراسة هو قالب نوشن النهائي المصمم للطلاب الذين يريدون التحكم الكامل في رحلتهم الأكاديمية - من تنظيم الدورات والمهام إلى تحديد الأهداف الشخصية وتتبع العادات اليومية.",
+    "price": "قريب",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/checkout",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/17.webp"
+  },
+  "Idea Flow – Solo Edition": {
+    "name": "مولد الأفكار",
+    "description": "حوّل أفكارك إلى نتائج قابلة للتنفيذ مع مولد الأفكار – نسخة الفرد، النظام الشامل المثالي لإدارة وتنظيم أفكارك الشخصية. تم تصميم هذا القالب في نوشن للبساطة والوضوح، لضمان عدم ضياع أي فكرة من خلال إرشادك عبر مراحل منظمة، بدءًا من الأفكار الأولية وحتى المشاريع المكتملة.",
+    "price": "$4.5",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/checkout",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/16.webp"
+  },
+  "Notion Me": {
+    "name": "نوشن مي",
+    "description": "أنشئ صفحة شخصية احترافية باستخدام نوشن. نوشن مي هو قالب أنيق ونظيف مصمم للمبدعين، المستقلين، والمهنيين الذين يرغبون في عرض هويتهم، خدماتهم، وآخر أعمالهم في مكان واحد.",
+    "price": "$0",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/checkout",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/18.webp"
   }
 }

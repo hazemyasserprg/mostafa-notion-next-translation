@@ -7,38 +7,32 @@ import AnimatedInView from "./AnimatedInView";
 const templates = {
   lifeChanging: [
     {
-      id: 1,
-      name: "Quran Tracker Premium",
-      slug: "quran-tracker-premium",
-      price: "$8",
+      id: 16,
+      name: "StudyHub",
+      slug: "study-hub",
       premium: true,
+    },
+    {
+      id: 14,
+      name: "Notion Starter Pack",
+      slug: "notion-starter-pack",
+    },
+  ],
+  moreTemplates: [
+    {
+      id: 5,
+      name: "Study Planner",
+      slug: "study-planner",
     },
     {
       id: 2,
       name: "90-Day Challenge Premium",
       slug: "90-day-challenge-premium",
-      price: "$5",
-      premium: true,
-    },
-  ],
-  moreTemplates: [
-    {
-      id: 3,
-      name: "Ibadat Tracker",
-      slug: "ibadat-tracker",
-      price: "$0",
     },
     {
-      id: 4,
-      name: "Quran Tracker",
-      slug: "quran-tracker",
-      price: "$0",
-    },
-    {
-      id: 5,
-      name: "Study Planner",
-      slug: "study-planner",
-      price: "$0",
+      id: 7,
+      name: "Habit Tracker",
+      slug: "habit-tracker",
     },
   ],
   largeCollection: [
@@ -46,51 +40,43 @@ const templates = {
       id: 12,
       name: "Priority Compass",
       slug: "priority-compass",
-      price: "$2",
       premium: true,
     },
     {
       id: 13,
       name: "TaskMaster",
       slug: "task-manager",
-      price: "$2",
       premium: true,
     },
     {
       id: 6,
       name: "Weekly Planner",
       slug: "weekly-planner",
-      price: "$0",
     },
     {
       id: 7,
       name: "Habit Tracker",
       slug: "habit-tracker",
-      price: "$0",
     },
     {
       id: 8,
       name: "Reading Tracker",
       slug: "reading-tracker",
-      price: "$0",
     },
     {
       id: 9,
       name: "90-Day Challenge",
       slug: "90-day-challenge",
-      price: "$0",
     },
     {
       id: 10,
       name: "Quran Memorization",
       slug: "quran-memorization",
-      price: "$0",
     },
     {
       id: 11,
       name: "Ramadan Tracker",
       slug: "ramadan-tracker",
-      price: "$0",
     },
   ],
 };
@@ -107,11 +93,11 @@ export default function TemplatesShowcase() {
         href={`/${locale}/templates/${template.slug}`}
         className="relative rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-[1.01] hover:-translate-y-2 overflow-hidden ease-in-out cursor-pointer hover:shadow-main"
       >
-        {/* {template.premium && (
+        {template.premium && (
           <span className="absolute top-9 right-0 rounded-tl-xl rounded-bl-xl border border-[#D7B180] text-[#D7B180] text-sm font-semibold px-4 py-1 -mr-1 z-50">
             PRO
           </span>
-        )} */}
+        )}
 
         <div className="w-full aspect-[4/3] relative">
           <Image

@@ -18,11 +18,11 @@ export default function TemplateCard({ template, index }) {
       <div className="relative rounded-2xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-[1.01] hover:-translate-y-2 ease-in-out cursor-pointer hover:shadow-main">
         <Link href={`/${locale}/templates/${template.slug}`}>
           {/* Price Label */}
-          {/* {template.premium && (
-          <span className="absolute top-9 right-0 rounded-tl-xl rounded-bl-xl border border-[#D7B180] text-[#D7B180] text-sm font-semibold px-4 py-1 -mr-1">
-            PRO
-          </span>
-        )} */}
+          {template.premium && (
+            <span className="absolute top-9 right-0 rounded-tl-xl rounded-bl-xl border border-[#D7B180] text-[#D7B180] text-sm font-semibold px-4 py-1 -mr-1">
+              PRO
+            </span>
+          )}
 
           <div className="w-full aspect-[4/3] lg:aspect-auto">
             <Image
