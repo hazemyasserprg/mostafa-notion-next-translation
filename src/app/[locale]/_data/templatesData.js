@@ -109,7 +109,7 @@ const templates = [
     name: "StudyHub",
     slug: "study-hub",
     premium: true,
-    category: "productivity",
+    category: "education",
     detailsLink: "",
   },
   {

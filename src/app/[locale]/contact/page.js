@@ -84,7 +84,7 @@ function ContactAffiliates() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-20 max-w-xl sm:max-w-3xl mx-auto">
             <a
-              href="mailto:contactmostafayasser@gmail.com"
+              href="mailto:contact@mostafayasser.com"
               className="cursor-pointer inline-flex items-center justify-center gap-4 text-main text-lg font-semibold border border-main px-8 py-4 rounded-2xl transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-[#d7b180] to-[#fff] hover:text-gray-800"
             >
               <MdEmail size={28} />

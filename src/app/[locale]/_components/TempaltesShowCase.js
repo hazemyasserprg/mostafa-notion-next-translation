@@ -10,7 +10,6 @@ const templates = {
       id: 16,
       name: "StudyHub",
       slug: "study-hub",
-      premium: true,
     },
     {
       id: 14,
@@ -40,13 +39,11 @@ const templates = {
       id: 12,
       name: "Priority Compass",
       slug: "priority-compass",
-      premium: true,
     },
     {
       id: 13,
       name: "TaskMaster",
       slug: "task-manager",
-      premium: true,
     },
     {
       id: 6,

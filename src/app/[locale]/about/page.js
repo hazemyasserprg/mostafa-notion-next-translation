@@ -58,7 +58,7 @@ function AboutMe() {
 
             <div>
               <a
-                href="mailto:contactmostafayasser@gmail.com"
+                href="mailto:contact@mostafayasser.com"
                 className="inline-flex items-center gap-3 bg-main text-black font-medium px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all shadow-lg"
               >
                 <MdEmail size={22} />
