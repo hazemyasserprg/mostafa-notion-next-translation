@@ -10,6 +10,7 @@ const templates = {
       id: 16,
       name: "StudyHub",
       slug: "study-hub",
+      premium: true,
     },
     {
       id: 14,
