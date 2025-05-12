@@ -51,8 +51,8 @@ export default function TemplateDetailsClient({ template }) {
               </p>
 
               <div className="flex flex-wrap justify-center lg:justify-start items-center mt-8 gap-4">
-                {t(`${template.name}.price`) !== "Soon" &&
-                  t(`${template.name}.price`) !== "قريب" && (
+                {t(`${template.name}.price`) !== "soon" &&
+                  t(`${template.name}.price`) !== "قريبًا" && (
                     <a
                       href={t(`${template.name}.checkoutLink`)}
                       target="_blank"

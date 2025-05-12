@@ -52,11 +52,6 @@ const templates = {
       slug: "weekly-planner",
     },
     {
-      id: 7,
-      name: "Habit Tracker",
-      slug: "habit-tracker",
-    },
-    {
       id: 8,
       name: "Reading Tracker",
       slug: "reading-tracker",
