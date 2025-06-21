@@ -25,9 +25,12 @@ export async function generateMetadata({ params }) {
   const { locale } = params;
   const isArabic = locale === "ar";
 
+  const siteUrl = "https://mostafayasser.com";
+  const imageUrl = `${siteUrl}/icon.png`;
+
   return {
     title: {
-      template: isArabic ? "%s" : "%s",
+      template: isArabic ? "%s | مصطفى ياسر" : "%s | Mostafa Yasser",
       default: isArabic
         ? "مصطفى ياسر | قوالب نوشن لتنظيم حياتك"
         : "Mostafa Yasser | Notion Templates to Organize Your Life",
@@ -35,6 +38,14 @@ export async function generateMetadata({ params }) {
     description: isArabic
       ? "استكشف قوالب نوشن المصممة بعناية لتعزيز الإنتاجية وتنظيم سير عملك وجعل حياتك أكثر وضوحًا. من تصميم مصطفى ياسر."
       : "Explore beautifully crafted Notion templates designed to boost productivity, streamline your workflow, and bring clarity to your life. Created by Mostafa Yasser.",
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `${siteUrl}/${locale}`,
+      languages: {
+        en: `${siteUrl}/en`,
+        ar: `${siteUrl}/ar`,
+      },
+    },
     openGraph: {
       title: isArabic
         ? "مصطفى ياسر | قوالب نوشن لتنظيم حياتك"
@@ -42,11 +53,11 @@ export async function generateMetadata({ params }) {
       description: isArabic
         ? "عزز إنتاجيتك مع قوالب نوشن الاحترافية من مصطفى ياسر. بسيطة وفعالة وجميلة."
         : "Boost your productivity with premium Notion templates by Mostafa Yasser. Simple, effective, and beautifully designed.",
-      url: "https://mostafayasser.com",
+      url: `${siteUrl}/${locale}`,
       siteName: "Mostafa Yasser",
       images: [
         {
-          url: "/icon.png",
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: isArabic
@@ -54,6 +65,7 @@ export async function generateMetadata({ params }) {
             : "Mostafa Yasser - Notion Templates",
         },
       ],
+      locale: isArabic ? "ar_EG" : "en_US",
       type: "website",
     },
     twitter: {
@@ -65,7 +77,7 @@ export async function generateMetadata({ params }) {
         ? "اكتشف قوالب نوشن لتنظيم حياتك وزيادة إنتاجيتك. من تصميم مصطفى ياسر."
         : "Discover Notion templates that organize your life and boost productivity. Built by Mostafa Yasser.",
       creator: "@engmsyasser",
-      images: ["/icon.png"],
+      images: [imageUrl],
     },
   };
 }
