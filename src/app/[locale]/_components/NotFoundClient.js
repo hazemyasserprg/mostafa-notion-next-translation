@@ -11,7 +11,7 @@ export default function NotFoundClient() {
   return (
     <div className="flex items-start justify-center min-h-screen bg-black text-white py-16">
       <div className="text-center px-6">
-        <AnimatedText>
+        <AnimatedText className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2 font-extrabold leading-tight">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2 font-extrabold leading-tight">
             {t("title")}
           </h1>

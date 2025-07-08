@@ -1,10 +1,10 @@
-// app/[locale]/templates/[slug]/page.js
 import TemplateDetailsClient from "./TemplateDetailsClient";
 import templatesData from "@/src/app/[locale]/_data/templatesData";
 import { notFound } from "next/navigation";
 import { createTranslator } from "next-intl";
 import arMessages from "@/messages/ar/TemplateSlug.json";
 import enMessages from "@/messages/en/TemplateSlug.json";
+import StudyHubPage from "./StudyHubPage";
 
 export async function generateMetadata({ params }) {
   const { locale, slug } = params;
@@ -88,6 +88,9 @@ export default function TemplateDetails({ params }) {
   if (!template) {
     return notFound();
   }
+
+  if (template.slug === "study-hub")
+    return <StudyHubPage template={template} />;
 
   return <TemplateDetailsClient template={template} />;
 }

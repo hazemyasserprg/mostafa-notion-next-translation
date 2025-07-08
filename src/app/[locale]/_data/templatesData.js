@@ -28,6 +28,20 @@ const templates = [
     detailsLink: "",
   },
   {
+    id: 19,
+    name: "FinanceHub",
+    slug: "finance-hub",
+    category: "productivity",
+    detailsLink: "",
+  },
+  {
+    id: 20,
+    name: "Second Brain",
+    slug: "second-brain",
+    category: "productivity",
+    detailsLink: "",
+  },
+  {
     id: 3,
     name: "Ibadat Tracker",
     slug: "ibadat-tracker",
@@ -114,7 +128,7 @@ const templates = [
   },
   {
     id: 17,
-    name: "Idea Flow – Solo Edition",
+    name: "Idea Flow - Solo Edition",
     slug: "idea-flow-solo",
     category: "productivity",
     detailsLink: "",

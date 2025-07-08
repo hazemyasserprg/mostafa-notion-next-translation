@@ -141,10 +141,13 @@
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
-    "image": "/thumbnails/ENThumbnails/17.webp"
+    "image": "/thumbnails/ENThumbnails/17.webp",
+    "dashboard": "/moreDetials/2.png",
+    "screenshot": "/moreDetials/screenshot.png",
+    "logo": "/moreDetials/StudyHub.png"
   },
-  "Idea Flow – Solo Edition": {
-    "name": "Idea Flow – Solo Edition",
+  "Idea Flow - Solo Edition": {
+    "name": "Idea Flow - Solo Edition",
     "description": "Transform your ideas into actionable outcomes with Idea Flow – Solo Edition, the ultimate all-in-one system for managing and organizing your personal ideas. Designed for simplicity and clarity, this Notion template ensures no idea gets lost by guiding you through structured stages—from raw thoughts to completed projects.",
     "price": "$4.5",
     "checkout": "Checkout",
@@ -160,5 +163,23 @@
     "checkoutLink": "https://www.notion.com/templates/personal-profile",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/18.webp"
+  },
+  "FinanceHub": {
+    "name": "FinanceHub",
+    "description": "",
+    "price": "soon",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com",
+    "moreDetails": "More Details",
+    "image": ""
+  },
+  "Second Brain": {
+    "name": "Second Brain",
+    "description": "",
+    "price": "soon",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com",
+    "moreDetails": "More Details",
+    "image": ""
   }
 }

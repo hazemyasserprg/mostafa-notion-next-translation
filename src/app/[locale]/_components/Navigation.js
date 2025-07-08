@@ -33,10 +33,10 @@ export default function Navigation() {
             <Image
               src="/logos/lightLogo.webp"
               alt="Mostafa Yasser logo"
-              height={40}
-              width={40}
+              height={180}
+              width={180}
             />
-            <span className="text-xl uppercase">{t("MOSTAFA")}</span>
+            {/* <span className="text-xl uppercase">{t("MOSTAFA")}</span> */}
           </Link>
 
           {/* Desktop Menu */}

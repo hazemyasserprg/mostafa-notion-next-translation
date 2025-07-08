@@ -69,18 +69,21 @@ export default function HomePage() {
   return (
     <BlurText>
       <div className="text-center">
-        <AnimatedText>
+        <AnimatedText className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2 font-extrabold leading-tight">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2 font-extrabold leading-tight">
             <TypewriterText text={t("title")} />
           </h1>
         </AnimatedText>
 
-        <AnimatedWrapper delay={3.5}>
+        <AnimatedWrapper delay={2.5}>
           <p className="text-base sm:text-lg md:text-xl text-main mt-4 max-w-2xl mx-auto px-4 font-light tracking-tight">
             {t("subtitle")}
           </p>
 
-          <GoToTemplatesPageButton text={t("browseButton")} />
+          <GoToTemplatesPageButton
+            text={t("browseButton")}
+            className={"flex justify-center mt-6 sm:mt-10 relative z-10 px-4"}
+          />
 
           <SubscriptionForm className="mt-15 w-full max-w-xl mx-auto flex flex-col sm:flex-row items-center gap-3 px-4 sm:px-6">
             <p className="text-center text-sm sm:text-base mt-4 max-w-md px-4 sm:px-0 mx-auto text-gray-400 font-light tracking-tight leading-relaxed">

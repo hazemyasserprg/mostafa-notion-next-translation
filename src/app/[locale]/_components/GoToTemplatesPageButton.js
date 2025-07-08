@@ -5,11 +5,16 @@ import Link from "next/link";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { useLocale } from "next-intl";
 
-function GoToTemplatesPageButton({ text }) {
+function GoToTemplatesPageButton({
+  text,
+  className,
+  initial = { opacity: 0, y: 20 },
+  transition = { duration: 0.1, ease: "easeOut" },
+}) {
   const locale = useLocale();
 
   return (
-    <div className="flex justify-center mt-6 sm:mt-10 relative z-10 px-4">
+    <div className={className}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.3 }}
@@ -19,17 +24,15 @@ function GoToTemplatesPageButton({ text }) {
 
       <Link href="/templates" passHref>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={initial}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1, ease: "easeOut" }}
+          transition={transition}
           whileHover={{
             scale: 1.05,
             boxShadow: "0px 0px 20px rgba(215, 177, 128, 0.3)",
           }}
           whileTap={{ scale: 0.95 }}
-          className="flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full 
-            bg-black text-white font-medium text-sm sm:text-base relative overflow-hidden 
-            transition-all duration-300 cursor-pointer"
+          className="flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-black text-white font-medium text-sm sm:text-base relative overflow-hidden transition-all duration-300 cursor-pointer"
         >
           {text}
           {locale === "ar" ? (

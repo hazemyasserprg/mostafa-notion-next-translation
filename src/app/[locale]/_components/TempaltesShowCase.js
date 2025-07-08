@@ -6,11 +6,16 @@ import AnimatedInView from "./AnimatedInView";
 
 const templates = {
   lifeChanging: [
+    // {
+    //   id: 16,
+    //   name: "StudyHub",
+    //   slug: "study-hub",
+    //   premium: true,
+    // },
     {
-      id: 16,
-      name: "StudyHub",
-      slug: "study-hub",
-      premium: true,
+      id: 1,
+      name: "Quran Tracker Premium",
+      slug: "quran-tracker-premium",
     },
     {
       id: 14,
@@ -175,7 +180,10 @@ export default function TemplatesShowcase() {
         </AnimatedInView>
       </div>
 
-      <GoToTemplatesPageButton text={t("showMore")} />
+      <GoToTemplatesPageButton
+        text={t("showMore")}
+        className={"flex justify-center mt-6 sm:mt-10 relative z-10 px-4"}
+      />
     </div>
   );
 }

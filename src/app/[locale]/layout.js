@@ -8,6 +8,7 @@ import Navigation from "@/src/app/[locale]/_components/Navigation";
 import Footer from "@/src/app/[locale]/_components/Footer";
 import "@/src/app/[locale]/_styles/globals.css";
 import Script from "next/script";
+import FloatingNav from "./_components/_studyhubPage/FloatingNav";
 
 const oswald = Oswald({
   subsets: ["latin"],
