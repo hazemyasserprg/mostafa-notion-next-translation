@@ -11,7 +11,7 @@
   "90-Day Challenge Premium": {
     "name": "90-Day Challenge Premium",
     "description": "Transform your habits in 90 days with this Notion template! Track progress, stay motivated, and build better routines with ease.",
-    "price": "$3",
+    "price": "$0",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/90-day-challenge-883",
     "moreDetails": "More Details",
@@ -29,7 +29,7 @@
   "TaskMaster": {
     "name": "TaskMaster",
     "description": "Stay on top of your tasks with this powerful Notion template designed for seamless organization and productivity. Whether you're managing daily tasks, weekly plans, or long-term goals, TaskMaster keeps everything in one place.",
-    "price": "$2",
+    "price": "$0",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/taskmaster",
     "moreDetails": "More Details",
@@ -128,7 +128,7 @@
   "Idea Flow - Team Edition": {
     "name": "Idea Flow - Team Edition",
     "description": "Elevate your team’s productivity with Idea Flow – Team Edition, a powerful Notion template designed to streamline collaborative idea management. This all-in-one system transforms raw concepts into successful outcomes by fostering discussion, enabling informed decisions, and ensuring seamless execution. Built for clarity and collaboration, it empowers teams to stay aligned and focused.",
-    "price": "$7",
+    "price": "$0",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/ideaflowteam",
     "moreDetails": "More Details",
@@ -136,26 +136,18 @@
   },
   "StudyHub": {
     "name": "StudyHub",
-    "description": "StudyHub is the ultimate Notion template built for students who want full control over their academic journey — from organizing courses and assignments to setting personal goals and tracking daily habits",
+    "heroHead": "Master your student life with StudyHub",
+    "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
     "price": "soon",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
-    "image": "/thumbnails/ENThumbnails/17.webp",
-    "dashboard": "/study-hub/Dashboard.webp",
-    "screenshot": "/study-hub/heroImage.webp",
-    "firstDesign": "/study-hub/designs/25.webp",
-    "secondDesign": "/study-hub/designs/26.webp",
-    "thirdDesign": "/study-hub/designs/27.webp",
-    "fourthDesign": "/study-hub/designs/28.webp",
-    "fifthDesign": "/study-hub/designs/29.webp",
-    "sixthDesign": "/study-hub/designs/30.webp",
-    "logo": "/study-hub/StudyHub.webp"
+    "image": "/thumbnails/ENThumbnails/17.webp"
   },
   "Idea Flow - Solo Edition": {
     "name": "Idea Flow - Solo Edition",
     "description": "Transform your ideas into actionable outcomes with Idea Flow – Solo Edition, the ultimate all-in-one system for managing and organizing your personal ideas. Designed for simplicity and clarity, this Notion template ensures no idea gets lost by guiding you through structured stages—from raw thoughts to completed projects.",
-    "price": "$4.5",
+    "price": "$0",
     "checkout": "Checkout",
     "checkoutLink": "https://www.notion.com/templates/ideaflow",
     "moreDetails": "More Details",

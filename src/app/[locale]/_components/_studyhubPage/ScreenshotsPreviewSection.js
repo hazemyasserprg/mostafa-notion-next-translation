@@ -91,93 +91,93 @@ export default function ScreenshotsPreviewSection() {
 
   const featureImages = [
     {
-      title: "Budget Tracking",
+      title: "Courses",
       description:
-        "Effortlessly track your budget, monitor spending, and stay on top of your financial goals with real-time insights.",
+        "Organize all your academic courses in one place — each with linked lessons, tasks, notes, and progress.",
       image: "/study-hub/screenshots/1.webp",
     },
     {
-      title: "Income Tracker",
+      title: "Modules",
       description:
-        "Easily manage and monitor all your income streams to stay on top of your earnings and financial growth.",
+        "Break down each course into structured modules or units for easier navigation and focused learning.",
       image: "/study-hub/screenshots/2.webp",
     },
     {
-      title: "Expense Tracker",
+      title: "Lessons",
       description:
-        "Keep a close eye on your spending habits, track every expense, and maintain control over your finances.",
+        "Track individual lessons, their topics, progress, and related materials — all connected to your modules and courses.",
       image: "/study-hub/screenshots/3.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Assignments",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Stay on top of every assignment, due date, and submission with smart filters and priority tags.",
       image: "/study-hub/screenshots/4.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Exams",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Plan and prepare for upcoming quizzes, midterms, and finals — with space for dates, study material, and linked courses.",
       image: "/study-hub/screenshots/5.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Instructors",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Manage details for all your professors and instructors, including contact info and courses they teach.",
       image: "/study-hub/screenshots/6.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Schedule",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Visualize your weekly timetable — classes, sessions, and events all organized and easy to access.",
       image: "/study-hub/screenshots/7.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Notes",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Capture and organize your study notes, ideas, and summaries — linked to lessons and courses.",
       image: "/study-hub/screenshots/8.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Resources",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Store useful materials like PDFs, links, and videos, categorized and tagged for easy access.",
       image: "/study-hub/screenshots/9.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Flow",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Build daily consistency with integrated Habits and Journaling — boost focus and self-reflection.",
       image: "/study-hub/screenshots/10.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Books",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Track your current and past readings, with progress bars, categories, and personal ratings.",
       image: "/study-hub/screenshots/11.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Archive",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Move completed courses, lessons, and tasks here to keep your workspace clean and focused.",
       image: "/study-hub/screenshots/12.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Goals",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Define academic and personal goals, track progress, and break them into actionable steps.",
       image: "/study-hub/screenshots/13.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Projects",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "Manage long-term assignments, research, or capstone projects — with status, deadlines, and subtasks.",
       image: "/study-hub/screenshots/14.webp",
     },
     {
-      title: "Accounts Overview",
+      title: "Tasks",
       description:
-        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+        "All your to-dos in one place — assignments, reviews, chores, and more, with flexible filters and views.",
       image: "/study-hub/screenshots/15.webp",
     },
   ];
@@ -188,12 +188,14 @@ export default function ScreenshotsPreviewSection() {
         className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 mt-24 sm:mt-32"
         id="databases"
       >
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-main mb-4 text-center">
-          Seamless Finance Management Tools
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 text-main leading-tight">
+          The Backbone of StudyHub
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto leading-relaxed">
-          Visualize your workflow and track your financial goals with these
-          powerful tools designed for clarity and control.
+
+        <p className="text-lg sm:text-xl md:text-3xl text-muted-foreground mb-14 max-w-6xl leading-relaxed text-center mx-auto">
+          At the heart of StudyHub is a powerful system of interconnected
+          databases designed to organize, connect, and simplify your entire
+          academic journey.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

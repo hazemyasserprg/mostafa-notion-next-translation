@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 const sections = [
   { id: "home", label: "Home" },
   { id: "dashboard", label: "Dashboard" },
-  { id: "all-features", label: "All Features" },
-  { id: "features", label: "Features" },
+  { id: "essentials", label: "Essentials" },
+  { id: "walkthrough", label: "Walkthrough" },
   { id: "databases", label: "Databases" },
   { id: "pricing", label: "Pricing" },
   { id: "faq", label: "FAQ" },

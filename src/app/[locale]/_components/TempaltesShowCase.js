@@ -6,16 +6,11 @@ import AnimatedInView from "./AnimatedInView";
 
 const templates = {
   lifeChanging: [
-    // {
-    //   id: 16,
-    //   name: "StudyHub",
-    //   slug: "study-hub",
-    //   premium: true,
-    // },
     {
-      id: 1,
-      name: "Quran Tracker Premium",
-      slug: "quran-tracker-premium",
+      id: 16,
+      name: "StudyHub",
+      slug: "study-hub",
+      premium: true,
     },
     {
       id: 14,

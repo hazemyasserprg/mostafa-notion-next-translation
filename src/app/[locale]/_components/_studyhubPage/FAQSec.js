@@ -6,24 +6,39 @@ function FAQSec() {
 
   const faqs = [
     {
-      question: "What payment methods do you accept?",
+      question: "What is Notion?",
       answer:
-        "We accept all major credit cards, PayPal, and Apple Pay for secure and fast checkout.",
+        "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between. It’s flexible, intuitive, and perfect for students who want full control over their academic life.",
     },
     {
-      question: "Is there a refund policy?",
+      question: "How do I get access to the template?",
       answer:
-        "Yes, if you're not satisfied with your template within 7 days of purchase, we offer a full refund—no questions asked.",
+        "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the StudyHub template to your Notion workspace — no waiting.",
     },
     {
-      question: "Can I upgrade my plan later?",
+      question: "Do I need a paid Notion account?",
       answer:
-        "Absolutely! You can upgrade from Standard to Essentials or Advanced anytime by paying only the price difference.",
+        "No. You can use StudyHub with Notion’s free plan — no upgrades required.",
     },
     {
-      question: "How will I receive the template after purchase?",
+      question: "Will I know how to use it?",
       answer:
-        "You'll get instant access via email with a link to duplicate the Notion template directly into your workspace.",
+        "Yes. The template comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step.",
+    },
+    {
+      question: "Is it worth the price?",
+      answer:
+        "Definitely. Instead of spending hours building a system from scratch, you get instant access to a professionally designed academic dashboard that’s ready to use. StudyHub saves you time, enhances your focus, and helps you stay on top of your learning journey.",
+    },
+    {
+      question: "What is your refund policy?",
+      answer:
+        "You are eligible for a refund if you initiate a refund request within 14 days of purchase. This follows the Marketplace refund policy where this template is distributed.",
+    },
+    {
+      question: "Still have questions?",
+      answer:
+        "Feel free to email me at contact@mostafayasser.com or DM me on Twitter — I’m happy to assist anytime.",
     },
   ];
 
@@ -36,18 +51,13 @@ function FAQSec() {
         mt-24
       "
     >
-      <h2
-        className="
-          text-3xl sm:text-4xl md:text-5xl
-          font-extrabold
-          text-main
-          mb-10
-          text-center
-          leading-tight
-        "
-      >
-        Frequently Asked Questions
+      <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 text-main leading-tight mt-24">
+        Frequently asked questions
       </h2>
+
+      <p className="text-lg sm:text-xl md:text-3xl text-muted-foreground mb-14 max-w-6xl leading-relaxed text-center mx-auto">
+        If you still have questions, feel free to get in touch with us.
+      </p>
 
       <div className="space-y-4">
         {faqs.map((faq, index) => (

@@ -1,5 +1,13 @@
 const templates = [
   {
+    id: 16,
+    name: "StudyHub",
+    slug: "study-hub",
+    premium: true,
+    category: "education",
+    detailsLink: "",
+  },
+  {
     id: 1,
     name: "Quran Tracker Premium",
     slug: "quran-tracker-premium",
@@ -118,14 +126,7 @@ const templates = [
     category: "productivity",
     detailsLink: "",
   },
-  {
-    id: 16,
-    name: "StudyHub",
-    slug: "study-hub",
-    premium: true,
-    category: "education",
-    detailsLink: "",
-  },
+
   {
     id: 17,
     name: "Idea Flow - Solo Edition",

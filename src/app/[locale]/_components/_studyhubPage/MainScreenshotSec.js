@@ -31,14 +31,12 @@ export default function MainScreenshotSec({ template }) {
       id="dashboard"
       className="mt-32 w-full px-4 flex flex-col items-center text-center"
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-main leading-tight">
-        Take Complete Control of Your Life with Notion
+      <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 text-main leading-tight">
+        Your Entire Student Life in One View
       </h2>
 
-      <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-        Built on the proven PARA organization method, Second Brain OS has
-        everything you need to organize your life seamlessly. <br /> Discover
-        the main dashboard.
+      <p className="text-lg sm:text-xl md:text-3xl text-muted-foreground mb-14 max-w-4xl leading-relaxed">
+        Explore how StudyHub brings everything together in one smart dashboard.
       </p>
 
       <div className="w-full max-w-7xl rounded-3xl overflow-hidden shadow-xl border border-neutral-800 bg-neutral-900/60 backdrop-blur-md relative mx-auto">
@@ -47,7 +45,7 @@ export default function MainScreenshotSec({ template }) {
           className="relative w-full h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-transparent"
         >
           <Image
-            src={t(`${template.name}.dashboard`)}
+            src="/study-hub/Dashboard.webp"
             alt={`${template.name} Full Page Screenshot`}
             width={1920}
             height={template.bigHeight ?? 3000}

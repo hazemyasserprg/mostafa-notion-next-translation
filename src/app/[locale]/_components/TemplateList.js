@@ -6,7 +6,7 @@ import TemplateCard from "./TemplateCard";
 function TemplateList({ filter }) {
   let filteredTemplates;
 
-  const excludedSlugs = ["finance-hub", "second-brain", "study-hub"];
+  const excludedSlugs = ["finance-hub", "second-brain"];
 
   if (filter === "all") filteredTemplates = templatesData;
   if (filter === "islam")

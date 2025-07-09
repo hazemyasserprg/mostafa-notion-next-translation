@@ -1,14 +1,17 @@
 import { useTranslations } from "next-intl";
 import {
-  Banknote,
-  Coins,
-  PieChart,
-  FileBarChart2,
+  LayoutDashboard,
+  Calendar,
+  PlusSquare,
+  BarChart3,
+  BookOpen,
+  CheckSquare,
+  Notebook,
+  BookMarked,
+  Repeat,
   Target,
-  LineChart,
-  CreditCard,
-  Bell,
-  Trophy,
+  CalendarDays,
+  Database,
 } from "lucide-react";
 
 function FeacturesSec() {
@@ -16,81 +19,97 @@ function FeacturesSec() {
 
   const features = [
     {
-      title: "Account Management",
+      title: "Dashboard Overview",
       description:
-        "Take control of your finances by categorizing income and expenses across accounts, providing a crystal-clear view of where your money flows.",
-      icon: Banknote,
+        "A sleek central hub that summarizes your academic life: progress, weekly schedule, and quick actions.",
+      icon: LayoutDashboard,
     },
     {
-      title: "Income & Expense",
+      title: "Schedule Section",
       description:
-        "Easily monitor your income, expenses, budgets, and financial goals—all seamlessly managed in one powerful system.",
-      icon: Coins,
+        "Plan your week with a clear and organized breakdown of your daily classes.",
+      icon: Calendar,
     },
     {
-      title: "Budget Tracking",
+      title: "Quick Actions Panel",
       description:
-        "Effortlessly track your budget, monitor spending, and stay on top of your financial goals with real-time insights.",
-      icon: PieChart,
+        "Easily add new lessons, instructors, notes, or goals with a single click.",
+      icon: PlusSquare,
     },
     {
-      title: "Financial Reports",
+      title: "Progress Tracker",
       description:
-        "Access detailed reports monthly, quarterly, yearly, to gain insights into your financial performance and make informed decisions.",
-      icon: FileBarChart2,
+        "Automatically updated analytics to help you measure academic performance over time.",
+      icon: BarChart3,
     },
     {
-      title: "Financial Goals",
+      title: "Learning Hub",
       description:
-        "Set, track, and achieve your financial goals with clear milestones and actionable plans tailored to your ambitions.",
+        "Manage all your current and upcoming courses in one smart space.",
+      icon: BookOpen,
+    },
+    {
+      title: "To-Do Hub",
+      description:
+        "Stay on top of your tasks, assignments, and exams with smart date filters like Today, Upcoming, and Missed.",
+      icon: CheckSquare,
+    },
+    {
+      title: "Review Hub",
+      description:
+        "Keep all your learning resources and notes organized for easy access and review.",
+      icon: Notebook,
+    },
+    {
+      title: "Reading Side",
+      description:
+        "Track your current reads and monitor completion rates to stay consistent with your learning goals.",
+      icon: BookMarked,
+    },
+    {
+      title: "Flow Section",
+      description:
+        "Build daily consistency through habit tracking and journaling.",
+      icon: Repeat,
+    },
+    {
+      title: "Mission Hub",
+      description:
+        "Set long-term academic goals and follow your progress toward achieving them.",
       icon: Target,
     },
     {
-      title: "Investment Tracker",
+      title: "Monthly View",
       description:
-        "Monitor your investments and watch your wealth grow with a clear overview of your portfolio's performance.",
-      icon: LineChart,
+        "A calendar view that brings together your exams, tasks, notes, and events all in one place.",
+      icon: CalendarDays,
     },
     {
-      title: "Debts and Liabilities",
+      title: "Pre-built Databases",
       description:
-        "Take charge of your debt—track, manage, and conquer your financial obligations with ease.",
-      icon: CreditCard,
-    },
-    {
-      title: "Subscriptions Tracker",
-      description:
-        "Stay on top of all your subscriptions by tracking renewals, costs, and cancellation dates in one organized place.",
-      icon: Bell,
-    },
-    {
-      title: "Net Worth Tracker",
-      description:
-        "Track your net worth over time and celebrate your progress towards financial stability.",
-      icon: Trophy,
+        "A modular system with dedicated databases for courses, tasks, exams, instructors, resources, notes, and more.",
+      icon: Database,
     },
   ];
 
   return (
     <section
-      id="all-features"
+      id="essentials"
       className="
         max-w-7xl mx-auto
         px-4 sm:px-6 lg:px-8
         mt-24
       "
     >
-      <h2
-        className="
-          text-3xl sm:text-4xl md:text-5xl
-          font-extrabold
-          text-main
-          mb-8 text-center
-          leading-tight
-        "
-      >
-        All-in-One Finance Management
+      <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 text-main leading-tight">
+        Everything You Need — In One Place
       </h2>
+
+      <p className="text-lg sm:text-xl md:text-3xl text-muted-foreground mb-14 max-w-6xl leading-relaxed text-center mx-auto">
+        Discover the core features that make StudyHub your ultimate
+        academic companion.
+      </p>
+
       <div
         className="
           grid

@@ -54,7 +54,7 @@ export default function HeroCoverImage({ template }) {
     >
       <div className="relative w-full aspect-auto">
         <Image
-          src={t(`${template.name}.screenshot`)}
+          src="/study-hub/heroImage.webp"
           alt={`${t(`${template.name}.name`)} Cover`}
           width={1600}
           height={900}

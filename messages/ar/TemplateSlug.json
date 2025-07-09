@@ -11,7 +11,7 @@
   "90-Day Challenge Premium": {
     "name": "تحدي الـ 90 يوم | النسخة المميزة",
     "description": "حوّل عاداتك في 90 يومًا مع قالب نوشن هذا! تتبع التقدم، حافظ على التحفيز، وبناء روتين أفضل بسهولة.",
-    "price": "$3",
+    "price": "$0",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/a4124b51-0a23-4250-94c3-2a301de47edb",
     "moreDetails": "مزيد من التفاصيل",
@@ -29,7 +29,7 @@
   "TaskMaster": {
     "name": "مدير المهام",
     "description": "سواء كنت تخطط ليومك، أسبوعك، أو أهدافك طويلة المدى، فإن قالب مدير المهام على نوشن سيساعدك على الحفاظ على تركيزك وزيادة إنتاجيتك بأدوات قوية ومنظمة. هذا القالب هو مركزك الرقمي لتنظيم جميع مهامك، مع عرض بصري واضح، وتصنيفات ذكية، وإمكانية تخصيص عالية لتناسب أسلوبك في العمل.",
-    "price": "$2",
+    "price": "$0",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/2dd15e76-fedb-4d95-be8e-45967e0f204a",
     "moreDetails": "مزيد من التفاصيل",
@@ -128,25 +128,26 @@
   "Idea Flow - Team Edition": {
     "name": "مولد الأفكار - نسخة الفريق",
     "description": "ارفع إنتاجية فريقك مع مولد الأفكار – نسخة الفريق، قالب قوي من نوشن مصمم لتنظيم إدارة الأفكار التعاونية. يحول هذا النظام الشامل الأفكار الخام إلى نتائج ناجحة من خلال تعزيز النقاش، تمكين القرارات المدروسة، وضمان التنفيذ السلس. مصمم للوضوح والتعاون، يمكّن الفرق من البقاء متوافقة ومركزة.",
-    "price": "$7",
+    "price": "$0",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/ea7e9309-5980-4db7-ac3f-817453c680de",
     "moreDetails": "مزيد من التفاصيل",
     "image": "/thumbnails/ARThumbnails/14.webp"
   },
   "StudyHub": {
-    "name": "مركز الدراسة",
-    "description": "مركز الدراسة هو قالب نوشن النهائي المصمم للطلاب الذين يريدون التحكم الكامل في رحلتهم الأكاديمية - من تنظيم الدورات والمهام إلى تحديد الأهداف الشخصية وتتبع العادات اليومية.",
-    "price": "قريبًا",
-    "checkout": "تحميل",
-    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/checkout",
-    "moreDetails": "مزيد من التفاصيل",
+    "name": "StudyHub",
+    "heroHead": "Master your student life with StudyHub",
+    "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
+    "price": "soon",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/studyhub0",
+    "moreDetails": "More Details",
     "image": "/thumbnails/ARThumbnails/17.webp"
   },
-  "Idea Flow – Solo Edition": {
+  "Idea Flow - Solo Edition": {
     "name": "مولد الأفكار",
     "description": "حوّل أفكارك إلى نتائج قابلة للتنفيذ مع مولد الأفكار – نسخة الفرد، النظام الشامل المثالي لإدارة وتنظيم أفكارك الشخصية. تم تصميم هذا القالب في نوشن للبساطة والوضوح، لضمان عدم ضياع أي فكرة من خلال إرشادك عبر مراحل منظمة، بدءًا من الأفكار الأولية وحتى المشاريع المكتملة.",
-    "price": "$4.5",
+    "price": "$0",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/9ef644bd-9aed-4a19-b9b3-1c994a7009f2",
     "moreDetails": "مزيد من التفاصيل",
