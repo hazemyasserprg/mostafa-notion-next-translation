@@ -94,91 +94,91 @@ export default function ScreenshotsPreviewSection() {
       title: "Budget Tracking",
       description:
         "Effortlessly track your budget, monitor spending, and stay on top of your financial goals with real-time insights.",
-      image: "/study-hub/screenshots/1.png",
+      image: "/study-hub/screenshots/1.webp",
     },
     {
       title: "Income Tracker",
       description:
         "Easily manage and monitor all your income streams to stay on top of your earnings and financial growth.",
-      image: "/study-hub/screenshots/2.png",
+      image: "/study-hub/screenshots/2.webp",
     },
     {
       title: "Expense Tracker",
       description:
         "Keep a close eye on your spending habits, track every expense, and maintain control over your finances.",
-      image: "/study-hub/screenshots/3.png",
+      image: "/study-hub/screenshots/3.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/4.png",
+      image: "/study-hub/screenshots/4.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/5.png",
+      image: "/study-hub/screenshots/5.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/6.png",
+      image: "/study-hub/screenshots/6.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/7.png",
+      image: "/study-hub/screenshots/7.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/8.png",
+      image: "/study-hub/screenshots/8.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/9.png",
+      image: "/study-hub/screenshots/9.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/10.png",
+      image: "/study-hub/screenshots/10.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/11.png",
+      image: "/study-hub/screenshots/11.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/12.png",
+      image: "/study-hub/screenshots/12.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/13.png",
+      image: "/study-hub/screenshots/13.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/14.png",
+      image: "/study-hub/screenshots/14.webp",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/study-hub/screenshots/15.png",
+      image: "/study-hub/screenshots/15.webp",
     },
   ];
 
