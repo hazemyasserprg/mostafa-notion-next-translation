@@ -1,6 +1,4 @@
 import Image from "next/image";
-import AnimatedInView from "../AnimatedInView";
-import CheckoutButton from "../CheckoutButton";
 import GoToTemplatesPageButton from "../GoToTemplatesPageButton";
 import { useTranslations } from "next-intl";
 import HeroCoverImage from "./HeroCoverImage";
