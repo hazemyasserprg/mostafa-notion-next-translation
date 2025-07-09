@@ -9,7 +9,6 @@ const sections = [
   { id: "walkthrough", label: "Walkthrough" },
   { id: "databases", label: "Databases" },
   { id: "pricing", label: "Pricing" },
-  { id: "faq", label: "FAQ" },
 ];
 
 export default function FloatingNav() {
