@@ -74,24 +74,77 @@ function FeacturesSec() {
   return (
     <section
       id="all-features"
-      className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-24"
+      className="
+        max-w-7xl mx-auto
+        px-4 sm:px-6 lg:px-8
+        mt-24
+      "
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-main mb-8 text-center">
+      <h2
+        className="
+          text-3xl sm:text-4xl md:text-5xl
+          font-extrabold
+          text-main
+          mb-8 text-center
+          leading-tight
+        "
+      >
         All-in-One Finance Management
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-3
+          gap-6 sm:gap-8 lg:gap-10
+        "
+      >
         {features.map((feature, index) => (
           <div
             key={index}
-            className="rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md p-6 sm:p-8 border border-neutral-200 dark:border-neutral-700 shadow-2xl hover:shadow-3xl transition-transform duration-300 ease-out group"
+            className="
+              rounded-3xl
+              bg-white/70 dark:bg-neutral-900/50
+              backdrop-blur-md
+              p-6 sm:p-8
+              border border-neutral-200 dark:border-neutral-700
+              shadow-xl hover:shadow-2xl
+              transform hover:-translate-y-1
+              transition-all duration-300 ease-out
+              group
+              flex flex-col
+              h-full
+            "
           >
             <div className="flex items-center gap-3 mb-4">
-              <feature.icon className="w-6 h-6 text-main group-hover:scale-110 transition-transform" />
-              <h3 className="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              <feature.icon
+                className="
+                  w-6 h-6 sm:w-7 sm:h-7
+                  text-main
+                  group-hover:scale-110
+                  transition-transform duration-300
+                "
+              />
+              <h3
+                className="
+                  text-lg sm:text-xl md:text-2xl
+                  font-semibold
+                  text-neutral-900 dark:text-neutral-100
+                  leading-tight
+                "
+              >
                 {feature.title}
               </h3>
             </div>
-            <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300">
+            <p
+              className="
+                text-sm sm:text-base
+                text-neutral-700 dark:text-neutral-300
+                leading-relaxed
+                max-w-prose
+              "
+            >
               {feature.description}
             </p>
           </div>

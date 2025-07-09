@@ -3,69 +3,124 @@ import AnimatedInView from "../AnimatedInView";
 import CheckoutButton from "../CheckoutButton";
 import GoToTemplatesPageButton from "../GoToTemplatesPageButton";
 import { useTranslations } from "next-intl";
+import HeroCoverImage from "./HeroCoverImage";
 
 function HeroSec({ template }) {
   const t = useTranslations("TemplateSlug");
 
   return (
     <section
-      id="hero"
-      className="relative w-full flex flex-col items-center text-center overflow-visible px-4"
+      id="home"
+      className="relative w-full flex flex-col items-center text-center overflow-visible px-4 sm:px-8 lg:px-12 "
     >
       {/* Title */}
-      <h1 className="flex flex-col items-center gap-4 mb-6">
+      <h1 className="flex flex-col items-center gap-4 mb-4 sm:mb-6">
         <Image
           src={t(`${template.name}.logo`)}
           alt={`${t(`${template.name}.name`)} Logo`}
           width={96}
           height={96}
-          className="mx-auto rounded-2xl shadow-lg"
+          className="
+            mx-auto 
+            rounded-2xl 
+            shadow-lg 
+            bg-white/80 
+            p-2 
+            transition-transform 
+            duration-300 
+            hover:scale-105 
+            hover:shadow-xl
+          "
+          quality={100}
           priority
         />
-        <span className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-main leading-tight">
+        <span
+          className="
+          text-3xl 
+          sm:text-5xl 
+          md:text-6xl 
+          font-extrabold 
+          tracking-tight 
+          text-main 
+          leading-tight
+        "
+        >
           {t(`${template.name}.name`)}
         </span>
       </h1>
 
       {/* Description */}
-      <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+      <p
+        className="
+        text-base 
+        sm:text-lg 
+        md:text-2xl 
+        text-muted-foreground 
+        mb-8 
+        sm:mb-10 
+        max-w-2xl 
+        leading-relaxed
+      "
+      >
         {t(`${template.name}.description`)}
       </p>
 
       {/* CTA Buttons */}
-      <div className="flex flex-wrap justify-center items-center gap-4 mb-12">
-        <CheckoutButton
-          checkoutLink={t(`${template.name}.checkoutLink`)}
-          checkoutText={t(`${template.name}.checkout`)}
-          className="px-6 py-3 text-base sm:text-lg font-semibold"
-        />
+      <div
+        className="
+        flex flex-col sm:flex-row flex-wrap 
+        justify-center items-center 
+        gap-4 mb-10 sm:mb-12
+      "
+      >
+        <a
+          href="#dashboard"
+          className="
+            relative inline-block overflow-hidden 
+            px-6 py-3 
+            text-base sm:text-lg 
+            font-semibold text-black 
+            bg-white rounded-full group 
+            shadow-lg hover:shadow-gray-300/50 
+            hover:scale-105 
+            transition-all duration-500 ease-in-out
+          "
+        >
+          <span
+            className="
+            absolute top-0 left-0 w-full h-full 
+            bg-main transform scale-x-0 
+            group-hover:scale-x-100 
+            transition-all duration-500 ease-in-out origin-left
+          "
+          />
+          <span
+            className="
+            relative block transform 
+            transition-all duration-300 ease-in-out 
+            group-hover:text-white
+          "
+          >
+            Dashboard
+          </span>
+        </a>
+
         <GoToTemplatesPageButton
-          text="Explore Other Templates"
-          className="px-6 py-3 text-base sm:text-lg font-semibold"
+          text="Check Prices"
+          className="
+            px-6 py-3 
+            text-base sm:text-lg 
+            font-semibold
+          "
           initial=""
           transition=""
+          href="#pricing"
         />
       </div>
 
-      {/* Background Gradients */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-52 h-[70%] rounded-full bg-main/20 blur-[120px] -z-20 pointer-events-none"></div>
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-52 h-[70%] rounded-full bg-main/20 blur-[120px] -z-20 pointer-events-none"></div>
-      <div className="absolute inset-0 flex justify-center items-center -z-10 pointer-events-none">
-        <div className="w-[85%] h-[85%] max-w-4xl rounded-3xl bg-white/30 dark:bg-neutral-900/30 blur-[120px]"></div>
-      </div>
-
-      {/* Screenshot */}
-      <div className="w-full max-w-4xl sm:w-[70%] rounded-3xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 relative z-10">
-        <AnimatedInView>
-          <Image
-            src={t(`${template.name}.screenshot`)}
-            alt={`${template.name} Notion Template Screenshot`}
-            width={1200}
-            height={template.height ?? 3000}
-            className="w-full h-auto object-cover rounded-3xl"
-            priority
-          />
-        </AnimatedInView>
+      {/* Cover Image */}
+      <div className="w-full max-w-6xl">
+        <HeroCoverImage template={template} />
       </div>
     </section>
   );

@@ -32,20 +32,20 @@ export default function StudyHubPage({ template }) {
             {/* === 2️⃣ MAIN DASHBOARD SCREENSHOT SECTION === */}
             <MainScreenshotSec template={template} />
 
+            {/* === 4️⃣ ALL FEATURES GRID SECTION === */}
+            <FeacturesSec />
+
             {/* === 3️⃣ FEATURED SCREENSHOTS WITH TEXT SECTION === */}
             <ScreenshotsDetails template={template} />
 
-            {/* === 4️⃣ ALL FEATURES GRID SECTION === */}
-            <FeacturesSec />
+            {/* === 7️⃣ FULL TEMPLATE SCREENSHOTS GALLERY === */}
+            <ScreenshotsPreviewSection />
 
             {/* === 5️⃣ PRICING SECTION === */}
             <PricingSec />
 
             {/* === 6️⃣ FAQ SECTION === */}
             <FAQSec />
-
-            {/* === 7️⃣ FULL TEMPLATE SCREENSHOTS GALLERY === */}
-            <ScreenshotsPreviewSection />
           </div>
         </div>
       </BlurText>

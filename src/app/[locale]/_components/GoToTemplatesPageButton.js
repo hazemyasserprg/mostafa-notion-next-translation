@@ -10,6 +10,7 @@ function GoToTemplatesPageButton({
   className,
   initial = { opacity: 0, y: 20 },
   transition = { duration: 0.1, ease: "easeOut" },
+  href = "/templates",
 }) {
   const locale = useLocale();
 
@@ -22,7 +23,7 @@ function GoToTemplatesPageButton({
         className="absolute w-56 sm:w-72 h-20 sm:h-24 blur-2xl bg-gradient-to-br from-white/70 to-transparent rounded-full"
       />
 
-      <Link href="/templates" passHref>
+      <Link href={href} passHref>
         <motion.div
           initial={initial}
           animate={{ opacity: 1, y: 0 }}

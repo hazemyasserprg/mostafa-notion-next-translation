@@ -3,17 +3,17 @@
 import { useEffect, useState } from "react";
 
 const sections = [
-  { id: "hero", label: "Hero" },
+  { id: "home", label: "Home" },
   { id: "dashboard", label: "Dashboard" },
+  { id: "all-features", label: "All Features" },
   { id: "features", label: "Features" },
+  { id: "databases", label: "Databases" },
   { id: "pricing", label: "Pricing" },
   { id: "faq", label: "FAQ" },
-  { id: "all-features", label: "All Features" },
-  { id: "screenshots", label: "Screenshots" },
 ];
 
 export default function FloatingNav() {
-  const [active, setActive] = useState("hero");
+  const [active, setActive] = useState("home");
 
   useEffect(() => {
     const observers = [];
@@ -51,12 +51,14 @@ export default function FloatingNav() {
   return (
     <div
       className="
-        fixed bottom-6 left-1/2 -translate-x-1/2 z-50
-        flex flex-row gap-2 px-4 py-2
+        fixed bottom-4 left-1/2 -translate-x-1/2 z-50
+        sm:flex flex-wrap justify-center gap-2
+        max-w-[95vw]
+        px-4 py-2
         bg-neutral-900/80 backdrop-blur-md
         border border-neutral-800
         rounded-full shadow-lg
-        transition
+        hidden
       "
     >
       {sections.map((section) => (
@@ -64,7 +66,9 @@ export default function FloatingNav() {
           key={section.id}
           onClick={() => handleClick(section.id)}
           className={`
-            px-3 py-1.5 text-xs sm:text-sm rounded-full transition font-medium
+            px-3 py-2 
+            text-xs sm:text-sm md:text-base 
+            rounded-full transition font-medium
             ${
               active === section.id
                 ? "bg-main text-black shadow-sm"

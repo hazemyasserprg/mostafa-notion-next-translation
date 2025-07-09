@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Fragment } from "react";
 import Image from "next/image";
-import { X, CheckCircle } from "lucide-react";
+import { X } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 
 /**
@@ -35,7 +35,7 @@ function ImagePreviewModal({ isOpen, onClose, imageSrc, alt }) {
 
         {/* Modal Content */}
         <div className="fixed inset-0 overflow-y-auto">
-          <div className="flex min-h-full items-center justify-center p-4">
+          <div className="flex min-h-full items-center justify-center p-4 sm:p-8">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -45,22 +45,31 @@ function ImagePreviewModal({ isOpen, onClose, imageSrc, alt }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="relative w-full max-w-5xl max-h-[90vh] overflow-hidden rounded-3xl bg-neutral-900 shadow-2xl">
+              <Dialog.Panel
+                className="
+                  relative w-full max-w-5xl max-h-[90vh] overflow-hidden
+                  rounded-3xl bg-neutral-900 shadow-2xl
+                "
+              >
                 <button
                   onClick={onClose}
-                  className="absolute top-4 right-4 z-10 text-white hover:text-neutral-300"
+                  className="
+                    absolute top-3 right-3 z-10 text-white hover:text-neutral-300
+                    p-2 rounded-full bg-neutral-700/50 hover:bg-neutral-600/70
+                  "
                   aria-label="Close preview"
                 >
-                  <X className="w-6 h-6 cursor-pointer" />
+                  <X className="w-6 h-6" />
                 </button>
                 {imageSrc && (
-                  <div className="relative w-full h-[80vh]">
+                  <div className="relative w-full h-[70vh] sm:h-[80vh]">
                     <Image
                       src={imageSrc}
                       alt={alt || "Preview"}
                       fill
                       className="object-contain rounded-3xl"
                       priority
+                      sizes="100vw"
                     />
                   </div>
                 )}
@@ -85,43 +94,109 @@ export default function ScreenshotsPreviewSection() {
       title: "Budget Tracking",
       description:
         "Effortlessly track your budget, monitor spending, and stay on top of your financial goals with real-time insights.",
-      image: "/moreDetials/screenshot.png",
+      image: "/study-hub/screenshots/1.png",
     },
     {
       title: "Income Tracker",
       description:
         "Easily manage and monitor all your income streams to stay on top of your earnings and financial growth.",
-      image: "/moreDetials/screenshot.png",
+      image: "/study-hub/screenshots/2.png",
     },
     {
       title: "Expense Tracker",
       description:
         "Keep a close eye on your spending habits, track every expense, and maintain control over your finances.",
-      image: "/moreDetials/screenshot.png",
+      image: "/study-hub/screenshots/3.png",
     },
     {
       title: "Accounts Overview",
       description:
         "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
-      image: "/moreDetials/screenshot.png",
+      image: "/study-hub/screenshots/4.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/5.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/6.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/7.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/8.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/9.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/10.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/11.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/12.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/13.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/14.png",
+    },
+    {
+      title: "Accounts Overview",
+      description:
+        "Manage all your financial accounts in one place with clear insights into your assets and liabilities.",
+      image: "/study-hub/screenshots/15.png",
     },
   ];
 
   return (
     <>
       <section
-        className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-32"
-        id="screenshots"
+        className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 mt-24 sm:mt-32"
+        id="databases"
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-main mb-4 text-center">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-main mb-4 text-center">
           Seamless Finance Management Tools
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto leading-relaxed">
           Visualize your workflow and track your financial goals with these
           powerful tools designed for clarity and control.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {featureImages.map((feature, index) => (
             <div
               key={index}
@@ -144,10 +219,10 @@ export default function ScreenshotsPreviewSection() {
                   alt={feature.title}
                   fill
                   className="object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 1024px) 100vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-white mb-2">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-neutral-900 dark:text-white mb-2">
                 {feature.title}
               </h3>
               <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300">

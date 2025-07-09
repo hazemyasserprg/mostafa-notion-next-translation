@@ -142,8 +142,14 @@
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/17.webp",
-    "dashboard": "/moreDetials/2.png",
-    "screenshot": "/moreDetials/screenshot.png",
+    "dashboard": "/study-hub/Dashboard.png",
+    "screenshot": "/study-hub/heroImage.png",
+    "firstDesign": "/study-hub/designs/25.png",
+    "secondDesign": "/study-hub/designs/26.png",
+    "thirdDesign": "/study-hub/designs/27.png",
+    "fourthDesign": "/study-hub/designs/28.png",
+    "fifthDesign": "/study-hub/designs/29.png",
+    "sixthDesign": "/study-hub/designs/30.png",
     "logo": "/moreDetials/StudyHub.png"
   },
   "Idea Flow - Solo Edition": {
