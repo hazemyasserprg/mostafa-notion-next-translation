@@ -26,7 +26,7 @@ export default function PricingSec({ template }) {
       badgeBg: "",
     },
     {
-      data: more_advanced,
+      data: advanced,
       bg: "bg-yellow-100/60 dark:bg-yellow-900/30",
       border: "border border-yellow-200 dark:border-main/20",
       text: "text-neutral-900 dark:text-white",
@@ -34,12 +34,12 @@ export default function PricingSec({ template }) {
       buttonText: "text-black",
       hoverBg: "hover:bg-main/80",
       ringColor: "focus-visible:ring-black",
-      shadow: "shadow hover:shadow-lg hover:scale-[1.03]",
+      shadow: "shadow hover:shadow-lg hover:scale-[1.02]",
       badgeBg: "bg-main text-black",
       badgeText: "MOST POPULAR",
     },
     {
-      data: advanced,
+      data: more_advanced,
       bg: "bg-main text-black",
       border: "",
       text: "text-black",
@@ -47,7 +47,7 @@ export default function PricingSec({ template }) {
       buttonText: "text-white",
       hoverBg: "hover:bg-neutral-800",
       ringColor: "focus-visible:ring-white",
-      shadow: "shadow hover:shadow-lg hover:scale-[1.02]",
+      shadow: "shadow hover:shadow-lg hover:scale-[1.03]",
       badgeBg: "bg-white text-main",
     },
   ];
