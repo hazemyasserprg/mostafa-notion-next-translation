@@ -13,9 +13,9 @@ const templates = {
       premium: true,
     },
     {
-      id: 19,
-      name: "FinanceHub",
-      slug: "finance-hub",
+      id: 16,
+      name: "StudyHub",
+      slug: "study-hub",
       premium: true,
     },
   ],
