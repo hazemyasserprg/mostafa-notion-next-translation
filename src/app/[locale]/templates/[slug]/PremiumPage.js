@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import BlurText from "../../_components/BlurText";
 import FloatingNav from "./premium-ones/FloatingNav";
 
@@ -12,8 +11,6 @@ import Pricing from "./premium-ones/PricingSec";
 import FAQ from "./premium-ones/FAQSec";
 
 export default function PremiumPage({ template }) {
-  const t = useTranslations("TemplateSlug");
-
   if (!template) {
     return notFound();
   }

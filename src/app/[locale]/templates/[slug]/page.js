@@ -27,11 +27,21 @@ export async function generateMetadata({ params }) {
 
   const url = `https://mostafayasser.com/${locale}/templates/${slug}`;
 
-  // Ensure image URL is absolute
   const rawImage = t(`${template.name}.image`);
   const imageUrl = rawImage.startsWith("http")
     ? rawImage
     : `https://mostafayasser.com${rawImage}`;
+
+  // ✅ Determine favicon per premium template
+  let faviconPath = "/icon.webp"; // default favicon
+
+  if (slug === "study-hub") {
+    faviconPath = "/favicons/study-hub.webp";
+  } else if (slug === "second-brain") {
+    faviconPath = "/favicons/second-brain.webp";
+  } else if (slug === "finance-hub") {
+    faviconPath = "/favicons/finance-hub.webp";
+  }
 
   return {
     title,
@@ -73,6 +83,9 @@ export async function generateMetadata({ params }) {
       title,
       description,
       images: [imageUrl],
+    },
+    icons: {
+      icon: faviconPath,
     },
   };
 }
