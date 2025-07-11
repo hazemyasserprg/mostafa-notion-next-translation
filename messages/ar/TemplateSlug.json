@@ -787,5 +787,309 @@
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ARThumbnails/20.webp"
+  },
+  "FinanceHub": {
+    "homeSec": {
+      "logoURL": "/premiumTemplates/finance-hub/FinanceHub.webp",
+      "title": "Take control of your money with FinanceHub",
+      "description": "Your complete Notion system for tracking, planning, and optimizing every financial detail in one place.",
+      "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp"
+    },
+    "dashboardSec": {
+      "title": "Your Whole Financial Life, One View",
+      "description": "Track every detail — income, expenses, debts, taxes, goals, wishlist, and more — all from a single powerful dashboard.",
+      "dashboardImageURL": "/premiumTemplates/finance-hub/Dashboard.webp"
+    },
+    "essentialsSec": {
+      "title": "Everything You Need — In One Place",
+      "description": "Discover the powerful features that make FinanceHub your complete system for managing money, goals, budgets, and financial clarity.",
+      "features": {
+        "0": {
+          "title": "Track Income & Expenses",
+          "description": "Monitor your income and expenses with clarity and precision, ensuring you always know where your money is going."
+        },
+        "1": {
+          "title": "Budgets",
+          "description": "Set monthly and yearly budgets and monitor your financial balance in real time to stay in control."
+        },
+        "2": {
+          "title": "Visual Financial Progress",
+          "description": "Visualize your full financial journey with dynamic charts and dashboards for clear insights."
+        },
+        "3": {
+          "title": "Subscriptions & Bills",
+          "description": "Stay on top of subscriptions, bills, and due dates with automated tracking and reminders."
+        },
+        "4": {
+          "title": "Financial Goals",
+          "description": "Plan and track your financial goals with clear progress indicators to keep your motivation high."
+        },
+        "5": {
+          "title": "Centralized Accounts View",
+          "description": "Organize all your financial accounts in one clean, centralized view for easy monitoring."
+        },
+        "6": {
+          "title": "Spending & Income Insights",
+          "description": "Instantly see what you spend most on and where your income really comes from for better financial decisions."
+        },
+        "7": {
+          "title": "Smart Transaction Logging",
+          "description": "Log all transactions with smart filters by category, date, amount, and more for effortless tracking."
+        },
+        "8": {
+          "title": "Manage Debts & Liabilities",
+          "description": "Track recurring payments, debts, and liabilities efficiently to stay organized."
+        },
+        "9": {
+          "title": "Tax Records",
+          "description": "Stay tax-ready with organized records, due date tracking, and payment history in one place."
+        },
+        "10": {
+          "title": "Wishlist & Saving Goals",
+          "description": "Build a wishlist and convert your desired purchases into actionable saving goals."
+        },
+        "11": {
+          "title": "Quick Activity Filters",
+          "description": "Filter and analyze your financial activity instantly (today, this week, this month) with one click."
+        },
+        "12": {
+          "title": "Fully Customizable",
+          "description": "Adapt and customize everything to fit your unique financial lifestyle and evolving goals."
+        },
+        "13": {
+          "title": "Designed for Clarity",
+          "description": "Clean, simple, and growth-focused design to keep your finances organized for the long term."
+        }
+      }
+    },
+    "walkthroughSec": {
+      "title": "A Visual Walkthrough of FinanceHub",
+      "description": "Take a closer look at how FinanceHub helps you manage your entire financial life — from tracking income and expenses to planning budgets, goals, and more.",
+      "rowBlocks": {
+        "0": {
+          "title": "Unified Account View",
+          "description": "See everything tied to each account — transactions, expenses, and income — all in one place.",
+          "image": "/premiumTemplates/finance-hub/designs/1.webp",
+          "reverse": false
+        },
+        "1": {
+          "title": "Detailed Financial Records",
+          "description": "Track every transaction, expense, and income — with dates, categories, and full context.",
+          "image": "/premiumTemplates/finance-hub/designs/2.webp",
+          "reverse": true
+        },
+        "2": {
+          "title": "Stay Ahead of Recurring & Fixed Costs",
+          "description": "Track subscriptions, debts, liabilities, and taxes — with auto-payment tracking triggered by due dates.",
+          "image": "/premiumTemplates/finance-hub/designs/3.webp",
+          "reverse": false
+        },
+        "3": {
+          "title": "Smart Budgeting System",
+          "description": "Set income targets and expense budgets by category — and track your financial balance in real time.",
+          "image": "/premiumTemplates/finance-hub/designs/4.webp",
+          "reverse": true
+        },
+        "4": {
+          "title": "Track All Your Financial Goals",
+          "description": "Whether it's saving for something on your wishlist or a bigger financial milestone — plan it, track it, achieve it.",
+          "image": "/premiumTemplates/finance-hub/designs/5.webp",
+          "reverse": false
+        }
+      },
+      "columnBlocks": {
+        "firstOne": {
+          "title": "Visual Insights That Matter",
+          "description": "Get detailed charts for monthly & yearly income and expenses — and spot trends by category in seconds.",
+          "image": "/premiumTemplates/finance-hub/designs/6.webp"
+        },
+        "secondOne": {
+          "title": "Complete Financial Snapshot",
+          "description": "Track your total financial progress monthly, quarterly, and yearly — all in one smart dashboard with deep insights.",
+          "image": "/premiumTemplates/finance-hub/designs/7.webp"
+        }
+      }
+    },
+    "databasesSec": {
+      "title": "Powerful Foundations for Smarter Finances",
+      "description": "FinanceHub runs on a smart system of linked databases — giving you full visibility and control over every financial detail.",
+      "features": {
+        "0": {
+          "title": "Profile",
+          "description": "View a full summary of your financial progress, goals, and account health.",
+          "image": "/premiumTemplates/finance-hub/screenshots/1.webp"
+        },
+        "1": {
+          "title": "Accounts",
+          "description": "Track all your financial accounts — banks, wallets, cards — in one central place.",
+          "image": "/premiumTemplates/finance-hub/screenshots/2.webp"
+        },
+        "2": {
+          "title": "Transactions",
+          "description": "Log every income and expense to keep your finances crystal clear.",
+          "image": "/premiumTemplates/finance-hub/screenshots/3.webp"
+        },
+        "3": {
+          "title": "Expenses",
+          "description": "Monitor your spending with detailed records and smart tagging.",
+          "image": "/premiumTemplates/finance-hub/screenshots/4.webp"
+        },
+        "4": {
+          "title": "Expense Categories",
+          "description": "Organize your spending into clear categories for better analysis.",
+          "image": "/premiumTemplates/finance-hub/screenshots/5.webp"
+        },
+        "5": {
+          "title": "Income",
+          "description": "Record all your income sources and track monthly totals.",
+          "image": "/premiumTemplates/finance-hub/screenshots/6.webp"
+        },
+        "6": {
+          "title": "Income Categories",
+          "description": "Group your income by type — salary, freelance, passive income, etc.",
+          "image": "/premiumTemplates/finance-hub/screenshots/7.webp"
+        },
+        "7": {
+          "title": "Subscriptions",
+          "description": "Keep tabs on all your recurring payments — never miss a renewal.",
+          "image": "/premiumTemplates/finance-hub/screenshots/8.webp"
+        },
+        "8": {
+          "title": "Liabilities",
+          "description": "List your ongoing financial obligations like rent, bills, or installments.",
+          "image": "/premiumTemplates/finance-hub/screenshots/9.webp"
+        },
+        "9": {
+          "title": "Debts",
+          "description": "Track personal debts and repayments over time.",
+          "image": "/premiumTemplates/finance-hub/screenshots/10.webp"
+        },
+        "10": {
+          "title": "Taxes",
+          "description": "Organize your tax records, due dates, and payment history.",
+          "image": "/premiumTemplates/finance-hub/screenshots/11.webp"
+        },
+        "11": {
+          "title": "Budget",
+          "description": "Set monthly or yearly budgets and monitor your spending in real time.",
+          "image": "/premiumTemplates/finance-hub/screenshots/12.webp"
+        },
+        "12": {
+          "title": "Wishlist",
+          "description": "Save the things you want to buy — and track when you can afford them.",
+          "image": "/premiumTemplates/finance-hub/screenshots/13.webp"
+        },
+        "13": {
+          "title": "Goals",
+          "description": "Set clear financial goals and track your progress toward achieving them.",
+          "image": "/premiumTemplates/finance-hub/screenshots/14.webp"
+        }
+      }
+    },
+    "pricingSec": {
+      "title": "Pick Your FinanceHub",
+      "description": "Whether you're starting simple or going all-in — both plans help you stay financially organized and in control.",
+      "plans": {
+        "basic": {
+          "label": "Basic",
+          "description": "A simple start to organize your financial life with FinanceHub.",
+          "price": "$0",
+          "features": ["Life time updates", "Expense", "Income"],
+          "missingFeatures": [
+            "Profile",
+            "Accounts",
+            "Transactions",
+            "Expense Categories",
+            "Income Categories",
+            "Subscriptions",
+            "Liabilities",
+            "Debts",
+            "Taxes",
+            "Budget",
+            "Wishlist",
+            "Goals",
+            "Dashboard Overview",
+            "Financial Tracker",
+            "Smart Filters & Automations",
+            "Linked Databases",
+            "Advanced Views & Layouts",
+            "Charts"
+          ],
+          "button": "Get for Free",
+          "buttonLink": "https://www.notion.so/marketplace/templates/financehub-free?checkout=true"
+        },
+        "more-advanced": {
+          "label": "Advanced",
+          "description": "Gain full control over your finances with powerful tools for tracking, planning, and growth.",
+          "price": "$49",
+          "oldPrice": "$70",
+          "features": [
+            "Life time updates",
+            "Profile",
+            "Accounts",
+            "Transactions",
+            "Expense",
+            "Expense Categories",
+            "Income",
+            "Income Categories",
+            "Subscriptions",
+            "Liabilities",
+            "Debts",
+            "Taxes",
+            "Budget",
+            "Wishlist",
+            "Goals",
+            "Dashboard Overview",
+            "Financial Tracker",
+            "Smart Filters & Automations",
+            "Linked Databases",
+            "Advanced Views & Layouts",
+            "Charts"
+          ],
+          "button": "Buy Now",
+          "buttonLink": "https://www.notion.so/marketplace/templates/financehub-premium?checkout=true",
+          "badge": "Best Value"
+        }
+      }
+    },
+    "faqSec": {
+      "title": "FAQs",
+      "faqs": [
+        {
+          "question": "What is Notion?",
+          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between."
+        },
+        {
+          "question": "How do I get access to the template?",
+          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the FinanceHub template to your Notion workspace."
+        },
+        {
+          "question": "Do I need a paid Notion account?",
+          "answer": "No. You can use FinanceHub with Notion's free plan."
+        },
+        {
+          "question": "Will I know how to use it?",
+          "answer": "Yes. It comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step."
+        },
+        {
+          "question": "Is it worth the price?",
+          "answer": "Definitely. You save hours building from scratch and get a professionally designed academic dashboard ready to use immediately."
+        },
+        {
+          "question": "What is your refund policy?",
+          "answer": "You can request a refund within 14 days of purchase following the Marketplace refund policy."
+        },
+        {
+          "question": "Still have questions?",
+          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
+        }
+      ]
+    },
+    "name": "مركز المال",
+    "price": "$79",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/studyhub0",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ARThumbnails/19.webp"
   }
 }

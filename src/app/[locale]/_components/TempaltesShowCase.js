@@ -26,9 +26,10 @@ const templates = {
       slug: "study-planner",
     },
     {
-      id: 2,
-      name: "90-Day Challenge Premium",
-      slug: "90-day-challenge-premium",
+      id: 19,
+      name: "FinanceHub",
+      slug: "finance-hub",
+      premium: true,
     },
     {
       id: 7,
@@ -38,9 +39,9 @@ const templates = {
   ],
   largeCollection: [
     {
-      id: 12,
-      name: "Priority Compass",
-      slug: "priority-compass",
+      id: 2,
+      name: "90-Day Challenge Premium",
+      slug: "90-day-challenge-premium",
     },
     {
       id: 13,

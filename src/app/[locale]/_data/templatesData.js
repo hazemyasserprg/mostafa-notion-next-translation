@@ -35,14 +35,14 @@ const templates = [
     category: "productivity",
     detailsLink: "",
   },
-  // {
-  //   id: 19,
-  //   name: "FinanceHub",
-  //   slug: "finance-hub",
-  //   premium: true,
-  //   category: "productivity",
-  //   detailsLink: "",
-  // },
+  {
+    id: 19,
+    name: "FinanceHub",
+    slug: "finance-hub",
+    premium: true,
+    category: "productivity",
+    detailsLink: "",
+  },
   {
     id: 16,
     name: "StudyHub",

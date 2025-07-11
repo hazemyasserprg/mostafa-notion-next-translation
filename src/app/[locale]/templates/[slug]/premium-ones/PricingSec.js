@@ -6,7 +6,12 @@ export default function PricingSec({ template }) {
   const t = useTranslations("TemplateSlug");
 
   const basic = t.raw(`${template.name}.pricingSec.plans.basic`);
-  const advanced = t.raw(`${template.name}.pricingSec.plans.advanced`);
+
+  let advanced = null;
+  if (t.has(`${template.name}.pricingSec.plans.advanced`)) {
+    advanced = t.raw(`${template.name}.pricingSec.plans.advanced`);
+  }
+
   let more_advanced = null;
   if (t.has(`${template.name}.pricingSec.plans.more-advanced`)) {
     more_advanced = t.raw(`${template.name}.pricingSec.plans.more-advanced`);

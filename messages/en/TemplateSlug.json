@@ -360,7 +360,7 @@
           "button": "Get for Free",
           "buttonLink": "https://www.notion.so/marketplace/templates/studyhub-free"
         },
-        "advanced": {
+        "more-advanced": {
           "label": "Advanced",
           "description": "Unlock your full academic productivity potential.",
           "price": "$59",
@@ -388,7 +388,7 @@
       }
     },
     "faqSec": {
-      "title": "FAQ",
+      "title": "FAQs",
       "faqs": [
         {
           "question": "What is Notion?",
@@ -445,299 +445,6 @@
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/18.webp"
   },
-  "FinanceHub": {
-    "homeSec": {
-      "logoURL": "/premiumTemplates/study-hub/StudyHub.webp",
-      "title": "Master your student life with StudyHub",
-      "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
-      "heroImageURL": "/premiumTemplates/study-hub/heroImage.webp"
-    },
-    "dashboardSec": {
-      "title": "Your Entire Student Life in One View",
-      "description": "Explore how StudyHub brings everything together in one smart dashboard.",
-      "dashboardImageURL": "/study-hub/Dashboard.webp"
-    },
-    "essentialsSec": {
-      "title": "Everything You Need — In One Place",
-      "description": "Discover the core features that make StudyHub your ultimate academic companion.",
-      "features": {
-        "0": {
-          "title": "Dashboard Overview",
-          "description": "A sleek central hub that summarizes your academic life: progress, weekly schedule, and quick actions."
-        },
-        "1": {
-          "title": "Schedule Section",
-          "description": "Plan your week with a clear and organized breakdown of your daily classes."
-        },
-        "2": {
-          "title": "Quick Actions Panel",
-          "description": "Easily add new lessons, instructors, notes, or goals with a single click."
-        },
-        "3": {
-          "title": "Progress Tracker",
-          "description": "Automatically updated analytics to help you measure academic performance over time."
-        },
-        "4": {
-          "title": "Learning Hub",
-          "description": "Manage all your current and upcoming courses in one smart space."
-        },
-        "5": {
-          "title": "To-Do Hub",
-          "description": "Stay on top of your tasks, assignments, and exams with smart date filters like Today, Upcoming, and Missed."
-        },
-        "6": {
-          "title": "Review Hub",
-          "description": "Keep all your learning resources and notes organized for easy access and review."
-        },
-        "7": {
-          "title": "Reading Side",
-          "description": "Track your current reads and monitor completion rates to stay consistent with your learning goals."
-        },
-        "8": {
-          "title": "Flow Section",
-          "description": "Build daily consistency through habit tracking and journaling."
-        },
-        "9": {
-          "title": "Mission Hub",
-          "description": "Set long-term academic goals and follow your progress toward achieving them."
-        },
-        "10": {
-          "title": "Monthly View",
-          "description": "A calendar view that brings together your exams, tasks, notes, and events all in one place."
-        },
-        "11": {
-          "title": "Pre-built Databases",
-          "description": "A modular system with dedicated databases for courses, tasks, exams, instructors, resources, notes, and more."
-        }
-      }
-    },
-    "walkthroughSec": {
-      "title": "A Visual Walkthrough of StudyHub",
-      "description": "Take a closer look at how StudyHub helps you manage your academic life — from planning and studying to tracking progress and setting goals.",
-      "rowBlocks": {
-        "0": {
-          "title": "Organize What You Study & When You Study",
-          "description": "View all your courses alongside your weekly schedule. Stay on track with what you're learning and exactly when you need to focus on it — all in one smart layout.",
-          "image": "/premiumTemplates/study-hub/designs/25.webp",
-          "reverse": false
-        },
-        "1": {
-          "title": "Structured Learning from Modules to Lessons",
-          "description": "Break down your courses into clear modules and lessons. Easily track what you've covered and what's next — no more scattered materials or missed topics.",
-          "image": "/premiumTemplates/study-hub/designs/26.webp",
-          "reverse": true
-        },
-        "2": {
-          "title": "Stay Ahead of Every Deadline",
-          "description": "Track all your assignments, tasks, and exams in one place. With smart filters and reminders, you'll never miss an important date again.",
-          "image": "/premiumTemplates/study-hub/designs/27.webp",
-          "reverse": false
-        },
-        "3": {
-          "title": "Read, Capture, and Explore",
-          "description": "Access your reading list, study notes, and valuable resources — all in one place. StudyHub keeps your knowledge organized, searchable, and always at your fingertips.",
-          "image": "/premiumTemplates/study-hub/designs/28.webp",
-          "reverse": true
-        },
-        "4": {
-          "title": "Set Goals. Build Projects. Make Progress.",
-          "description": "Turn your academic vision into action. Track long-term goals and manage projects with clear steps, deadlines, and progress indicators.",
-          "image": "/premiumTemplates/study-hub/designs/29.webp",
-          "reverse": false
-        }
-      },
-      "columnBlocks": {
-        "firstOne": {
-          "title": "Everything About Your Course — In One Place",
-          "description": "Click into any course to access all related tasks, exams, notes, resources, and more. StudyHub connects every detail so you can focus on learning, not searching.",
-          "image": "/premiumTemplates/study-hub/designs/30.webp",
-          "reverse": false
-        },
-        "secondOne": {
-          "title": "Track Your Progress Like Never Before",
-          "description": "Get a complete overview of your academic and personal growth — from finished courses and assignments to achieved goals and habits. Stay motivated with real-time progress insights.",
-          "image": "/premiumTemplates/study-hub/designs/31.webp",
-          "reverse": false
-        }
-      }
-    },
-    "databasesSec": {
-      "title": "The Backbone of StudyHub",
-      "description": "At the heart of StudyHub is a powerful system of interconnected databases designed to organize, connect, and simplify your entire academic journey.",
-      "features": {
-        "0": {
-          "title": "Courses",
-          "description": "Organize all your academic courses in one place — each with linked lessons, tasks, notes, and progress.",
-          "image": "/premiumTemplates/study-hub/screenshots/1.webp"
-        },
-        "1": {
-          "title": "Modules",
-          "description": "Break down each course into structured modules or units for easier navigation and focused learning.",
-          "image": "/premiumTemplates/study-hub/screenshots/2.webp"
-        },
-        "2": {
-          "title": "Lessons",
-          "description": "Track individual lessons, their topics, progress, and related materials — all connected to your modules and courses.",
-          "image": "/premiumTemplates/study-hub/screenshots/3.webp"
-        },
-        "3": {
-          "title": "Assignments",
-          "description": "Stay on top of every assignment, due date, and submission with smart filters and priority tags.",
-          "image": "/premiumTemplates/study-hub/screenshots/4.webp"
-        },
-        "4": {
-          "title": "Exams",
-          "description": "Plan and prepare for upcoming quizzes, midterms, and finals — with space for dates, study material, and linked courses.",
-          "image": "/premiumTemplates/study-hub/screenshots/5.webp"
-        },
-        "5": {
-          "title": "Instructors",
-          "description": "Manage details for all your professors and instructors, including contact info and courses they teach.",
-          "image": "/premiumTemplates/study-hub/screenshots/6.webp"
-        },
-        "6": {
-          "title": "Schedule",
-          "description": "Visualize your weekly timetable — classes, sessions, and events all organized and easy to access.",
-          "image": "/premiumTemplates/study-hub/screenshots/7.webp"
-        },
-        "7": {
-          "title": "Notes",
-          "description": "Capture and organize your study notes, ideas, and summaries — linked to lessons and courses.",
-          "image": "/premiumTemplates/study-hub/screenshots/8.webp"
-        },
-        "8": {
-          "title": "Resources",
-          "description": "Store useful materials like PDFs, links, and videos, categorized and tagged for easy access.",
-          "image": "/premiumTemplates/study-hub/screenshots/9.webp"
-        },
-        "9": {
-          "title": "Flow",
-          "description": "Build daily consistency with integrated Habits and Journaling — boost focus and self-reflection.",
-          "image": "/premiumTemplates/study-hub/screenshots/10.webp"
-        },
-        "10": {
-          "title": "Books",
-          "description": "Track your current and past readings, with progress bars, categories, and personal ratings.",
-          "image": "/premiumTemplates/study-hub/screenshots/11.webp"
-        },
-        "11": {
-          "title": "Archive",
-          "description": "Move completed courses, lessons, and tasks here to keep your workspace clean and focused.",
-          "image": "/premiumTemplates/study-hub/screenshots/12.webp"
-        },
-        "12": {
-          "title": "Goals",
-          "description": "Define academic and personal goals, track progress, and break them into actionable steps.",
-          "image": "/premiumTemplates/study-hub/screenshots/13.webp"
-        },
-        "13": {
-          "title": "Projects",
-          "description": "Manage long-term assignments, research, or capstone projects — with status, deadlines, and subtasks.",
-          "image": "/premiumTemplates/study-hub/screenshots/14.webp"
-        },
-        "14": {
-          "title": "Tasks",
-          "description": "All your to-dos in one place — assignments, reviews, chores, and more, with flexible filters and views.",
-          "image": "/premiumTemplates/study-hub/screenshots/15.webp"
-        }
-      }
-    },
-    "pricingSec": {
-      "title": "Choose Your Plan",
-      "description": "Two options. Same goal: your academic success.",
-      "plans": {
-        "basic": {
-          "label": "Basic",
-          "description": "A free, simplified version to get you started.",
-          "price": "$0",
-          "features": [
-            "Life time updates",
-            "Courses (Simple)",
-            "Assignments & Exams (Simple)",
-            "Notes, Books (Simple)"
-          ],
-          "missingFeatures": [
-            "Modules & Lessons",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Tasks, Goals & Projects",
-            "Habits & Journal",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts"
-          ],
-          "button": "Get for Free",
-          "buttonLink": "https://www.notion.so/marketplace/templates/studyhub-free"
-        },
-        "advanced": {
-          "label": "Advanced",
-          "description": "Unlock your full academic productivity potential.",
-          "price": "$59",
-          "oldPrice": "$80",
-          "features": [
-            "Life time updates",
-            "Courses (Advanced)",
-            "Modules & Lessons",
-            "Assignments & Exams (Advanced)",
-            "Review Hub",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Tasks, Goals & Projects",
-            "Habits & Journal",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts"
-          ],
-          "button": "Buy Now",
-          "buttonLink": "https://www.notion.so/marketplace/templates/studyhub-premium?checkout=true",
-          "badge": "Best Value"
-        }
-      }
-    },
-    "faqSec": {
-      "title": "FAQ",
-      "faqs": [
-        {
-          "question": "What is Notion?",
-          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between."
-        },
-        {
-          "question": "How do I get access to the template?",
-          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the StudyHub template to your Notion workspace."
-        },
-        {
-          "question": "Do I need a paid Notion account?",
-          "answer": "No. You can use StudyHub with Notion’s free plan."
-        },
-        {
-          "question": "Will I know how to use it?",
-          "answer": "Yes. It comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step."
-        },
-        {
-          "question": "Is it worth the price?",
-          "answer": "Definitely. You save hours building from scratch and get a professionally designed academic dashboard ready to use immediately."
-        },
-        {
-          "question": "What is your refund policy?",
-          "answer": "You can request a refund within 14 days of purchase following the Marketplace refund policy."
-        },
-        {
-          "question": "Still have questions?",
-          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
-        }
-      ]
-    },
-    "name": "StudyHub",
-    "price": "$59",
-    "checkout": "Checkout",
-    "checkoutLink": "https://www.notion.com/templates/studyhub0",
-    "moreDetails": "More Details",
-    "image": "/thumbnails/ENThumbnails/17.webp"
-  },
   "Second Brain": {
     "homeSec": {
       "logoURL": "/premiumTemplates/second-brain/SecondBrain.webp",
@@ -755,60 +462,60 @@
       "description": "Discover the core features that make Second Brain your ultimate system for life, work, and finances.",
       "features": {
         "0": {
-          "title": "Profile (Total Progress)",
-          "description": "Visual overview of your total progress across goals, tasks, projects, habits, and finances in one centralized hub."
+          "title": "Goals",
+          "description": "Set meaningful goals and track your real progress over time with visual indicators and linked actions."
         },
         "1": {
-          "title": "Areas (Life Areas)",
-          "description": "Organize your life into domains (e.g., study, health, finance) with linked goals, projects, and financial tracking."
+          "title": "Projects",
+          "description": "Plan and manage personal and professional projects with milestones and visual progress tracking."
         },
         "2": {
-          "title": "Goals",
-          "description": "Track your long-term objectives with progress bars, deadlines, and direct links to your areas and projects."
+          "title": "Tasks",
+          "description": "Organize your daily tasks and never miss a deadline with clear due dates and reminders."
         },
         "3": {
-          "title": "Projects",
-          "description": "Manage time-bound initiatives with milestone tracking, task links, visual progress indicators, and deadlines."
+          "title": "Recurring Tasks",
+          "description": "Set daily, weekly, or monthly recurring tasks that automatically appear when due."
         },
         "4": {
-          "title": "Tasks",
-          "description": "Handle your daily and weekly to-dos with status tracking, overdue alerts, and connections to projects and goals."
+          "title": "Ideas",
+          "description": "Capture and develop your ideas, turning them into actionable tasks or projects with one click."
         },
         "5": {
-          "title": "Ideas",
-          "description": "Capture and organize your inspirations, with the ability to pin or convert them into actionable tasks or projects."
+          "title": "Notes",
+          "description": "Keep all your notes and personal knowledge structured, searchable, and easy to access."
         },
         "6": {
-          "title": "Notes",
-          "description": "Build a personal knowledge base with organized, searchable notes categorized by time and relevance."
+          "title": "Resources",
+          "description": "Review saved content and resources easily through a built-in spaced repetition review system."
         },
         "7": {
-          "title": "Resources",
-          "description": "Store and categorize reference materials, articles, and educational content with tags and importance levels."
+          "title": "Habits",
+          "description": "Build healthy habits and track consistency with visual progress and completion rates."
         },
         "8": {
-          "title": "Books",
-          "description": "Track your reading progress with page tracking, completion rates, cover images, and personal notes."
+          "title": "Journalling",
+          "description": "Journal your thoughts and moods to boost mindfulness, reflection, and self-awareness."
         },
         "9": {
-          "title": "Watchlist",
-          "description": "Manage your movies, series, and courses with viewing status, categories, and direct source links."
+          "title": "Dashboard",
+          "description": "Track everything from one clean dashboard with real-time updates and status indicators."
         },
         "10": {
-          "title": "Contacts",
-          "description": "Store personal and professional contacts, including notes, interaction history, and categorization."
+          "title": "Smart Filters",
+          "description": "Stay focused with smart filters for 'Today,' 'Upcoming,' and 'Overdue' tasks and goals."
         },
         "11": {
-          "title": "Habits",
-          "description": "Build consistency by tracking your daily and weekly habits with visual progress and completion rates."
+          "title": "Linked System",
+          "description": "Create connections between goals, projects, tasks, notes, and ideas to keep your workflow seamless."
         },
         "12": {
-          "title": "Journalling",
-          "description": "Reflect daily with mood tracking, prompts, and archival systems for deeper self-awareness."
+          "title": "Profile Overview",
+          "description": "Monitor your overall system activity and performance from your personal profile overview."
         },
         "13": {
-          "title": "Archive",
-          "description": "Keep your workspace clean by archiving completed or inactive tasks, notes, and projects for future reference."
+          "title": "Fully Customizable",
+          "description": "Everything is linked, automated, and easy to customize to match your workflow and lifestyle."
         }
       }
     },
@@ -868,7 +575,7 @@
     },
     "databasesSec": {
       "title": "The Backbone of Second Brain",
-      "description": "At the core of Second Brain lies a powerful network of interconnected databases — built to organize, connect, and simplify every part of your personal, professional, and financial life.",
+      "description": "At the core of Second Brain lies a powerful network of interconnected databases — built to organize, connect, and simplify every part of your personal, professional, and financial life.",
       "features": {
         "0": {
           "title": "Profile",
@@ -944,7 +651,7 @@
     },
     "pricingSec": {
       "title": "Choose Your Plan",
-      "description": "Two options. Same mission: take full control of your life.",
+      "description": "Two options. Same mission: take full control of your life.",
       "plans": {
         "basic": {
           "label": "Basic",
@@ -1042,7 +749,7 @@
       }
     },
     "faqSec": {
-      "title": "FAQ",
+      "title": "FAQs",
       "faqs": [
         {
           "question": "What is Notion?",
@@ -1050,11 +757,11 @@
         },
         {
           "question": "How do I get access to the template?",
-          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the StudyHub template to your Notion workspace."
+          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the Second Brain template to your Notion workspace."
         },
         {
           "question": "Do I need a paid Notion account?",
-          "answer": "No. You can use StudyHub with Notion’s free plan."
+          "answer": "No. You can use Second Brain with Notion’s free plan."
         },
         {
           "question": "Will I know how to use it?",
@@ -1080,5 +787,309 @@
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/20.webp"
+  },
+  "FinanceHub": {
+    "homeSec": {
+      "logoURL": "/premiumTemplates/finance-hub/FinanceHub.webp",
+      "title": "Take control of your money with FinanceHub",
+      "description": "Your complete Notion system for tracking, planning, and optimizing every financial detail in one place.",
+      "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp"
+    },
+    "dashboardSec": {
+      "title": "Your Whole Financial Life, One View",
+      "description": "Track every detail — income, expenses, debts, taxes, goals, wishlist, and more — all from a single powerful dashboard.",
+      "dashboardImageURL": "/premiumTemplates/finance-hub/Dashboard.webp"
+    },
+    "essentialsSec": {
+      "title": "Everything You Need — In One Place",
+      "description": "Discover the powerful features that make FinanceHub your complete system for managing money, goals, budgets, and financial clarity.",
+      "features": {
+        "0": {
+          "title": "Track Income & Expenses",
+          "description": "Monitor your income and expenses with clarity and precision, ensuring you always know where your money is going."
+        },
+        "1": {
+          "title": "Budgets",
+          "description": "Set monthly and yearly budgets and monitor your financial balance in real time to stay in control."
+        },
+        "2": {
+          "title": "Visual Financial Progress",
+          "description": "Visualize your full financial journey with dynamic charts and dashboards for clear insights."
+        },
+        "3": {
+          "title": "Subscriptions & Bills",
+          "description": "Stay on top of subscriptions, bills, and due dates with automated tracking and reminders."
+        },
+        "4": {
+          "title": "Financial Goals",
+          "description": "Plan and track your financial goals with clear progress indicators to keep your motivation high."
+        },
+        "5": {
+          "title": "Centralized Accounts View",
+          "description": "Organize all your financial accounts in one clean, centralized view for easy monitoring."
+        },
+        "6": {
+          "title": "Spending & Income Insights",
+          "description": "Instantly see what you spend most on and where your income really comes from for better financial decisions."
+        },
+        "7": {
+          "title": "Smart Transaction Logging",
+          "description": "Log all transactions with smart filters by category, date, amount, and more for effortless tracking."
+        },
+        "8": {
+          "title": "Manage Debts & Liabilities",
+          "description": "Track recurring payments, debts, and liabilities efficiently to stay organized."
+        },
+        "9": {
+          "title": "Tax Records",
+          "description": "Stay tax-ready with organized records, due date tracking, and payment history in one place."
+        },
+        "10": {
+          "title": "Wishlist & Saving Goals",
+          "description": "Build a wishlist and convert your desired purchases into actionable saving goals."
+        },
+        "11": {
+          "title": "Quick Activity Filters",
+          "description": "Filter and analyze your financial activity instantly (today, this week, this month) with one click."
+        },
+        "12": {
+          "title": "Fully Customizable",
+          "description": "Adapt and customize everything to fit your unique financial lifestyle and evolving goals."
+        },
+        "13": {
+          "title": "Designed for Clarity",
+          "description": "Clean, simple, and growth-focused design to keep your finances organized for the long term."
+        }
+      }
+    },
+    "walkthroughSec": {
+      "title": "A Visual Walkthrough of FinanceHub",
+      "description": "Take a closer look at how FinanceHub helps you manage your entire financial life — from tracking income and expenses to planning budgets, goals, and more.",
+      "rowBlocks": {
+        "0": {
+          "title": "Unified Account View",
+          "description": "See everything tied to each account — transactions, expenses, and income — all in one place.",
+          "image": "/premiumTemplates/finance-hub/designs/1.webp",
+          "reverse": false
+        },
+        "1": {
+          "title": "Detailed Financial Records",
+          "description": "Track every transaction, expense, and income — with dates, categories, and full context.",
+          "image": "/premiumTemplates/finance-hub/designs/2.webp",
+          "reverse": true
+        },
+        "2": {
+          "title": "Stay Ahead of Recurring & Fixed Costs",
+          "description": "Track subscriptions, debts, liabilities, and taxes — with auto-payment tracking triggered by due dates.",
+          "image": "/premiumTemplates/finance-hub/designs/3.webp",
+          "reverse": false
+        },
+        "3": {
+          "title": "Smart Budgeting System",
+          "description": "Set income targets and expense budgets by category — and track your financial balance in real time.",
+          "image": "/premiumTemplates/finance-hub/designs/4.webp",
+          "reverse": true
+        },
+        "4": {
+          "title": "Track All Your Financial Goals",
+          "description": "Whether it's saving for something on your wishlist or a bigger financial milestone — plan it, track it, achieve it.",
+          "image": "/premiumTemplates/finance-hub/designs/5.webp",
+          "reverse": false
+        }
+      },
+      "columnBlocks": {
+        "firstOne": {
+          "title": "Visual Insights That Matter",
+          "description": "Get detailed charts for monthly & yearly income and expenses — and spot trends by category in seconds.",
+          "image": "/premiumTemplates/finance-hub/designs/6.webp"
+        },
+        "secondOne": {
+          "title": "Complete Financial Snapshot",
+          "description": "Track your total financial progress monthly, quarterly, and yearly — all in one smart dashboard with deep insights.",
+          "image": "/premiumTemplates/finance-hub/designs/7.webp"
+        }
+      }
+    },
+    "databasesSec": {
+      "title": "Powerful Foundations for Smarter Finances",
+      "description": "FinanceHub runs on a smart system of linked databases — giving you full visibility and control over every financial detail.",
+      "features": {
+        "0": {
+          "title": "Profile",
+          "description": "View a full summary of your financial progress, goals, and account health.",
+          "image": "/premiumTemplates/finance-hub/screenshots/1.webp"
+        },
+        "1": {
+          "title": "Accounts",
+          "description": "Track all your financial accounts — banks, wallets, cards — in one central place.",
+          "image": "/premiumTemplates/finance-hub/screenshots/2.webp"
+        },
+        "2": {
+          "title": "Transactions",
+          "description": "Log every income and expense to keep your finances crystal clear.",
+          "image": "/premiumTemplates/finance-hub/screenshots/3.webp"
+        },
+        "3": {
+          "title": "Expenses",
+          "description": "Monitor your spending with detailed records and smart tagging.",
+          "image": "/premiumTemplates/finance-hub/screenshots/4.webp"
+        },
+        "4": {
+          "title": "Expense Categories",
+          "description": "Organize your spending into clear categories for better analysis.",
+          "image": "/premiumTemplates/finance-hub/screenshots/5.webp"
+        },
+        "5": {
+          "title": "Income",
+          "description": "Record all your income sources and track monthly totals.",
+          "image": "/premiumTemplates/finance-hub/screenshots/6.webp"
+        },
+        "6": {
+          "title": "Income Categories",
+          "description": "Group your income by type — salary, freelance, passive income, etc.",
+          "image": "/premiumTemplates/finance-hub/screenshots/7.webp"
+        },
+        "7": {
+          "title": "Subscriptions",
+          "description": "Keep tabs on all your recurring payments — never miss a renewal.",
+          "image": "/premiumTemplates/finance-hub/screenshots/8.webp"
+        },
+        "8": {
+          "title": "Liabilities",
+          "description": "List your ongoing financial obligations like rent, bills, or installments.",
+          "image": "/premiumTemplates/finance-hub/screenshots/9.webp"
+        },
+        "9": {
+          "title": "Debts",
+          "description": "Track personal debts and repayments over time.",
+          "image": "/premiumTemplates/finance-hub/screenshots/10.webp"
+        },
+        "10": {
+          "title": "Taxes",
+          "description": "Organize your tax records, due dates, and payment history.",
+          "image": "/premiumTemplates/finance-hub/screenshots/11.webp"
+        },
+        "11": {
+          "title": "Budget",
+          "description": "Set monthly or yearly budgets and monitor your spending in real time.",
+          "image": "/premiumTemplates/finance-hub/screenshots/12.webp"
+        },
+        "12": {
+          "title": "Wishlist",
+          "description": "Save the things you want to buy — and track when you can afford them.",
+          "image": "/premiumTemplates/finance-hub/screenshots/13.webp"
+        },
+        "13": {
+          "title": "Goals",
+          "description": "Set clear financial goals and track your progress toward achieving them.",
+          "image": "/premiumTemplates/finance-hub/screenshots/14.webp"
+        }
+      }
+    },
+    "pricingSec": {
+      "title": "Pick Your FinanceHub",
+      "description": "Whether you're starting simple or going all-in — both plans help you stay financially organized and in control.",
+      "plans": {
+        "basic": {
+          "label": "Basic",
+          "description": "A simple start to organize your financial life with FinanceHub.",
+          "price": "$0",
+          "features": ["Life time updates", "Expense", "Income"],
+          "missingFeatures": [
+            "Profile",
+            "Accounts",
+            "Transactions",
+            "Expense Categories",
+            "Income Categories",
+            "Subscriptions",
+            "Liabilities",
+            "Debts",
+            "Taxes",
+            "Budget",
+            "Wishlist",
+            "Goals",
+            "Dashboard Overview",
+            "Financial Tracker",
+            "Smart Filters & Automations",
+            "Linked Databases",
+            "Advanced Views & Layouts",
+            "Charts"
+          ],
+          "button": "Get for Free",
+          "buttonLink": "https://www.notion.so/marketplace/templates/financehub-free?checkout=true"
+        },
+        "more-advanced": {
+          "label": "Advanced",
+          "description": "Gain full control over your finances with powerful tools for tracking, planning, and growth.",
+          "price": "$49",
+          "oldPrice": "$70",
+          "features": [
+            "Life time updates",
+            "Profile",
+            "Accounts",
+            "Transactions",
+            "Expense",
+            "Expense Categories",
+            "Income",
+            "Income Categories",
+            "Subscriptions",
+            "Liabilities",
+            "Debts",
+            "Taxes",
+            "Budget",
+            "Wishlist",
+            "Goals",
+            "Dashboard Overview",
+            "Financial Tracker",
+            "Smart Filters & Automations",
+            "Linked Databases",
+            "Advanced Views & Layouts",
+            "Charts"
+          ],
+          "button": "Buy Now",
+          "buttonLink": "https://www.notion.so/marketplace/templates/financehub-premium?checkout=true",
+          "badge": "Best Value"
+        }
+      }
+    },
+    "faqSec": {
+      "title": "FAQs",
+      "faqs": [
+        {
+          "question": "What is Notion?",
+          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between."
+        },
+        {
+          "question": "How do I get access to the template?",
+          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the FinanceHub template to your Notion workspace."
+        },
+        {
+          "question": "Do I need a paid Notion account?",
+          "answer": "No. You can use FinanceHub with Notion's free plan."
+        },
+        {
+          "question": "Will I know how to use it?",
+          "answer": "Yes. It comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step."
+        },
+        {
+          "question": "Is it worth the price?",
+          "answer": "Definitely. You save hours building from scratch and get a professionally designed academic dashboard ready to use immediately."
+        },
+        {
+          "question": "What is your refund policy?",
+          "answer": "You can request a refund within 14 days of purchase following the Marketplace refund policy."
+        },
+        {
+          "question": "Still have questions?",
+          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
+        }
+      ]
+    },
+    "name": "FinanceHub",
+    "price": "$79",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.com/templates/studyhub0",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/19.webp"
   }
 }

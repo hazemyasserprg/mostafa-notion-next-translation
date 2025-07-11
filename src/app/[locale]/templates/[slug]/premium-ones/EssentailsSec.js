@@ -24,7 +24,6 @@ import {
   DollarSign,
   PieChart,
   TrendingUp,
-  TrendingDown,
   FileText,
   NotebookPen,
   PlaySquare,
@@ -62,36 +61,37 @@ const iconsMap = {
     Sparkles,
   ],
   "second-brain": [
+    Target,
+    ClipboardList,
+    CheckSquare,
+    Repeat,
+    Lightbulb,
+    Notebook,
+    BookMarked,
+    Repeat,
+    NotebookPen,
+    LayoutDashboard,
+    ClipboardList,
     BrainCircuit,
     LayoutDashboard,
-    Target,
-    ClipboardList, // ✅ replacing FolderKanban
-    CheckSquare, // ✅ enable
-    Lightbulb, // ✅ enable
-    Notebook,
-    BookOpen,
-    BookMarked,
-    PlaySquare,
-    Users, // ✅ replacing Contact
-    Repeat, // ✅ enable
-    NotebookPen, // ✅ enable
-    ArchiveBox, // ✅ replaced Archive
-    ,
+    BrainCircuit,
   ],
-  // "finance-hub": [
-  //   Wallet,
-  //   DollarSign,
-  //   BarChart3,
-  //   PieChart,
-  //   TrendingUp,
-  //   TrendingDown,
-  //   Calendar,
-  //   Target,
-  //   FileText,
-  //   CheckSquare,
-  //   Layers,
-  //   Trophy,
-  // ],
+  "finance-hub": [
+    BarChart3,
+    Calendar,
+    PieChart,
+    CheckSquare,
+    Target,
+    Wallet,
+    DollarSign,
+    FileText,
+    Layers,
+    FileText,
+    Trophy,
+    TrendingUp,
+    Layers,
+    BarChart3,
+  ],
 };
 
 function Essentials({ template }) {
