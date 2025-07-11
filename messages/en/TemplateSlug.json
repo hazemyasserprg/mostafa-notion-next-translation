@@ -975,13 +975,13 @@
             "FinanceHub"
           ],
           "button": "Get for Free",
-          "buttonLink": "https://www.notion.com/templates/second-brain-free"
+          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-free"
         },
         "advanced": {
           "label": "Advanced",
           "description": "From chaos to clarity — organize your entire life in one system.",
-          "price": "$79",
-          "oldPrice": "$99",
+          "price": "$59",
+          "oldPrice": "$79",
           "features": [
             "Life time updates",
             "Goals (Advanced)",
@@ -1005,8 +1005,39 @@
           ],
           "missingFeatures": ["FinanceHub"],
           "button": "Buy Now",
-          "buttonLink": "https://www.notion.com/templates/second-brain-plus?checkout=true",
+          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-basic?checkout=true",
           "badge": "Best Value"
+        },
+        "more-advanced": {
+          "label": "Advanced + FinanceHub",
+          "description": "Manage your goals, tasks, habits — and your money, too. All in one place.",
+          "price": "$79",
+          "oldPrice": "$120",
+          "features": [
+            "Life time updates",
+            "Goals (Advanced)",
+            "Projects (Advanced)",
+            "Tasks (Advanced)",
+            "Notes, Resources, Books (Advanced)",
+            "Habits & Journal (Advanced)",
+            "Profile & Areas",
+            "Ideas Hub",
+            "Review Hub",
+            "Dashboard Overview",
+            "Weekly & Monthly Schedule",
+            "Progress Tracker",
+            "Smart Filters & Automations",
+            "Archive",
+            "Linked Databases",
+            "Advanced Views & Layouts",
+            "Watchlist",
+            "Contacts",
+            "Charts",
+            "FinanceHub"
+          ],
+          "button": "Buy with FinanceHub",
+          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-plus?checkout=true",
+          "badge": "All-in-One"
         }
       }
     },
