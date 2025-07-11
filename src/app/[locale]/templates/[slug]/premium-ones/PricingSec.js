@@ -11,12 +11,9 @@ export default function PricingSec({ template }) {
   const advanced = t.raw(`${template.name}.pricingSec.plans.advanced`);
 
   return (
-    <section
-      id="pricing"
-      className="w-full mt-24 sm:mt-32 space-y-16 px-4 sm:px-8"
-    >
+    <section id="pricing" className="w-full space-y-16 px-4 sm:px-8">
       {/* Title & Description */}
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-main leading-tight text-center">
+      <h2 className="text-3xl mt-24 sm:mt-32 sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-main leading-tight text-center">
         {t(`${template.name}.pricingSec.title`)}
       </h2>
       <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed text-center mx-auto">
