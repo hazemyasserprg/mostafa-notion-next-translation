@@ -1,10 +1,10 @@
 const templates = [
   {
-    id: 16,
-    name: "StudyHub",
-    slug: "study-hub",
+    id: 20,
+    name: "Second Brain",
+    slug: "second-brain",
     premium: true,
-    category: "education",
+    category: "productivity",
     detailsLink: "",
   },
   {
@@ -35,18 +35,20 @@ const templates = [
     category: "productivity",
     detailsLink: "",
   },
+  // {
+  //   id: 19,
+  //   name: "FinanceHub",
+  //   slug: "finance-hub",
+  //   premium: true,
+  //   category: "productivity",
+  //   detailsLink: "",
+  // },
   {
-    id: 19,
-    name: "FinanceHub",
-    slug: "finance-hub",
-    category: "productivity",
-    detailsLink: "",
-  },
-  {
-    id: 20,
-    name: "Second Brain",
-    slug: "second-brain",
-    category: "productivity",
+    id: 16,
+    name: "StudyHub",
+    slug: "study-hub",
+    premium: true,
+    category: "education",
     detailsLink: "",
   },
   {
@@ -126,7 +128,6 @@ const templates = [
     category: "productivity",
     detailsLink: "",
   },
-
   {
     id: 17,
     name: "Idea Flow - Solo Edition",

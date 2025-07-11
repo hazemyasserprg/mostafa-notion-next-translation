@@ -7,15 +7,16 @@ import AnimatedInView from "./AnimatedInView";
 const templates = {
   lifeChanging: [
     {
-      id: 16,
-      name: "StudyHub",
-      slug: "study-hub",
+      id: 20,
+      name: "Second Brain",
+      slug: "second-brain",
       premium: true,
     },
     {
-      id: 14,
-      name: "Notion Starter Pack",
-      slug: "notion-starter-pack",
+      id: 19,
+      name: "FinanceHub",
+      slug: "finance-hub",
+      premium: true,
     },
   ],
   moreTemplates: [

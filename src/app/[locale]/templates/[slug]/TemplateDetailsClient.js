@@ -3,7 +3,7 @@ import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 // import MoreDetails from "@/src/app/[locale]/_components/MoreDetails";
 import AnimatedInView from "@/src/app/[locale]/_components/AnimatedInView";
-import StudyHubPage from "./StudyHubPage";
+import PremiumPage from "./PremiumPage";
 import CheckoutButton from "../../_components/CheckoutButton";
 // import Link from "next/link";
 
@@ -11,8 +11,12 @@ export default function TemplateDetailsClient({ template }) {
   const t = useTranslations("TemplateSlug");
   const locale = useLocale();
 
-  if (template.slug === "study-hub") {
-    return <StudyHubPage />;
+  if (
+    template.slug === "study-hub" ||
+    template.slug === "second-brain" ||
+    template.slug === "finance-hub"
+  ) {
+    return <PremiumPage template={template} />;
   }
 
   return (

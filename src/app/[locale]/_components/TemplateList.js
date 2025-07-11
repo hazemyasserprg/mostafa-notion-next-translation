@@ -6,8 +6,6 @@ import TemplateCard from "./TemplateCard";
 function TemplateList({ filter }) {
   let filteredTemplates;
 
-  const excludedSlugs = ["finance-hub", "second-brain"];
-
   if (filter === "all") filteredTemplates = templatesData;
   if (filter === "islam")
     filteredTemplates = templatesData.filter(
@@ -25,11 +23,9 @@ function TemplateList({ filter }) {
   return (
     <Suspense fallback={<Loader />} key={filter}>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-        {filteredTemplates
-          .filter((template) => !excludedSlugs.includes(template.slug))
-          .map((template, index) => (
-            <TemplateCard key={template.id} template={template} index={index} />
-          ))}
+        {filteredTemplates.map((template, index) => (
+          <TemplateCard key={template.id} template={template} index={index} />
+        ))}
       </div>
     </Suspense>
   );

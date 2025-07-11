@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { createTranslator } from "next-intl";
 import arMessages from "@/messages/ar/TemplateSlug.json";
 import enMessages from "@/messages/en/TemplateSlug.json";
-import StudyHubPage from "./StudyHubPage";
+import PremiumPage from "./PremiumPage";
 
 export async function generateMetadata({ params }) {
   const { locale, slug } = params;
@@ -89,8 +89,13 @@ export default function TemplateDetails({ params }) {
     return notFound();
   }
 
-  if (template.slug === "study-hub")
-    return <StudyHubPage template={template} />;
+  if (
+    template.slug === "study-hub" ||
+    template.slug === "second-brain" ||
+    template.slug === "finance-hub"
+  ) {
+    return <PremiumPage template={template} />;
+  }
 
   return <TemplateDetailsClient template={template} />;
 }

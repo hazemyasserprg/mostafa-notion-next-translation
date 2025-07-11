@@ -1,16 +1,15 @@
 import Image from "next/image";
-import GoToTemplatesPageButton from "../GoToTemplatesPageButton";
+import GoToTemplatesPageButton from "../../../_components/GoToTemplatesPageButton";
 import { useTranslations } from "next-intl";
-import HeroCoverImage from "./HeroCoverImage";
+import HeroCoverImage from "./_components/HeroCoverImage";
 
-function HeroSec({ template }) {
+function Home({ template }) {
   const t = useTranslations("TemplateSlug");
 
   return (
     <section
       id="home"
-      className="
-    relative w-full 
+      className="relative w-full 
     flex flex-col items-center text-center 
     overflow-visible 
     px-4 sm:px-8 lg:px-12 
@@ -21,7 +20,7 @@ function HeroSec({ template }) {
       {/* Title */}
       <h1 className="flex flex-col items-center gap-4 mb-2 sm:mb-4 md:mb-6 max-w-2xl">
         <Image
-          src="/study-hub/StudyHub.webp"
+          src={t(`${template.name}.homeSec.logoURL`)}
           alt={`${t(`${template.name}.name`)} Logo`}
           width={96}
           height={96}
@@ -50,7 +49,7 @@ function HeroSec({ template }) {
         leading-tight
       "
         >
-          {t(`${template.name}.heroHead`)}
+          {t(`${template.name}.homeSec.title`)}
         </span>
       </h1>
 
@@ -66,7 +65,7 @@ function HeroSec({ template }) {
       leading-relaxed
     "
       >
-        {t(`${template.name}.description`)}
+        {t(`${template.name}.homeSec.description`)}
       </p>
 
       {/* CTA Buttons */}
@@ -94,7 +93,7 @@ function HeroSec({ template }) {
           <span
             className="
           absolute top-0 left-0 w-full h-full 
-          bg-white transform scale-x-0 
+          bg-black transform scale-x-0 
           group-hover:scale-x-100 
           transition-all duration-500 ease-in-out origin-left
         "
@@ -103,10 +102,10 @@ function HeroSec({ template }) {
             className="
           relative block transform 
           transition-all duration-300 ease-in-out 
-          group-hover:text-main
+          group-hover:text-white
         "
           >
-            Get StudyHub
+            Get {t(`${template.name}.name`)}
           </span>
         </a>
 
@@ -131,4 +130,4 @@ function HeroSec({ template }) {
   );
 }
 
-export default HeroSec;
+export default Home;

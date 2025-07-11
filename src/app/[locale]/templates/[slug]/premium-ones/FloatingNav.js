@@ -50,31 +50,30 @@ export default function FloatingNav() {
   return (
     <div
       className="
-        fixed bottom-4 left-1/2 -translate-x-1/2 z-50
-        sm:flex flex-wrap justify-center gap-2
-        max-w-[95vw]
-        px-4 py-2
-        bg-neutral-900/80 backdrop-blur-md
-        border border-neutral-800
-        rounded-full shadow-lg
-        hidden
-      "
+      fixed bottom-4 left-1/2 -translate-x-1/2 z-50
+      sm:flex hidden justify-center gap-2
+      max-w-[95vw]
+      px-4 py-2
+      bg-neutral-900/80 backdrop-blur-md
+      border border-neutral-800
+      rounded-full shadow-lg
+    "
     >
       {sections.map((section) => (
         <button
           key={section.id}
           onClick={() => handleClick(section.id)}
           className={`
-            px-3 py-2 
-            text-xs sm:text-sm md:text-base 
-            rounded-full transition font-medium
-            ${
-              active === section.id
-                ? "bg-main text-black shadow-sm"
-                : "text-neutral-300 hover:bg-main/20 hover:text-white"
-            }
-            cursor-pointer
-          `}
+          px-3 py-2 
+          text-xs sm:text-sm md:text-base 
+          rounded-full transition font-medium
+          ${
+            active === section.id
+              ? "bg-main text-black shadow-sm"
+              : "text-neutral-300 hover:bg-main/20 hover:text-white"
+          }
+          cursor-pointer
+        `}
         >
           {section.label}
         </button>
