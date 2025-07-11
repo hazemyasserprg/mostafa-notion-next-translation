@@ -25,7 +25,13 @@ export async function generateMetadata({ params }) {
       "اكتشف قالب نوشن مصمم بعناية لتحسين إنتاجيتك وتنظيم حياتك الرقمية."
     : "Discover a Notion template carefully designed to improve your productivity and organize your digital life.";
 
-  const url = `https://mostafayasser.com//${locale}/templates/${slug}`;
+  const url = `https://mostafayasser.com/${locale}/templates/${slug}`;
+
+  // Ensure image URL is absolute
+  const rawImage = t(`${template.name}.image`);
+  const imageUrl = rawImage.startsWith("http")
+    ? rawImage
+    : `https://mostafayasser.com${rawImage}`;
 
   return {
     title,
@@ -53,7 +59,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
-          url: t(`${template.name}.image`),
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: isArabic
@@ -66,7 +72,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: [t(`${template.name}.image`)],
+      images: [imageUrl],
     },
   };
 }
