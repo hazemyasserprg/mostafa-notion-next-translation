@@ -1,4 +1,13 @@
 {
+  "Prayer Times": {
+    "name": "Prayer Times",
+    "description": "This Notion template provides a complete daily Prayer Times widget that covers the entire year. Whether you're building a personal dashboard, spiritual tracker, or a minimalist Islamic setup — this widget fits right in.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.so/marketplace/templates/prayer-times?from=notion_template_gallery",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/21.webp"
+  },
   "Quran Tracker Premium": {
     "name": "متتبع القرآن | النسخة المميزة",
     "description": "تتبع تلاوة القرآن، والحفظ، والتفسير في قالب نوشن قوي واحد. حافظ على تحفيزك، وتأمل بعمق، ورفع تجربتك مع القرآن.",

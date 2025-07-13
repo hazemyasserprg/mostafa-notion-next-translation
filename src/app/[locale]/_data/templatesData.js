@@ -52,6 +52,13 @@ const templates = [
     detailsLink: "",
   },
   {
+    id: 21,
+    name: "Prayer Times",
+    slug: "prayer-times",
+    category: "islam",
+    detailsLink: "",
+  },
+  {
     id: 3,
     name: "Ibadat Tracker",
     slug: "ibadat-tracker",

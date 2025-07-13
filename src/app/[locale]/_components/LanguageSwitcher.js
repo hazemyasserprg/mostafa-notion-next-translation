@@ -18,7 +18,8 @@ export default function LanguageSwitcher() {
   const switchTo = locales[currentLocale];
 
   const handleClick = () => {
-    router.push(pathname, { locale: switchTo });
+    // Use replace instead of push to prevent adding to history stack
+    router.replace(pathname, { locale: switchTo });
   };
 
   return (
