@@ -1100,5 +1100,32 @@
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/19.webp"
+  },
+  "StudyHub - Minimal Version": {
+    "name": "StudyHub - Minimal Version",
+    "description": "Stay on top of your tasks with this powerful Notion template designed for seamless organization and productivity. Whether you're managing daily tasks, weekly plans, or long-term goals, TaskMaster keeps everything in one place.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.so/marketplace/templates/studyhub-free",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/22.webp"
+  },
+  "Second Brain - Minimal Version": {
+    "name": "Second Brain - Minimal Version",
+    "description": "Organize your life with this Notion template! Track goals, tasks, notes, books, habits, & resources with intuitive databases & progress tracking. Perfect for productivity & knowledge management!",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.so/marketplace/templates/second-brain-free",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/23.webp"
+  },
+  "FinanceHub - Minimal Version": {
+    "name": "FinanceHub - Minimal Version",
+    "description": "Simplify your finances with this Notion template! Track income, expenses, and monthly financial activity with an intuitive gallery view. Perfect for budgeting and gaining clarity on your cash flow.",
+    "price": "$0",
+    "checkout": "Checkout",
+    "checkoutLink": "https://www.notion.so/marketplace/templates/financehub-free",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/24.webp"
   }
 }

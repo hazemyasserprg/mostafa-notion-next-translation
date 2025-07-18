@@ -1,12 +1,12 @@
 {
   "Prayer Times": {
-    "name": "Prayer Times",
-    "description": "This Notion template provides a complete daily Prayer Times widget that covers the entire year. Whether you're building a personal dashboard, spiritual tracker, or a minimalist Islamic setup — this widget fits right in.",
+    "name": "مواقيت الصلاة",
+    "description": "أداة لمواقيت الصلاة طوال العام في نوشن. يمكنك تضمينها بسهولة في أي لوحة تحكم — بتصميم نظيف وبسيط وأكثر موثوقية من الأدوات الخارجية.",
     "price": "$0",
-    "checkout": "Checkout",
-    "checkoutLink": "https://www.notion.so/marketplace/templates/prayer-times?from=notion_template_gallery",
-    "moreDetails": "More Details",
-    "image": "/thumbnails/ENThumbnails/21.webp"
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/3c5a0c17-41e1-42dd-9362-5155200ab7ae",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/21.webp"
   },
   "Quran Tracker Premium": {
     "name": "متتبع القرآن | النسخة المميزة",
@@ -1100,5 +1100,32 @@
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ARThumbnails/19.webp"
+  },
+  "StudyHub - Minimal Version": {
+    "name": "مركز الدراسة - النسخة المبسطة",
+    "description": "قالب نوشن بسيط ومرتب، يتيح لك تنظيم مقرراتك الدراسية، وتتبع تقدمك الأكاديمي، ومتابعة مهامك بكل سهولة — مثالي للطلاب الذين يبحثون عن نظام دراسي مركز وخالٍ من التشتت.",
+    "price": "$0",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/a0e5e603-4934-416c-b635-4283ac69eb2f",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/22.webp"
+  },
+  "Second Brain - Minimal Version": {
+    "name": "العقل التاني - النسخة المبسطة",
+    "description": "نظّم حياتك باستخدام هذا القالب على نوشن! تابع أهدافك، مهامك، ملاحظاتك، كتبك، عاداتك، ومصادرك من خلال قواعد بيانات سهلة الاستخدام ونظام لتتبع التقدّم. مثالي لزيادة الإنتاجية وإدارة المعرفة!",
+    "price": "$0",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/97af0642-649b-4c3f-a3d3-f3f6392bbbdf",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/23.webp"
+  },
+  "FinanceHub - Minimal Version": {
+    "name": "مركز المال - النسخة المبسطة",
+    "description": "بسّط أمورك المالية باستخدام هذا القالب على نوشن! تابع الدخل، والمصروفات، ونشاطك المالي الشهري من خلال عرض مصوّر سهل الاستخدام. مثالي لإعداد الميزانية وفهم تدفق أموالك بوضوح.",
+    "price": "$0",
+    "checkout": "تحميل",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/b76eff35-0b92-49a6-b885-47a44a89cab3",
+    "moreDetails": "مزيد من التفاصيل",
+    "image": "/thumbnails/ARThumbnails/24.webp"
   }
 }

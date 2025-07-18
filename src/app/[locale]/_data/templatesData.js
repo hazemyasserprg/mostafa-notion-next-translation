@@ -149,6 +149,27 @@ const templates = [
     category: "productivity",
     detailsLink: "",
   },
+  {
+    id: 22,
+    name: "StudyHub - Minimal Version",
+    slug: "studyhub-minimal",
+    category: "education",
+    detailsLink: "",
+  },
+  {
+    id: 23,
+    name: "Second Brain - Minimal Version",
+    slug: "second-brain-minimal",
+    category: "productivity",
+    detailsLink: "",
+  },
+  {
+    id: 24,
+    name: "FinanceHub - Minimal Version",
+    slug: "finance-hub-minimal",
+    category: "productivity",
+    detailsLink: "",
+  },
 ];
 
 export default templates;
