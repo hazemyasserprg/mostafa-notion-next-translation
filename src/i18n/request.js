@@ -34,6 +34,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         .default,
       Navigation: (await import(`../../messages/${locale}/Navigation.json`))
         .default,
+      FloatingNav: (await import(`../../messages/${locale}/FloatingNav.json`))
+        .default,
       TemplatesShowcase: (
         await import(`../../messages/${locale}/TemplatesShowcase.json`)
       ).default,

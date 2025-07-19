@@ -64,7 +64,7 @@
   },
   "Study Planner": {
     "name": "مخطط الدراسة",
-    "description": "ابق منظمًا وعلى المسار الصحيح مع مخطط الدراسة البسيط! إدارة الدورات الدراسية، تتبع التقدم، وتحقيق المواعيد النهائية مع قالب نوشن القابل للتخصيص.",
+    "description": "ابق منظمًا وعلى المسار الصحيح مع مخطط الدراسة البسيط! إدارة المقررات الدراسية، تتبع التقدم، وتحقيق المواعيد النهائية مع قالب نوشن القابل للتخصيص.",
     "price": "$0",
     "checkout": "تحميل",
     "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/5bedb5a4-d479-439a-98ca-e1d43f406dcc",
@@ -145,295 +145,297 @@
   },
   "StudyHub": {
     "homeSec": {
-      "logoURL": "/premiumTemplates/study-hub/StudyHub.webp",
-      "title": "Master your student life with StudyHub",
-      "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
-      "heroImageURL": "/premiumTemplates/study-hub/heroImage.webp"
+      "logoURL": "/premiumTemplates/study-hub-ar/StudyHub.webp",
+      "title": "تحكّم في حياتك الجامعية مع مركز الدراسة",
+      "description": "قالب نوشن المتكامل لتتبع كل شيء من الحصص والمهام إلى العادات والأهداف.",
+      "heroImageURL": "/premiumTemplates/study-hub-ar/heroImage.webp",
+      "dashboardButtonText": "لوحة التحكم"
     },
     "dashboardSec": {
-      "title": "Your Entire Student Life in One View",
-      "description": "Explore how StudyHub brings everything together in one smart dashboard.",
-      "dashboardImageURL": "/premiumTemplates/study-hub/Dashboard.webp"
+      "title": "حياتك الدراسية كاملة في مكان واحد",
+      "description": "اكتشف كيف يجمع مركز الدراسة كل شيء معًا في لوحة تحكم ذكية واحدة.",
+      "dashboardImageURL": "/premiumTemplates/study-hub-ar/Dashboard.webp"
     },
     "essentialsSec": {
-      "title": "Everything You Need — In One Place",
-      "description": "Discover the core features that make StudyHub your ultimate academic companion.",
+      "title": "كل ما تحتاجه — في مكان واحد",
+      "description": "اكتشف المزايا الأساسية التي تجعل مركز الدراسة رفيقك الأكاديمي المثالي.",
       "features": {
         "0": {
-          "title": "Dashboard Overview",
-          "description": "A sleek central hub that summarizes your academic life: progress, weekly schedule, and quick actions."
+          "title": "نظرة عامة على اللوحة",
+          "description": "لوحة مركزية أنيقة تلخص حياتك الدراسية: التقدم، الجدول الأسبوعي، وإجراءات سريعة."
         },
         "1": {
-          "title": "Schedule Section",
-          "description": "Plan your week with a clear and organized breakdown of your daily classes."
+          "title": "قسم الجدول",
+          "description": "خطط أسبوعك بتقسيم منظم وواضح لحصصك اليومية."
         },
         "2": {
-          "title": "Quick Actions Panel",
-          "description": "Easily add new lessons, instructors, notes, or goals with a single click."
+          "title": "لوحة الإجراءات السريعة",
+          "description": "أضف الدروس، المدرسين، الملاحظات، أو الأهداف بسهولة بضغطة واحدة."
         },
         "3": {
-          "title": "Progress Tracker",
-          "description": "Automatically updated analytics to help you measure academic performance over time."
+          "title": "متعقب التقدم",
+          "description": "إحصائيات محدثة تلقائيًا تساعدك في قياس أدائك الأكاديمي مع مرور الوقت."
         },
         "4": {
-          "title": "Learning Hub",
-          "description": "Manage all your current and upcoming courses in one smart space."
+          "title": "مركز التعلم",
+          "description": "إدارة جميع المقررات الحالية والقادمة في مكان ذكي واحد."
         },
         "5": {
-          "title": "To-Do Hub",
-          "description": "Stay on top of your tasks, assignments, and exams with smart date filters like Today, Upcoming, and Missed."
+          "title": "مركز المهام",
+          "description": "ابقَ على اطلاع بمهامك وامتحاناتك باستخدام مرشحات ذكية مثل اليوم، القادمة، والمتأخرة."
         },
         "6": {
-          "title": "Review Hub",
-          "description": "Keep all your learning resources and notes organized for easy access and review."
+          "title": "مركز المراجعة",
+          "description": "احتفظ بجميع مصادر التعلم وملاحظاتك منظمة وسهلة الوصول."
         },
         "7": {
-          "title": "Reading Side",
-          "description": "Track your current reads and monitor completion rates to stay consistent with your learning goals."
+          "title": "ركن القراءة",
+          "description": "تتبع قراءاتك الحالية ومعدل إكمالها لتحقيق أهدافك التعليمية باستمرار."
         },
         "8": {
-          "title": "Flow Section",
-          "description": "Build daily consistency through habit tracking and journaling."
+          "title": "قسم التدفق",
+          "description": "ابنِ الاتساق اليومي من خلال تتبع العادات والتدوين اليومي."
         },
         "9": {
-          "title": "Mission Hub",
-          "description": "Set long-term academic goals and follow your progress toward achieving them."
+          "title": "مركز الأهداف",
+          "description": "حدد أهدافك الأكاديمية طويلة المدى وتابع تقدمك نحو تحقيقها."
         },
         "10": {
-          "title": "Monthly View",
-          "description": "A calendar view that brings together your exams, tasks, notes, and events all in one place."
+          "title": "عرض شهري",
+          "description": "عرض تقويمي يجمع امتحاناتك، مهامك، ملاحظاتك، وفعالياتك في مكان واحد."
         },
         "11": {
-          "title": "Pre-built Databases",
-          "description": "A modular system with dedicated databases for courses, tasks, exams, instructors, resources, notes, and more."
+          "title": "قواعد بيانات جاهزة",
+          "description": "نظام معياري بقواعد بيانات مخصصة للدورات، المهام، الامتحانات، المدرسين، المصادر، الملاحظات، وغيرها."
         }
       }
     },
     "walkthroughSec": {
-      "title": "A Visual Walkthrough of StudyHub",
-      "description": "Take a closer look at how StudyHub helps you manage your academic life — from planning and studying to tracking progress and setting goals.",
+      "title": "جولة بصرية داخل مركز الدراسة",
+      "description": "اطّلع عن قرب على كيفية مساعدتك مركز الدراسة في تنظيم حياتك الدراسية — من التخطيط والدراسة إلى تتبع التقدم وتحقيق الأهداف.",
       "rowBlocks": {
         "0": {
-          "title": "Organize What You Study & When You Study",
-          "description": "View all your courses alongside your weekly schedule. Stay on track with what you're learning and exactly when you need to focus on it — all in one smart layout.",
-          "image": "/premiumTemplates/study-hub/designs/25.webp",
+          "title": "نظم ما تدرسه ومتى تدرسه",
+          "description": "اعرض جميع مقرراتك مع جدولك الأسبوعي في تخطيط ذكي واحد.",
+          "image": "/premiumTemplates/study-hub-ar/designs/25.webp",
           "reverse": false
         },
         "1": {
-          "title": "Structured Learning from Modules to Lessons",
-          "description": "Break down your courses into clear modules and lessons. Easily track what you've covered and what's next — no more scattered materials or missed topics.",
-          "image": "/premiumTemplates/study-hub/designs/26.webp",
+          "title": "تعلم منظم من الوحدات إلى الدروس",
+          "description": "قسّم مقرراتك إلى وحدات ودروس واضحة، وتابع ما تم وما التالي بسهولة.",
+          "image": "/premiumTemplates/study-hub-ar/designs/26.webp",
           "reverse": true
         },
         "2": {
-          "title": "Stay Ahead of Every Deadline",
-          "description": "Track all your assignments, tasks, and exams in one place. With smart filters and reminders, you'll never miss an important date again.",
-          "image": "/premiumTemplates/study-hub/designs/27.webp",
+          "title": "ابقَ متقدماً على جميع المواعيد النهائية",
+          "description": "تتبع جميع مهامك وامتحاناتك في مكان واحد مع التذكيرات والمرشحات الذكية.",
+          "image": "/premiumTemplates/study-hub-ar/designs/27.webp",
           "reverse": false
         },
         "3": {
-          "title": "Read, Capture, and Explore",
-          "description": "Access your reading list, study notes, and valuable resources — all in one place. StudyHub keeps your knowledge organized, searchable, and always at your fingertips.",
-          "image": "/premiumTemplates/study-hub/designs/28.webp",
+          "title": "اقرأ، دوّن، واستكشف",
+          "description": "الوصول إلى قائمة قراءاتك وملاحظاتك ومصادرك في مكان واحد مرتب ومنظم.",
+          "image": "/premiumTemplates/study-hub-ar/designs/28.webp",
           "reverse": true
         },
         "4": {
-          "title": "Set Goals. Build Projects. Make Progress.",
-          "description": "Turn your academic vision into action. Track long-term goals and manage projects with clear steps, deadlines, and progress indicators.",
-          "image": "/premiumTemplates/study-hub/designs/29.webp",
+          "title": "حدد الأهداف. نفذ المشاريع. أحرز التقدم.",
+          "description": "حوّل رؤيتك الأكاديمية إلى أفعال مع تتبع الأهداف والمشاريع بخطوات واضحة ومواعيد نهائية.",
+          "image": "/premiumTemplates/study-hub-ar/designs/29.webp",
           "reverse": false
         }
       },
       "columnBlocks": {
         "firstOne": {
-          "title": "Everything About Your Course — In One Place",
-          "description": "Click into any course to access all related tasks, exams, notes, resources, and more. StudyHub connects every detail so you can focus on learning, not searching.",
-          "image": "/premiumTemplates/study-hub/designs/30.webp",
+          "title": "كل شيء عن دورتك في مكان واحد",
+          "description": "اضغط على أي دورة للوصول إلى جميع المهام والامتحانات والملاحظات والمصادر المتعلقة بها بسهولة.",
+          "image": "/premiumTemplates/study-hub-ar/designs/30.webp",
           "reverse": false
         },
         "secondOne": {
-          "title": "Track Your Progress Like Never Before",
-          "description": "Get a complete overview of your academic and personal growth — from finished courses and assignments to achieved goals and habits. Stay motivated with real-time progress insights.",
-          "image": "/premiumTemplates/study-hub/designs/31.webp",
+          "title": "تتبع تقدمك كما لم يحدث من قبل",
+          "description": "احصل على نظرة شاملة حول تقدمك الأكاديمي والشخصي لتحفيزك دائمًا.",
+          "image": "/premiumTemplates/study-hub-ar/designs/31.webp",
           "reverse": false
         }
       }
     },
     "databasesSec": {
-      "title": "The Backbone of StudyHub",
-      "description": "At the heart of StudyHub is a powerful system of interconnected databases designed to organize, connect, and simplify your entire academic journey.",
+      "title": "قلب مركز الدراسة النابض",
+      "description": "في قلب مركز الدراسة نظام قواعد بيانات مترابطة تنظّم وتبسط رحلتك الدراسية بالكامل.",
       "features": {
         "0": {
-          "title": "Courses",
-          "description": "Organize all your academic courses in one place — each with linked lessons, tasks, notes, and progress.",
-          "image": "/premiumTemplates/study-hub/screenshots/1.webp"
+          "title": "المقررات",
+          "description": "تنظيم جميع مقرراتك الأكاديمية في مكان واحد مع الدروس والمهام والملاحظات المتصلة بها.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/1.webp"
         },
         "1": {
-          "title": "Modules",
-          "description": "Break down each course into structured modules or units for easier navigation and focused learning.",
-          "image": "/premiumTemplates/study-hub/screenshots/2.webp"
+          "title": "الوحدات",
+          "description": "قسّم كل دورة إلى وحدات منظمة لسهولة التعلم والتركيز.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/2.webp"
         },
         "2": {
-          "title": "Lessons",
-          "description": "Track individual lessons, their topics, progress, and related materials — all connected to your modules and courses.",
-          "image": "/premiumTemplates/study-hub/screenshots/3.webp"
+          "title": "الدروس",
+          "description": "تتبع الدروس ومواضيعها وتقدمها والمواد المتعلقة بها والمتصلة بدوراتك.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/3.webp"
         },
         "3": {
-          "title": "Assignments",
-          "description": "Stay on top of every assignment, due date, and submission with smart filters and priority tags.",
-          "image": "/premiumTemplates/study-hub/screenshots/4.webp"
+          "title": "الواجبات",
+          "description": "تابع جميع واجباتك ومواعيد تسليمها وحالة تقديمها باستخدام الفلاتر الذكية وعلامات الأولوية.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/4.webp"
         },
         "4": {
-          "title": "Exams",
-          "description": "Plan and prepare for upcoming quizzes, midterms, and finals — with space for dates, study material, and linked courses.",
-          "image": "/premiumTemplates/study-hub/screenshots/5.webp"
+          "title": "الامتحانات",
+          "description": "التحضير للاختبارات مع تنظيم المواعيد والمواد الدراسية والربط مع المقررات.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/5.webp"
         },
         "5": {
-          "title": "Instructors",
-          "description": "Manage details for all your professors and instructors, including contact info and courses they teach.",
-          "image": "/premiumTemplates/study-hub/screenshots/6.webp"
+          "title": "المحاضرون",
+          "description": "إدارة بيانات الأساتذة والمدرسين مع تفاصيل الاتصال والمقررات التي يدرسونها.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/6.webp"
         },
         "6": {
-          "title": "Schedule",
-          "description": "Visualize your weekly timetable — classes, sessions, and events all organized and easy to access.",
-          "image": "/premiumTemplates/study-hub/screenshots/7.webp"
+          "title": "الجدول",
+          "description": "عرض جدولك الأسبوعي للدروس والفعاليات بسهولة ووضوح.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/7.webp"
         },
         "7": {
-          "title": "Notes",
-          "description": "Capture and organize your study notes, ideas, and summaries — linked to lessons and courses.",
-          "image": "/premiumTemplates/study-hub/screenshots/8.webp"
+          "title": "الملاحظات",
+          "description": "تدوين وتنظيم الملاحظات والأفكار والملخصات مرتبطة بالدروس والمقررات.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/8.webp"
         },
         "8": {
-          "title": "Resources",
-          "description": "Store useful materials like PDFs, links, and videos, categorized and tagged for easy access.",
-          "image": "/premiumTemplates/study-hub/screenshots/9.webp"
+          "title": "المصادر",
+          "description": "حفظ المواد المفيدة مثل PDF، الروابط، والفيديوهات منظمة وسهلة الوصول.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/9.webp"
         },
         "9": {
-          "title": "Flow",
-          "description": "Build daily consistency with integrated Habits and Journaling — boost focus and self-reflection.",
-          "image": "/premiumTemplates/study-hub/screenshots/10.webp"
+          "title": "التدفق",
+          "description": "بناء عادات يومية مع التدوين اليومي لتقوية التركيز والانعكاس الذاتي.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/10.webp"
         },
         "10": {
-          "title": "Books",
-          "description": "Track your current and past readings, with progress bars, categories, and personal ratings.",
-          "image": "/premiumTemplates/study-hub/screenshots/11.webp"
+          "title": "الكتب",
+          "description": "تتبع قراءاتك الحالية والسابق مع التقييمات والتصنيفات.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/11.webp"
         },
         "11": {
-          "title": "Archive",
-          "description": "Move completed courses, lessons, and tasks here to keep your workspace clean and focused.",
-          "image": "/premiumTemplates/study-hub/screenshots/12.webp"
+          "title": "الأرشيف",
+          "description": "نقل المقررات والمهام المكتملة إلى الأرشيف للحفاظ على مساحة عمل نظيفة.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/12.webp"
         },
         "12": {
-          "title": "Goals",
-          "description": "Define academic and personal goals, track progress, and break them into actionable steps.",
-          "image": "/premiumTemplates/study-hub/screenshots/13.webp"
+          "title": "الأهداف",
+          "description": "تحديد الأهداف الأكاديمية والشخصية وتتبع تقدمها بخطوات عملية.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/13.webp"
         },
         "13": {
-          "title": "Projects",
-          "description": "Manage long-term assignments, research, or capstone projects — with status, deadlines, and subtasks.",
-          "image": "/premiumTemplates/study-hub/screenshots/14.webp"
+          "title": "المشاريع",
+          "description": "إدارة المشاريع والبحوث طويلة المدى مع المواعيد النهائية وخطوات التنفيذ.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/14.webp"
         },
         "14": {
-          "title": "Tasks",
-          "description": "All your to-dos in one place — assignments, reviews, chores, and more, with flexible filters and views.",
-          "image": "/premiumTemplates/study-hub/screenshots/15.webp"
+          "title": "المهام",
+          "description": "إدارة جميع مهامك اليومية والأكاديمية مع طرق عرض مرنة.",
+          "image": "/premiumTemplates/study-hub-ar/screenshots/15.webp"
         }
       }
     },
     "pricingSec": {
-      "title": "Choose Your Plan",
-      "description": "Two options. Same goal: your academic success.",
+      "title": "اختر خطتك",
+      "description": "خياران بهدف واحد: نجاحك الأكاديمي.",
       "plans": {
         "basic": {
-          "label": "Basic",
-          "description": "A free, simplified version to get you started.",
+          "label": "أساسي",
+          "description": "نسخة مبسطة مجانية للبدء فورًا.",
           "price": "$0",
           "features": [
-            "Life time updates",
-            "Courses (Simple)",
-            "Assignments & Exams (Simple)",
-            "Notes, Books (Simple)"
+            "تحديثات مدى الحياة",
+            "المقررات (مبسط)",
+            "المهام والامتحانات (مبسط)",
+            "الملاحظات والكتب (مبسط)"
           ],
           "missingFeatures": [
-            "Modules & Lessons",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Tasks, Goals & Projects",
-            "Habits & Journal",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts"
+            "الوحدات والدروس",
+            "نظرة عامة على اللوحة",
+            "الجدول الأسبوعي والشهري",
+            "متعقب التقدم",
+            "المهام والأهداف والمشاريع",
+            "العادات والتدوين",
+            "مرشحات ذكية وأتمتة",
+            "الأرشيف",
+            "قواعد بيانات مترابطة",
+            "طرق عرض متقدمة"
           ],
-          "button": "Get for Free",
-          "buttonLink": "https://www.notion.so/marketplace/templates/studyhub-free"
+          "button": "الحصول مجانًا",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/a0e5e603-4934-416c-b635-4283ac69eb2f"
         },
-        "advanced": {
-          "label": "Advanced",
-          "description": "Unlock your full academic productivity potential.",
+        "more-advanced": {
+          "label": "متقدم",
+          "description": "حقق أقصى إنتاجية أكاديمية ممكنة.",
           "price": "$59",
           "oldPrice": "$80",
           "features": [
-            "Life time updates",
-            "Courses (Advanced)",
-            "Modules & Lessons",
-            "Assignments & Exams (Advanced)",
-            "Review Hub",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Tasks, Goals & Projects",
-            "Habits & Journal",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts"
+            "تحديثات مدى الحياة",
+            "المقررات (متقدم)",
+            "الوحدات والدروس",
+            "المهام والامتحانات (متقدم)",
+            "مركز المراجعة",
+            "نظرة عامة على اللوحة",
+            "الجدول الأسبوعي والشهري",
+            "متعقب التقدم",
+            "المهام والأهداف والمشاريع",
+            "العادات والتدوين",
+            "مرشحات ذكية وأتمتة",
+            "الأرشيف",
+            "قواعد بيانات مترابطة",
+            "طرق عرض متقدمة"
           ],
-          "button": "Buy Now",
-          "buttonLink": "https://www.notion.so/marketplace/templates/studyhub-premium?checkout=true",
-          "badge": "Best Value"
+          "button": "اشترِ الآن",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/b94e66fc-b96b-4a24-b637-4da24eed8cf9",
+          "badge": "الأكثر قيمة"
         }
       }
     },
     "faqSec": {
-      "title": "FAQ",
+      "title": "الأسئلة الشائعة",
       "faqs": [
         {
-          "question": "What is Notion?",
-          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between."
+          "question": "ما هو نوشن؟",
+          "answer": "نوشن هو مساحة العمل الرقمية المتكاملة الخاصة بك — مكان واحد لتنظيم الملاحظات، المهام، المقررات، الأهداف، وكل شيء آخر."
         },
         {
-          "question": "How do I get access to the template?",
-          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the StudyHub template to your Notion workspace."
+          "question": "كيف أحصل على القالب؟",
+          "answer": "بعد إتمام عملية الشراء، ستتلقى بريدًا إلكترونيًا يحتوي على رابط لنسخ قالب مركز الدراسة إلى مساحة العمل الخاصة بك على نوشن فورًا."
         },
         {
-          "question": "Do I need a paid Notion account?",
-          "answer": "No. You can use StudyHub with Notion’s free plan."
+          "question": "هل أحتاج إلى حساب مدفوع على نوشن؟",
+          "answer": "لا، يمكنك استخدام مركز الدراسة مع الخطة المجانية لنوشن."
         },
         {
-          "question": "Will I know how to use it?",
-          "answer": "Yes. It comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step."
+          "question": "هل سأعرف كيفية استخدامه؟",
+          "answer": "نعم، يأتي مع فيديوهات تعليمية تفصيلية وإرشادات مكتوبة داخل النظام ترشدك خطوة بخطوة."
         },
         {
-          "question": "Is it worth the price?",
-          "answer": "Definitely. You save hours building from scratch and get a professionally designed academic dashboard ready to use immediately."
+          "question": "هل يستحق السعر؟",
+          "answer": "بالتأكيد، ستوفر ساعات من العمل اليدوي وتحصل على لوحة تحكم أكاديمية جاهزة ومصممة باحتراف."
         },
         {
-          "question": "What is your refund policy?",
-          "answer": "You can request a refund within 14 days of purchase following the Marketplace refund policy."
+          "question": "ما هي سياسة الاسترجاع؟",
+          "answer": "يمكنك طلب استرجاع خلال 14 يومًا من الشراء وفق سياسة الاسترجاع في Marketplace."
         },
         {
-          "question": "Still have questions?",
-          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
+          "question": "هل لديك أسئلة أخرى؟",
+          "answer": "راسلني عبر البريد contact@mostafayasser.com أو عبر تويتر في أي وقت."
         }
       ]
     },
     "name": "مركز الدراسة",
+    "description": "",
     "price": "$59",
-    "checkout": "Checkout",
-    "checkoutLink": "https://www.notion.com/templates/studyhub0",
-    "moreDetails": "More Details",
+    "checkout": "احصل على مركز الدراسة",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/b94e66fc-b96b-4a24-b637-4da24eed8cf9",
+    "moreDetails": "المزيد من التفاصيل",
     "image": "/thumbnails/ARThumbnails/17.webp"
   },
   "Idea Flow - Solo Edition": {
@@ -456,649 +458,653 @@
   },
   "Second Brain": {
     "homeSec": {
-      "logoURL": "/premiumTemplates/second-brain/SecondBrain.webp",
-      "title": "Master your life with Second Brain",
-      "description": "The all-in-one Notion system to organize your tasks, goals, habits, ideas, and finances — all in one connected workspace",
-      "heroImageURL": "/premiumTemplates/second-brain/heroImage.webp"
+      "logoURL": "/premiumTemplates/second-brain-ar/SecondBrain.webp",
+      "title": "سيطر على حياتك مع العقل الثاني",
+      "description": "نظام نوشن شامل لتنظيم مهامك، أهدافك، عاداتك، أفكارك، وأمورك المالية — في مساحة عمل متصلة واحدة",
+      "heroImageURL": "/premiumTemplates/second-brain-ar/heroImage.webp",
+      "dashboardButtonText": "لوحة التحكم"
     },
     "dashboardSec": {
-      "title": "Your Entire Life in One View",
-      "description": "Explore how Second Brain brings your goals, tasks, habits, and finances together in one powerful dashboard.",
-      "dashboardImageURL": "/premiumTemplates/second-brain/Dashboard.webp"
+      "title": "حياتك بالكامل في مكان واحد",
+      "description": "استكشف كيف يجمع العقل الثاني أهدافك ومهامك وعاداتك وأمورك المالية في لوحة تحكم قوية واحدة.",
+      "dashboardImageURL": "/premiumTemplates/second-brain-ar/Dashboard.webp"
     },
     "essentialsSec": {
-      "title": "Everything You Need — In One Place",
-      "description": "Discover the core features that make Second Brain your ultimate system for life, work, and finances.",
+      "title": "كل ما تحتاجه — في مكان واحد",
+      "description": "اكتشف الميزات الأساسية التي تجعل العقل الثاني نظامك المثالي للحياة والعمل والمال.",
       "features": {
         "0": {
-          "title": "Profile (Total Progress)",
-          "description": "Visual overview of your total progress across goals, tasks, projects, habits, and finances in one centralized hub."
+          "title": "الأهداف",
+          "description": "حدد أهدافًا ذات معنى وتابع تقدمك الحقيقي بمرور الوقت باستخدام مؤشرات مرئية وإجراءات مرتبطة."
         },
         "1": {
-          "title": "Areas (Life Areas)",
-          "description": "Organize your life into domains (e.g., study, health, finance) with linked goals, projects, and financial tracking."
+          "title": "المشاريع",
+          "description": "خطط وأدر مشاريعك الشخصية والمهنية مع تتبع الإنجازات والتقدم بصريًا."
         },
         "2": {
-          "title": "Goals",
-          "description": "Track your long-term objectives with progress bars, deadlines, and direct links to your areas and projects."
+          "title": "المهام",
+          "description": "نظم مهامك اليومية ولا تفوت أي موعد نهائي باستخدام تواريخ استحقاق واضحة وتذكيرات."
         },
         "3": {
-          "title": "Projects",
-          "description": "Manage time-bound initiatives with milestone tracking, task links, visual progress indicators, and deadlines."
+          "title": "المهام المتكررة",
+          "description": "أنشئ مهام متكررة يومية أو أسبوعية أو شهرية تظهر تلقائيًا عند استحقاقها."
         },
         "4": {
-          "title": "Tasks",
-          "description": "Handle your daily and weekly to-dos with status tracking, overdue alerts, and connections to projects and goals."
+          "title": "الأفكار",
+          "description": "التقط وطور أفكارك، وحولها إلى مهام أو مشاريع قابلة للتنفيذ بنقرة واحدة."
         },
         "5": {
-          "title": "Ideas",
-          "description": "Capture and organize your inspirations, with the ability to pin or convert them into actionable tasks or projects."
+          "title": "الملاحظات",
+          "description": "احتفظ بجميع ملاحظاتك ومعرفتك الشخصية بشكل منظم وسهل البحث وسهل الوصول إليه."
         },
         "6": {
-          "title": "Notes",
-          "description": "Build a personal knowledge base with organized, searchable notes categorized by time and relevance."
+          "title": "المصادر",
+          "description": "راجع المحتوى والموارد المحفوظة بسهولة من خلال نظام مراجعة مبني على التكرار المتباعد."
         },
         "7": {
-          "title": "Resources",
-          "description": "Store and categorize reference materials, articles, and educational content with tags and importance levels."
+          "title": "العادات",
+          "description": "ابنِ عادات صحية وتابع استمراريتك باستخدام تتبع بصري ونسب الإكمال."
         },
         "8": {
-          "title": "Books",
-          "description": "Track your reading progress with page tracking, completion rates, cover images, and personal notes."
+          "title": "اليوميات",
+          "description": "دوّن أفكارك ومشاعرك لتعزيز اليقظة والتأمل والوعي الذاتي."
         },
         "9": {
-          "title": "Watchlist",
-          "description": "Manage your movies, series, and courses with viewing status, categories, and direct source links."
+          "title": "لوحة التحكم",
+          "description": "تابع كل شيء من لوحة تحكم نظيفة واحدة بتحديثات لحظية ومؤشرات حالة."
         },
         "10": {
-          "title": "Contacts",
-          "description": "Store personal and professional contacts, including notes, interaction history, and categorization."
+          "title": "الفلاتر الذكية",
+          "description": "ابقَ مركزًا باستخدام الفلاتر الذكية لمهام وأهداف 'اليوم' و'القادمة' و'المتأخرة'."
         },
         "11": {
-          "title": "Habits",
-          "description": "Build consistency by tracking your daily and weekly habits with visual progress and completion rates."
+          "title": "نظام مترابط",
+          "description": "أنشئ روابط بين الأهداف والمشاريع والمهام والملاحظات والأفكار للحفاظ على سير عمل سلس."
         },
         "12": {
-          "title": "Journalling",
-          "description": "Reflect daily with mood tracking, prompts, and archival systems for deeper self-awareness."
+          "title": "نظرة عامة على الملف الشخصي",
+          "description": "تابع نشاطك وأدائك العام من نظرة عامة على ملفك الشخصي."
         },
         "13": {
-          "title": "Archive",
-          "description": "Keep your workspace clean by archiving completed or inactive tasks, notes, and projects for future reference."
+          "title": "قابل للتخصيص بالكامل",
+          "description": "كل شيء مرتبط وآلي وسهل التخصيص ليتوافق مع سير عملك ونمط حياتك."
         }
       }
     },
     "walkthroughSec": {
-      "title": "A Visual Walkthrough of Second Brain",
-      "description": "Take a closer look at how Second Brain helps you manage your entire life — from organizing tasks and goals to tracking habits, ideas, and finances.",
+      "title": "نظرة بصرية داخل العقل الثاني",
+      "description": "ألقِ نظرة أقرب على كيفية مساعدتك العقل الثاني في إدارة حياتك بالكامل — من تنظيم المهام والأهداف إلى تتبع العادات والأفكار والأمور المالية.",
       "rowBlocks": {
         "0": {
-          "title": "From Vision to Action",
-          "description": "Define your life areas, set meaningful goals, manage projects, and complete tasks — all in one connected workflow.",
-          "image": "/premiumTemplates/second-brain/designs/1.webp",
+          "title": "من الرؤية إلى التنفيذ",
+          "description": "حدد مجالات حياتك، وضع أهدافًا ذات معنى، وأدر المشاريع، وأكمل المهام — في سير عمل متصل واحد.",
+          "image": "/premiumTemplates/second-brain-ar/designs/1.webp",
           "reverse": false
         },
         "1": {
-          "title": "Recurring Tasks Made Easy",
-          "description": "Automate your workflow with flexible repeat options — daily, weekly, monthly, or fully custom.",
-          "image": "/premiumTemplates/second-brain/designs/2.webp",
+          "title": "سهولة المهام المتكررة",
+          "description": "أتمت سير عملك باستخدام خيارات تكرار مرنة — يومية أو أسبوعية أو شهرية أو مخصصة بالكامل.",
+          "image": "/premiumTemplates/second-brain-ar/designs/2.webp",
           "reverse": true
         },
         "2": {
-          "title": "Review Hub",
-          "description": "Revisit your notes and resources with spaced repetition — stay sharp and never forget what matters.",
-          "image": "/premiumTemplates/second-brain/designs/3.webp",
+          "title": "مركز المراجعة",
+          "description": "راجع ملاحظاتك ومواردك باستخدام التكرار المتباعد — ابقَ حادًا ولا تنسَ ما يهمك.",
+          "image": "/premiumTemplates/second-brain-ar/designs/3.webp",
           "reverse": false
         },
         "3": {
-          "title": "Idea Engine",
-          "description": "Capture, summarize, and instantly turn ideas into actionable tasks or projects — powered by AI.",
-          "image": "/premiumTemplates/second-brain/designs/4.webp",
+          "title": "محرك الأفكار",
+          "description": "التقط الأفكار، لخصها، وحولها فورًا إلى مهام أو مشاريع قابلة للتنفيذ — مدعوم بالذكاء الاصطناعي.",
+          "image": "/premiumTemplates/second-brain-ar/designs/4.webp",
           "reverse": true
         },
         "4": {
-          "title": "Wellness Flow",
-          "description": "Track your habits, reflect through journaling, and monitor your mood — all in one mindful space.",
-          "image": "/premiumTemplates/second-brain/designs/5.webp",
+          "title": "تدفق الصحة",
+          "description": "تابع عاداتك، ودوّن يومياتك، وتابع حالتك المزاجية — في مساحة واحدة مليئة بالوعي الذاتي.",
+          "image": "/premiumTemplates/second-brain-ar/designs/5.webp",
           "reverse": false
         },
         "5": {
-          "title": "Control Center",
-          "description": "Visualize your total progress across goals, projects, and tasks — with detailed breakdowns for each objective.",
-          "image": "/premiumTemplates/second-brain/designs/6.webp",
+          "title": "مركز التحكم",
+          "description": "تصور تقدمك الكامل عبر الأهداف والمشاريع والمهام — مع تفاصيل لكل هدف.",
+          "image": "/premiumTemplates/second-brain-ar/designs/6.webp",
           "reverse": true
         }
       },
       "columnBlocks": {
         "firstOne": {
-          "title": "Connected Clarity",
-          "description": "Open any goal or project and instantly see all related tasks, notes, resources, ideas, and progress — all in one place.",
-          "image": "/premiumTemplates/second-brain/designs/7.webp"
+          "title": "وضوح مترابط",
+          "description": "افتح أي هدف أو مشروع وشاهد فورًا جميع المهام والملاحظات والموارد والأفكار والتقدم المرتبط — في مكان واحد.",
+          "image": "/premiumTemplates/second-brain-ar/designs/7.webp"
         },
         "secondOne": {
-          "title": "Visual Insights",
-          "description": "Explore charts and analytics across all your Second Brain — from reading and habits to goals, projects, mood, tasks, and more.",
-          "image": "/premiumTemplates/second-brain/designs/8.webp"
+          "title": "رؤى بصرية",
+          "description": "استكشف المخططات والتحليلات عبر جميع عناصر العقل الثاني — من القراءة والعادات إلى الأهداف والمشاريع والمزاج والمهام والمزيد.",
+          "image": "/premiumTemplates/second-brain-ar/designs/8.webp"
         }
       }
     },
     "databasesSec": {
-      "title": "The Backbone of Second Brain",
-      "description": "At the core of Second Brain lies a powerful network of interconnected databases — built to organize, connect, and simplify every part of your personal, professional, and financial life.",
+      "title": "عمود العقل الثاني الفقري",
+      "description": "في جوهر العقل الثاني توجد شبكة قوية من قواعد البيانات المترابطة — مصممة لتنظيم وربط وتبسيط كل جانب من جوانب حياتك الشخصية والمهنية والمالية.",
       "features": {
         "0": {
-          "title": "Profile",
-          "description": "Your personal dashboard for tracking progress across all areas — goals, tasks, projects, and more.",
-          "image": "/premiumTemplates/second-brain/screenshots/1.webp"
+          "title": "الملف الشخصي",
+          "description": "لوحتك الشخصية لتتبع التقدم عبر جميع المجالات — الأهداف والمهام والمشاريع والمزيد.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/1.webp"
         },
         "1": {
-          "title": "Areas",
-          "description": "Break your life into focus zones (e.g., Health, Career, Finance) — each with linked goals and dedicated projects.",
-          "image": "/premiumTemplates/second-brain/screenshots/2.webp"
+          "title": "المساحات",
+          "description": "قسّم حياتك إلى مناطق تركيز (مثل الصحة، المهنة، المال) — مع أهداف مرتبطة ومشاريع مخصصة.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/2.webp"
         },
         "2": {
-          "title": "Goals",
-          "description": "Define your long-term objectives and stay motivated with visual progress bars, deadlines, and linked actions.",
-          "image": "/premiumTemplates/second-brain/screenshots/3.webp"
+          "title": "الأهداف",
+          "description": "حدد أهدافك طويلة المدى وحافظ على حماسك باستخدام مؤشرات تقدم بصرية، ومواعيد نهائية، وإجراءات مرتبطة.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/3.webp"
         },
         "3": {
-          "title": "Projects",
-          "description": "Manage multi-step initiatives with milestone tracking, linked tasks, and status-based organization.",
-          "image": "/premiumTemplates/second-brain/screenshots/4.webp"
+          "title": "المشاريع",
+          "description": "أدر المبادرات متعددة المراحل باستخدام تتبع الإنجازات والمهام المرتبطة والتنظيم حسب الحالة.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/4.webp"
         },
         "4": {
-          "title": "Tasks",
-          "description": "Handle your day-to-day to-dos with smart filters, deadline alerts, and direct links to projects and goals.",
-          "image": "/premiumTemplates/second-brain/screenshots/5.webp"
+          "title": "المهام",
+          "description": "أدر مهامك اليومية باستخدام الفلاتر الذكية، وتنبيهات المواعيد النهائية، والروابط المباشرة بالمشاريع والأهداف.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/5.webp"
         },
         "5": {
-          "title": "Ideas",
-          "description": "Capture sparks of inspiration and turn them into actionable tasks or full-fledged projects when you're ready.",
-          "image": "/premiumTemplates/second-brain/screenshots/6.webp"
+          "title": "الأفكار",
+          "description": "التقط ومضات الإلهام وحولها إلى مهام قابلة للتنفيذ أو مشاريع كاملة عندما تكون جاهزًا.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/6.webp"
         },
         "6": {
-          "title": "Notes",
-          "description": "Build your personal knowledge base with searchable notes, sorted by time and category.",
-          "image": "/premiumTemplates/second-brain/screenshots/7.webp"
+          "title": "الملاحظات",
+          "description": "أنشئ قاعدة معرفتك الشخصية باستخدام ملاحظات قابلة للبحث، مصنفة حسب الوقت والفئة.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/7.webp"
         },
         "7": {
-          "title": "Resources",
-          "description": "Organize articles, videos, and references — all categorized by type, importance, or relevance.",
-          "image": "/premiumTemplates/second-brain/screenshots/8.webp"
+          "title": "المصادر",
+          "description": "نظم المقالات ومقاطع الفيديو والمراجع — جميعها مصنفة حسب النوع والأهمية أو الصلة.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/8.webp"
         },
         "8": {
-          "title": "Books",
-          "description": "Track your reading journey with completion rates, page tracking, and space for personal insights.",
-          "image": "/premiumTemplates/second-brain/screenshots/9.webp"
+          "title": "الكتب",
+          "description": "تابع رحلتك في القراءة مع معدلات الإنجاز، وتتبع الصفحات، ومساحة لملاحظاتك الشخصية.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/9.webp"
         },
         "9": {
-          "title": "Watchlist",
-          "description": "Keep a log of movies, series, and courses you want to watch, with viewing status and source links.",
-          "image": "/premiumTemplates/second-brain/screenshots/10.webp"
+          "title": "قائمة المشاهدات",
+          "description": "احتفظ بقائمة بالأفلام والمسلسلات والدورات التي تريد مشاهدتها، مع حالة المشاهدة وروابط المصادر.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/10.webp"
         },
         "10": {
-          "title": "Contacts",
-          "description": "Maintain important personal and professional connections with notes and interaction history.",
-          "image": "/premiumTemplates/second-brain/screenshots/11.webp"
+          "title": "جهات الاتصال",
+          "description": "حافظ على علاقاتك الشخصية والمهنية المهمة مع ملاحظات وسجل التفاعلات.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/11.webp"
         },
         "11": {
-          "title": "Habits",
-          "description": "Track your daily and weekly habits to build consistency and improve your personal routines.",
-          "image": "/premiumTemplates/second-brain/screenshots/12.webp"
+          "title": "العادات",
+          "description": "تابع عاداتك اليومية والأسبوعية لبناء الاستمرارية وتحسين روتينك الشخصي.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/12.webp"
         },
         "12": {
-          "title": "Journalling",
-          "description": "Reflect on your thoughts, log moods, and archive daily experiences for deeper self-awareness.",
-          "image": "/premiumTemplates/second-brain/screenshots/13.webp"
+          "title": "اليوميات",
+          "description": "دوّن أفكارك، وتتبع حالتك المزاجية، وأرشف تجاربك اليومية لزيادة الوعي الذاتي.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/13.webp"
         },
         "13": {
-          "title": "Archive",
-          "description": "Clean up your workspace by moving completed or inactive items into a dedicated archive for future reference.",
-          "image": "/premiumTemplates/second-brain/screenshots/14.webp"
+          "title": "الأرشيف",
+          "description": "نظم مساحة عملك عن طريق نقل العناصر المكتملة أو غير النشطة إلى الأرشيف للرجوع إليها مستقبلًا.",
+          "image": "/premiumTemplates/second-brain-ar/screenshots/14.webp"
         }
       }
     },
     "pricingSec": {
-      "title": "Choose Your Plan",
-      "description": "Two options. Same mission: take full control of your life.",
+      "title": "اختر خطتك",
+      "description": "خياران. نفس الهدف: السيطرة الكاملة على حياتك.",
       "plans": {
         "basic": {
-          "label": "Basic",
-          "description": "A simple start to organize your life with Second Brain.",
+          "label": "أساسي",
+          "description": "بداية بسيطة لتنظيم حياتك باستخدام العقل الثاني.",
           "price": "$0",
           "features": [
-            "Life time updates",
-            "Goals (Simple)",
-            "Tasks (Simple)",
-            "Notes, Resources, Books (Simple)"
+            "تحديثات مدى الحياة",
+            "الأهداف (مبسطة)",
+            "المهام (مبسطة)",
+            "الملاحظات، الموارد، الكتب (مبسطة)"
           ],
           "missingFeatures": [
-            "Projects",
-            "Habits & Journal",
-            "Profile & Areas",
-            "Ideas Hub",
-            "Review Hub",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts",
-            "Watchlist",
-            "Contacts",
-            "Charts",
+            "المشاريع",
+            "العادات واليوميات",
+            "الملف الشخصي والمجالات",
+            "محرك الأفكار",
+            "مركز المراجعة",
+            "نظرة عامة على لوحة التحكم",
+            "جدولة أسبوعية وشهرية",
+            "متتبع التقدم",
+            "الفلاتر الذكية والأتمتة",
+            "الأرشيف",
+            "قواعد البيانات المترابطة",
+            "العروض والتخطيطات المتقدمة",
+            "قائمة المشاهدة",
+            "جهات الاتصال",
+            "المخططات",
             "FinanceHub"
           ],
-          "button": "Get for Free",
-          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-free"
+          "button": "احصل عليه مجانًا",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/97af0642-649b-4c3f-a3d3-f3f6392bbbdf"
         },
         "advanced": {
-          "label": "Advanced",
-          "description": "From chaos to clarity — organize your entire life in one system.",
+          "label": "متقدم",
+          "description": "من الفوضى إلى الوضوح — نظم حياتك بالكامل في نظام واحد.",
           "price": "$59",
           "oldPrice": "$79",
           "features": [
-            "Life time updates",
-            "Goals (Advanced)",
-            "Projects (Advanced)",
-            "Tasks (Advanced)",
-            "Notes, Resources, Books (Advanced)",
-            "Habits & Journal (Advanced)",
-            "Profile & Areas",
-            "Ideas Hub",
-            "Review Hub",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts",
-            "Watchlist",
-            "Contacts",
-            "Charts"
+            "تحديثات مدى الحياة",
+            "الأهداف (متقدمة)",
+            "المشاريع (متقدمة)",
+            "المهام (متقدمة)",
+            "الملاحظات، الموارد، الكتب (متقدمة)",
+            "العادات واليوميات (متقدمة)",
+            "الملف الشخصي والمجالات",
+            "محرك الأفكار",
+            "مركز المراجعة",
+            "نظرة عامة على لوحة التحكم",
+            "جدولة أسبوعية وشهرية",
+            "متتبع التقدم",
+            "الفلاتر الذكية والأتمتة",
+            "الأرشيف",
+            "قواعد البيانات المترابطة",
+            "العروض والتخطيطات المتقدمة",
+            "قائمة المشاهدة",
+            "جهات الاتصال",
+            "المخططات"
           ],
           "missingFeatures": ["FinanceHub"],
-          "button": "Buy Now",
-          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-basic?checkout=true",
-          "badge": "Best Value"
+          "button": "اشترِ الآن",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/5ea6ec9e-27a4-4317-b329-b69cbd325cd3",
+          "badge": "الأكثر قيمة"
         },
         "more-advanced": {
-          "label": "Ultimate",
-          "description": "Manage your goals, tasks, habits — and your money, too. All in one place.",
+          "label": "النسخة الكاملة",
+          "description": "أدر أهدافك ومهامك وعاداتك — وأموالك أيضًا. الكل في مكان واحد.",
           "price": "$79",
           "oldPrice": "$120",
           "features": [
-            "Life time updates",
-            "Goals (Advanced)",
-            "Projects (Advanced)",
-            "Tasks (Advanced)",
-            "Notes, Resources, Books (Advanced)",
-            "Habits & Journal (Advanced)",
-            "Profile & Areas",
-            "Ideas Hub",
-            "Review Hub",
-            "Dashboard Overview",
-            "Weekly & Monthly Schedule",
-            "Progress Tracker",
-            "Smart Filters & Automations",
-            "Archive",
-            "Linked Databases",
-            "Advanced Views & Layouts",
-            "Watchlist",
-            "Contacts",
-            "Charts",
+            "تحديثات مدى الحياة",
+            "الأهداف (متقدمة)",
+            "المشاريع (متقدمة)",
+            "المهام (متقدمة)",
+            "الملاحظات، الموارد، الكتب (متقدمة)",
+            "العادات واليوميات (متقدمة)",
+            "الملف الشخصي والمجالات",
+            "محرك الأفكار",
+            "مركز المراجعة",
+            "نظرة عامة على لوحة التحكم",
+            "جدولة أسبوعية وشهرية",
+            "متتبع التقدم",
+            "الفلاتر الذكية والأتمتة",
+            "الأرشيف",
+            "قواعد البيانات المترابطة",
+            "العروض والتخطيطات المتقدمة",
+            "قائمة المشاهدة",
+            "جهات الاتصال",
+            "المخططات",
             "FinanceHub"
           ],
-          "button": "Buy with FinanceHub",
-          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-plus?checkout=true",
-          "badge": "All-in-One"
+          "button": "اشترِ مع FinanceHub",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/c69247a2-b73c-4ac8-b16c-f91f11f5498e",
+          "badge": "شامل"
         }
       }
     },
     "faqSec": {
-      "title": "FAQ",
+      "title": "الأسئلة المتكررة",
       "faqs": [
         {
-          "question": "What is Notion?",
-          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between."
+          "question": "ما هو نوشن؟",
+          "answer": "نوشن هو مساحة عمل رقمية متكاملة — بمثابة عقل ثانٍ حيث يمكنك تنظيم ملاحظاتك ومهامك ودوراتك وأهدافك وكل شيء بينهما."
         },
         {
-          "question": "How do I get access to the template?",
-          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the StudyHub template to your Notion workspace."
+          "question": "كيف أحصل على القالب؟",
+          "answer": "بمجرد إتمام عملية الشراء، ستتلقى فورًا بريدًا إلكترونيًا يحتوي على رابط لنسخ قالب العقل الثاني إلى مساحة عملك على نوشن."
         },
         {
-          "question": "Do I need a paid Notion account?",
-          "answer": "No. You can use StudyHub with Notion’s free plan."
+          "question": "هل أحتاج إلى حساب مدفوع على نوشن؟",
+          "answer": "لا، يمكنك استخدام العقل الثاني مع خطة نوشن المجانية."
         },
         {
-          "question": "Will I know how to use it?",
-          "answer": "Yes. It comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step."
+          "question": "هل سأعرف كيف أستخدمه؟",
+          "answer": "نعم، يأتي القالب مع فيديوهات تعليمية مفصلة وإرشادات مكتوبة داخل النظام لتوجيهك خطوة بخطوة."
         },
         {
-          "question": "Is it worth the price?",
-          "answer": "Definitely. You save hours building from scratch and get a professionally designed academic dashboard ready to use immediately."
+          "question": "هل يستحق السعر؟",
+          "answer": "بالتأكيد، ستوفر ساعات من البناء من الصفر وتحصل على لوحة تحكم احترافية جاهزة للاستخدام فورًا."
         },
         {
-          "question": "What is your refund policy?",
-          "answer": "You can request a refund within 14 days of purchase following the Marketplace refund policy."
+          "question": "ما هي سياسة الاسترجاع؟",
+          "answer": "يمكنك طلب استرجاع خلال 14 يومًا من الشراء وفقًا لسياسة الاسترجاع الخاصة بالمتجر."
         },
         {
-          "question": "Still have questions?",
-          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
+          "question": "لدي المزيد من الأسئلة، ماذا أفعل؟",
+          "answer": "راسلني على contact@mostafayasser.com أو عبر تويتر في أي وقت."
         }
       ]
     },
-    "name": "العقل التاني",
+    "name": "العقل الثاني",
+    "description": "",
     "price": "$79",
-    "checkout": "Checkout",
-    "checkoutLink": "https://www.notion.com/templates/studyhub0",
-    "moreDetails": "More Details",
+    "checkout": "احصل على العقل الثاني",
+    "checkoutLink": "",
+    "moreDetails": "المزيد من التفاصيل",
     "image": "/thumbnails/ARThumbnails/20.webp"
   },
   "FinanceHub": {
     "homeSec": {
-      "logoURL": "/premiumTemplates/finance-hub/FinanceHub.webp",
-      "title": "Take control of your money with FinanceHub",
-      "description": "Your complete Notion system for tracking, planning, and optimizing every financial detail in one place.",
-      "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp"
+      "logoURL": "/premiumTemplates/finance-hub-ar/FinanceHub.webp",
+      "title": "تحكّم بأموالك مع مركز المال",
+      "description": "نظام متكامل على نوشن لتتبع، تخطيط، وتحسين كل تفاصيلك المالية في مكان واحد.",
+      "heroImageURL": "/premiumTemplates/finance-hub-ar/heroImage.webp",
+      "dashboardButtonText": "لوحة التحكم"
     },
     "dashboardSec": {
-      "title": "Your Whole Financial Life, One View",
-      "description": "Track every detail — income, expenses, debts, taxes, goals, wishlist, and more — all from a single powerful dashboard.",
-      "dashboardImageURL": "/premiumTemplates/finance-hub/Dashboard.webp"
+      "title": "كل حياتك المالية في مكان واحد",
+      "description": "تتبّع كل التفاصيل — الدخل، المصروفات، الديون، الضرائب، الأهداف، قائمة الرغبات والمزيد — من لوحة تحكم قوية واحدة.",
+      "dashboardImageURL": "/premiumTemplates/finance-hub-ar/Dashboard.webp"
     },
     "essentialsSec": {
-      "title": "Everything You Need — In One Place",
-      "description": "Discover the powerful features that make FinanceHub your complete system for managing money, goals, budgets, and financial clarity.",
+      "title": "كل ما تحتاجه — في مكان واحد",
+      "description": "اكتشف الميزات القوية التي تجعل مركز المال نظامك المتكامل لإدارة الأموال، الأهداف، الميزانيات، والوضوح المالي.",
       "features": {
         "0": {
-          "title": "Track Income & Expenses",
-          "description": "Monitor your income and expenses with clarity and precision, ensuring you always know where your money is going."
+          "title": "تتبع الدخل والمصروفات",
+          "description": "راقب دخلك ومصروفاتك بوضوح ودقة لتعرف دائمًا أين تذهب أموالك."
         },
         "1": {
-          "title": "Budgets",
-          "description": "Set monthly and yearly budgets and monitor your financial balance in real time to stay in control."
+          "title": "الميزانيات",
+          "description": "حدد ميزانيات شهرية وسنوية وراقب توازنك المالي في الوقت الفعلي للبقاء مسيطرًا."
         },
         "2": {
-          "title": "Visual Financial Progress",
-          "description": "Visualize your full financial journey with dynamic charts and dashboards for clear insights."
+          "title": "رؤية مالية مرئية",
+          "description": "تتبع رحلتك المالية بالكامل من خلال المخططات ولوحات التحكم الديناميكية لرؤية واضحة."
         },
         "3": {
-          "title": "Subscriptions & Bills",
-          "description": "Stay on top of subscriptions, bills, and due dates with automated tracking and reminders."
+          "title": "الاشتراكات والفواتير",
+          "description": "ابق على اطلاع باشتراكاتك وفواتيرك وتواريخ استحقاقك مع التتبع التلقائي والتنبيهات."
         },
         "4": {
-          "title": "Financial Goals",
-          "description": "Plan and track your financial goals with clear progress indicators to keep your motivation high."
+          "title": "الأهداف المالية",
+          "description": "خطط وتتبع أهدافك المالية مع مؤشرات تقدم واضحة لتحفيز مستمر."
         },
         "5": {
-          "title": "Centralized Accounts View",
-          "description": "Organize all your financial accounts in one clean, centralized view for easy monitoring."
+          "title": "عرض مركزي للحسابات",
+          "description": "نظم جميع حساباتك المالية في عرض نظيف ومركزي لتتبع سهل."
         },
         "6": {
-          "title": "Spending & Income Insights",
-          "description": "Instantly see what you spend most on and where your income really comes from for better financial decisions."
+          "title": "رؤى الإنفاق والدخل",
+          "description": "شاهد فورًا أين تنفق أكثر ومن أين يأتي دخلك لتحسين قراراتك المالية."
         },
         "7": {
-          "title": "Smart Transaction Logging",
-          "description": "Log all transactions with smart filters by category, date, amount, and more for effortless tracking."
+          "title": "تسجيل المعاملات بذكاء",
+          "description": "سجل جميع المعاملات مع تصفية ذكية حسب الفئة، التاريخ، المبلغ والمزيد بسهولة."
         },
         "8": {
-          "title": "Manage Debts & Liabilities",
-          "description": "Track recurring payments, debts, and liabilities efficiently to stay organized."
+          "title": "إدارة الديون والالتزامات",
+          "description": "تتبع المدفوعات المتكررة والديون والالتزامات بشكل فعال للبقاء منظمًا."
         },
         "9": {
-          "title": "Tax Records",
-          "description": "Stay tax-ready with organized records, due date tracking, and payment history in one place."
+          "title": "سجلات الضرائب",
+          "description": "كن جاهزًا للضرائب مع سجلات منظمة وتتبع مواعيد الاستحقاق وسجل المدفوعات في مكان واحد."
         },
         "10": {
-          "title": "Wishlist & Saving Goals",
-          "description": "Build a wishlist and convert your desired purchases into actionable saving goals."
+          "title": "قائمة الرغبات وأهداف الادخار",
+          "description": "أنشئ قائمة أمنيات وحوّل مشترياتك المرغوبة إلى أهداف ادخار قابلة للتحقيق."
         },
         "11": {
-          "title": "Quick Activity Filters",
-          "description": "Filter and analyze your financial activity instantly (today, this week, this month) with one click."
+          "title": "مرشحات نشاط سريعة",
+          "description": "قم بتصفية وتحليل نشاطك المالي فورًا (اليوم، هذا الأسبوع، هذا الشهر) بنقرة واحدة."
         },
         "12": {
-          "title": "Fully Customizable",
-          "description": "Adapt and customize everything to fit your unique financial lifestyle and evolving goals."
+          "title": "قابل للتخصيص بالكامل",
+          "description": "يمكنك تعديل وتخصيص كل شيء ليتناسب مع أسلوبك المالي الفريد وأهدافك المتغيرة."
         },
         "13": {
-          "title": "Designed for Clarity",
-          "description": "Clean, simple, and growth-focused design to keep your finances organized for the long term."
+          "title": "مصمم للوضوح",
+          "description": "تصميم بسيط ونظيف يركز على النمو لتنظيم أمورك المالية على المدى الطويل."
         }
       }
     },
     "walkthroughSec": {
-      "title": "A Visual Walkthrough of FinanceHub",
-      "description": "Take a closer look at how FinanceHub helps you manage your entire financial life — from tracking income and expenses to planning budgets, goals, and more.",
+      "title": "جولة بصرية في مركز المال",
+      "description": "شاهد كيف يساعدك مركز المال في إدارة حياتك المالية بالكامل — من تتبع الدخل والمصروفات إلى تخطيط الميزانيات والأهداف والمزيد.",
       "rowBlocks": {
         "0": {
-          "title": "Unified Account View",
-          "description": "See everything tied to each account — transactions, expenses, and income — all in one place.",
-          "image": "/premiumTemplates/finance-hub/designs/1.webp",
+          "title": "عرض موحد للحسابات",
+          "description": "شاهد كل ما يخص كل حساب — المعاملات، المصروفات، والدخل — في مكان واحد.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/1.webp",
           "reverse": false
         },
         "1": {
-          "title": "Detailed Financial Records",
-          "description": "Track every transaction, expense, and income — with dates, categories, and full context.",
-          "image": "/premiumTemplates/finance-hub/designs/2.webp",
+          "title": "سجلات مالية مفصلة",
+          "description": "تتبع كل معاملة ومصروف ودخل — مع التواريخ، الفئات، والسياق الكامل.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/2.webp",
           "reverse": true
         },
         "2": {
-          "title": "Stay Ahead of Recurring & Fixed Costs",
-          "description": "Track subscriptions, debts, liabilities, and taxes — with auto-payment tracking triggered by due dates.",
-          "image": "/premiumTemplates/finance-hub/designs/3.webp",
+          "title": "ابق على اطلاع بالتكاليف الثابتة والمتكررة",
+          "description": "تتبع الاشتراكات والديون والالتزامات والضرائب — مع تتبع المدفوعات التلقائي عند تواريخ الاستحقاق.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/3.webp",
           "reverse": false
         },
         "3": {
-          "title": "Smart Budgeting System",
-          "description": "Set income targets and expense budgets by category — and track your financial balance in real time.",
-          "image": "/premiumTemplates/finance-hub/designs/4.webp",
+          "title": "نظام ميزانية ذكي",
+          "description": "حدد أهداف الدخل وميزانيات المصروفات حسب الفئة — وتتبع توازنك المالي في الوقت الفعلي.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/4.webp",
           "reverse": true
         },
         "4": {
-          "title": "Track All Your Financial Goals",
-          "description": "Whether it's saving for something on your wishlist or a bigger financial milestone — plan it, track it, achieve it.",
-          "image": "/premiumTemplates/finance-hub/designs/5.webp",
+          "title": "تتبع جميع أهدافك المالية",
+          "description": "سواء كنت تدخر لشيء في قائمة أمنياتك أو لهدف مالي أكبر — خطط له، تتبعه، وحققه.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/5.webp",
           "reverse": false
         }
       },
       "columnBlocks": {
         "firstOne": {
-          "title": "Visual Insights That Matter",
-          "description": "Get detailed charts for monthly & yearly income and expenses — and spot trends by category in seconds.",
-          "image": "/premiumTemplates/finance-hub/designs/6.webp"
+          "title": "رؤى مرئية هامة",
+          "description": "احصل على مخططات مفصلة للدخل والمصروفات شهريًا وسنويًا — واكتشف الاتجاهات بسرعة.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/6.webp"
         },
         "secondOne": {
-          "title": "Complete Financial Snapshot",
-          "description": "Track your total financial progress monthly, quarterly, and yearly — all in one smart dashboard with deep insights.",
-          "image": "/premiumTemplates/finance-hub/designs/7.webp"
+          "title": "ملخص مالي متكامل",
+          "description": "تتبع تقدمك المالي شهريًا وربع سنوي وسنوي — عبر لوحة تحكم ذكية بعمق تحليلي شامل.",
+          "image": "/premiumTemplates/finance-hub-ar/designs/7.webp"
         }
       }
     },
     "databasesSec": {
-      "title": "Powerful Foundations for Smarter Finances",
-      "description": "FinanceHub runs on a smart system of linked databases — giving you full visibility and control over every financial detail.",
+      "title": "أسس قوية لإدارة أموال أذكى",
+      "description": "يعمل مركز المال بنظام ذكي من قواعد البيانات المترابطة — ليمنحك رؤية كاملة وتحكمًا في كل تفاصيلك المالية.",
       "features": {
         "0": {
-          "title": "Profile",
-          "description": "View a full summary of your financial progress, goals, and account health.",
-          "image": "/premiumTemplates/finance-hub/screenshots/1.webp"
+          "title": "الملف الشخصي",
+          "description": "شاهد ملخصًا كاملًا لتقدمك المالي، أهدافك، وصحة حساباتك.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/1.webp"
         },
         "1": {
-          "title": "Accounts",
-          "description": "Track all your financial accounts — banks, wallets, cards — in one central place.",
-          "image": "/premiumTemplates/finance-hub/screenshots/2.webp"
+          "title": "الحسابات",
+          "description": "تتبع جميع حساباتك المالية — البنوك، المحافظ، البطاقات — في مكان مركزي واحد.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/2.webp"
         },
         "2": {
-          "title": "Transactions",
-          "description": "Log every income and expense to keep your finances crystal clear.",
-          "image": "/premiumTemplates/finance-hub/screenshots/3.webp"
+          "title": "التحويلات",
+          "description": "سجل جميع دخلك ومصروفاتك لتكون أمورك المالية واضحة دائمًا.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/3.webp"
         },
         "3": {
-          "title": "Expenses",
-          "description": "Monitor your spending with detailed records and smart tagging.",
-          "image": "/premiumTemplates/finance-hub/screenshots/4.webp"
+          "title": "المصروف",
+          "description": "راقب مصروفاتك بتفصيل مع إمكانية التصنيف الذكي.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/4.webp"
         },
         "4": {
-          "title": "Expense Categories",
-          "description": "Organize your spending into clear categories for better analysis.",
-          "image": "/premiumTemplates/finance-hub/screenshots/5.webp"
+          "title": "فئات المصروفات",
+          "description": "نظم مصروفاتك إلى فئات واضحة لتحليل أفضل.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/5.webp"
         },
         "5": {
-          "title": "Income",
-          "description": "Record all your income sources and track monthly totals.",
-          "image": "/premiumTemplates/finance-hub/screenshots/6.webp"
+          "title": "الدخل",
+          "description": "سجل جميع مصادر دخلك وتتبع إجمالياتك الشهرية.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/6.webp"
         },
         "6": {
-          "title": "Income Categories",
-          "description": "Group your income by type — salary, freelance, passive income, etc.",
-          "image": "/premiumTemplates/finance-hub/screenshots/7.webp"
+          "title": "مصادر الدخل",
+          "description": "نظم دخلك حسب النوع — راتب، عمل حر، دخل سلبي، وغيرها.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/7.webp"
         },
         "7": {
-          "title": "Subscriptions",
-          "description": "Keep tabs on all your recurring payments — never miss a renewal.",
-          "image": "/premiumTemplates/finance-hub/screenshots/8.webp"
+          "title": "الاشتراكات",
+          "description": "تابع جميع مدفوعاتك المتكررة — ولا تفوت أي تجديد.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/8.webp"
         },
         "8": {
-          "title": "Liabilities",
-          "description": "List your ongoing financial obligations like rent, bills, or installments.",
-          "image": "/premiumTemplates/finance-hub/screenshots/9.webp"
+          "title": "الالتزامات",
+          "description": "سجل التزاماتك المالية المستمرة مثل الإيجار، الفواتير، أو الأقساط.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/9.webp"
         },
         "9": {
-          "title": "Debts",
-          "description": "Track personal debts and repayments over time.",
-          "image": "/premiumTemplates/finance-hub/screenshots/10.webp"
+          "title": "الديون",
+          "description": "تتبع ديونك الشخصية وسدادها مع مرور الوقت.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/10.webp"
         },
         "10": {
-          "title": "Taxes",
-          "description": "Organize your tax records, due dates, and payment history.",
-          "image": "/premiumTemplates/finance-hub/screenshots/11.webp"
+          "title": "الضرائب",
+          "description": "نظم سجلات الضرائب، تواريخ الاستحقاق، وسجل المدفوعات الخاص بك.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/11.webp"
         },
         "11": {
-          "title": "Budget",
-          "description": "Set monthly or yearly budgets and monitor your spending in real time.",
-          "image": "/premiumTemplates/finance-hub/screenshots/12.webp"
+          "title": "الميزانية",
+          "description": "حدد ميزانيات شهرية أو سنوية وتتبع مصروفاتك في الوقت الفعلي.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/12.webp"
         },
         "12": {
-          "title": "Wishlist",
-          "description": "Save the things you want to buy — and track when you can afford them.",
-          "image": "/premiumTemplates/finance-hub/screenshots/13.webp"
+          "title": "قائمة الرغبات",
+          "description": "احفظ الأشياء التي تريد شرائها — وتتبع متى يمكنك تحقيقها.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/13.webp"
         },
         "13": {
-          "title": "Goals",
-          "description": "Set clear financial goals and track your progress toward achieving them.",
-          "image": "/premiumTemplates/finance-hub/screenshots/14.webp"
+          "title": "الأهداف",
+          "description": "حدد أهدافًا مالية واضحة وتتبع تقدمك نحو تحقيقها.",
+          "image": "/premiumTemplates/finance-hub-ar/screenshots/14.webp"
         }
       }
     },
     "pricingSec": {
-      "title": "Pick Your FinanceHub",
-      "description": "Whether you're starting simple or going all-in — both plans help you stay financially organized and in control.",
+      "title": "اختر خطتك في مركز المال",
+      "description": "سواء كنت تبدأ ببساطة أو تريد السيطرة الكاملة — كلا الخُطط تساعدك على تنظيم أموالك والتحكم بها.",
       "plans": {
         "basic": {
-          "label": "Basic",
-          "description": "A simple start to organize your financial life with FinanceHub.",
+          "label": "أساسي",
+          "description": "بداية بسيطة لتنظيم حياتك المالية باستخدام مركز المال.",
           "price": "$0",
-          "features": ["Life time updates", "Expense", "Income"],
+          "features": ["تحديثات مدى الحياة", "المصروفات", "الدخل"],
           "missingFeatures": [
-            "Profile",
-            "Accounts",
-            "Transactions",
-            "Expense Categories",
-            "Income Categories",
-            "Subscriptions",
-            "Liabilities",
-            "Debts",
-            "Taxes",
-            "Budget",
-            "Wishlist",
-            "Goals",
-            "Dashboard Overview",
-            "Financial Tracker",
-            "Smart Filters & Automations",
-            "Linked Databases",
-            "Advanced Views & Layouts",
-            "Charts"
+            "الملف الشخصي",
+            "الحسابات",
+            "المعاملات",
+            "فئات المصروفات",
+            "فئات الدخل",
+            "الاشتراكات",
+            "الالتزامات",
+            "الديون",
+            "الضرائب",
+            "الميزانية",
+            "قائمة الرغبات",
+            "الأهداف",
+            "نظرة عامة على لوحة التحكم",
+            "متتبع مالي",
+            "مرشحات ذكية وأتمتة",
+            "قواعد بيانات مترابطة",
+            "عروض وتخطيطات متقدمة",
+            "مخططات"
           ],
-          "button": "Get for Free",
-          "buttonLink": "https://www.notion.so/marketplace/templates/financehub-free?checkout=true"
+          "button": "احصل عليه مجانًا",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/b76eff35-0b92-49a6-b885-47a44a89cab3"
         },
         "more-advanced": {
-          "label": "Advanced",
-          "description": "Gain full control over your finances with powerful tools for tracking, planning, and growth.",
+          "label": "متقدم",
+          "description": "تحكم كامل في أموالك باستخدام أدوات قوية للتتبع والتخطيط والنمو.",
           "price": "$59",
           "oldPrice": "$80",
           "features": [
-            "Life time updates",
-            "Profile",
-            "Accounts",
-            "Transactions",
-            "Expense",
-            "Expense Categories",
-            "Income",
-            "Income Categories",
-            "Subscriptions",
-            "Liabilities",
-            "Debts",
-            "Taxes",
-            "Budget",
-            "Wishlist",
-            "Goals",
-            "Dashboard Overview",
-            "Financial Tracker",
-            "Smart Filters & Automations",
-            "Linked Databases",
-            "Advanced Views & Layouts",
-            "Charts"
+            "تحديثات مدى الحياة",
+            "الملف الشخصي",
+            "الحسابات",
+            "المعاملات",
+            "المصروفات",
+            "فئات المصروفات",
+            "الدخل",
+            "فئات الدخل",
+            "الاشتراكات",
+            "الالتزامات",
+            "الديون",
+            "الضرائب",
+            "الميزانية",
+            "قائمة الرغبات",
+            "الأهداف",
+            "نظرة عامة على لوحة التحكم",
+            "متتبع مالي",
+            "مرشحات ذكية وأتمتة",
+            "قواعد بيانات مترابطة",
+            "عروض وتخطيطات متقدمة",
+            "مخططات"
           ],
-          "button": "Buy Now",
-          "buttonLink": "https://www.notion.so/marketplace/templates/financehub-premium?checkout=true",
-          "badge": "Best Value"
+          "button": "اشتري الآن",
+          "buttonLink": "https://mostafayasser.lemonsqueezy.com/buy/26c07df3-b759-4d0f-a019-5d5b30909928",
+          "badge": "الأفضل قيمة"
         }
       }
     },
     "faqSec": {
-      "title": "FAQs",
+      "title": "الأسئلة الشائعة",
       "faqs": [
         {
-          "question": "What is Notion?",
-          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, courses, goals, and everything in between."
+          "question": "ما هو نوشن؟",
+          "answer": "نوشن هو مساحة عمل رقمية متكاملة — عقل ثاني يمكنك من خلاله تنظيم الملاحظات، المهام، الدورات، الأهداف، وكل شيء آخر."
         },
         {
-          "question": "How do I get access to the template?",
-          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the FinanceHub template to your Notion workspace."
+          "question": "كيف أحصل على القالب؟",
+          "answer": "بعد إتمام الشراء، ستصلك رسالة بريد إلكتروني فورًا تحتوي على رابط لنسخ قالب مركز المال إلى مساحة العمل الخاصة بك على نوشن."
         },
         {
-          "question": "Do I need a paid Notion account?",
-          "answer": "No. You can use FinanceHub with Notion's free plan."
+          "question": "هل أحتاج إلى حساب مدفوع على نوشن؟",
+          "answer": "لا، يمكنك استخدام مركز المال مع خطة نوشن المجانية."
         },
         {
-          "question": "Will I know how to use it?",
-          "answer": "Yes. It comes with detailed video tutorials and in-system written guidance to walk you through everything step-by-step."
+          "question": "هل سأعرف كيفية استخدامه؟",
+          "answer": "نعم، يأتي مع شروحات فيديو تفصيلية وإرشادات مكتوبة داخل النظام لتسهيل التعلم خطوة بخطوة."
         },
         {
-          "question": "Is it worth the price?",
-          "answer": "Definitely. You save hours building from scratch and get a professionally designed academic dashboard ready to use immediately."
+          "question": "هل يستحق السعر؟",
+          "answer": "بالتأكيد، ستوفر ساعات من بناء النظام بنفسك وتحصل على لوحة تحكم مالية مصممة باحتراف جاهزة للاستخدام فورًا."
         },
         {
-          "question": "What is your refund policy?",
-          "answer": "You can request a refund within 14 days of purchase following the Marketplace refund policy."
+          "question": "ما هي سياسة الاسترجاع؟",
+          "answer": "يمكنك طلب استرجاع خلال 14 يومًا من الشراء وفقًا لسياسة الاسترجاع الخاصة بالمتجر."
         },
         {
-          "question": "Still have questions?",
-          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
+          "question": "هل لديك أسئلة أخرى؟",
+          "answer": "راسلني عبر البريد contact@mostafayasser.com أو عبر تويتر في أي وقت."
         }
       ]
     },
     "name": "مركز المال",
+    "description": "",
     "price": "$59",
-    "checkout": "Checkout",
-    "checkoutLink": "https://www.notion.com/templates/studyhub0",
-    "moreDetails": "More Details",
+    "checkout": "احصل على مركز المال",
+    "checkoutLink": "",
+    "moreDetails": "المزيد من التفاصيل",
     "image": "/thumbnails/ARThumbnails/19.webp"
   },
   "StudyHub - Minimal Version": {

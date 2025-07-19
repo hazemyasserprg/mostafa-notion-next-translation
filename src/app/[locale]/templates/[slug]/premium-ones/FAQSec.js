@@ -1,8 +1,10 @@
 import { ChevronDown, CornerDownRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function FAQ({ template }) {
   const t = useTranslations("TemplateSlug");
+  const locale = useLocale();
+  const isRTL = locale === "ar";
 
   const faqs = t.raw(`${template.name}.faqSec.faqs`);
 
@@ -28,36 +30,42 @@ export default function FAQ({ template }) {
             "
           >
             <summary
-              className="
+              className={`
                 flex items-center justify-between
                 cursor-pointer list-none
-              "
+              `}
             >
               <h3
-                className="
+                className={`
                   text-sm sm:text-base font-medium
                   text-neutral-900 dark:text-neutral-100
-                "
+                  ${isRTL ? "text-right" : "text-left"}
+                `}
               >
                 {faq.question}
               </h3>
               <ChevronDown
-                className="
+                className={`
                   w-4 h-4 sm:w-5 sm:h-5 text-main
                   group-open:rotate-180
                   transform transition-transform duration-300
-                "
+                `}
               />
             </summary>
             <p
-              className="
+              className={`
                 mt-2 flex items-start gap-2
                 text-sm sm:text-base
                 text-neutral-700 dark:text-neutral-300
-                text-left
-              "
+                ${isRTL ? "text-right" : "text-left"}
+              `}
             >
-              <CornerDownRight className="w-4 h-4 mt-0.5 text-main shrink-0" />
+              <CornerDownRight
+                className={`
+    w-4 h-4 mt-0.5 text-main shrink-0
+    ${isRTL ? "scale-x-[-1]" : ""}
+  `}
+              />
               <span>{faq.answer}</span>
             </p>
           </details>

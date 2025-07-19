@@ -105,17 +105,17 @@ function Home({ template }) {
           group-hover:text-white
         "
           >
-            Get {t(`${template.name}.name`)}
+            {t(`${template.name}.checkout`)}
           </span>
         </a>
 
         <GoToTemplatesPageButton
-          text="Dashboard"
+          text={t(`${template.name}.homeSec.dashboardButtonText`)}
           className="
-        px-6 py-3 
-        text-base sm:text-lg 
-        font-semibold
-      "
+          px-6 py-3 
+          text-base sm:text-lg 
+          font-semibold
+          "
           initial=""
           transition=""
           href="#dashboard"

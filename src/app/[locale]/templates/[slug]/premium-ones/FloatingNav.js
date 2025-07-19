@@ -1,17 +1,20 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
-const sections = [
-  { id: "home", label: "Home" },
-  { id: "dashboard", label: "Dashboard" },
-  { id: "essentials", label: "Essentials" },
-  { id: "walkthrough", label: "Walkthrough" },
-  { id: "databases", label: "Databases" },
-  { id: "pricing", label: "Pricing" },
-];
-
 export default function FloatingNav() {
+  const t = useTranslations("FloatingNav");
+
+  const sections = [
+    { id: "home", label: t("home") },
+    { id: "dashboard", label: t("dashboard") },
+    { id: "essentials", label: t("essentials") },
+    { id: "walkthrough", label: t("walkthrough") },
+    { id: "databases", label: t("databases") },
+    { id: "pricing", label: t("pricing") },
+  ];
+
   const [active, setActive] = useState("home");
 
   useEffect(() => {

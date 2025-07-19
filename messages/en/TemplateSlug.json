@@ -148,7 +148,8 @@
       "logoURL": "/premiumTemplates/study-hub/StudyHub.webp",
       "title": "Master your student life with StudyHub",
       "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
-      "heroImageURL": "/premiumTemplates/study-hub/heroImage.webp"
+      "heroImageURL": "/premiumTemplates/study-hub/heroImage.webp",
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "Your Entire Student Life in One View",
@@ -430,8 +431,9 @@
       ]
     },
     "name": "StudyHub",
+    "description": "",
     "price": "$59",
-    "checkout": "Checkout",
+    "checkout": "Get StudyHub",
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/17.webp"
@@ -459,7 +461,8 @@
       "logoURL": "/premiumTemplates/second-brain/SecondBrain.webp",
       "title": "Master your life with Second Brain",
       "description": "The all-in-one Notion system to organize your tasks, goals, habits, ideas, and finances — all in one connected workspace",
-      "heroImageURL": "/premiumTemplates/second-brain/heroImage.webp"
+      "heroImageURL": "/premiumTemplates/second-brain/heroImage.webp",
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "Your Entire Life in One View",
@@ -791,8 +794,9 @@
       ]
     },
     "name": "Second Brain",
+    "description": "",
     "price": "$79",
-    "checkout": "Checkout",
+    "checkout": "Get Second Brain",
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/20.webp"
@@ -802,7 +806,8 @@
       "logoURL": "/premiumTemplates/finance-hub/FinanceHub.webp",
       "title": "Take control of your money with FinanceHub",
       "description": "Your complete Notion system for tracking, planning, and optimizing every financial detail in one place.",
-      "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp"
+      "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp",
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "Your Whole Financial Life, One View",
@@ -1096,7 +1101,7 @@
     },
     "name": "FinanceHub",
     "price": "$59",
-    "checkout": "Checkout",
+    "checkout": "Get FinanceHub",
     "checkoutLink": "https://www.notion.com/templates/studyhub0",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/19.webp"

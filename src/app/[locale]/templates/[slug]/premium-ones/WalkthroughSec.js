@@ -1,10 +1,12 @@
 import Image from "next/image";
 import AnimatedInView from "../../../_components/AnimatedInView";
 import FadeInFromLeft from "../../../_components/FadeInFromLeft";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 function Walkthrough({ template }) {
   const t = useTranslations("TemplateSlug");
+  const locale = useLocale();
+  const isRTL = locale === "ar";
 
   const rowBlocks = Object.keys(
     t.raw(`${template.name}.walkthroughSec.rowBlocks`)
@@ -39,7 +41,11 @@ function Walkthrough({ template }) {
           `}
         >
           {/* === Text === */}
-          <div className="flex-[1.2] text-center lg:text-left">
+          <div
+            className={`flex-[1.2] text-center ${
+              isRTL ? "lg:text-right" : "lg:text-left"
+            }`}
+          >
             <FadeInFromLeft>
               <h3
                 className="
@@ -89,7 +95,9 @@ function Walkthrough({ template }) {
         <div className="flex-1 flex flex-col items-center rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md border border-neutral-200 dark:border-neutral-800 p-6 sm:p-10 lg:p-12 shadow-2xl w-full h-full gap-4">
           <div className="text-center">
             <FadeInFromLeft>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight">
+              <h3
+                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight`}
+              >
                 {t(
                   `${template.name}.walkthroughSec.columnBlocks.firstOne.title`
                 )}
@@ -121,7 +129,9 @@ function Walkthrough({ template }) {
         <div className="flex-1 flex flex-col items-center rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md border border-neutral-200 dark:border-neutral-800 p-6 sm:p-10 lg:p-12 shadow-2xl w-full h-full gap-4">
           <div className="text-center">
             <FadeInFromLeft>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight">
+              <h3
+                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight`}
+              >
                 {t(
                   `${template.name}.walkthroughSec.columnBlocks.secondOne.title`
                 )}
