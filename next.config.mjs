@@ -11,6 +11,21 @@ const nextConfig = {
         destination: "/en/",
         permanent: true,
       },
+      {
+        source: "/privacy-policy",
+        destination: "/en/privacy-policy",
+        permanent: true,
+      },
+      {
+        source: "/terms-of-service",
+        destination: "/en/terms-of-service",
+        permanent: true,
+      },
+      {
+        source: "/templates",
+        destination: "/en/templates",
+        permanent: true,
+      },
     ];
   },
 };

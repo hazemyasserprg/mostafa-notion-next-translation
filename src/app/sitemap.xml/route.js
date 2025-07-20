@@ -16,6 +16,10 @@ export async function GET() {
     "/ar/contact",
     "/en/about",
     "/ar/about",
+    "/en/privacy-policy",
+    "/ar/privacy-policy",
+    "/en/terms-of-service",
+    "/en/terms-of-service",
   ];
 
   // Add your dynamic routes here manually for now
