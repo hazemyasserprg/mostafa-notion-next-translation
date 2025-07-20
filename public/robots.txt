@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.mostafayasser.com
-
-# Sitemaps
-Sitemap: https://www.mostafayasser.com/sitemap.xml
