@@ -98,6 +98,10 @@ export default async function LocaleLayout({ children, params }) {
       className={locale === "ar" ? tajawal.className : oswald.className}
     >
       <head>
+        <meta
+          name="google-site-verification"
+          content="SKiO5RTFyP9KeXKJAJ14FVn-qZUFpXut8_41TWNG_9o"
+        />
         {/* Google Analytics Script */}
         <Script
           async
