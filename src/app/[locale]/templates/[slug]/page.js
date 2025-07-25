@@ -87,6 +87,9 @@ export async function generateMetadata({ params }) {
     icons: {
       icon: faviconPath,
     },
+    alternates: {
+      canonical: url,
+    },
   };
 }
 
