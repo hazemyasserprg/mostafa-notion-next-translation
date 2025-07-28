@@ -3,7 +3,7 @@
 import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 import ReactMarkdown from "react-markdown";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function BlogDetailsClient({ blog }) {
   const t = useTranslations("BlogSlug");
@@ -53,9 +53,25 @@ export default function BlogDetailsClient({ blog }) {
           </div>
 
           <div className="md:col-span-3">
-            <h1 className="sm:text-4xl text-3xl font-bold text-center mb-8">
+            <h1 className="sm:text-4xl text-3xl font-bold text-center mb-2">
               {t(`${blog.title}.title`)}
             </h1>
+
+            <p className="text-gray-400 text-center text-sm mb-6">
+              {t(`${blog.title}.blogInfo.blogBy`)}
+              <span className="text-white font-medium">
+                {t(`${blog.title}.blogInfo.by`)}
+              </span>
+              {t(`${blog.title}.blogInfo.dateIn`)}
+              <span className="text-white font-medium">
+                {t(`${blog.title}.blogInfo.date`)}
+              </span>
+              {t(`${blog.title}.blogInfo.typeOf`)}
+              <span className="text-white font-medium">
+                {t(`${blog.title}.blogInfo.type`)}
+              </span>
+            </p>
+
             <Image
               src={t(`${blog.title}.image`)}
               alt={t(`${blog.title}.title`)}

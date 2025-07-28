@@ -5,6 +5,14 @@
     "shortCut": "What is Notion?",
     "image": "/blogs/ENBlogs/1.webp",
     "toc": "Table of Content",
+    "blogInfo": {
+      "blogBy": "Blog by: ",
+      "by": "Malak Yasser",
+      "dateIn": ". Date: ",
+      "date": "June 15, 2025",
+      "typeOf": ". Type: ",
+      "type": "Productivity"
+    },
     "topics": {
       "intro": {
         "heading": "What is Notion?",
@@ -74,6 +82,14 @@
     "shortCut": "Notion External Tools",
     "image": "/blogs/ENBlogs/2.webp",
     "toc": "Table of Content",
+    "blogInfo": {
+      "blogBy": "Blog by: ",
+      "by": "Malak Yasser",
+      "dateIn": ". Date: ",
+      "date": "July 1, 2025",
+      "typeOf": ". Type: ",
+      "type": "Productivity"
+    },
     "topics": {
       "intro": {
         "heading": "Introduction",
@@ -118,6 +134,14 @@
     "shortCut": "Best Notion Widgets",
     "image": "/blogs/ENBlogs/3.webp",
     "toc": "Table of Content",
+    "blogInfo": {
+      "blogBy": "Blog by: ",
+      "by": "Malak Yasser",
+      "dateIn": ". Date: ",
+      "date": "July 20, 2025",
+      "typeOf": ". Type: ",
+      "type": "Productivity"
+    },
     "topics": {
       "intro": {
         "heading": "Why Use Widgets in Notion?",

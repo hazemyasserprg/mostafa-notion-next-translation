@@ -5,6 +5,14 @@
     "shortCut": "ما هى نوشن؟",
     "image": "/blogs/ARBlogs/1.webp",
     "toc": "قاعدة المحتوى",
+    "blogInfo": {
+      "blogBy": "بقلم: ",
+      "by": "ملك ياسر",
+      "dateIn": "، التاريخ: ",
+      "date": "١٥ يونيو ٢٠٢٥",
+      "typeOf": "، النوع: ",
+      "type": "الإنتاجية"
+    },
     "topics": {
       "intro": {
         "heading": "ما هو نوشن؟",
@@ -74,6 +82,14 @@
     "shortCut": "أدوات نوشن الخارجية",
     "image": "/blogs/ARBlogs/2.webp",
     "toc": "قاعدة المحتوى",
+    "blogInfo": {
+      "blogBy": "بقلم: ",
+      "by": "ملك ياسر",
+      "dateIn": "، التاريخ: ",
+      "date": "١ يوليو ٢٠٢٥",
+      "typeOf": "، النوع: ",
+      "type": "الإنتاجية"
+    },
     "topics": {
       "intro": {
         "heading": "مقدمة",
@@ -118,6 +134,14 @@
     "shortCut": "أفضل ويدجت لـ نوش",
     "image": "/blogs/ARBlogs/3.webp",
     "toc": "جدول المحتويات",
+    "blogInfo": {
+      "blogBy": "بقلم: ",
+      "by": "ملك ياسر",
+      "dateIn": "، التاريخ: ",
+      "date": "٢٠ يوليو ٢٠٢٥",
+      "typeOf": "، النوع: ",
+      "type": "الإنتاجية"
+    },
     "topics": {
       "intro": {
         "heading": "لماذا تستخدم الويدجت في Notion؟",
