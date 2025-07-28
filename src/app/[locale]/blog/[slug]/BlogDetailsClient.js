@@ -3,7 +3,7 @@
 import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 import ReactMarkdown from "react-markdown";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function BlogDetailsClient({ blog }) {
   const t = useTranslations("BlogSlug");
