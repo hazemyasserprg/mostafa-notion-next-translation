@@ -37,7 +37,7 @@ function TemplateList({ filter }) {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="mt-6 sm:mt-8 flex justify-center px-4 sm:px-6"
+        className="mt-6 sm:mt-8 sm:flex justify-center px-4 sm:px-6 hidden"
       >
         <motion.div
           animate={{

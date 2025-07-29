@@ -1,11 +1,18 @@
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
-// import MoreDetails from "@/src/app/[locale]/_components/MoreDetails";
 import AnimatedInView from "@/src/app/[locale]/_components/AnimatedInView";
 import PremiumPage from "./PremiumPage";
 import CheckoutButton from "../../_components/CheckoutButton";
-// import Link from "next/link";
+import TemplateCard from "../../_components/TemplateCard";
+import Link from "next/link";
+import templatesData from "@/src/app/[locale]/_data/templatesData";
+import GoToTemplatesPageButton from "../../_components/GoToTemplatesPageButton";
+
+function getRandomItems(arr, count) {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
 
 export default function TemplateDetailsClient({ template }) {
   const t = useTranslations("TemplateSlug");
@@ -18,6 +25,16 @@ export default function TemplateDetailsClient({ template }) {
   ) {
     return <PremiumPage template={template} />;
   }
+
+  // 🔍 Step 1: Filter related templates by category or tags
+  const relatedTemplates = templatesData.filter((t) => {
+    const sameCategory = t.category === template.category;
+    const notSameTemplate = t.slug !== template.slug;
+    return sameCategory && notSameTemplate;
+  });
+
+  // 🔀 Step 2: Pick 3 random related templates
+  const recommendations = getRandomItems(relatedTemplates, 3);
 
   return (
     <BlurText>
@@ -65,6 +82,34 @@ export default function TemplateDetailsClient({ template }) {
           </div>
         </div>
       </AnimatedInView>
+
+      {/* 🔽 Recommendations Section */}
+      {recommendations.length > 0 && (
+        <div className="px-6 md:px-12 lg:px-24 mt-20 text-center">
+          <h2
+            className={`text-2xl md:text-3xl font-bold mb-8 text-main drop-shadow-[0_0_5px_rgba(215,177,128,0.4)] ${
+              locale === "ar" ? "text-right" : "text-left"
+            }`}
+          >
+            {t("recommendedTitle") || "You might also like"}
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {recommendations.map((rec, i) => (
+              <TemplateCard key={rec.id} template={rec} index={i} />
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href={`/${locale}/templates`}
+              className="inline-block bg-transparent text-[#D7B180] border border-[#D7B180] font-semibold py-2 px-6 rounded-xl hover:bg-[#D7B180] hover:text-white transition duration-300"
+            >
+              {t("showMore") || "Show more templates"}
+            </Link>
+          </div>
+        </div>
+      )}
     </BlurText>
   );
 }
