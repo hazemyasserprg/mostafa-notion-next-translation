@@ -7,7 +7,6 @@ import CheckoutButton from "../../_components/CheckoutButton";
 import TemplateCard from "../../_components/TemplateCard";
 import Link from "next/link";
 import templatesData from "@/src/app/[locale]/_data/templatesData";
-import GoToTemplatesPageButton from "../../_components/GoToTemplatesPageButton";
 
 function getRandomItems(arr, count) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());

@@ -9,12 +9,11 @@ import PremiumPage from "./PremiumPage";
 export async function generateMetadata({ params }) {
   const { locale, slug } = params;
   const isArabic = locale === "ar";
-
-  const template = templatesData.find((b) => b.slug === slug);
-  if (!template) return {};
-
   const messages = isArabic ? arMessages : enMessages;
   const t = createTranslator({ locale, messages });
+  const template = templatesData.find((b) => b.slug === slug);
+
+  if (!template) return {};
 
   const title = isArabic
     ? `${t(`${template.name}.name`)} | قالب نوشن من مصطفى ياسر`

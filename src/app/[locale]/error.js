@@ -19,10 +19,10 @@ export async function generateMetadata({ params }) {
       title,
       description,
       type: "website",
-      url: "https://mostafayasser.com", // Adjust the URL if needed
+      url: "https://mostafayasser.com",
       images: [
         {
-          url: "/mostafa/mostafa.webp",
+          url: "/metaData/error.webp",
           width: 800,
           height: 600,
           alt: "Mostafa Yasser",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: ["/mostafa/mostafa.webp"],
+      images: ["/metaData/error.webp"],
     },
   };
 }

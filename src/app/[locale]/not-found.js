@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
       url: "https://mostafayasser.com",
       images: [
         {
-          url: "@/src/public/mostafa/mostafa.webp",
+          url: "/mostafa/mostafa.webp",
           width: 800,
           height: 600,
           alt: "Mostafa Yasser",
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: ["@/src/public/mostafa/mostafa.webp"],
+      images: ["/mostafa/mostafa.webp"],
     },
   };
 }
