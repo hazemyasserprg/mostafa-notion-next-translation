@@ -37,7 +37,7 @@ function TermsOfService() {
           <p className="text-sm text-gray-400">{t("effectiveDate")}</p>
         </div>
 
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((section) => (
+        {[1, 2, 3, 4, 5, 6, 7].map((section) => (
           <section key={section}>
             <h2 className="text-xl font-semibold text-main mb-2">
               {t(`section${section}.title`)}
@@ -68,14 +68,12 @@ function TermsOfService() {
             {t("contact.title")}
           </h2>
           <p className="text-gray-300">
-            {t("contact.text")}{" "}
             <a
               href="mailto:contactmostafayasser@gmail.com"
               className="text-main underline hover:text-white transition-colors"
             >
               {t("contact.text")}
             </a>
-            .
           </p>
         </section>
       </div>
