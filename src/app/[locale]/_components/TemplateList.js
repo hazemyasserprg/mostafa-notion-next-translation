@@ -16,13 +16,11 @@ function TemplateList({ filter }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  // Filter by category
   const filteredTemplates =
     filter === "all"
       ? templatesData
       : templatesData.filter((template) => template.category === filter);
 
-  // Setup Fuse.js with language-aware keys
   const fuse = new Fuse(filteredTemplates, {
     keys: locale === "ar" ? ["name_ar", "tags_ar"] : ["name", "tags"],
     threshold: 0.4,
@@ -39,14 +37,14 @@ function TemplateList({ filter }) {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="mt-4 flex justify-center"
+        className="mt-6 sm:mt-8 flex justify-center px-4 sm:px-6"
       >
         <motion.div
           animate={{
-            width: isFocused ? 320 : 200,
+            width: isFocused ? 320 : 240,
           }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="relative"
+          className="relative w-full max-w-md"
         >
           <input
             type="text"
@@ -69,7 +67,7 @@ function TemplateList({ filter }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-10"
         >
           {searchedTemplates.length > 0 ? (
             searchedTemplates.map((template, index) => (
@@ -80,8 +78,8 @@ function TemplateList({ filter }) {
               />
             ))
           ) : (
-            <p className="col-span-full text-center text-gray-500 mt-8">
-              No templates found.
+            <p className="col-span-full text-center text-gray-500 mt-10 text-sm">
+              {t("noTemplates")}
             </p>
           )}
         </motion.div>

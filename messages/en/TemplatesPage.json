@@ -1,5 +1,6 @@
 {
   "title": "My Latest Creations",
   "subtitle": "Stay inspired and explore the newest projects and ideas I've been working on.",
-  "placeholder": "Search templates..."
+  "placeholder": "Search templates...",
+  "noTemplates": "No templates found."
 }
