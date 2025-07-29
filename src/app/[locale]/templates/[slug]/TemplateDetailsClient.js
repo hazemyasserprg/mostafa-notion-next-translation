@@ -93,11 +93,13 @@ export default function TemplateDetailsClient({ template }) {
             {t("recommendedTitle") || "You might also like"}
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {recommendations.map((rec, i) => (
-              <TemplateCard key={rec.id} template={rec} index={i} />
-            ))}
-          </div>
+          <AnimatedInView>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {recommendations.map((rec, i) => (
+                <TemplateCard key={rec.id} template={rec} index={i} />
+              ))}
+            </div>
+          </AnimatedInView>
 
           <div className="text-center mt-10">
             <Link
