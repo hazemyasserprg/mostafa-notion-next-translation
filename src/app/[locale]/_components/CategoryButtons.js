@@ -3,7 +3,7 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-const categories = ["all", "productivity", "education", "islam"];
+const categories = ["all", "productivity", "education", "islam", "finance"];
 
 export default function CategoryButtons() {
   const searchParams = useSearchParams();
