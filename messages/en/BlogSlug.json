@@ -8,9 +8,9 @@
     "blogInfo": {
       "blogBy": "Blog by: ",
       "by": "Malak Yasser",
-      "dateIn": ". Date: ",
+      "dateIn": "     Date: ",
       "date": "June 15, 2025",
-      "typeOf": ". Type: ",
+      "typeOf": "     Type: ",
       "type": "Productivity"
     },
     "topics": {
@@ -85,9 +85,9 @@
     "blogInfo": {
       "blogBy": "Blog by: ",
       "by": "Malak Yasser",
-      "dateIn": ". Date: ",
+      "dateIn": "    Date: ",
       "date": "July 1, 2025",
-      "typeOf": ". Type: ",
+      "typeOf": "    Type: ",
       "type": "Productivity"
     },
     "topics": {
@@ -137,9 +137,9 @@
     "blogInfo": {
       "blogBy": "Blog by: ",
       "by": "Malak Yasser",
-      "dateIn": ". Date: ",
+      "dateIn": "    Date: ",
       "date": "July 20, 2025",
-      "typeOf": ". Type: ",
+      "typeOf": "    Type: ",
       "type": "Productivity"
     },
     "topics": {

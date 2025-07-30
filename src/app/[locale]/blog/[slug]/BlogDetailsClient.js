@@ -79,14 +79,18 @@ export default function BlogDetailsClient({ blog }) {
               height={450}
               className="w-full rounded-2xl mb-10"
             />
+
             {blog.topics.map((topic) => (
               <section key={topic.id} id={topic.id} className="mb-16">
-                <h3 className="text-2xl font-semibold text-main mb-4">
+                {/* Heading with Markdown support */}
+                <h3 className="text-3xl font-bold text-main mb-4">
                   <ReactMarkdown components={customComponents}>
                     {t(`${blog.title}.topics.${topic.id}.heading`)}
                   </ReactMarkdown>
                 </h3>
-                <p className="text-lg text-gray-300 leading-relaxed">
+
+                {/* Content as plain text with line breaks */}
+                <p className="text-lg text-gray-300 leading-relaxed whitespace-pre-line">
                   {t(`${blog.title}.topics.${topic.id}.content`)}
                 </p>
               </section>
