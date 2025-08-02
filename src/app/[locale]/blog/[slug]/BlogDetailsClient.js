@@ -9,20 +9,27 @@ export default function BlogDetailsClient({ blog }) {
   const t = useTranslations("BlogSlug");
 
   const customComponents = {
+    h1: ({ children }) => (
+      <h1 className="text-3xl font-bold text-main mb-4">{children}</h1>
+    ),
+    h2: ({ children }) => (
+      <h2 className="text-2xl font-bold text-main mb-4">{children}</h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className="text-xl font-semibold text-main mb-4">{children}</h3>
+    ),
+    p: ({ children }) => (
+      <p className="text-white text-base leading-7 mb-6">{children}</p>
+    ),
     a: ({ href, children }) => (
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-main text-2xl font-normal cursor-pointer border-b-2 border-b-main hover:text-[25px] transition-all duration-300 hover:border-b-gray-300 hover:text-gray-300"
+        className="text-main underline hover:text-gray-300 transition-colors duration-300"
       >
         {children}
       </a>
-    ),
-    p: ({ children }) => (
-      <p className="text-main leading-relaxed text-2xl font-normal">
-        {children}
-      </p>
     ),
   };
 
@@ -82,17 +89,13 @@ export default function BlogDetailsClient({ blog }) {
 
             {blog.topics.map((topic) => (
               <section key={topic.id} id={topic.id} className="mb-16">
-                {/* Heading with Markdown support */}
-                <h3 className="text-3xl font-bold text-main mb-4">
-                  <ReactMarkdown components={customComponents}>
-                    {t(`${blog.title}.topics.${topic.id}.heading`)}
-                  </ReactMarkdown>
-                </h3>
+                <ReactMarkdown components={customComponents}>
+                  {`# ${t(`${blog.title}.topics.${topic.id}.heading`)}`}
+                </ReactMarkdown>
 
-                {/* Content as plain text with line breaks */}
-                <p className="text-lg text-gray-300 leading-relaxed whitespace-pre-line">
-                  {t(`${blog.title}.topics.${topic.id}.content`)}
-                </p>
+                <ReactMarkdown components={customComponents}>
+                  {`${t(`${blog.title}.topics.${topic.id}.content`)}`}
+                </ReactMarkdown>
               </section>
             ))}
           </div>
