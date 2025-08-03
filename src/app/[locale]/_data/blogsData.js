@@ -314,6 +314,174 @@ const blogsData = [
       },
     ],
   },
+  {
+    title: "atomic-habits-guide",
+    id: 5,
+    slug: "atomic-habits-guide",
+    topics: [
+      {
+        id: "intro",
+        heading: "Introduction to the Book",
+        tocTitle: "Introduction",
+        content:
+          'The book "Atomic Habits" by James Clear is one of the most important in self-development over the past decade. Released in 2018, it sold over 20 million copies, translated into more than 50 languages, and topped bestseller lists for 164 weeks.',
+      },
+      {
+        id: "author",
+        heading: "Who is James Clear?",
+        tocTitle: "About the Author",
+        content:
+          "James Clear is an American author and habit formation expert. He studied biokinetics at Denison University, was a baseball team captain, and began writing in 2012. Known for simplifying complex topics into actionable strategies, he published 250+ articles before writing this book.",
+      },
+      {
+        id: "core-idea",
+        heading: "The Basic Idea of the Book",
+        tocTitle: "Core Idea",
+        content:
+          "The core philosophy: **1% improvement per day** leads to exponential results. Improve 1% daily = 37x better in a year. Regression = close to zero. 'Atomic' reflects small changes with massive long-term impact.",
+      },
+      {
+        id: "principles",
+        heading: "Key Principles of the Book",
+        tocTitle: "Principles",
+        content:
+          "- **Systems > Goals**: Focus on the processes, not just outcomes.\n- **Habits Shape Identity**: You don’t just run, you *become* a runner.\n- **Environment Shapes Behaviour**: Your environment should make good habits easy.",
+      },
+      {
+        id: "four-laws",
+        heading: "The Four Laws of Habit Formation",
+        tocTitle: "Four Laws",
+        content:
+          "**1. Make it obvious**: Use cues, habit stacking, and visible reminders.\n\n**2. Make it attractive**: Pair habits with pleasure or social reinforcement.\n\n**3. Make it easy**: Two-minute rule, prep environment, small steps.\n\n**4. Make it satisfying**: Use instant rewards, habit tracking, and celebrate progress.",
+      },
+      {
+        id: "break-bad",
+        heading: "How to Break Bad Habits",
+        tocTitle: "Break Bad Habits",
+        content:
+          "Use inverse of the Four Laws:\n1. Make it **invisible**\n2. Make it **unattractive**\n3. Make it **difficult**\n4. Make it **unsatisfying**",
+      },
+      {
+        id: "habit-cycle",
+        heading: "The Basic Habit Cycle",
+        tocTitle: "Habit Cycle",
+        content:
+          "Every habit follows this loop:\n1. **Cue** – Trigger\n2. **Craving** – Motivation\n3. **Response** – Action\n4. **Reward** – Reinforcement",
+      },
+      {
+        id: "strategies",
+        heading: "Practical Application and Strategies",
+        tocTitle: "Strategies",
+        content:
+          "- **Habit Relay**: “After I do X, I’ll do Y.”\n- **1% Rule**: Prioritize small daily changes.\n- **Consistency > Perfection**: Don’t aim for perfect, aim for consistent.",
+      },
+      {
+        id: "tools",
+        heading: "Turn Habits into Reality with the Right Tools",
+        tocTitle: "Tools",
+        content:
+          "**Habit Tracker Template** ([free download](https://www.mostafayasser.com/en/templates/habit-tracker)):\n- Visual, customizable, mobile-ready\n\n**Second Brain System** ([get it here](https://www.mostafayasser.com/en/templates/second-brain)):\n- Goal management, habit tracking, task linking, idea capture\n- Full integration across projects, habits, and goals",
+      },
+      {
+        id: "challenges",
+        heading: "Common Challenges and How to Overcome Them",
+        tocTitle: "Challenges",
+        content:
+          "- **Loss of motivation**: Build systems, not moods\n- **Wrong expectations**: Real change takes time\n- **All or nothing mindset**: Get back on track the next day",
+      },
+      {
+        id: "conclusion",
+        heading: "Conclusion",
+        tocTitle: "Conclusion",
+        content:
+          "Atomic Habits doesn’t promise fast change—it teaches how to create systems that lead to lasting self-improvement. Start small, stay consistent, and design your environment for success. As Clear says: **“You don’t rise to your goals, you fall to your systems.”**",
+      },
+    ],
+  },
+  {
+    title: "the-5am-club-guide",
+    id: 6,
+    slug: "the-5am-club-guide",
+    topics: [
+      {
+        id: "intro",
+        heading: "Introduction: The Power of Early Rising",
+        tocTitle: "Introduction",
+        content:
+          "The 5am Club by Robin Sharma is a bestselling book that promotes waking up at 5 a.m. to transform your productivity, health, and personal growth. The book combines storytelling with practical strategies for mastering your mornings and building a legendary life.",
+      },
+      {
+        id: "author",
+        heading: "Who is Robin Sharma?",
+        tocTitle: "About the Author",
+        content:
+          "Robin Sharma is a leadership expert, motivational speaker, and bestselling author known for books like *The Monk Who Sold His Ferrari*. With clients ranging from billionaires to global organizations, he focuses on leadership, performance, and personal mastery.",
+      },
+      {
+        id: "core-idea",
+        heading: "The Core Concept of the Book",
+        tocTitle: "Core Idea",
+        content:
+          "The core idea is that waking up at 5 a.m. and spending the first hour of your day in intentional personal development (the Victory Hour) can help you gain focus, increase energy, and build powerful habits to excel in life.",
+      },
+      {
+        id: "principles",
+        heading: "Key Principles of the 5am Club",
+        tocTitle: "Principles",
+        content:
+          "- **Own your morning, elevate your life**\n- **All change is hard at first, messy in the middle, and beautiful at the end**\n- **The way you begin your day determines how you live your day**",
+      },
+      {
+        id: "four-laws",
+        heading: "The 20/20/20 Formula: The Heart of the 5am Routine",
+        tocTitle: "20/20/20 Formula",
+        content:
+          "Spend the first hour of your day as follows:\n\n**1. Move (5:00–5:20 a.m.)**: Engage in intense physical exercise to activate your brain and body.\n\n**2. Reflect (5:20–5:40 a.m.)**: Practice journaling, meditation, or gratitude to gain clarity.\n\n**3. Grow (5:40–6:00 a.m.)**: Read, review goals, or listen to educational content to fuel personal growth.",
+      },
+      {
+        id: "break-bad",
+        heading: "How to Overcome Morning Resistance",
+        tocTitle: "Overcoming Resistance",
+        content:
+          "- **Use the 66-day rule**: It takes ~66 days to form a habit.\n- **Build identity-based habits**: See yourself as an early riser.\n- **Remove distractions before bed**: Digital detox and a calming pre-sleep routine help.",
+      },
+      {
+        id: "habit-cycle",
+        heading: "The Habit Installation Protocol",
+        tocTitle: "Habit Protocol",
+        content:
+          "The book divides habit building into 3 phases:\n\n**1. Destruction (Days 1–22)**: Breaking old patterns.\n**2. Installation (Days 23–44)**: Creating the new routine.\n**3. Integration (Days 45–66)**: Internalizing the new habit as part of your identity.",
+      },
+      {
+        id: "strategies",
+        heading: "Strategies for Success from the Book",
+        tocTitle: "Strategies",
+        content:
+          "- **Tight Bubble of Total Focus**: Eliminate distractions completely during creative work hours.\n- **Twin Cycles of Elite Performance**: Balance intense work periods with deep rest.\n- **Use triggers and rituals**: Morning and evening rituals reinforce consistency.",
+      },
+      {
+        id: "tools",
+        heading: "Recommended Tools and Systems",
+        tocTitle: "Tools",
+        content:
+          "**Morning Routine Tracker** ([download it here](https://www.mostafayasser.com/en/templates/morning-routine)):\n- Helps track your 5am routine.\n\n**Second Brain System** ([view template](https://www.mostafayasser.com/en/templates/second-brain)):\n- Capture ideas, manage goals, and structure personal growth based on the 5am philosophy.",
+      },
+      {
+        id: "challenges",
+        heading: "Common Challenges in the 5am Club Journey",
+        tocTitle: "Challenges",
+        content:
+          "- **Fatigue**: Sleep 7–8 hours. Prioritize sleep hygiene.\n- **Inconsistency**: Focus on habit streaks and small wins.\n- **Lack of purpose**: Align your early hours with deep personal goals.",
+      },
+      {
+        id: "conclusion",
+        heading: "Conclusion: Why 5am is a Game Changer",
+        tocTitle: "Conclusion",
+        content:
+          "The 5am Club isn't just about waking up early—it's about owning your day before it owns you. With a structured start to your mornings, you gain control over your mindset, energy, and priorities. As Sharma says, **“Own your morning. Elevate your life.”**",
+      },
+    ],
+  },
 ];
 
 export default blogsData;
