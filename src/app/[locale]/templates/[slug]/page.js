@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
     : `https://mostafayasser.com${rawImage}`;
 
   // ✅ Determine favicon per premium template
-  let faviconPath = "../../icon.png"; // default favicon
+  let faviconPath = "/favicons/icon.webp";
 
   if (slug === "study-hub") {
     faviconPath = "/favicons/study-hub.webp";
