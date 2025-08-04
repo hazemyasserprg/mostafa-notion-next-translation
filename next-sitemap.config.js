@@ -16,6 +16,10 @@ module.exports = {
     await config.transform(config, "/ar/about"),
     await config.transform(config, "/en/templates"),
     await config.transform(config, "/ar/templates"),
+    await config.transform(config, "/en/blogs"),
+    await config.transform(config, "/ar/blogs"),
+    await config.transform(config, "/en/contact"),
+    await config.transform(config, "/ar/contact"),
     // Add all important localized pages here
   ],
 };

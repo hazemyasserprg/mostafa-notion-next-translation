@@ -1,14 +1,19 @@
 import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin({
+  // Optional: Add any NextIntl config if needed
+  locales: ["en", "ar"],
+  defaultLocale: "en",
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // ✅ Don't include i18n manually here; let next-intl handle it
   async redirects() {
     return [
       {
         source: "/",
-        destination: "/en/",
+        destination: "/en",
         permanent: true,
       },
       {
