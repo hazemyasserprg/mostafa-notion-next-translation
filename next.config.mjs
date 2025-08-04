@@ -6,34 +6,6 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   async redirects() {
     return [
-      // 1️⃣ Redirect www → non-www (or flip if you prefer www)
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.mostafayasser.com" }],
-        destination: "https://mostafayasser.com/:path*",
-        permanent: true,
-      },
-      // 2️⃣ Redirect http → https (for non-www)
-      {
-        source: "/:path*",
-        has: [
-          { type: "host", value: "mostafayasser.com" },
-          { type: "protocol", value: "http" },
-        ],
-        destination: "https://mostafayasser.com/:path*",
-        permanent: true,
-      },
-      // 3️⃣ Redirect http → https (for www)
-      {
-        source: "/:path*",
-        has: [
-          { type: "host", value: "www.mostafayasser.com" },
-          { type: "protocol", value: "http" },
-        ],
-        destination: "https://mostafayasser.com/:path*",
-        permanent: true,
-      },
-      // 🟢 Your existing internal redirects below:
       {
         source: "/",
         destination: "/en/",

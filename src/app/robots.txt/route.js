@@ -2,7 +2,7 @@ export async function GET() {
   const content = `User-agent: *
 Allow: /
 
-Sitemap: https://mostafayasser.com/sitemap.xml`;
+Sitemap: https://www.mostafayasser.com/sitemap.xml`;
 
   return new Response(content, {
     headers: {
