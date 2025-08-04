@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://www.mostafayasser.com",
+  siteUrl: "https://mostafayasser.com",
   generateRobotsTxt: true,
   generateIndexSitemap: false, // disables sitemap index to avoid empty sitemaps
   changefreq: "weekly",

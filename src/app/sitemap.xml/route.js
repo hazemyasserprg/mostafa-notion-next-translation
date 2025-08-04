@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const baseUrl = "https://www.mostafayasser.com";
+  const baseUrl = "https://mostafayasser.com";
 
   // Add your static routes here
   const staticRoutes = [
