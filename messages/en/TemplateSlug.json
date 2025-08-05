@@ -1134,5 +1134,145 @@
     "checkoutLink": "https://www.notion.so/marketplace/templates/financehub-free",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/24.webp"
+  },
+
+  "My Liabilities": {
+    "name": "My Liabilities",
+    "description": "My Liabilities is a Notion template to track and manage your recurring financial obligations such as bills, rent, and memberships—categorized and linked for easy access and budgeting.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-liabilities",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/25.webp"
+  },
+
+  "My Wishlist": {
+    "name": "My Wishlist",
+    "description": "A smart Notion wishlist template to plan, track, and manage the things you want—organized by status, category, and savings progress.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-wishlist",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/26.webp"
+  },
+
+  "My Subscriptions": {
+    "name": "My Subscriptions",
+    "description": "My Subscriptions is a simple Notion template to track all your active subscriptions, their costs, billing cycles, and renewal dates—so you never miss a charge or lose control of your budget.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-subscriptions",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/27.webp"
+  },
+
+  "My Watchlist": {
+    "name": "My Watchlist",
+    "description": "Stay on top of your favorite movies, series, and documentaries with My Watchlist – a simple, organized Notion template to manage what you’ve watched, what’s next, and what’s worth recommending.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-watchlist",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/28.webp"
+  },
+
+  "My Schedule": {
+    "name": "My Schedule",
+    "description": "My Schedule is a Notion template to help you organize your daily and weekly class or meeting schedules—organized by name, day, and time.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-student-schedule",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/29.webp"
+  },
+
+  "My Instructors": {
+    "name": "My Instructors",
+    "description": "My Instructors is a Notion template to help you organize and manage contact details of your instructors—organized by name, course, and status.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-instructors",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/30.webp"
+  },
+
+  "My Taxes": {
+    "name": "My Taxes",
+    "description": "My Taxes is a Notion template to help you track your tax-related payments, deadlines, and obligations—organized by type, frequency, and payment status.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-taxes",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/31.webp"
+  },
+
+  "My Depts": {
+    "name": "My Depts",
+    "description": "My Debts is a Notion template to help you track your debt payments, deadlines, and balances—organized by type, payment method, and status.",
+    "price": "$4.99",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-debts",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/32.webp"
+  },
+
+  "My Contacts": {
+    "name": "My Contacts",
+    "description": "My Contacts is a Notion template to help you organize your personal and professional relationships. Categorize contacts, set reminders for regular check-ins, and never miss a birthday or important follow-up again.",
+    "price": "$3.99",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-contacts",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/33.webp"
+  },
+
+  "Habit Tracker - Premium": {
+    "name": "Habit Tracker",
+    "description": "Habit Tracker is a Notion template to help you monitor and build daily habits—organized by habit type, completion status, and progress over time.",
+    "price": "$0",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-habits",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/34.webp"
+  },
+
+  "My Exams": {
+    "name": "My Exams",
+    "description": "My Exams is a Notion template to help you track exam schedules, progress, and deadlines—organized by status, type, and course.",
+    "price": "$3.99",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-exams",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/35.webp"
+  },
+
+  "My Resources": {
+    "name": "My Resources",
+    "description": "My Resources is a Notion template to help you manage and track your study materials—organized by name, status, and type.",
+    "price": "$3.99",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-resources",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/36.webp"
+  },
+
+  "My Assignments": {
+    "name": "My Assignments",
+    "description": "My Assignments is a Notion template to help you manage your tasks and deadlines—organized by status, priority, and calendar view.",
+    "price": "$3.99",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-assignments",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/37.webp"
+  },
+
+  "My Notes": {
+    "name": "My Notes",
+    "description": "My Notes is an advanced Notion template designed for capturing, reviewing, and organizing your notes using spaced repetition, smart filters, and multiple views.",
+    "price": "$4.99",
+    "checkout": "Download",
+    "checkoutLink": "https://www.notion.com/marketplace/templates/my-notes",
+    "moreDetails": "More Details",
+    "image": "/thumbnails/ENThumbnails/38.webp"
   }
 }

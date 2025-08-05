@@ -59,7 +59,7 @@ export default function BlogDetailsClient({ blog }) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Table of Contents */}
           <aside className="md:col-span-1 hidden md:block">
-            <div className="p-0 border-l-2 border-main pl-6 sticky top-24 max-h-[80vh] overflow-y-auto">
+            <div className="toc-scroll p-0 border-l-2 border-main pl-6 sticky top-24 max-h-[80vh] overflow-y-auto">
               <h2 className="text-xl font-bold mb-6 tracking-tight">
                 {t(`${blog.title}.toc`)}
               </h2>
