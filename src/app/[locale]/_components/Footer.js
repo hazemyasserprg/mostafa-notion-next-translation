@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { RiNotionFill } from "react-icons/ri";
 import {
   BsFacebook,
@@ -15,6 +15,7 @@ import AnimatedInView from "./AnimatedInView";
 
 function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <AnimatedInView threshold={0.3}>
@@ -181,6 +182,30 @@ function Footer() {
             <FilloutSlider className="text-sm text-gray-400 hover:text-main transition cursor-pointer">
               {t("customTemplateCta")}
             </FilloutSlider>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="text-main font-semibold text-base mb-2">
+              {t("blog")}
+            </h4>
+            <Link
+              href={`/${locale}/blog/organized-mind-productive-life`}
+              className="block text-sm text-gray-400 hover:text-main transition"
+            >
+              {t("blogs.organizedMind")}
+            </Link>
+            <Link
+              href={`/${locale}/blog/the-5am-club-guide`}
+              className="block text-sm text-gray-400 hover:text-main transition"
+            >
+              {t("blogs.fiveAmClub")}
+            </Link>
+            <Link
+              href={`/${locale}/blog/atomic-habits-guide`}
+              className="block text-sm text-gray-400 hover:text-main transition"
+            >
+              {t("blogs.atomicHabits")}
+            </Link>
           </div>
         </div>
       </div>

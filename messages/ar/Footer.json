@@ -9,6 +9,12 @@
   "terms": "شروط الاستخدام",
   "customTemplate": "قالب مخصص",
   "customTemplateCta": "هل تحتاج إلى قالب مخصص؟",
+  "blog": "مقالات المدونة",
+  "blogs": {
+    "organizedMind": "عقل منظم، حياة منتجة",
+    "fiveAmClub": "دليل نادي الخامسة صباحًا",
+    "atomicHabits": "مراجعة كتاب العادات الذرية"
+  },
   "copyright": "© 2025 .جميع الحقوق محفوظة. مصطفى ياسر",
   "developedBy": "تم التطوير بواسطة",
   "developer": "حازم ياسر",
