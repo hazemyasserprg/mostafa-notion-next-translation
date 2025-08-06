@@ -70,13 +70,18 @@ function TemplateList({ filter }) {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-10"
         >
           {searchedTemplates.length > 0 ? (
-            searchedTemplates.map((template, index) => (
-              <TemplateCard
-                key={template.id}
-                template={template}
-                index={index}
-              />
-            ))
+            searchedTemplates.map((template, index) => {
+              const isNew = index >= searchedTemplates.length - 3;
+
+              return (
+                <TemplateCard
+                  key={template.id}
+                  template={template}
+                  index={index}
+                  isNew={isNew}
+                />
+              );
+            })
           ) : (
             <p className="col-span-full text-center text-gray-500 mt-10 text-sm">
               {t("noTemplates")}

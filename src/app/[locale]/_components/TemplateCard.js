@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-export default function TemplateCard({ template, index }) {
+export default function TemplateCard({ template, index, isNew }) {
   const t = useTranslations("TemplateSlug");
   const locale = useLocale();
 
@@ -21,6 +21,12 @@ export default function TemplateCard({ template, index }) {
           {template.premium && (
             <span className="absolute top-9 right-0 rounded-tl-xl rounded-bl-xl border border-[#D7B180] text-[#D7B180] text-sm font-semibold px-4 py-1 -mr-1">
               PRO
+            </span>
+          )}
+
+          {isNew && (
+            <span className="absolute top-2 left-2 bg-white text-main text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              NEW
             </span>
           )}
 

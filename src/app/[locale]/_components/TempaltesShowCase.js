@@ -73,6 +73,16 @@ const templates = {
       name: "Ramadan Tracker",
       slug: "ramadan-tracker",
     },
+    {
+      id: 36,
+      name: "My Resources",
+      slug: "my-resources",
+    },
+    {
+      id: 38,
+      name: "My Notes",
+      slug: "my-notes",
+    },
   ],
 };
 
