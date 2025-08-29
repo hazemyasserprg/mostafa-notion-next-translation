@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: "https://www.mostafayasser.com",
   generateRobotsTxt: false, // We're using a static robots.txt file
-  generateIndexSitemap: false,
+  generateIndexSitemap: true, // Enable index sitemap for better organization
   changefreq: "weekly",
   priority: 0.7,
   sitemapSize: 5000,
@@ -80,12 +80,22 @@ module.exports = {
     await config.transform(config, "/en/templates/finance-hub-minimal", { priority: 0.8, changefreq: "monthly" }),
     await config.transform(config, "/ar/templates/finance-hub-minimal", { priority: 0.8, changefreq: "monthly" }),
 
-    // Blog posts (medium priority)
+    // All Blog posts (medium priority) - Added missing ones
     await config.transform(config, "/en/blog/what-is-notion", { priority: 0.8, changefreq: "monthly" }),
     await config.transform(config, "/ar/blog/what-is-notion", { priority: 0.8, changefreq: "monthly" }),
     await config.transform(config, "/en/blog/notion-external-tools", { priority: 0.8, changefreq: "monthly" }),
     await config.transform(config, "/ar/blog/notion-external-tools", { priority: 0.8, changefreq: "monthly" }),
     await config.transform(config, "/en/blog/best-notion-widgets-2025", { priority: 0.8, changefreq: "monthly" }),
     await config.transform(config, "/ar/blog/best-notion-widgets-2025", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/en/blog/notion-productivity-tips", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/ar/blog/notion-productivity-tips", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/en/blog/notion-templates-guide", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/ar/blog/notion-templates-guide", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/en/blog/notion-for-students", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/ar/blog/notion-for-students", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/en/blog/notion-business-tools", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/ar/blog/notion-business-tools", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/en/blog/notion-mobile-app", { priority: 0.8, changefreq: "monthly" }),
+    await config.transform(config, "/ar/blog/notion-mobile-app", { priority: 0.8, changefreq: "monthly" }),
   ],
 };

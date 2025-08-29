@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "https://mostafayasser.com/(.*)",
+      "destination": "https://www.mostafayasser.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "http://mostafayasser.com/(.*)",
+      "destination": "https://www.mostafayasser.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "http://www.mostafayasser.com/(.*)",
+      "destination": "https://www.mostafayasser.com/$1",
+      "permanent": true
+    }
+  ]
+}

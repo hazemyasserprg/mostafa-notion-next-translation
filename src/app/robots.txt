@@ -13,6 +13,14 @@ Allow: /templates/
 Allow: /blogs/
 Allow: /about/
 Allow: /contact/
+Allow: /en/
+Allow: /ar/
+
+# Specific allow directives for better crawling
+Allow: /en/templates/
+Allow: /ar/templates/
+Allow: /en/blog/
+Allow: /ar/blog/
 
 # Crawl delay for better server performance
 Crawl-delay: 1

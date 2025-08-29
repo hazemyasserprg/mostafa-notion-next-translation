@@ -59,6 +59,7 @@ const nextConfig = {
     ];
   },
 
+  // Essential path-based redirects
   async redirects() {
     return [
       {
