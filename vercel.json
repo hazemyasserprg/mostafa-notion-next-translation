@@ -1,19 +1,15 @@
 {
   "redirects": [
     {
-      "source": "https://mostafayasser.com/(.*)",
+      "source": "/(.*)",
       "destination": "https://www.mostafayasser.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "http://mostafayasser.com/(.*)",
-      "destination": "https://www.mostafayasser.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "http://www.mostafayasser.com/(.*)",
-      "destination": "https://www.mostafayasser.com/$1",
-      "permanent": true
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "mostafayasser.com"
+        }
+      ]
     }
   ]
 }
