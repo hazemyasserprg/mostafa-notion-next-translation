@@ -1,10 +1,7 @@
-import { useTranslations } from "next-intl";
-import BlurText from "@/src/app/[locale]/_components/BlurText";
-import TemplateList from "@/src/app/[locale]/_components/TemplateList";
-import CategoryButtons from "@/src/app/[locale]/_components/CategoryButtons";
+import TemplatesPage from "./templatesPage";
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isArabic = locale === "ar";
 
   return {
@@ -16,21 +13,21 @@ export async function generateMetadata({ params }) {
       : "Discover premium Notion templates designed to help you stay organized, productive, and inspired. Explore my latest creations and boost your digital workflow.",
     keywords: isArabic
       ? [
-          "قوالب نوشن",
-          "قوالب إنتاجية",
-          "تنظيم نوشن",
-          "قوالب مصطفى ياسر",
-          "لوحة تحكم نوشن",
-          "قوالب نوشن مجانية",
-        ]
+        "قوالب نوشن",
+        "قوالب إنتاجية",
+        "تنظيم نوشن",
+        "قوالب مصطفى ياسر",
+        "لوحة تحكم نوشن",
+        "قوالب نوشن مجانية",
+      ]
       : [
-          "Notion templates",
-          "Productivity templates",
-          "Organize Notion",
-          "Mostafa Yasser templates",
-          "Notion dashboard",
-          "Free Notion templates",
-        ],
+        "Notion templates",
+        "Productivity templates",
+        "Organize Notion",
+        "Mostafa Yasser templates",
+        "Notion dashboard",
+        "Free Notion templates",
+      ],
     openGraph: {
       title: isArabic
         ? "قوالب نوشن | مصطفى ياسر"
@@ -71,26 +68,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function Templates({ searchParams }) {
-  const t = useTranslations("TemplatesPage");
-
-  const filter = searchParams?.category || "all";
-
-  return (
-    <BlurText>
-      <div className="w-full px-6 py-12 mt-6 sm:mt-12">
-        <section className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-            {t("title")}
-          </h1>
-          <p className="text-base sm:text-lg text-main mb-8 sm:mb-10">
-            {t("subtitle")}
-          </p>
-
-          <CategoryButtons />
-          <TemplateList filter={filter} />
-        </section>
-      </div>
-    </BlurText>
-  );
+export default function Templates() {
+  return <TemplatesPage />;
 }
+
+

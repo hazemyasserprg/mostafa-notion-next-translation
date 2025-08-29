@@ -13,8 +13,14 @@ export default function CategoryButtons() {
 
   const handleFilter = (category) => {
     const params = new URLSearchParams(searchParams);
-    params.set("category", category);
-    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    if (category === "all") {
+      params.delete("category");
+    } else {
+      params.set("category", category);
+    }
+
+    const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname;
+    router.push(newUrl, { scroll: false });
   };
 
   const activeCategory = searchParams.get("category") || "all";
@@ -27,11 +33,10 @@ export default function CategoryButtons() {
             <button
               key={cat}
               onClick={() => handleFilter(cat)}
-              className={`cursor-pointer px-6 py-2 rounded-xl border transition-all duration-300 ${
-                activeCategory === cat
-                  ? "bg-main text-white border-black"
-                  : "bg-black text-main"
-              }`}
+              className={`cursor-pointer px-6 py-2 rounded-xl border transition-all duration-300 ${activeCategory === cat
+                ? "bg-main text-white border-black"
+                : "bg-black text-main"
+                }`}
             >
               {t(cat)}
             </button>

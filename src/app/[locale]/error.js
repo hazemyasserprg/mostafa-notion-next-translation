@@ -2,42 +2,6 @@
 
 import Link from "next/link";
 
-export async function generateMetadata({ params }) {
-  const isArabic = params.locale === "ar";
-
-  const title = isArabic
-    ? "حدث خطأ | مصطفى ياسر"
-    : "Something Went Wrong | Mostafa Yasser";
-  const description = isArabic
-    ? "نأسف — حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى أو العودة إلى الصفحة الرئيسية."
-    : "We&apos;re sorry — an unexpected error occurred. Please try again or go back to the homepage.";
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      url: "https://mostafayasser.com",
-      images: [
-        {
-          url: "/metaData/error.webp",
-          width: 800,
-          height: 600,
-          alt: "Mostafa Yasser",
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: ["/metaData/error.webp"],
-    },
-  };
-}
-
 export default function Error({ error, reset }) {
   return (
     <div className="flex items-center justify-center min-h-screen -mt-40 bg-black text-white px-6">

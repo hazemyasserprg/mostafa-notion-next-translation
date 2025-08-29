@@ -7,7 +7,7 @@ import { Suspense } from "react";
 import Loader from "@/src/app/[locale]/_components/Loader";
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isArabic = locale === "ar";
 
   const title = isArabic
@@ -27,23 +27,23 @@ export async function generateMetadata({ params }) {
     description,
     keywords: isArabic
       ? [
-          "مدونة نوشن",
-          "مدونة الإنتاجية",
-          "مقالات مصطفى ياسر",
-          "دروس نوشن",
-          "نصائح التنظيم الرقمي",
-          "رؤى خبير نوشن",
-          "تخطيط الحياة باستخدام نوشن",
-        ]
+        "مدونة نوشن",
+        "مدونة الإنتاجية",
+        "مقالات مصطفى ياسر",
+        "دروس نوشن",
+        "نصائح التنظيم الرقمي",
+        "رؤى خبير نوشن",
+        "تخطيط الحياة باستخدام نوشن",
+      ]
       : [
-          "Notion blog",
-          "Productivity blog",
-          "Mostafa Yasser articles",
-          "Notion tutorials",
-          "Digital organization tips",
-          "Notion expert insights",
-          "Life planning with Notion",
-        ],
+        "Notion blog",
+        "Productivity blog",
+        "Mostafa Yasser articles",
+        "Notion tutorials",
+        "Digital organization tips",
+        "Notion expert insights",
+        "Life planning with Notion",
+      ],
     openGraph: {
       title,
       description: openGraphDescription,

@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import BlurText from "../../_components/BlurText";
 import FloatingNav from "./premium-ones/FloatingNav";
 

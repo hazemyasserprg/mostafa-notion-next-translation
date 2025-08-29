@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isArabic = locale === "ar";
 
   return {

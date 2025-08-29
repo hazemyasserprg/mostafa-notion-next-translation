@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const isArabic = params.locale === "ar";
+  const { locale } = await params;
+  const isArabic = locale === "ar";
 
   const title = isArabic
     ? "الصفحة غير موجودة | مصطفى ياسر"

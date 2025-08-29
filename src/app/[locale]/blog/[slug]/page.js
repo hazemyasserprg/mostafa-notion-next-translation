@@ -4,46 +4,46 @@ import { notFound } from "next/navigation";
 import { createTranslator } from "next-intl";
 import arMessages from "@/messages/ar/BlogSlug.json";
 import enMessages from "@/messages/en/BlogSlug.json";
+import SEOOptimizer from "../../_components/SEOOptimizer";
 
 export async function generateMetadata({ params }) {
-  const { locale, slug } = params;
-  const isArabic = locale === "ar";
+  const { locale, slug } = await params;
 
   const blog = blogsData.find((b) => b.slug === slug);
   if (!blog) return {};
 
-  const messages = isArabic ? arMessages : enMessages;
+  const messages = locale === "ar" ? arMessages : enMessages;
   const t = createTranslator({ locale, messages });
 
-  const title = isArabic
+  const title = locale === "ar"
     ? `${t(`${blog.title}.shortCut`)} | مدونة مصطفى ياسر`
     : `${t(`${blog.title}.shortCut`)} | Mostafa Yasser Blog`;
 
-  const description = isArabic
+  const description = locale === "ar"
     ? t(`${blog.title}.title`) ??
-      "اكتشف آخر مقالات مصطفى ياسر حول نوشن والإنتاجية."
+    "اكتشف آخر مقالات مصطفى ياسر حول نوشن والإنتاجية."
     : "Explore the latest articles by Mostafa Yasser on Notion, productivity, and digital organization.";
 
-  const url = `https://mostafayasser.com/blog/${slug}`;
+  const url = `https://www.mostafayasser.com/${locale}/blog/${slug}`;
 
   return {
     title,
     description,
-    keywords: isArabic
+    keywords: locale === "ar"
       ? [
-          t(`${blog.title}.title`),
-          "مدونة نوشن",
-          "الإنتاجية",
-          "تنظيم رقمي",
-          "مقالات مصطفى ياسر",
-        ]
+        t(`${blog.title}.title`),
+        "مدونة نوشن",
+        "الإنتاجية",
+        "تنظيم رقمي",
+        "مقالات مصطفى ياسر",
+      ]
       : [
-          t(`${blog.title}.title`),
-          "Notion blog",
-          "productivity",
-          "digital organization",
-          "Mostafa Yasser articles",
-        ],
+        t(`${blog.title}.title`),
+        "Notion blog",
+        "productivity",
+        "digital organization",
+        "Mostafa Yasser articles",
+      ],
     openGraph: {
       title,
       description,
@@ -64,6 +64,12 @@ export async function generateMetadata({ params }) {
       description,
       images: [t(`${blog.title}.image`)],
     },
+    alternates: {
+      canonical: url,
+    },
+    other: {
+      "google-site-verification": "SKiO5RTFyP9KeXKJAJ14FVn-qZUFpXut8_41TWNG_9o",
+    },
   };
 }
 
@@ -77,10 +83,27 @@ export async function generateStaticParams() {
   );
 }
 
-export default function BlogDetails({ params }) {
-  const blog = blogsData.find((b) => b.slug === params.slug);
+export default async function BlogDetails({ params }) {
+  const { locale, slug } = await params;
+  const blog = blogsData.find((b) => b.slug === slug);
 
   if (!blog) return notFound();
 
-  return <BlogDetailsClient blog={blog} />;
+  return (
+    <>
+      <SEOOptimizer
+        type="blog"
+        title={blog.title}
+        description={blog.description || "Explore the latest articles by Mostafa Yasser on Notion, productivity, and digital organization."}
+        url={`https://www.mostafayasser.com/${locale}/blog/${blog.slug}`}
+        image={blog.image}
+        locale={locale}
+        blogData={{
+          publishedAt: blog.publishedAt,
+          updatedAt: blog.updatedAt
+        }}
+      />
+      <BlogDetailsClient blog={blog} />
+    </>
+  );
 }

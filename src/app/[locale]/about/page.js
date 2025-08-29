@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import aboutImg from "/public/mostafa/mostafa.webp";
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isArabic = locale === "ar";
 
   const title = isArabic ? "عنّي | مصطفى ياسر" : "About | Mostafa Yasser";

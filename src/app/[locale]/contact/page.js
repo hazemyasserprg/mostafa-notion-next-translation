@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { useTranslations } from "next-intl";
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const isArabic = locale === "ar";
 
   const title = isArabic
@@ -25,21 +25,21 @@ export async function generateMetadata({ params }) {
     description,
     keywords: isArabic
       ? [
-          "اتصل بمصطفى ياسر",
-          "قالب نوشن مخصص",
-          "التعاون مع نوشن",
-          "برنامج التسويق بالعمولة نوشن",
-          "خبير نوشن",
-          "توظيف مصمم نوشن",
-        ]
+        "اتصل بمصطفى ياسر",
+        "قالب نوشن مخصص",
+        "التعاون مع نوشن",
+        "برنامج التسويق بالعمولة نوشن",
+        "خبير نوشن",
+        "توظيف مصمم نوشن",
+      ]
       : [
-          "Contact Mostafa Yasser",
-          "Custom Notion template",
-          "Notion collaboration",
-          "Notion affiliate program",
-          "Notion expert",
-          "Hire Notion designer",
-        ],
+        "Contact Mostafa Yasser",
+        "Custom Notion template",
+        "Notion collaboration",
+        "Notion affiliate program",
+        "Notion expert",
+        "Hire Notion designer",
+      ],
     openGraph: {
       title,
       description: openGraphDescription,
