@@ -1,9 +1,8 @@
 import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin({
-  // Optional: Add any NextIntl config if needed
-  locales: ["en", "ar"],
-  defaultLocale: "en",
+  // This should point to the request configuration
+  requestConfig: './src/i18n/request.js'
 });
 
 /** @type {import('next').NextConfig} */

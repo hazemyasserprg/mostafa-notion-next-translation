@@ -68,7 +68,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function Templates() {
+export default function Templates({ params }) {
   return <TemplatesPage />;
 }
 

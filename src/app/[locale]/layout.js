@@ -96,6 +96,7 @@ export default async function LocaleLayout({ children, params }) {
       lang={locale}
       dir={dir}
       className={locale === "ar" ? tajawal.className : oswald.className}
+      suppressHydrationWarning={true}
     >
       <head>
         <meta

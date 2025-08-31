@@ -1,19 +1,19 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export default function FloatingNav() {
   const t = useTranslations("FloatingNav");
 
-  const sections = [
+  const sections = useMemo(() => [
     { id: "home", label: t("home") },
     { id: "dashboard", label: t("dashboard") },
     { id: "essentials", label: t("essentials") },
     { id: "walkthrough", label: t("walkthrough") },
     { id: "databases", label: t("databases") },
     { id: "pricing", label: t("pricing") },
-  ];
+  ], [t]);
 
   const [active, setActive] = useState("home");
 
@@ -39,7 +39,7 @@ export default function FloatingNav() {
     return () => {
       observers.forEach((observer) => observer.disconnect());
     };
-  }, []);
+  }, [sections]);
 
   const handleClick = (id) => {
     setActive(id);
@@ -70,11 +70,10 @@ export default function FloatingNav() {
           px-3 py-2 
           text-xs sm:text-sm md:text-base 
           rounded-full transition font-medium
-          ${
-            active === section.id
+          ${active === section.id
               ? "bg-main text-black shadow-sm"
               : "text-neutral-300 hover:bg-main/20 hover:text-white"
-          }
+            }
           cursor-pointer
         `}
         >

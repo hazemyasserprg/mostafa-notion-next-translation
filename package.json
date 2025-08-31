@@ -10,7 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@fillout/react": "^2.0.12",
+    "@fillout/react": "^3.0.0",
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
     "@vercel/analytics": "^1.5.0",

@@ -1,7 +1,6 @@
 "use client";
 
 import { FilloutSliderEmbed } from "@fillout/react";
-import "@fillout/react/style.css";
 import { useState } from "react";
 import { useLocale } from "next-intl"; // assuming you're using next-intl
 

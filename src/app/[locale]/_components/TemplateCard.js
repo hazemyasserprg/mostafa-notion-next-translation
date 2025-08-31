@@ -9,6 +9,33 @@ export default function TemplateCard({ template, index, isNew }) {
   const t = useTranslations("TemplateSlug");
   const locale = useLocale();
 
+  // Fallback function to get template name
+  const getTemplateName = () => {
+    try {
+      return t(`${template.name}.name`);
+    } catch (error) {
+      return locale === "ar" ? template.name_ar || template.name : template.name;
+    }
+  };
+
+  // Fallback function to get template image
+  const getTemplateImage = () => {
+    try {
+      return t(`${template.name}.image`);
+    } catch (error) {
+      return `/thumbnails/${locale === "ar" ? "ARThumbnails" : "ENThumbnails"}/${template.id}.webp`;
+    }
+  };
+
+  // Fallback function to get template price
+  const getTemplatePrice = () => {
+    try {
+      return t(`${template.name}.price`);
+    } catch (error) {
+      return template.premium ? "PRO" : "$0";
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -32,18 +59,18 @@ export default function TemplateCard({ template, index, isNew }) {
 
           <div className="w-full aspect-[4/3] lg:aspect-auto">
             <Image
-              src={t(`${template.name}.image`)}
-              alt={`Template ${t(`${template.name}.name`)}`}
+              src={getTemplateImage()}
+              alt={`Template ${getTemplateName()}`}
               width={400}
               height={400}
               className="object-cover w-full h-full"
             />
           </div>
           <h3 className="mt-3 text-base font-semibold sm:text-lg md:text-xl">
-            {t(`${template.name}.name`)}
+            {getTemplateName()}
           </h3>
           <p className="text-[#D7B180] text-lg sm:text-xl md:text-2xl font-bold mb-4 drop-shadow-[0_0_5px_rgba(215,177,128,0.4)]">
-            {t(`${template.name}.price`)}
+            {getTemplatePrice()}
           </p>
         </Link>
       </div>
