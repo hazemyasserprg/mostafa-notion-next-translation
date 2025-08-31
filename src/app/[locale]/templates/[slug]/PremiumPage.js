@@ -1,15 +1,30 @@
 import { notFound } from "next/navigation";
+import dynamic from "next/dynamic";
 import BlurText from "../../_components/BlurText";
 import FloatingNav from "./premium-ones/FloatingNav";
 
-// Sections (ranked)
-import Home from "./premium-ones/HomeSec";
-import Dashboard from "./premium-ones/DashboardSec";
-import Essentials from "./premium-ones/EssentailsSec";
-import Walkthrough from "./premium-ones/WalkthroughSec";
-import Databases from "./premium-ones/DatabasesSec";
-import Pricing from "./premium-ones/PricingSec";
-import FAQ from "./premium-ones/FAQSec";
+// Lazy load heavy sections for better performance
+const Home = dynamic(() => import("./premium-ones/HomeSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const Dashboard = dynamic(() => import("./premium-ones/DashboardSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const Essentials = dynamic(() => import("./premium-ones/EssentailsSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const Walkthrough = dynamic(() => import("./premium-ones/WalkthroughSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const Databases = dynamic(() => import("./premium-ones/DatabasesSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const Pricing = dynamic(() => import("./premium-ones/PricingSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const FAQ = dynamic(() => import("./premium-ones/FAQSec"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
 
 export default function PremiumPage({ template }) {
   if (!template) {

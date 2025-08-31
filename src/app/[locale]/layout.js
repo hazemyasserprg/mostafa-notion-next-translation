@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 
 import Navigation from "@/src/app/[locale]/_components/Navigation";
 import Footer from "@/src/app/[locale]/_components/Footer";
+import PerformanceMonitor from "@/src/app/[locale]/_components/PerformanceMonitor";
 import "@/src/app/[locale]/_styles/globals.css";
 import Script from "next/script";
 
@@ -13,12 +14,16 @@ const oswald = Oswald({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
 const tajawal = Tajawal({
   subsets: ["arabic", "latin"],
   weight: ["400", "700"],
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
 export async function generateMetadata({ params }) {
@@ -103,19 +108,20 @@ export default async function LocaleLayout({ children, params }) {
           name="google-site-verification"
           content="SKiO5RTFyP9KeXKJAJ14FVn-qZUFpXut8_41TWNG_9o"
         />
-        {/* Google Analytics Script */}
+        {/* Google Analytics Script - Optimized */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-BPZ882BE5Y"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
-            gtag('config', 'G-BPZ882BE5Y');
+            gtag('config', 'G-BPZ882BE5Y', {
+              page_load_time: true,
+              custom_map: {'custom_parameter': 'value'}
+            });
           `}
         </Script>
 
@@ -150,6 +156,7 @@ export default async function LocaleLayout({ children, params }) {
         cz-shortcut-listen="true"
       >
         <NextIntlClientProvider locale={locale}>
+          <PerformanceMonitor />
           <Navigation />
           <main className="flex-1 px-2 sm:px-8 pt-26">{children}</main>
           <Footer />

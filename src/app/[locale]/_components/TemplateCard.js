@@ -64,6 +64,11 @@ export default function TemplateCard({ template, index, isNew }) {
               width={400}
               height={400}
               className="object-cover w-full h-full"
+              priority={index < 6} // Prioritize first 6 images
+              loading={index < 6 ? "eager" : "lazy"}
+              placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRnoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <h3 className="mt-3 text-base font-semibold sm:text-lg md:text-xl">

@@ -1,8 +1,13 @@
 import createNextIntlPlugin from "next-intl/plugin";
+import bundleAnalyzer from "@next/bundle-analyzer";
 
 const withNextIntl = createNextIntlPlugin({
   // This should point to the request configuration
   requestConfig: './src/i18n/request.js'
+});
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
 });
 
 /** @type {import('next').NextConfig} */
@@ -12,6 +17,43 @@ const nextConfig = {
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
+
+  // Bundle optimization
+  experimental: {
+    optimizePackageImports: ['framer-motion', 'react-icons', 'lucide-react'],
+  },
+
+  // Webpack optimization
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // Optimize bundle splitting
+    if (!dev && !isServer) {
+      config.optimization.splitChunks = {
+        ...config.optimization.splitChunks,
+        cacheGroups: {
+          ...config.optimization.splitChunks.cacheGroups,
+          animations: {
+            test: /[\/\\]node_modules[\/\\](framer-motion|gsap)[\/\\]/,
+            name: 'animations',
+            chunks: 'all',
+            priority: 20,
+          },
+          icons: {
+            test: /[\/\\]node_modules[\/\\](react-icons|lucide-react|@heroicons)[\/\\]/,
+            name: 'icons',
+            chunks: 'all',
+            priority: 15,
+          },
+          vendor: {
+            test: /[\/\\]node_modules[\/\\]/,
+            name: 'vendor',
+            chunks: 'all',
+            priority: 10,
+          },
+        },
+      };
+    }
+    return config;
+  },
 
 
 
@@ -55,6 +97,26 @@ const nextConfig = {
           },
         ],
       },
+      // Cache static assets aggressively
+      {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Cache static assets
+      {
+        source: '/public/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=604800, s-maxage=2592000',
+          },
+        ],
+      },
     ];
   },
 
@@ -85,4 +147,4 @@ const nextConfig = {
   },
 };
 
-export default withNextIntl(nextConfig);
+export default withNextIntl(withBundleAnalyzer(nextConfig));

@@ -1,12 +1,21 @@
 import { useTranslations, useLocale } from "next-intl";
-import TemplatesShowcase from "@/src/app/[locale]/_components/TempaltesShowCase";
+import dynamic from "next/dynamic";
 import AnimatedText from "@/src/app/[locale]/_components/AnimatedText";
 import TypewriterText from "@/src/app/[locale]/_components/TypewriterText";
 import AnimatedWrapper from "@/src/app/[locale]/_components/AnimatedWrapper";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
-import SubscriptionForm from "@/src/app/[locale]/_components/SubscriptionForm";
-import GoToTemplatesPageButton from "@/src/app/[locale]/_components/GoToTemplatesPageButton";
 import SEOOptimizer from "./_components/SEOOptimizer";
+
+// Lazy load components that are not immediately visible
+const TemplatesShowcase = dynamic(() => import("@/src/app/[locale]/_components/TempaltesShowCase"), {
+  loading: () => <div className="animate-pulse h-96 bg-gray-800 rounded-lg"></div>
+});
+const SubscriptionForm = dynamic(() => import("@/src/app/[locale]/_components/SubscriptionForm"), {
+  loading: () => <div className="animate-pulse h-32 bg-gray-800 rounded-lg"></div>
+});
+const GoToTemplatesPageButton = dynamic(() => import("@/src/app/[locale]/_components/GoToTemplatesPageButton"), {
+  loading: () => <div className="animate-pulse h-12 bg-gray-800 rounded-lg w-48"></div>
+});
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
