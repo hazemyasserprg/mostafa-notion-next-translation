@@ -1,0 +1,5 @@
+[33m9a21d43[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix: Completely bypass middleware for image files
+[33mc79645a[m Fix: Ensure images bypass all middleware processing
+[33mde55949[m Fix: Prevent image redirects to www with /en/ locale
+[33m2e1a392[m Fix: Resolve Next.js route source pattern error
+[33m17b93e7[m Fix: Resolve Vercel redirect pattern error

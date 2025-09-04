@@ -9,11 +9,11 @@
   "terms": "Terms of Service",
   "customTemplate": "CUSTOM TEMPLATE",
   "customTemplateCta": "Need a Custom Template?",
-  "blog": "BLOG POSTS",
-  "blogs": {
-    "organizedMind": "An Organized Mind, a Productive Life",
-    "fiveAmClub": "The 5am Club Guide",
-    "atomicHabits": "Atomic Habits Review"
+  "premiumTemplates": "PREMIUM TEMPLATES",
+  "templates": {
+    "secondBrain": "Second Brain",
+    "studyHub": "StudyHub",
+    "financeHub": "FinanceHub"
   },
   "copyright": "© 2025 Mostafa Yasser. All rights reserved.",
   "developedBy": "Developed by",

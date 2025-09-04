@@ -186,25 +186,25 @@ function Footer() {
 
           <div className="space-y-2">
             <h4 className="text-main font-semibold text-base mb-2">
-              {t("blog")}
+              {t("premiumTemplates")}
             </h4>
             <Link
-              href={`/${locale}/blog/organized-mind-productive-life`}
+              href={`/${locale}/templates/second-brain`}
               className="block text-sm text-gray-400 hover:text-main transition"
             >
-              {t("blogs.organizedMind")}
+              {t("templates.secondBrain")}
             </Link>
             <Link
-              href={`/${locale}/blog/the-5am-club-guide`}
+              href={`/${locale}/templates/study-hub`}
               className="block text-sm text-gray-400 hover:text-main transition"
             >
-              {t("blogs.fiveAmClub")}
+              {t("templates.studyHub")}
             </Link>
             <Link
-              href={`/${locale}/blog/atomic-habits-guide`}
+              href={`/${locale}/templates/finance-hub`}
               className="block text-sm text-gray-400 hover:text-main transition"
             >
-              {t("blogs.atomicHabits")}
+              {t("templates.financeHub")}
             </Link>
           </div>
         </div>
