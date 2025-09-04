@@ -8,6 +8,8 @@ import TemplateCard from "../../_components/TemplateCard";
 import SEOOptimizer from "../../_components/SEOOptimizer";
 import Link from "next/link";
 import templatesData from "@/src/app/[locale]/_data/templatesData";
+import enMessages from "@/messages/en/TemplateSlug.json";
+import arMessages from "@/messages/ar/TemplateSlug.json";
 
 function getRandomItems(arr, count) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
@@ -87,6 +89,10 @@ export default function TemplateDetailsClient({ template }) {
                   <CheckoutButton
                     checkoutLink={t(`${template.name}.checkoutLink`)}
                     checkoutText={t(`${template.name}.checkout`)}
+                    arabicCheckoutLink={arMessages[template.name]?.checkoutLink}
+                    arabicCheckoutText={arMessages[template.name]?.checkout}
+                    englishCheckoutLink={enMessages[template.name]?.checkoutLink}
+                    englishCheckoutText={enMessages[template.name]?.checkout}
                   />
                 )}
               </div>

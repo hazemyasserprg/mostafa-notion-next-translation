@@ -68,11 +68,10 @@ export default function PricingSec({ template }) {
       </p>
 
       <div
-        className={`grid grid-cols-1 ${
-          plans.filter((plan) => plan.data).length === 2
+        className={`grid grid-cols-1 ${plans.filter((plan) => plan.data).length === 2
             ? "md:grid-cols-2 max-w-4xl"
             : "md:grid-cols-3 max-w-7xl"
-        } gap-10  mx-auto`}
+          } gap-10  mx-auto`}
       >
         {plans.map((plan, idx) => {
           if (!plan.data) return null;
@@ -94,11 +93,10 @@ export default function PricingSec({ template }) {
                   {plan.data.label}
                 </h3>
                 <p
-                  className={`text-sm sm:text-base mb-4 ${
-                    idx === 2
+                  className={`text-sm sm:text-base mb-4 ${idx === 2
                       ? "text-neutral-800"
                       : "text-neutral-600 dark:text-neutral-300"
-                  }`}
+                    }`}
                 >
                   {plan.data.description}
                 </p>
@@ -111,18 +109,16 @@ export default function PricingSec({ template }) {
                   )}
                 </div>
                 <ul
-                  className={`text-sm sm:text-base space-y-2 mb-6 ${
-                    idx === 2
+                  className={`text-sm sm:text-base space-y-2 mb-6 ${idx === 2
                       ? "text-black"
                       : "text-neutral-800 dark:text-neutral-300"
-                  }`}
+                    }`}
                 >
                   {plan.data.features.map((item) => (
                     <li key={item} className="flex items-center gap-2">
                       <CheckCircle
-                        className={`w-5 h-5 ${
-                          idx === 2 ? "text-black" : "text-main"
-                        }`}
+                        className={`w-5 h-5 ${idx === 2 ? "text-black" : "text-main"
+                          }`}
                       />
                       <span>{item}</span>
                     </li>
