@@ -549,5 +549,124 @@
         "content": "الفشل لا يحددنا؛ ما يحددنا هو كيف نرد عليه. من خلال فهم الآثار النفسية للفشل، واعتماد استراتيجيات مدروسة، وتحويل النكسات إلى دروس، يمكننا أن نحول كل فشل إلى خطوة نحو النجاح. المفتاح هو أن لا نستسلم أبدًا، بل نعيد المحاولة دائمًا – بثقة أكبر وخطة أوضح."
       }
     }
+  },
+  "The Easiest Way to Track Your Time and Tasks Using Notion": {
+    "title": "أسهل طريقة لتتبع وقتك ومهامك باستخدام Notion",
+    "slug": "notion-time-tracking-guide",
+    "shortCut": "تتبع الوقت في Notion",
+    "image": "/blogs/ARBlogs/9.webp",
+    "toc": "قاعدة المحتوى",
+    "blogInfo": {
+      "blogBy": "بقلم: ",
+      "by": "مصطفى ياسر",
+      "dateIn": "    التاريخ: ",
+      "date": "١٥ يناير ٢٠٢٥",
+      "typeOf": "    النوع: ",
+      "type": "الإنتاجية"
+    },
+    "topics": {
+      "intro": {
+        "heading": "أسهل طريقة لتتبع وقتك ومهامك باستخدام Notion",
+        "tocTitle": "مقدمة",
+        "content": "**هل تعاني من إضاعة الوقت وتساءلت أين يذهب يومك؟ مع Notion، يمكنك تتبع كل دقيقة وإنجاز بسهولة وذكاء!**\n\nفي عالم مليء بالمشتتات، معرفة أين يذهب وقتك وما أنجزته هو أحد أكبر مفاتيح الإنتاجية. في هذا الدليل خطوة بخطوة، سأوضح لك كيفية تطبيق نظام تتبع وقت ناجح في Notion، مستوحى من تجربة مصطفى ياسر، خبير أنظمة الإنتاجية الرقمية."
+      },
+      "why-track": {
+        "heading": "لماذا تتبع وقتك على Notion؟",
+        "tocTitle": "لماذا تتبع الوقت؟",
+        "content": "- راقب حقاً ساعاتك المنتجة والمضاعة.\n- حلل تقدمك في أي مشروع أو دراسة بسهولة مع بيانات دقيقة وقابلة للتنفيذ.\n- راجع أداءك الأسبوعي أو الشهري لاتخاذ قرارات أفضل حول كيفية قضاء وقتك."
+      },
+      "step-1": {
+        "heading": "الخطوة 1: أضف أعمدة الوقت لقاعدة البيانات",
+        "tocTitle": "أضف أعمدة الوقت",
+        "content": "أضف أعمدة **وقت البداية** و **وقت النهاية** إلى قاعدة بيانات مهامك أو مشاريعك. ستكون هذه هي الأساس لنظام تتبع الوقت الخاص بك."
+      },
+      "step-2": {
+        "heading": "الخطوة 2: أنشئ أزرار تفاعلية",
+        "tocTitle": "أنشئ الأزرار",
+        "content": "أنشئ زرين تفاعليين:\n- زر **\"بدء\"** يضع حالة المهمة على \"قيد التنفيذ\" ويسجل وقت البداية الحالي.\n- زر **\"إنهاء\"** يضعها كـ \"مكتملة\" ويحفظ وقت النهاية."
+      },
+      "step-3": {
+        "heading": "الخطوة 3: أضف حساب الوقت التلقائي",
+        "tocTitle": "حساب الوقت",
+        "content": "أضف معادلة لحساب الفرق الزمني تلقائياً بين بداية ونهاية كل مهمة:\n\nاستخدم الدالة:\n\n```jsx\ndateBetween(End Time, Start Time, \"minutes\")\n```\n\nللحصول فوراً على مدة المهمة بالدقائق—بدون حساب يدوي مطلوب."
+      },
+      "step-4": {
+        "heading": "الخطوة 4: امنح نتائجك مظهراً احترافياً",
+        "tocTitle": "تنسيق النتائج",
+        "content": "اجعل نتائجك أوضح! امنح معادلتك تنسيقاً بحيث تتغير وحدة الوقت (\"دقيقة\"، \"دقائق\"، \"ساعة\"، أو \"يوم\") تلقائياً حسب المدة. استخدم هذه المعادلة الذكية للحصول على نتائج احترافية:\n\n```jsx\nif(\n  empty(prop(\"End Time\")),\n  \"\",\n  let(\n    totalMinutes, dateBetween(prop(\"End Time\"), prop(\"Start Time\"), \"minutes\"),\n    let(\n      days, floor(totalMinutes / 1440),\n      let(\n        hours, floor((totalMinutes % 1440) / 60),\n        let(\n          minutes, totalMinutes % 60,\n          if(days > 0,\n            format(days) + \" day\" + if(days > 1, \"s\", \"\") +\n            if(hours > 0, \" and \" + format(hours) + \" hour\" + if(hours > 1, \"s\", \"\"), \"\"),\n            if(hours > 0,\n              format(hours) + \" hour\" + if(hours > 1, \"s\", \"\") +\n              if(minutes > 0, \" and \" + format(minutes) + \" minute\" + if(minutes > 1, \"s\", \"\"), \"\"),\n              format(minutes) + \" minute\" + if(minutes > 1, \"s\", \"\")\n            )\n          )\n        )\n      )\n    )\n  )\n)\n```"
+      },
+      "tips": {
+        "heading": "نصائح إضافية للنجاح",
+        "tocTitle": "نصائح إضافية",
+        "content": "- اسم الأعمدة بالضبط كما هو موضح في المثال حتى تعمل المعادلة الجاهزة بشكل صحيح.\n- راجع ساعات عملك أسبوعياً واصدر تقارير وقت مفصلة بسهولة من قاعدة البيانات.\n- استخدم بيانات تتبع الوقت لتحديد ساعاتك الأكثر إنتاجية وتحسين جدولك وفقاً لذلك."
+      },
+      "conclusion": {
+        "heading": "الخاتمة: اجعل إدارة الوقت عادة ذكية",
+        "tocTitle": "الخاتمة",
+        "content": "**اجعل إدارة الوقت عادة ذكية حقيقية، وسجل كل دقيقة إنجاز—Notion سيدهشك بوضوحه وبساطته!**\n\nبهذا النظام، ستحصل على رؤية كاملة لكيفية قضاء وقتك، مما يتيح لك اتخاذ قرارات مدروسة حول إنتاجيتك وعادات عملك. ابدأ في تطبيق هذا اليوم وشاهد إنتاجيتك ترتفع!"
+      }
+    }
+  },
+  "How to Create Powerful Advanced Recurring Tasks in Notion": {
+    "title": "كيفية إنشاء مهام متكررة متقدمة وقوية في نوشن",
+    "slug": "advanced-recurring-tasks-notion",
+    "shortCut": "المهام المتكررة المتقدمة",
+    "image": "/blogs/ARBlogs/10.webp",
+    "toc": "قاعدة المحتوى",
+    "blogInfo": {
+      "blogBy": "بقلم: ",
+      "by": "مصطفى ياسر",
+      "dateIn": "     التاريخ: ",
+      "date": "٢٠ يناير ٢٠٢٥",
+      "typeOf": "     النوع: ",
+      "type": "الإنتاجية"
+    },
+    "topics": {
+      "intro": {
+        "heading": "كيفية إنشاء مهام متكررة متقدمة وقوية في نوشن",
+        "tocTitle": "مقدمة",
+        "content": "إذا كنت طالباً، أو محترفاً، أو عاشقاً للإنتاجية وكنت تريد أن يتعامل مدير مهام نوشن مع المهام المتكررة *حقاً*—فكر في \"كل خميس ثالث\"، أو \"آخر يوم عمل في الشهر\"، أو \"الاثنين/الأربعاء/الجمعة\"—فإن هذا الدليل لك! سأرشدك خطوة بخطوة، من خصائص قاعدة البيانات إلى الأتمتة، حتى تتمكن من إعداد نظام مهام متكررة مرن وذكي في نوشن."
+      },
+      "setup-database": {
+        "heading": "الخطوة ١: إعداد خصائص قاعدة البيانات",
+        "tocTitle": "إعداد قاعدة البيانات",
+        "content": "قبل أن نتعمق في المعادلات السحرية، تأكد من أن قاعدة البيانات تحتوي على الخصائص التالية (بهذه الأسماء *الضبط* حتى تعمل المعادلات):\n\n| اسم الخاصية | النوع |\n| --- | --- |\n| **الحالة** | الحالة |\n| **الموعد النهائي** | التاريخ |\n| **فترة التكرار** | رقم |\n| **وحدة التكرار** | اختيار |\n| **الأيام** | اختيار متعدد |\n| **مفتاح الترجمة** | معادلة |\n| **الموعد التالي** | معادلة |\n\n> نصيحة: للحصول على شرح كامل، راجع أدلة الفيديو أو أقسام الأسئلة الشائعة (هناك صور رائعة، لكن هذه المقالة تعطيك ملخصاً مختصراً)."
+      },
+      "recurring-options": {
+        "heading": "الخطوة ٢: إعداد خيارات التكرار",
+        "tocTitle": "خيارات التكرار",
+        "content": "**في خاصية \"وحدة التكرار\"، أضف هذه الخيارات:**\n\n- يوم(أيام)\n- أسبوع(أسابيع)\n- شهر(شهور)\n- سنة(سنوات)\n- شهر(شهور) في آخر يوم\n- شهر(شهور) في أول يوم عمل\n- شهر(شهور) في آخر يوم عمل\n- يوم عمل رقم ن في الشهر\n\n**لخاصية \"الأيام\":**\n\nأضف كل يوم من أيام الأسبوع كخيارات (الاثنين، الثلاثاء، إلخ).\n\n## كيف تعمل هذه في الممارسة\n\n- **أيام متعددة**: تريد أن تتكرر المهمة في الاثنين/الأربعاء/الجمعة؟ اختر \"يوم(أيام)\" وحدد أيامك.\n- **يوم عمل رقم ن**: تريد \"كل خميس ثالث\"؟ اضبط فترة التكرار = ٣، وحدة التكرار = \"يوم عمل رقم ن في الشهر\"، الأيام = الخميس."
+      },
+      "localization": {
+        "heading": "الخطوة ٣: الترجمة للاستخدام العالمي",
+        "tocTitle": "إعداد الترجمة",
+        "content": "أضف هذه المعادلة إلى خاصية **مفتاح الترجمة**، والتي تتيح لك تخصيص اللغة لأيام الأسبوع، والحالات، والوحدات:\n\n```jsx\n[\n/* أعد كتابة خيارات أيام الأسبوع ووحدة التكرار بلغتك الخاصة، حتى يعمل عقلك الثاني بشكل أفضل مع عقلك الأول. تأكد من إعداد نفس الخيارات في خصائص \"وحدة التكرار\" و\"الأيام\" بعد ذلك، حتى تتمكن من اختيارها. لا تتردد في إزالة الأسماء الأصلية بعد ذلك! */\n\n/* [\"الاثنين\", \"الثلاثاء\", \"الأربعاء\", \"الخميس\", \"الجمعة\", \"السبت\", \"الأحد\"] */\n[\"الاثنين\", \"الثلاثاء\", \"الأربعاء\", \"الخميس\", \"الجمعة\", \"السبت\", \"الأحد\"],\n\n/* [\"يوم(أيام)\", \"أسبوع(أسابيع)\", \"شهر(شهور)\", \"سنة(سنوات)\", \"شهر(شهور) في آخر يوم\", \"شهر(شهور) في أول يوم عمل\", \"شهر(شهور) في آخر يوم عمل\", \"يوم عمل رقم ن في الشهر\"] */\n[\"يوم(أيام)\", \"أسبوع(أسابيع)\", \"شهر(شهور)\", \"سنة(سنوات)\", \"شهر(شهور) في آخر يوم\", \"شهر(شهور) في أول يوم عمل\", \"شهر(شهور) في آخر يوم عمل\", \"يوم عمل رقم ن في الشهر\"],\n\n/* هذه القائمة الأخيرة لأسماء خيارات الحالة. */\n[\"لم تبدأ\", \"قيد التنفيذ\", \"مكتملة\"]\n]\n```\n\nخصص القيم إذا كنت تفضل لغة أو مصطلحات أخرى—فقط تأكد من مزامنة الأسماء مع خيارات خاصية الاختيار/الاختيار المتعدد."
+      },
+      "advanced-formula": {
+        "heading": "الخطوة ٤: معادلة \"الموعد التالي\" المتقدمة",
+        "tocTitle": "المعادلة المتقدمة",
+        "content": "الصق هذه المعادلة المتقدمة في خاصية **الموعد التالي**. تحسب هذه المعادلة موعد التكرار التالي، بما في ذلك منطق المواعيد المتأخرة، والفترات المخصصة، والأنماط \"الأنيقة\" (مثل آخر يوم عمل في كل شهر).\n\n```jsx\nlets(\n  version, \"2.2.0\",\n\n  dueProp, prop(\"الموعد النهائي\"),\n\n  recurIntervalProp, prop(\"فترة التكرار\"),\n\n  recurUnitProp, prop(\"وحدة التكرار\"),\n\n  localizationKeyProp, prop(\"مفتاح الترجمة\"),\n\n  daysProp, prop(\"الأيام\"),\n\n  emptyDate, parseDate(\"\"),\n\n  if(!empty(recurIntervalProp) and !empty(dueProp),\n    if(recurIntervalProp > 0 and recurIntervalProp == ceil(recurIntervalProp),\n      lets(\n        recurUnit,\n          ifs(\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 0), recurUnitProp == \"يوم(أيام)\"), \"days\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 1), recurUnitProp == \"أسبوع(أسابيع)\"), \"weeks\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 2), recurUnitProp == \"شهر(شهور)\"), \"months\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 3), recurUnitProp == \"سنة(سنوات)\"), \"years\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 4), recurUnitProp == \"شهر(شهور) في آخر يوم\"), \"monthsonthelastday\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 5), recurUnitProp == \"شهر(شهور) في أول يوم عمل\"), \"monthsonthefirstweekday\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 6), recurUnitProp == \"شهر(شهور) في آخر يوم عمل\"), \"monthsonthelastweekday\",\n            or(and(!empty(at(at(localizationKeyProp, 1), 7)), recurUnitProp == at(at(localizationKeyProp, 1), 7)), recurUnitProp == \"يوم عمل رقم ن في الشهر\"), \"nthweekday\",\n            \"days\"\n          ),\n\n        weekdays,\n          match(\n            [\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 1 - 1)), includes(daysProp, \"الاثنين\")), 1, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 2 - 1)), includes(daysProp, \"الثلاثاء\")), 2, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 3 - 1)), includes(daysProp, \"الأربعاء\")), 3, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 4 - 1)), includes(daysProp, \"الخميس\")), 4, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 5 - 1)), includes(daysProp, \"الجمعة\")), 5, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 6 - 1)), includes(daysProp, \"السبت\")), 6, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 7 - 1)), includes(daysProp, \"الأحد\")), 7, false)\n            ],\n            \"[1-7]\"\n          ),\n\n        dateDue, parseDate(formatDate(dueProp, \"YYYY-MM-DD\")),\n\n        timeNow, now(),\n\n        dateNow, parseDate(formatDate(timeNow, \"YYYY-MM-DD\")),\n\n        hasRange, dateEnd(dueProp) > dateStart(dueProp),\n\n        recurUnitLapseLength,\n          if(\n            includes([\"days\", \"weeks\", \"months\", \"years\"], recurUnit),\n            dateBetween(dateNow, dateDue, recurUnit) / recurIntervalProp,\n            false\n          ),\n\n        lastDayBaseDate,\n          if(\n            includes([\"monthsonthelastday\", \"monthsonthefirstweekday\", \"monthsonthelastweekday\"], recurUnit),\n            if(\n              year(dateNow) * 12 + month(dateNow) - (year(dateDue) * 12 + month(dateDue)) > 0,\n              dateSubtract(dateAdd(dateSubtract(dateAdd(dateDue, ceil((year(dateNow) * 12 + month(dateNow) - (year(dateDue) * 12 + month(dateDue))) / recurIntervalProp) * recurIntervalProp, \"months\"), date(dateAdd(dateDue, ceil((year(dateNow) * 12 + month(dateNow) - (year(dateDue) * 12 + month(dateDue))) / recurIntervalProp) * recurIntervalProp, \"months\")) - 1, \"days\"), 1, \"months\"), 1, \"days\"),\n              dateSubtract(dateAdd(dateSubtract(dateAdd(dateDue, recurIntervalProp, \"months\"), date(dateAdd(dateDue, recurIntervalProp, \"months\")) - 1, \"days\"), 1, \"months\"), 1, \"days\")\n            ),\n            emptyDate\n          ),\n\n        firstDayBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            dateSubtract(lastDayBaseDate, date(lastDayBaseDate) - 1, \"days\"),\n            emptyDate\n          ),\n\n        firstWeekdayBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(firstDayBaseDate), \"6|7\"),\n              dateAdd(firstDayBaseDate, 8 - day(firstDayBaseDate), \"days\"),\n              firstDayBaseDate\n            ),\n            emptyDate\n          ),\n\n        lastWeekdayBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(lastDayBaseDate), \"6|7\"),\n              dateSubtract(lastDayBaseDate, day(lastDayBaseDate) - 5, \"days\"),\n              lastDayBaseDate\n            ),\n            emptyDate\n          ),\n\n        nextLastBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            dateSubtract(dateAdd(dateSubtract(dateAdd(lastDayBaseDate, recurIntervalProp, \"months\"), date(dateAdd(lastDayBaseDate, recurIntervalProp, \"months\")) - 1, \"days\"), 1, \"months\"), 1, \"days\"),\n            emptyDate\n          ),\n\n        nextFirstBaseDate,\n        if(\n          lastDayBaseDate != emptyDate,\n          dateSubtract(nextLastBaseDate, date(nextLastBaseDate) - 1, \"days\"),\n          emptyDate\n        ),\n\n        nextFirstWeekday,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(nextFirstBaseDate), \"6|7\"),\n              dateAdd(nextFirstBaseDate, 8 - day(nextFirstBaseDate), \"days\"),\n              nextFirstBaseDate\n            ),\n            emptyDate\n          ),\n\n        nextLastWeekday,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(nextLastBaseDate), \"6|7\"),\n              dateSubtract(nextLastBaseDate, day(nextLastBaseDate) - 5, \"days\"),\n              nextLastBaseDate\n            ),\n            emptyDate\n          ),\n\n        firstWeekSpecificDayBaseDate,\n          lets(\n            baseMonthDate,\n              if(\n                timeNow > dueProp,\n                timeNow,\n                dueProp\n              ),\n\n            weekday, toNumber(at(weekdays, 0)),\n\n            firstDayOfNextMonth, dateSubtract(dateAdd(baseMonthDate, 1, \"months\"), date(baseMonthDate) - 1, \"days\"),\n\n            ifs(\n              day(firstDayOfNextMonth) < weekday, dateAdd(firstDayOfNextMonth, weekday - day(firstDayOfNextMonth), \"days\"),\n              day(firstDayOfNextMonth) > weekday, dateAdd(firstDayOfNextMonth, weekday - day(firstDayOfNextMonth) + 7, \"days\"),\n              firstDayOfNextMonth\n            )\n          ),\n\n        nthWeekdayBaseDate, dateAdd(firstWeekSpecificDayBaseDate, recurIntervalProp - 1, \"weeks\"),\n\n        nextDueStart,\n          ifs(\n            recurUnit == \"days\" and length(weekdays) > 0 and recurIntervalProp == 1,\n              if(\n                dateNow >= dateDue,\n                ifs(\n                  includes(weekdays, format(day(dateAdd(dateNow, 1, \"days\")))), dateAdd(dateNow, 1, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 2, \"days\")))), dateAdd(dateNow, 2, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 3, \"days\")))), dateAdd(dateNow, 3, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 4, \"days\")))), dateAdd(dateNow, 4, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 5, \"days\")))), dateAdd(dateNow, 5, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 6, \"days\")))), dateAdd(dateNow, 6, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 7, \"days\")))), dateAdd(dateNow, 7, \"days\"),\n                  emptyDate\n                ),\n                ifs(\n                  includes(weekdays, format(day(dateAdd(dateDue, 1, \"days\")))), dateAdd(dateDue, 1, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 2, \"days\")))), dateAdd(dateDue, 2, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 3, \"days\")))), dateAdd(dateDue, 3, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 4, \"days\")))), dateAdd(dateDue, 4, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 5, \"days\")))), dateAdd(dateDue, 5, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 6, \"days\")))), dateAdd(dateDue, 6, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 7, \"days\")))), dateAdd(dateDue, 7, \"days\"),\n                  emptyDate\n                )\n              ),\n\n            recurUnit == \"nthweekday\" and length(weekdays) == 1 and recurIntervalProp >= 1 and recurIntervalProp <= 5,\n              if(\n                month(nthWeekdayBaseDate) == month(firstWeekSpecificDayBaseDate),\n                nthWeekdayBaseDate,\n                dateSubtract(nthWeekdayBaseDate, 1, \"week\")\n              ),\n\n            recurUnit == \"monthsonthelastday\",\n              if(\n                dateNow >= lastDayBaseDate,\n                nextLastBaseDate,\n                lastDayBaseDate\n              ),\n\n            recurUnit == \"monthsonthefirstweekday\",\n              if(\n                dateNow >= firstWeekdayBaseDate,\n                nextFirstWeekday,\n                firstWeekdayBaseDate\n              ),\n\n            recurUnit == \"monthsonthelastweekday\",\n              if(\n                dateNow >= lastWeekdayBaseDate,\n                nextLastWeekday,\n                lastWeekdayBaseDate\n              ),\n\n            includes([\"days\", \"weeks\", \"months\", \"years\"], recurUnit),\n              if(\n                dateBetween(dateNow, dateDue, \"days\") >= 1,\n                if(\n                  recurUnitLapseLength == ceil(recurUnitLapseLength),\n                  dateAdd(dateDue, (recurUnitLapseLength + 1) * recurIntervalProp, recurUnit),\n                  dateAdd(dateDue, ceil(recurUnitLapseLength) * recurIntervalProp, recurUnit)\n                ),\n                dateAdd(dateDue, recurIntervalProp, recurUnit)\n              ),\n\n            emptyDate\n          ),\n\n        recurRange, dateBetween(nextDueStart, dateDue, \"days\"),\n\n        timeNextDueStart, dateAdd(dateStart(dueProp), recurRange, \"days\"),\n\n        timeNextDueEnd, dateAdd(dateEnd(dueProp), recurRange, \"days\"),\n\n        nextDue,\n          if(\n            hasRange,\n            dateRange(timeNextDueStart, timeNextDueEnd),\n            timeNextDueStart\n          ),\n\n        nextDue\n      ),\n      dueProp\n    ),\n    emptyDate\n  )\n)\n```\n\n> هذه المعادلة طويلة لكنها ضرورية؛ تأكد من أن أسماء الخصائص مطابقة تماماً!"
+      },
+      "automation": {
+        "heading": "الخطوة ٥: أتمتة مهامك المتكررة",
+        "tocTitle": "أتمتة المهام",
+        "content": "الآن، دعنا نعالج هذه المهام تلقائياً عند انتهائك منها.\n\n١. **أنشئ عرضاً مصفى يسمى \"المهام المتكررة\":**\n    - المرشح: **الموعد النهائي غير فارغ** و **فترة التكرار >= ١**\n٢. **أنشئ أتمتة قاعدة البيانات:**\n    - المحفز: **الحالة تُضبط على مكتملة**\n    - الإجراء ١: اضبط **الحالة** مرة أخرى على \"لم تبدأ\"\n    - الإجراء ٢: اضبط خاصية **الموعد النهائي** على **معادلة**:\n        \n        ```jsx\n        context(\"Trigger page\").prop(\"الموعد التالي\")\n        ```\n        \n    - هذا يشير إلى خاصية \"الموعد التالي\"، محدثاً موعد مهمتك تلقائياً باستخدام معادلتك الضخمة.\n\n> نصيحة محترف: استخدم دائماً خصائص المعادلة للمنطق المعقد حتى تتمكن من مراجعة المخرجات واستكشاف الأخطاء بسهولة!"
+      },
+      "why-matters": {
+        "heading": "لماذا هذا مهم",
+        "tocTitle": "لماذا هذا مهم",
+        "content": "مع هذا النظام، يتعامل مساحة عمل نوشن مع أي سيناريو مهام متكررة تقريباً—مفيد سواء كنت طالباً، أو محترفاً مع مواعيد نهائية معقدة، أو تبني متتبع عادات روحية. يمكنك ضبط المهام لتتكرر في أي نمط قد تحتاجه تقريباً—*تلقائياً*!\n\nكمطور نوشن ومهندس مدني، أعرف كم من الوقت يمكن أن توفر التصميم الذكي. مع هذا الإعداد، يمكنك قضاء وقت أقل في العبث بالتواريخ، والمزيد من الوقت في التركيز على المهام المهمة."
+      },
+      "final-thoughts": {
+        "heading": "الأفكار النهائية والخطوات التالية",
+        "tocTitle": "الأفكار النهائية",
+        "content": "هذا مجرد الأساس! فكر في إضافة سجل تاريخ المهام، المزيد من الأتمتة (للإشعارات، على سبيل المثال)، أو ربط إعداد التكرار الخاص بك بلوحات المعلومات لعمل تدفق إنتاجية شامل.\n\nفضولي حول حالات استخدام محددة، أو تحتاج مساعدة في استكشاف أخطاء المعادلات أو الأتمتة؟ اطرح أسئلتك في التعليقات، أو راجع موارد الإنتاجية في نوشن للحصول على قوالب مصممة للطلاب، والمحترفين، والمسلمين الذين يريدون التنظيم، والتعلم، والنمو—كل ذلك في مكان واحد.\n\nتنظيم سعيد،\n\n**مصطفى ياسر**"
+      },
+      "get-started": {
+        "heading": "ابدأ اليوم",
+        "tocTitle": "ابدأ",
+        "content": "طريق الوضوح والنجاح يبدأ من قالب واحد. انقر أدناه لفتح تجربة العقل الثاني الكاملة:\n\n[**اكتشف قالب العقل الثاني**](https://www.mostafayasser.com/ar/templates/second-brain)"
+      }
+    }
   }
 }

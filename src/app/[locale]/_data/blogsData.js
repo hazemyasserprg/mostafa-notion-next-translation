@@ -651,6 +651,131 @@ const blogsData = [
       },
     ],
   },
+  {
+    title: "The Easiest Way to Track Your Time and Tasks Using Notion",
+    id: 9,
+    slug: "notion-time-tracking-guide",
+    topics: [
+      {
+        id: "intro",
+        heading: "The Easiest Way to Track Your Time and Tasks Using Notion",
+        tocTitle: "Introduction",
+        content: "**Do you struggle with wasted time and wonder where your day goes? With Notion, you can track every minute and achievement easily and intelligently!**\n\nIn a world full of distractions, knowing where your time goes and what you've accomplished is one of the biggest keys to productivity. In this step-by-step guide, I'll show you how to implement a successful time tracking system in Notion, inspired by the experience of Mostafa Yasser, an expert in digital productivity systems.",
+      },
+      {
+        id: "why-track",
+        heading: "Why Track Your Time on Notion?",
+        tocTitle: "Why Track Time?",
+        content: "- Truly monitor your productive and wasted hours.\n- Easily analyze your progress in any project or study with accurate, actionable data.\n- Review your weekly or monthly performance to make better decisions on how to spend your time.",
+      },
+      {
+        id: "step-1",
+        heading: "Step 1: Add Time Columns to Your Database",
+        tocTitle: "Add Time Columns",
+        content: "Add **Start Time** and **End Time** columns to your tasks or project database. These will be the foundation of your time tracking system.",
+      },
+      {
+        id: "step-2",
+        heading: "Step 2: Create Interactive Buttons",
+        tocTitle: "Create Buttons",
+        content: "Create two interactive buttons:\n- A **\"Start\"** button that sets the task status to \"In Progress\" and records the current start time.\n- An **\"End\"** button that marks it as \"Done\" and saves the end time.",
+      },
+      {
+        id: "step-3",
+        heading: "Step 3: Add Automatic Time Calculation",
+        tocTitle: "Time Calculation",
+        content: "Add a formula to automatically calculate the time difference between the start and end of each task:\n\nUse the function:\n\n```jsx\ndateBetween(End Time, Start Time, \"minutes\")\n```\n\nto instantly get the task duration in minutes—no manual calculation required.",
+      },
+      {
+        id: "step-4",
+        heading: "Step 4: Format Your Results Professionally",
+        tocTitle: "Format Results",
+        content: "Make your results clearer! Format your formula so the time unit (\"minute,\" \"minutes,\" \"hour,\" or \"day\") changes automatically based on the duration. Use this smart formula for professional results:\n\n```jsx\nif(\n  empty(prop(\"End Time\")),\n  \"\",\n  let(\n    totalMinutes, dateBetween(prop(\"End Time\"), prop(\"Start Time\"), \"minutes\"),\n    let(\n      days, floor(totalMinutes / 1440),\n      let(\n        hours, floor((totalMinutes % 1440) / 60),\n        let(\n          minutes, totalMinutes % 60,\n          if(days > 0,\n            format(days) + \" day\" + if(days > 1, \"s\", \"\") +\n            if(hours > 0, \" and \" + format(hours) + \" hour\" + if(hours > 1, \"s\", \"\"), \"\"),\n            if(hours > 0,\n              format(hours) + \" hour\" + if(hours > 1, \"s\", \"\") +\n              if(minutes > 0, \" and \" + format(minutes) + \" minute\" + if(minutes > 1, \"s\", \"\"), \"\"),\n              format(minutes) + \" minute\" + if(minutes > 1, \"s\", \"\")\n            )\n          )\n        )\n      )\n    )\n  )\n)\n```",
+      },
+      {
+        id: "tips",
+        heading: "Extra Tips for Success",
+        tocTitle: "Extra Tips",
+        content: "- Name the columns exactly as shown in the example for the ready-made formula to work correctly.\n- Review your work hours weekly and easily export detailed time reports from your database.\n- Use the time tracking data to identify your most productive hours and optimize your schedule accordingly.",
+      },
+      {
+        id: "conclusion",
+        heading: "Conclusion: Make Time Management a Smart Habit",
+        tocTitle: "Conclusion",
+        content: "**Make time management a real smart habit, and record every minute of achievement—Notion will amaze you with its clarity and simplicity!**\n\nWith this system, you'll have complete visibility into how you spend your time, allowing you to make data-driven decisions about your productivity and work habits. Start implementing this today and watch your productivity soar!",
+      },
+    ],
+  },
+  {
+    title: "How to Create Powerful Advanced Recurring Tasks in Notion",
+    id: 10,
+    slug: "advanced-recurring-tasks-notion",
+    topics: [
+      {
+        id: "intro",
+        heading: "How to Create Powerful Advanced Recurring Tasks in Notion",
+        tocTitle: "Introduction",
+        content:
+          "If you're a student, professional, or productivity lover who's wanted your Notion task manager to *truly* handle recurring tasks—think \"every third Thursday,\" \"last weekday of the month,\" or \"Mon/Wed/Fri\"—this guide is for you! I'll walk you through step-by-step, from database properties to automation, so you can set up a flexible, smart recurring system in Notion.",
+      },
+      {
+        id: "setup-database",
+        heading: "Step 1: Set Up Your Database Properties",
+        tocTitle: "Database Setup",
+        content:
+          "Before we dive into the magic formulas, make sure your database has the following properties (with these *exact* names for the formulas to work):\n\n| Property Name | Type |\n| --- | --- |\n| **Status** | Status |\n| **Due** | Date |\n| **Recur Interval** | Number |\n| **Recur Unit** | Select |\n| **Days** | Multi-Select |\n| **Localization Key** | Formula |\n| **Next Due** | Formula |\n\n> Tip: For a full walkthrough, check out video guides or FAQ sections (there are great visuals, but this article gives you a concise breakdown).",
+      },
+      {
+        id: "recurring-options",
+        heading: "Step 2: Set Up Your Recurring Options",
+        tocTitle: "Recurring Options",
+        content:
+          "**In your \"Recur Unit\" property, add these options:**\n\n- Day(s)\n- Week(s)\n- Month(s)\n- Year(s)\n- Month(s) on the Last Day\n- Month(s) on the First Weekday\n- Month(s) on the Last Weekday\n- Nth Weekday of Month\n\n**For \"Days\" property:**\n\nAdd each day of the week as options (Monday, Tuesday, etc.).\n\n## How These Work in Practice\n\n- **Multiple Days**: Want a task to recur on Mon/Wed/Fri? Choose \"Day(s)\" and select your days.\n- **Nth Weekday**: Want \"every 3rd Thursday\"? Set Recur Interval = 3, Recur Unit = \"Nth Weekday of Month\", Days = Thursday.",
+      },
+      {
+        id: "localization",
+        heading: "Step 3: Localization for Global Use",
+        tocTitle: "Localization Setup",
+        content:
+          "Add this formula to your **Localization Key** property, which allows you to customize language for weekdays, statuses, and units:\n\n```jsx\n[\n/* Rewrite these weekday and recur unit options in your own language, so your second brain can work even better with your first. Make sure to set up the same options in the \"Recur Unit\" and \"Days\" properties afterward, so you can select them. Feel free to remove the original names afterward! */\n\n/* [\"lunes\", \"3ª\", \"mercredi\", \"木曜日\", \"piątek\", \"lørdag\", \"Double Sunday\"] */\n[\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"],\n\n/* [\"Day(s)\", \"Week(s)\", \"Month(s)\", \"Year(s)\", \"Month(s) on the Last Day\", \"Month(s) on the First Weekday\", \"Month(s) on the Last Weekday\", \"Nth Weekday of Month\"] */\n[\"Day(s)\", \"Week(s)\", \"Month(s)\", \"Year(s)\", \"Month(s) on the Last Day\", \"Month(s) on the First Weekday\", \"Month(s) on the Last Weekday\", \"Nth Weekday of Month\"],\n\n/* This final list is for Status option names. */\n[\"To Do\", \"Doing\", \"Done\"]\n]\n```\n\nCustomize the values if you prefer another language or terminology—just be sure to sync the names with your select/multi-select property options.",
+      },
+      {
+        id: "advanced-formula",
+        heading: "Step 4: The Advanced \"Next Due\" Formula",
+        tocTitle: "Advanced Formula",
+        content:
+          "Paste this advanced formula into your **Next Due** property. This formula calculates your next recurring date, including overdue date logic, custom intervals, and \"fancy\" patterns (like last weekday of each month).\n\n```jsx\nlets(\n  version, \"2.2.0\",\n\n  dueProp, prop(\"Due\"),\n\n  recurIntervalProp, prop(\"Recur Interval\"),\n\n  recurUnitProp, prop(\"Recur Unit\"),\n\n  localizationKeyProp, prop(\"Localization Key\"),\n\n  daysProp, prop(\"Days\"),\n\n  emptyDate, parseDate(\"\"),\n\n  if(!empty(recurIntervalProp) and !empty(dueProp),\n    if(recurIntervalProp > 0 and recurIntervalProp == ceil(recurIntervalProp),\n      lets(\n        recurUnit,\n          ifs(\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 0), recurUnitProp == \"Day(s)\"), \"days\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 1), recurUnitProp == \"Week(s)\"), \"weeks\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 2), recurUnitProp == \"Month(s)\"), \"months\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 3), recurUnitProp == \"Year(s)\"), \"years\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 4), recurUnitProp == \"Month(s) on the Last Day\"), \"monthsonthelastday\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 5), recurUnitProp == \"Month(s) on the First Weekday\"), \"monthsonthefirstweekday\",\n            or(recurUnitProp == at(at(localizationKeyProp, 1), 6), recurUnitProp == \"Month(s) on the Last Weekday\"), \"monthsonthelastweekday\",\n            or(and(!empty(at(at(localizationKeyProp, 1), 7)), recurUnitProp == at(at(localizationKeyProp, 1), 7)), recurUnitProp == \"Nth Weekday of Month\"), \"nthweekday\",\n            \"days\"\n          ),\n\n        weekdays,\n          match(\n            [\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 1 - 1)), includes(daysProp, \"Monday\")), 1, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 2 - 1)), includes(daysProp, \"Tuesday\")), 2, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 3 - 1)), includes(daysProp, \"Wednesday\")), 3, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 4 - 1)), includes(daysProp, \"Thursday\")), 4, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 5 - 1)), includes(daysProp, \"Friday\")), 5, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 6 - 1)), includes(daysProp, \"Saturday\")), 6, false),\n              if(or(includes(daysProp, at(at(localizationKeyProp, 0), 7 - 1)), includes(daysProp, \"Sunday\")), 7, false)\n            ],\n            \"[1-7]\"\n          ),\n\n        dateDue, parseDate(formatDate(dueProp, \"YYYY-MM-DD\")),\n\n        timeNow, now(),\n\n        dateNow, parseDate(formatDate(timeNow, \"YYYY-MM-DD\")),\n\n        hasRange, dateEnd(dueProp) > dateStart(dueProp),\n\n        recurUnitLapseLength,\n          if(\n            includes([\"days\", \"weeks\", \"months\", \"years\"], recurUnit),\n            dateBetween(dateNow, dateDue, recurUnit) / recurIntervalProp,\n            false\n          ),\n\n        lastDayBaseDate,\n          if(\n            includes([\"monthsonthelastday\", \"monthsonthefirstweekday\", \"monthsonthelastweekday\"], recurUnit),\n            if(\n              year(dateNow) * 12 + month(dateNow) - (year(dateDue) * 12 + month(dateDue)) > 0,\n              dateSubtract(dateAdd(dateSubtract(dateAdd(dateDue, ceil((year(dateNow) * 12 + month(dateNow) - (year(dateDue) * 12 + month(dateDue))) / recurIntervalProp) * recurIntervalProp, \"months\"), date(dateAdd(dateDue, ceil((year(dateNow) * 12 + month(dateNow) - (year(dateDue) * 12 + month(dateDue))) / recurIntervalProp) * recurIntervalProp, \"months\")) - 1, \"days\"), 1, \"months\"), 1, \"days\"),\n              dateSubtract(dateAdd(dateSubtract(dateAdd(dateDue, recurIntervalProp, \"months\"), date(dateAdd(dateDue, recurIntervalProp, \"months\")) - 1, \"days\"), 1, \"months\"), 1, \"days\")\n            ),\n            emptyDate\n          ),\n\n        firstDayBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            dateSubtract(lastDayBaseDate, date(lastDayBaseDate) - 1, \"days\"),\n            emptyDate\n          ),\n\n        firstWeekdayBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(firstDayBaseDate), \"6|7\"),\n              dateAdd(firstDayBaseDate, 8 - day(firstDayBaseDate), \"days\"),\n              firstDayBaseDate\n            ),\n            emptyDate\n          ),\n\n        lastWeekdayBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(lastDayBaseDate), \"6|7\"),\n              dateSubtract(lastDayBaseDate, day(lastDayBaseDate) - 5, \"days\"),\n              lastDayBaseDate\n            ),\n            emptyDate\n          ),\n\n        nextLastBaseDate,\n          if(\n            lastDayBaseDate != emptyDate,\n            dateSubtract(dateAdd(dateSubtract(dateAdd(lastDayBaseDate, recurIntervalProp, \"months\"), date(dateAdd(lastDayBaseDate, recurIntervalProp, \"months\")) - 1, \"days\"), 1, \"months\"), 1, \"days\"),\n            emptyDate\n          ),\n\n        nextFirstBaseDate,\n        if(\n          lastDayBaseDate != emptyDate,\n          dateSubtract(nextLastBaseDate, date(nextLastBaseDate) - 1, \"days\"),\n          emptyDate\n        ),\n\n        nextFirstWeekday,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(nextFirstBaseDate), \"6|7\"),\n              dateAdd(nextFirstBaseDate, 8 - day(nextFirstBaseDate), \"days\"),\n              nextFirstBaseDate\n            ),\n            emptyDate\n          ),\n\n        nextLastWeekday,\n          if(\n            lastDayBaseDate != emptyDate,\n            if(\n              test(day(nextLastBaseDate), \"6|7\"),\n              dateSubtract(nextLastBaseDate, day(nextLastBaseDate) - 5, \"days\"),\n              nextLastBaseDate\n            ),\n            emptyDate\n          ),\n\n        firstWeekSpecificDayBaseDate,\n          lets(\n            baseMonthDate,\n              if(\n                timeNow > dueProp,\n                timeNow,\n                dueProp\n              ),\n\n            weekday, toNumber(at(weekdays, 0)),\n\n            firstDayOfNextMonth, dateSubtract(dateAdd(baseMonthDate, 1, \"months\"), date(baseMonthDate) - 1, \"days\"),\n\n            ifs(\n              day(firstDayOfNextMonth) < weekday, dateAdd(firstDayOfNextMonth, weekday - day(firstDayOfNextMonth), \"days\"),\n              day(firstDayOfNextMonth) > weekday, dateAdd(firstDayOfNextMonth, weekday - day(firstDayOfNextMonth) + 7, \"days\"),\n              firstDayOfNextMonth\n            )\n          ),\n\n        nthWeekdayBaseDate, dateAdd(firstWeekSpecificDayBaseDate, recurIntervalProp - 1, \"weeks\"),\n\n        nextDueStart,\n          ifs(\n            recurUnit == \"days\" and length(weekdays) > 0 and recurIntervalProp == 1,\n              if(\n                dateNow >= dateDue,\n                ifs(\n                  includes(weekdays, format(day(dateAdd(dateNow, 1, \"days\")))), dateAdd(dateNow, 1, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 2, \"days\")))), dateAdd(dateNow, 2, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 3, \"days\")))), dateAdd(dateNow, 3, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 4, \"days\")))), dateAdd(dateNow, 4, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 5, \"days\")))), dateAdd(dateNow, 5, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 6, \"days\")))), dateAdd(dateNow, 6, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateNow, 7, \"days\")))), dateAdd(dateNow, 7, \"days\"),\n                  emptyDate\n                ),\n                ifs(\n                  includes(weekdays, format(day(dateAdd(dateDue, 1, \"days\")))), dateAdd(dateDue, 1, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 2, \"days\")))), dateAdd(dateDue, 2, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 3, \"days\")))), dateAdd(dateDue, 3, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 4, \"days\")))), dateAdd(dateDue, 4, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 5, \"days\")))), dateAdd(dateDue, 5, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 6, \"days\")))), dateAdd(dateDue, 6, \"days\"),\n                  includes(weekdays, format(day(dateAdd(dateDue, 7, \"days\")))), dateAdd(dateDue, 7, \"days\"),\n                  emptyDate\n                )\n              ),\n\n            recurUnit == \"nthweekday\" and length(weekdays) == 1 and recurIntervalProp >= 1 and recurIntervalProp <= 5,\n              if(\n                month(nthWeekdayBaseDate) == month(firstWeekSpecificDayBaseDate),\n                nthWeekdayBaseDate,\n                dateSubtract(nthWeekdayBaseDate, 1, \"week\")\n              ),\n\n            recurUnit == \"monthsonthelastday\",\n              if(\n                dateNow >= lastDayBaseDate,\n                nextLastBaseDate,\n                lastDayBaseDate\n              ),\n\n            recurUnit == \"monthsonthefirstweekday\",\n              if(\n                dateNow >= firstWeekdayBaseDate,\n                nextFirstWeekday,\n                firstWeekdayBaseDate\n              ),\n\n            recurUnit == \"monthsonthelastweekday\",\n              if(\n                dateNow >= lastWeekdayBaseDate,\n                nextLastWeekday,\n                lastWeekdayBaseDate\n              ),\n\n            includes([\"days\", \"weeks\", \"months\", \"years\"], recurUnit),\n              if(\n                dateBetween(dateNow, dateDue, \"days\") >= 1,\n                if(\n                  recurUnitLapseLength == ceil(recurUnitLapseLength),\n                  dateAdd(dateDue, (recurUnitLapseLength + 1) * recurIntervalProp, recurUnit),\n                  dateAdd(dateDue, ceil(recurUnitLapseLength) * recurIntervalProp, recurUnit)\n                ),\n                dateAdd(dateDue, recurIntervalProp, recurUnit)\n              ),\n\n            emptyDate\n          ),\n\n        recurRange, dateBetween(nextDueStart, dateDue, \"days\"),\n\n        timeNextDueStart, dateAdd(dateStart(dueProp), recurRange, \"days\"),\n\n        timeNextDueEnd, dateAdd(dateEnd(dueProp), recurRange, \"days\"),\n\n        nextDue,\n          if(\n            hasRange,\n            dateRange(timeNextDueStart, timeNextDueEnd),\n            timeNextDueStart\n          ),\n\n        nextDue\n      ),\n      dueProp\n    ),\n    emptyDate\n  )\n)\n```\n\n> This formula is lengthy but essential; ensure your property names are a perfect match!",
+      },
+      {
+        id: "automation",
+        heading: "Step 5: Automate Your Recurring Tasks",
+        tocTitle: "Task Automation",
+        content:
+          "Now, let's process these tasks automatically when you finish them.\n\n1. **Create a filtered view called \"Recurring Tasks\":**\n    - Filter: **Due is not empty** AND **Recur Interval >= 1**\n2. **Create a database automation:**\n    - Trigger: **Status is set to Complete**\n    - Action 1: Set **Status** back to \"Not Started\"\n    - Action 2: Set **Due** property to a **Formula**:\n        \n        ```jsx\n        context(\"Trigger page\").prop(\"Next Due\")\n        ```\n        \n    - This references the \"Next Due\" property, updating your task's due date automatically using your mega-formula.\n\n> Pro Tip: Always use formula properties for heavy logic so you can easily audit outputs and troubleshoot!",
+      },
+      {
+        id: "why-matters",
+        heading: "Why This Matters",
+        tocTitle: "Why This Matters",
+        content:
+          "With this system, your Notion workspace handles virtually any recurring task scenario—helpful whether you're a student, a professional with complex deadlines, or building a spiritual habit tracker. You can set tasks to repeat in nearly every pattern you might need—*automatically*!\n\nAs a Notion creator and civil engineer, I know how much time smart design can save. With this setup, you can spend less time fiddling with dates, and more time focusing on the tasks that matter.",
+      },
+      {
+        id: "final-thoughts",
+        heading: "Final Thoughts & Next Steps",
+        tocTitle: "Final Thoughts",
+        content:
+          "This is just the foundation! Consider adding a task history log, more automation (for notifications, for example), or connecting your recurring setup with dashboards for a holistic productivity workflow.\n\nCurious about specific use cases, or need troubleshooting help on formulas or automations? Drop your questions in the comments, or check out my Notion productivity resources for templates designed for students, professionals, and Muslims who want to organize, learn, and grow—all in one place.\n\nHappy organizing,\n\n**Mostafa Yasser**",
+      },
+      {
+        id: "get-started",
+        heading: "Get Started Today",
+        tocTitle: "Get Started",
+        content:
+          "The path to clarity and success begins with a single template. Click below to unlock the full Second Brain experience:\n\n[**Discover the Second Brain Template**](https://www.mostafayasser.com/en/templates/second-brain)",
+      },
+    ],
+  },
 ];
 
 export default blogsData;

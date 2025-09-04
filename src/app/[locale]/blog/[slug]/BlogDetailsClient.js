@@ -57,13 +57,18 @@ export default function BlogDetailsClient({ blog }) {
     ),
     blockquote: ({ children }) => (
       <blockquote className="border-l-4 border-main pl-3 sm:pl-4 md:pl-6 py-3 sm:py-4 my-4 sm:my-6 md:my-8 bg-main/5 rounded-r-lg">
-        <p className="text-gray-200 text-sm sm:text-base md:text-lg italic font-light">{children}</p>
+        <div className="text-gray-200 text-sm sm:text-base md:text-lg italic font-light">{children}</div>
       </blockquote>
     ),
     code: ({ children }) => (
-      <code className="bg-black/40 text-main px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-mono border border-main/20">
+      <code className="bg-black/40 text-main px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-mono border border-main/20 block overflow-x-auto whitespace-nowrap">
         {children}
       </code>
+    ),
+    pre: ({ children }) => (
+      <pre className="bg-black/40 text-main p-4 rounded-lg text-xs sm:text-sm font-mono border border-main/20 overflow-x-auto whitespace-pre-wrap mb-4 sm:mb-6">
+        {children}
+      </pre>
     ),
   };
 
