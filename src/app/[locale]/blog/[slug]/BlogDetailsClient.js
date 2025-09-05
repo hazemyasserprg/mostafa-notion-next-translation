@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
+import CopyCodeButton from "@/src/app/[locale]/_components/CopyCodeButton";
 import ReactMarkdown from "react-markdown";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -60,16 +61,34 @@ export default function BlogDetailsClient({ blog }) {
         <div className="text-gray-200 text-sm sm:text-base md:text-lg italic font-light">{children}</div>
       </blockquote>
     ),
-    code: ({ children }) => (
-      <code className="bg-black/40 text-main px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-mono border border-main/20 block overflow-x-auto whitespace-nowrap">
-        {children}
-      </code>
-    ),
-    pre: ({ children }) => (
-      <pre className="bg-black/40 text-main p-4 rounded-lg text-xs sm:text-sm font-mono border border-main/20 overflow-x-auto whitespace-pre-wrap mb-4 sm:mb-6">
-        {children}
-      </pre>
-    ),
+    code: ({ children, className }) => {
+      // Check if this code is inside a pre block (code block)
+      const isCodeBlock = className?.includes('language-');
+      if (isCodeBlock) {
+        return <code className={className}>{children}</code>;
+      }
+      // Inline code
+      return (
+        <code className="bg-black/40 text-main px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-mono border border-main/20 block overflow-x-auto whitespace-nowrap">
+          {children}
+        </code>
+      );
+    },
+    pre: ({ children, className }) => {
+      // Extract the code content for copying
+      const codeContent = typeof children === 'string'
+        ? children
+        : children?.props?.children || '';
+
+      return (
+        <div className="relative group mb-4 sm:mb-6">
+          <pre className="bg-black/40 text-main p-4 pr-16 rounded-lg text-xs sm:text-sm font-mono border border-main/20 overflow-x-auto whitespace-pre-wrap">
+            {children}
+          </pre>
+          <CopyCodeButton code={codeContent} />
+        </div>
+      );
+    },
   };
 
   return (
