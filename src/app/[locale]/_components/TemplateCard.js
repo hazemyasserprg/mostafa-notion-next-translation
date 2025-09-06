@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-export default function TemplateCard({ template, index, isNew }) {
+export default function TemplateCard({ template, index }) {
   const t = useTranslations("TemplateSlug");
   const locale = useLocale();
 
@@ -51,11 +51,6 @@ export default function TemplateCard({ template, index, isNew }) {
             </span>
           )}
 
-          {isNew && (
-            <span className="absolute top-2 left-2 bg-white text-main text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-              NEW
-            </span>
-          )}
 
           <div className="w-full aspect-[4/3] lg:aspect-auto">
             <Image

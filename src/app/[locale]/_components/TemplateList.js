@@ -71,14 +71,11 @@ function TemplateList({ filter }) {
         >
           {searchedTemplates.length > 0 ? (
             searchedTemplates.map((template, index) => {
-              const isNew = index >= searchedTemplates.length - 3;
-
               return (
                 <TemplateCard
                   key={template.id}
                   template={template}
                   index={index}
-                  isNew={isNew}
                 />
               );
             })
