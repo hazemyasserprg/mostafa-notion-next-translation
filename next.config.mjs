@@ -76,7 +76,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self' https://www.notion.so https://notion.so;",
+            value: "frame-ancestors 'self' https://www.notion.so https://notion.so; frame-src 'self' https://www.notion.so https://notion.so https://mostafayasser.notion.site;",
           },
           {
             key: 'X-Content-Type-Options',
