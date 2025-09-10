@@ -104,7 +104,7 @@ export default function TemplateDetailsClient({ template }) {
         {recommendations.length > 0 && (
           <div className="px-6 md:px-12 lg:px-24 mt-20 text-center">
             <h2
-              className={`text-2xl md:text-3xl font-bold mb-8 text-main drop-shadow-[0_0_5px_rgba(215,177,128,0.4)] ${locale === "ar" ? "text-right" : "text-left"
+              className={`text-2xl md:text-3xl font-bold mb-8 text-main ${locale === "ar" ? "text-right" : "text-left"
                 }`}
             >
               {t("recommendedTitle") || "You might also like"}
