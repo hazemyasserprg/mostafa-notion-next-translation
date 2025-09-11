@@ -5,11 +5,13 @@ import { useSearchParams } from "next/navigation";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 import TemplateList from "@/src/app/[locale]/_components/TemplateList";
 import CategoryButtons from "@/src/app/[locale]/_components/CategoryButtons";
+import AdvancedFilter from "@/src/app/[locale]/_components/AdvancedFilter";
 
 export default function TemplatesPage() {
   const t = useTranslations("TemplatesPage");
   const searchParams = useSearchParams();
-  const filter = searchParams?.get("category") || "all";
+  const filter = searchParams?.get("category");
+  const pricingFilter = searchParams?.get("pricing") || "all";
 
   return (
     <BlurText>
@@ -22,8 +24,11 @@ export default function TemplatesPage() {
             {t("subtitle")}
           </p>
 
-          <CategoryButtons />
-          <TemplateList filter={filter} />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 my-6">
+            <CategoryButtons />
+            <AdvancedFilter />
+          </div>
+          <TemplateList filter={filter} pricingFilter={pricingFilter} />
         </section>
       </div>
     </BlurText>

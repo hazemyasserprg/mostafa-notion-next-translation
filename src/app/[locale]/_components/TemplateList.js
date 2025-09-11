@@ -10,16 +10,29 @@ import templatesData from "@/src/app/[locale]/_data/templatesData";
 import TemplateCard from "./TemplateCard";
 import { useTranslations, useLocale } from "next-intl";
 
-function TemplateList({ filter }) {
+function TemplateList({ filter, pricingFilter }) {
   const t = useTranslations("TemplatesPage");
   const locale = useLocale();
   const [searchTerm, setSearchTerm] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  const filteredTemplates =
-    filter === "all"
+  // First filter by category
+  let filteredTemplates =
+    !filter || filter === "all"
       ? templatesData
       : templatesData.filter((template) => template.category === filter);
+
+  // Then filter by pricing
+  if (pricingFilter && pricingFilter !== "all") {
+    filteredTemplates = filteredTemplates.filter((template) => {
+      if (pricingFilter === "free") {
+        return !template.premium; // Free templates don't have premium: true
+      } else if (pricingFilter === "premium") {
+        return template.premium === true; // Premium templates have premium: true
+      }
+      return true;
+    });
+  }
 
   const fuse = new Fuse(filteredTemplates, {
     keys: locale === "ar" ? ["name_ar", "tags_ar"] : ["name", "tags"],
@@ -62,7 +75,7 @@ function TemplateList({ filter }) {
         </motion.div>
       </motion.div>
 
-      <Suspense fallback={<Loader />} key={filter + searchTerm}>
+      <Suspense fallback={<Loader />} key={filter + searchTerm + pricingFilter}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
