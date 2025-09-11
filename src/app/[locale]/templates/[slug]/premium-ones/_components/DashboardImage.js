@@ -26,7 +26,7 @@ export default function DashboardImage({ template }) {
     <div className="w-full sm:max-w-7xl rounded-none sm:rounded-3xl overflow-hidden shadow-xl border border-neutral-800 bg-neutral-900/60 backdrop-blur-md relative mx-auto">
       <div
         ref={scrollRef}
-        className="relative w-full h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-transparent"
+        className="relative w-full h-[300px] sm:h-[500px] md:h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-transparent"
       >
         <Image
           src={t(`${template.name}.dashboardSec.dashboardImageURL`)}
