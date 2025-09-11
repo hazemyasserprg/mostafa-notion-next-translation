@@ -194,7 +194,7 @@ const templates = [
     name: "Reading Tracker",
     name_ar: "متتبع القراءة",
     slug: "reading-tracker",
-    category: "education",
+    category: "lifestyle",
     tags: ["books", "reading", "tracker", "study", "library", "knowledge"],
     tags_ar: ["كتب", "قراءة", "تتبع", "دراسة", "مكتبة", "معرفة"],
     detailsLink: "",
