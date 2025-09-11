@@ -13,7 +13,14 @@ export default function CategoryButtons() {
 
   const handleFilter = (category) => {
     const params = new URLSearchParams(searchParams);
-    params.set("category", category);
+
+    // If the same category is clicked, remove it (toggle off)
+    if (activeCategory === category) {
+      params.delete("category");
+    } else {
+      // Otherwise, set the new category
+      params.set("category", category);
+    }
 
     const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname;
     router.push(newUrl, { scroll: false });
