@@ -15,18 +15,22 @@ export default function TemplatesPage() {
 
   return (
     <BlurText>
-      <div className="w-full px-6 py-12 mt-6 sm:mt-12">
+      <div className="w-full px-4 sm:px-6 py-8 sm:py-12 mt-4 sm:mt-6 lg:mt-12">
         <section className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6">
             {t("title")}
           </h1>
-          <p className="text-base sm:text-lg text-main mb-8 sm:mb-10">
+          <p className="text-sm sm:text-base md:text-lg text-main mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 my-6">
-            <CategoryButtons />
-            <AdvancedFilter />
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 my-4 sm:my-6 max-w-4xl mx-auto">
+            <div className="w-full sm:flex-1">
+              <CategoryButtons />
+            </div>
+            <div className="w-full sm:w-auto sm:flex-shrink-0">
+              <AdvancedFilter />
+            </div>
           </div>
           <TemplateList filter={filter} pricingFilter={pricingFilter} />
         </section>

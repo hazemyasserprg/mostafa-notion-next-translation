@@ -50,14 +50,14 @@ function TemplateList({ filter, pricingFilter }) {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="mt-6 sm:mt-8 sm:flex justify-center px-4 sm:px-6 hidden"
+        className="mt-6 sm:mt-8 flex justify-center px-4 sm:px-6"
       >
         <motion.div
           animate={{
-            width: isFocused ? 320 : 240,
+            width: isFocused ? "100%" : "100%",
           }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="relative w-full max-w-md"
+          className="relative w-full max-w-sm sm:max-w-md"
         >
           <input
             type="text"
@@ -66,7 +66,7 @@ function TemplateList({ filter, pricingFilter }) {
             onChange={(e) => setSearchTerm(e.target.value)}
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-main transition-all duration-300 text-sm"
+            className="w-full pl-10 pr-4 py-2 sm:py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-main transition-all duration-300 text-sm sm:text-base"
           />
           <Search
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -80,7 +80,7 @@ function TemplateList({ filter, pricingFilter }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 mt-8 sm:mt-10 px-4 sm:px-0"
         >
           {searchedTemplates.length > 0 ? (
             searchedTemplates.map((template, index) => {

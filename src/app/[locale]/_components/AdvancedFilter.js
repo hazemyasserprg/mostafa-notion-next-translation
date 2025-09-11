@@ -51,19 +51,19 @@ export default function AdvancedFilter() {
   }, []);
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative w-full sm:w-auto" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`cursor-pointer px-6 py-2 rounded-xl border transition-all duration-300 flex items-center gap-2 ${isOpen
+        className={`cursor-pointer px-3 sm:px-6 py-2 rounded-xl border transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center sm:justify-start text-sm sm:text-base ${isOpen
           ? "bg-main text-white border-black"
           : "bg-black text-main"
           }`}
       >
         <Filter size={16} />
-        <span>{activeOption?.label}</span>
+        <span className="truncate">{activeOption?.label}</span>
         <ChevronDown
           size={16}
-          className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+          className={`transition-transform duration-200 flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`}
         />
       </button>
 
@@ -73,7 +73,7 @@ export default function AdvancedFilter() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -10, scale: 0.95 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="absolute top-full left-0 mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden min-w-[180px]"
+          className="absolute top-full left-0 right-0 sm:right-auto mt-2 w-full sm:w-auto bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden min-w-[180px]"
         >
           {pricingOptions.map((option) => (
             <button
