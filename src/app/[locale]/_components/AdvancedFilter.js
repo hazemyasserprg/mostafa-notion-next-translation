@@ -73,15 +73,15 @@ export default function AdvancedFilter() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -10, scale: 0.95 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl shadow-lg z-50 overflow-hidden min-w-[180px]"
+          className="absolute top-full left-0 mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden min-w-[180px]"
         >
           {pricingOptions.map((option) => (
             <button
               key={option.value}
               onClick={() => handlePricingFilter(option.value)}
-              className={`cursor-pointer w-full text-left px-4 py-3 text-sm font-medium transition-colors duration-200 hover:bg-gray-50 dark:hover:bg-gray-700 ${activePricing === option.value
-                ? "bg-main/10 text-main dark:bg-main/20"
-                : "text-gray-700 dark:text-gray-300"
+              className={`cursor-pointer w-full text-left px-4 py-3 text-sm font-medium transition-colors duration-200 hover:bg-gray-50 ${activePricing === option.value
+                ? "bg-main/10 text-main"
+                : "text-gray-700"
                 }`}
             >
               {option.label}
