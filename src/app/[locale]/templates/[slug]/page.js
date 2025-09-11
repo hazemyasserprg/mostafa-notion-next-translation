@@ -41,6 +41,8 @@ export async function generateMetadata({ params }) {
     faviconPath = "/favicons/finance-hub.webp";
   } else if (slug === "quran-tracker") {
     faviconPath = "/favicons/quran-tracker.webp";
+  } else if (slug === "ibadat-hub") {
+    faviconPath = "/favicons/ibadat-hub.webp";
   }
 
   return {
@@ -119,7 +121,8 @@ export default async function TemplateDetails({ params }) {
     template.slug === "study-hub" ||
     template.slug === "second-brain" ||
     template.slug === "finance-hub" ||
-    template.slug === "quran-tracker"
+    template.slug === "quran-tracker" ||
+    template.slug === "ibadat-hub"
   ) {
     return <PremiumPage template={template} />;
   }
