@@ -92,15 +92,25 @@ const iconsMap = {
     Layers,
     BarChart3,
   ],
+  "quran-tracker": [
+    LayoutDashboard,  // Quran Overview
+    Layers,          // Juz Tracking
+    FileText,        // Surah Insights
+    BookOpen,        // Verse Details
+    Trophy,          // Achievement Tracking
+    NotebookPen,     // Reflection Notes
+  ],
 };
 
 function Essentials({ template }) {
   const t = useTranslations("TemplateSlug");
 
-  const features = Array.from({ length: 12 }, (_, i) => i.toString());
-
   // Dynamically select icons based on template slug
   const icons = iconsMap[template.slug] || iconsMap["default"];
+
+  // Dynamically determine feature count based on the number of icons available
+  const featureCount = icons.length;
+  const features = Array.from({ length: featureCount }, (_, i) => i.toString());
 
   return (
     <section

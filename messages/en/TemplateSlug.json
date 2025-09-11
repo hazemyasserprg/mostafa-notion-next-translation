@@ -10,12 +10,218 @@
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/21.webp"
   },
-  "Quran Tracker Premium": {
-    "name": "Quran Tracker Premium",
+  "Quran Tracker": {
+    "homeSec": {
+      "logoURL": "/premiumTemplates/quran-tracker/quran-tracker.webp",
+      "title": "Master Your Quran Journey with Quran Tracker",
+      "description": "The all-in-one Notion system to track your recitation, memorization, tafsir, and progress — all in one connected workspace.",
+      "heroImageURL": "/premiumTemplates/quran-tracker/heroImage.webp",
+      "dashboardButtonText": "Dashboard"
+    },
+    "dashboardSec": {
+      "title": "A Clear View of Your Quran Journey",
+      "description": "See your recitation, memorization, and tafsir progress at a glance with Quran Tracker's all-in-one dashboard.",
+      "dashboardImageURL": "/premiumTemplates/quran-tracker/Dashboard.webp"
+    },
+    "essentialsSec": {
+      "title": "Everything You Need — In One Place",
+      "description": "Discover the core features that make Quran Tracker your ultimate companion for Quran memorization, recitation, and daily ibadah.",
+      "features": {
+        "0": {
+          "title": "Quran Overview",
+          "description": "A single-page overview of your entire Quran journey with progress tracking across all Surahs and Juz."
+        },
+        "1": {
+          "title": "Juz Tracking",
+          "description": "All 30 Juz with detailed progress, verse counts, and linked Surahs for a structured view of your recitation, memorization, or tafsir."
+        },
+        "2": {
+          "title": "Surah Insights",
+          "description": "114 Surahs with insights such as verse count, type, Juz, revelation order, and direct tracking for your progress."
+        },
+        "3": {
+          "title": "Verse Details",
+          "description": "Every verse of the Quran written in Arabic with English translation, additional details, and a direct link to Quran.com."
+        },
+        "4": {
+          "title": "Achievement Tracking",
+          "description": "Track milestones with start and finish dates for Khatma, Tafsir, and Hifz journeys."
+        },
+        "5": {
+          "title": "Reflection Notes",
+          "description": "Write and organize reflection notes tied to specific verses, with the option to pin important insights for quick access."
+        }
+      }
+    },
+    "walkthroughSec": {
+      "title": "A Visual Walkthrough of Quran Tracker",
+      "description": "Take a closer look at how Quran Tracker helps you on your journey with the Quran — from memorization and recitation to tafsir study and complete progress tracking.",
+      "rowBlocks": {
+        "0": {
+          "title": "Structured Quran Journey",
+          "description": "Navigate the Quran by Juz and Surahs — track your Recitation, Hifz, and Tafsir progress in one organized system.",
+          "image": "/premiumTemplates/quran-tracker/designs/139.webp",
+          "reverse": false
+        },
+        "1": {
+          "title": "Explore Each Juz in Detail",
+          "description": "Dive into every Juz to see its Surahs, verse counts, and detailed progress for recitation, memorization, and tafsir.",
+          "image": "/premiumTemplates/quran-tracker/designs/137.webp",
+          "reverse": true
+        },
+        "2": {
+          "title": "Surah-by-Surah Breakdown",
+          "description": "Explore every Surah with all verses fully written in Arabic, paired with clear English explanations. Stay on track with checkboxes for recitation, memorization, and tafsir, while accessing rich Surah insights — verse count, Makki/Madani, name meaning, Juz, and revelation order. Plus, each Surah and verse comes with a direct external link to Quran.com for deeper study and reference.",
+          "image": "/premiumTemplates/quran-tracker/designs/138.webp",
+          "reverse": false
+        },
+        "3": {
+          "title": "Reflection Notes",
+          "description": "Create personal notes linked to specific verses — giving you a dedicated space for tadabbur, insights, and reflections as you journey through the Quran.",
+          "image": "/premiumTemplates/quran-tracker/designs/140.webp",
+          "reverse": true
+        },
+        "4": {
+          "title": "Personalized Journeys",
+          "description": "Start a new Khatma, Tafsir, or Hifz with just one click, and track your progress from beginning to completion. Stay motivated with the Achievements database, recording start and finish dates for every milestone in your Quran journey.",
+          "image": "/premiumTemplates/quran-tracker/designs/141.webp",
+          "reverse": false
+        }
+      }
+    },
+    "databasesSec": {
+      "title": "The Backbone of Quran Tracker",
+      "description": "At the core of Quran Tracker lies a powerful system of interconnected databases designed to organize, connect, and simplify your entire spiritual journey with the Quran.",
+      "features": {
+        "0": {
+          "title": "Quran",
+          "description": "A single-page overview of your entire Quran journey with progress tracking across all Surahs and Juz.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/130.webp"
+        },
+        "1": {
+          "title": "Juz",
+          "description": "All 30 Juz with detailed progress, verse counts, and linked Surahs for a structured view of your recitation, memorization, or tafsir.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/131.webp"
+        },
+        "2": {
+          "title": "Surahs",
+          "description": "114 Surahs with insights such as verse count, type, Juz, revelation order, and direct tracking for your progress.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/132.webp"
+        },
+        "3": {
+          "title": "Ayat",
+          "description": "Every verse of the Quran written in Arabic with English translation, additional details, and a direct link to Quran.com.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/133.webp"
+        },
+        "4": {
+          "title": "Achieve",
+          "description": "Track milestones with start and finish dates for Khatma, Tafsir, and Hifz journeys.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/134.webp"
+        },
+        "5": {
+          "title": "Notes",
+          "description": "Write and organize reflection notes tied to specific verses, with the option to pin important insights for quick access.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/135.webp"
+        },
+        "6": {
+          "title": "Tools",
+          "description": "A curated collection of useful tools and resources to support your Quran learning and reflection journey.",
+          "image": "/premiumTemplates/quran-tracker/screenshots/136.webp"
+        }
+      }
+    },
+    "pricingSec": {
+      "title": "Choose Your Plan",
+      "description": "Two options. Same goal: your spiritual growth.",
+      "plans": {
+        "basic": {
+          "label": "Basic",
+          "description": "A free, simplified version to get you started.",
+          "price": "$0",
+          "features": [
+            "Lifetime Updates",
+            "Quran Database",
+            "Surahs Database (Simple)"
+          ],
+          "missingFeatures": [
+            "Juz Database",
+            "Ayat Database",
+            "Achieve Database",
+            "Advanced Details",
+            "Advanced Dashboard",
+            "Advanced Tracking"
+          ],
+          "button": "Get for Free",
+          "buttonLink": "https://www.notion.so/marketplace/templates/qurantracker?checkout=true"
+        },
+        "more-advanced": {
+          "label": "Premium",
+          "description": "Unlock your full spiritual productivity potential.",
+          "price": "$14.99",
+          "oldPrice": "$25",
+          "features": [
+            "Lifetime Updates",
+            "Quran Database",
+            "Surahs Database (Advanced)",
+            "Juz Database",
+            "Ayat Database",
+            "Achieve Database",
+            "Advanced Details",
+            "Advanced Dashboard",
+            "Advanced Tracking"
+          ],
+          "button": "Buy Now",
+          "buttonLink": "https://www.notion.so/marketplace/templates/quran-tracker-559?checkout=true",
+          "badge": "Best Value"
+        }
+      }
+    },
+    "faqSec": {
+      "title": "FAQs",
+      "faqs": [
+        {
+          "question": "What is Notion?",
+          "answer": "Notion is your all-in-one digital workspace — a second brain where you can organize notes, tasks, goals, and everything in between."
+        },
+        {
+          "question": "How do I get access to the template?",
+          "answer": "Once you complete your purchase, you'll instantly receive an email with a link to duplicate the Quran Tracker template to your Notion workspace."
+        },
+        {
+          "question": "Do I need a paid Notion account?",
+          "answer": "No. You can use Quran Tracker with Notion's free plan."
+        },
+        {
+          "question": "Is this template suitable for beginners?",
+          "answer": "Absolutely! Quran Tracker is designed for all levels, from beginners starting their Quran journey to advanced students seeking deeper organization."
+        },
+        {
+          "question": "Can I customize the template?",
+          "answer": "Yes! The template is fully customizable. You can modify colors, layouts, and add your own sections to match your personal preferences."
+        },
+        {
+          "question": "Does it work on mobile devices?",
+          "answer": "Yes, the template is fully responsive and works perfectly on all devices through Notion's mobile app."
+        },
+        {
+          "question": "Will I receive updates?",
+          "answer": "Yes! You'll receive lifetime updates and new features as we continue to improve the template."
+        },
+        {
+          "question": "What is your refund policy?",
+          "answer": "You can request a refund within 14 days of purchase following Notion Marketplace refund policy."
+        },
+        {
+          "question": "Still have questions?",
+          "answer": "Email me at contact@mostafayasser.com or DM me on Twitter anytime."
+        }
+      ]
+    },
+    "name": "Quran Tracker",
     "description": "Track Quran recitation, memorization & Tafsir in one powerful Notion template. Stay motivated, reflect deeply, and elevate your Quran journey.",
     "price": "$15",
-    "checkout": "Checkout",
-    "checkoutLink": "https://www.notion.com/templates/quran-tracker-559",
+    "checkout": "Get Quran Tracker",
+    "checkoutLink": "https://mostafayasser.lemonsqueezy.com/buy/786dd007-922a-4df6-ac87-8519b528061f",
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/1.webp"
   },
@@ -55,8 +261,8 @@
     "moreDetails": "More Details",
     "image": "/thumbnails/ENThumbnails/3.webp"
   },
-  "Quran Tracker": {
-    "name": "Quran Tracker",
+  "Quran Tracker - Minimal Version": {
+    "name": "Quran Tracker - Minimal Version",
     "description": "Track Quran recitation, memorization & Tafsir in one powerful Notion template. Stay motivated, reflect deeply, and elevate your Quran journey.",
     "price": "$0",
     "checkoutLink": "https://www.notion.com/templates/qurantracker",

@@ -42,9 +42,8 @@ function Walkthrough({ template }) {
         >
           {/* === Text === */}
           <div
-            className={`flex-[1.2] text-center ${
-              isRTL ? "lg:text-right" : "lg:text-left"
-            }`}
+            className={`flex-[1.2] text-center ${isRTL ? "lg:text-right" : "lg:text-left"
+              }`}
           >
             <FadeInFromLeft>
               <h3
@@ -90,75 +89,77 @@ function Walkthrough({ template }) {
       ))}
 
       {/* === column Blocks === */}
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
-        {/* Block 4 */}
-        <div className="flex-1 flex flex-col items-center rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md border border-neutral-200 dark:border-neutral-800 p-6 sm:p-10 lg:p-12 shadow-2xl w-full h-full gap-4">
-          <div className="text-center">
-            <FadeInFromLeft>
-              <h3
-                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight`}
-              >
-                {t(
-                  `${template.name}.walkthroughSec.columnBlocks.firstOne.title`
-                )}
-              </h3>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
-                {t(
-                  `${template.name}.walkthroughSec.columnBlocks.firstOne.description`
-                )}
-              </p>
-            </FadeInFromLeft>
-          </div>
-          <AnimatedInView className="w-full">
-            <div className="w-full rounded-2xl overflow-hidden shadow-xl border border-neutral-200 dark:border-neutral-700">
-              <Image
-                src={t(
-                  `${template.name}.walkthroughSec.columnBlocks.firstOne.image`
-                )}
-                alt="Notion Template Screenshot"
-                width={1600}
-                height={1600}
-                className="w-full h-auto max-h-[75vh] object-cover rounded-2xl"
-                priority
-              />
+      {t.raw(`${template.name}.walkthroughSec`)?.columnBlocks && (
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
+          {/* Block 4 */}
+          <div className="flex-1 flex flex-col items-center rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md border border-neutral-200 dark:border-neutral-800 p-6 sm:p-10 lg:p-12 shadow-2xl w-full h-full gap-4">
+            <div className="text-center">
+              <FadeInFromLeft>
+                <h3
+                  className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight`}
+                >
+                  {t(
+                    `${template.name}.walkthroughSec.columnBlocks.firstOne.title`
+                  )}
+                </h3>
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
+                  {t(
+                    `${template.name}.walkthroughSec.columnBlocks.firstOne.description`
+                  )}
+                </p>
+              </FadeInFromLeft>
             </div>
-          </AnimatedInView>
-        </div>
+            <AnimatedInView className="w-full">
+              <div className="w-full rounded-2xl overflow-hidden shadow-xl border border-neutral-200 dark:border-neutral-700">
+                <Image
+                  src={t(
+                    `${template.name}.walkthroughSec.columnBlocks.firstOne.image`
+                  )}
+                  alt="Notion Template Screenshot"
+                  width={1600}
+                  height={1600}
+                  className="w-full h-auto max-h-[75vh] object-cover rounded-2xl"
+                  priority
+                />
+              </div>
+            </AnimatedInView>
+          </div>
 
-        {/* Block 5 */}
-        <div className="flex-1 flex flex-col items-center rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md border border-neutral-200 dark:border-neutral-800 p-6 sm:p-10 lg:p-12 shadow-2xl w-full h-full gap-4">
-          <div className="text-center">
-            <FadeInFromLeft>
-              <h3
-                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight`}
-              >
-                {t(
-                  `${template.name}.walkthroughSec.columnBlocks.secondOne.title`
-                )}
-              </h3>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
-                {t(
-                  `${template.name}.walkthroughSec.columnBlocks.secondOne.description`
-                )}
-              </p>
-            </FadeInFromLeft>
-          </div>
-          <AnimatedInView className="w-full">
-            <div className="w-full rounded-2xl overflow-hidden shadow-xl border border-neutral-200 dark:border-neutral-700">
-              <Image
-                src={t(
-                  `${template.name}.walkthroughSec.columnBlocks.secondOne.image`
-                )}
-                alt="Notion Template Screenshot"
-                width={1600}
-                height={1600}
-                className="w-full h-auto max-h-[75vh] object-cover rounded-2xl"
-                priority
-              />
+          {/* Block 5 */}
+          <div className="flex-1 flex flex-col items-center rounded-3xl bg-white/70 dark:bg-neutral-900/50 backdrop-blur-md border border-neutral-200 dark:border-neutral-800 p-6 sm:p-10 lg:p-12 shadow-2xl w-full h-full gap-4">
+            <div className="text-center">
+              <FadeInFromLeft>
+                <h3
+                  className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-main mb-4 leading-tight`}
+                >
+                  {t(
+                    `${template.name}.walkthroughSec.columnBlocks.secondOne.title`
+                  )}
+                </h3>
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
+                  {t(
+                    `${template.name}.walkthroughSec.columnBlocks.secondOne.description`
+                  )}
+                </p>
+              </FadeInFromLeft>
             </div>
-          </AnimatedInView>
+            <AnimatedInView className="w-full">
+              <div className="w-full rounded-2xl overflow-hidden shadow-xl border border-neutral-200 dark:border-neutral-700">
+                <Image
+                  src={t(
+                    `${template.name}.walkthroughSec.columnBlocks.secondOne.image`
+                  )}
+                  alt="Notion Template Screenshot"
+                  width={1600}
+                  height={1600}
+                  className="w-full h-auto max-h-[75vh] object-cover rounded-2xl"
+                  priority
+                />
+              </div>
+            </AnimatedInView>
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }
