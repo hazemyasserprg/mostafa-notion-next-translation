@@ -29,13 +29,13 @@ export default function CategoryButtons() {
   const activeCategory = searchParams.get("category");
 
   return (
-    <div className="overflow-x-auto py-2 scrollbar-container">
-      <div className="flex gap-2 justify-start">
+    <div className="overflow-x-auto py-2 category-scrollbar">
+      <div className="flex gap-2 justify-start min-w-max">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => handleFilter(cat)}
-            className={`cursor-pointer px-6 py-2 rounded-xl border transition-all duration-300 ${activeCategory === cat
+            className={`cursor-pointer px-6 py-2 rounded-xl border transition-all duration-300 whitespace-nowrap ${activeCategory === cat
               ? "bg-main text-white border-black"
               : "bg-black text-main"
               }`}
