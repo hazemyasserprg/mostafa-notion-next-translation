@@ -33,8 +33,8 @@ const templates = {
     },
     {
       id: 7,
-      name: "Habit Tracker",
-      slug: "habit-tracker",
+      name: "Habit Tracker - Minimal Version",
+      slug: "habit-tracker-minimal",
     },
   ],
   largeCollection: [

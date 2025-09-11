@@ -100,6 +100,19 @@ const iconsMap = {
     Trophy,          // Achievement Tracking
     NotebookPen,     // Reflection Notes
   ],
+  "ibadat-hub": [
+    LayoutDashboard,  // Fard Prayer Tracking
+    BookOpen,        // Nafl & Sunnah Worship
+    Notebook,        // Adhkar & Dhikr System
+    FileText,        // Quran Integration
+    Calendar,        // Prayer Times Widget
+    BarChart3,       // Spiritual Dashboard
+    Star,            // Quick Access Shortcuts
+    TrendingUp,      // Progress Analytics
+    CalendarDays,    // Weekly Calendar View
+    Users,           // Profile & Stats
+    Database,        // Pre-built Database System
+  ],
 };
 
 function Essentials({ template }) {
