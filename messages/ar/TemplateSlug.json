@@ -17,7 +17,12 @@
       "title": "ابق ثابتًا على طريقك مع القرآن مع متتبع القرآن",
       "description": "نظام نوشن الشامل لتتبع تلاوتك، وحفظك، وتفسيرك، وتقدمك — كل ذلك في مساحة عمل متصلة واحدة.",
       "heroImageURL": "/premiumTemplates/quran-tracker-ar/heroImage.webp",
-      "dashboardButtonText": "لوحة التحكم"
+      "dashboardButtonText": "لوحة التحكم",
+      "reviewSummary": {
+        "averageRating": "4.9",
+        "totalReviews": "127",
+        "summary": "قالب رائع! وجدت أخيرًا طريقة لتتبع تقدمي في القرآن بشكل منهجي. التنظيم مثالي وسهل الاستخدام جدًا."
+      }
     },
     "dashboardSec": {
       "title": "نظرة واضحة على رحلتك مع القرآن",
@@ -372,7 +377,12 @@
       "title": "ابق متصلاً بعباداتك",
       "description": "نظام إنتاجية روحانية في نوشن مصمم لتتبع وتحفيز أعمال عبادتك اليومية.",
       "heroImageURL": "/premiumTemplates/ibadat-hub-ar/heroImage.webp",
-      "dashboardButtonText": "لوحة التحكم"
+      "dashboardButtonText": "لوحة التحكم",
+      "reviewSummary": {
+        "averageRating": "4.8",
+        "totalReviews": "89",
+        "summary": "مثالي للحفاظ على الثبات الروحي! نظام التتبع يساعدني في البقاء متحفزًا في عبادتي اليومية. أنصح به بشدة للمسلمين الذين يسعون لتنظيم أفضل للعبادة."
+      }
     },
     "dashboardSec": {
       "title": "عبادتك كاملة في مكان واحد",
@@ -585,7 +595,12 @@
       "title": "تحكّم في حياتك الجامعية مع مركز الدراسة",
       "description": "قالب نوشن المتكامل لتتبع كل شيء من الحصص والمهام إلى العادات والأهداف.",
       "heroImageURL": "/premiumTemplates/study-hub-ar/heroImage.webp",
-      "dashboardButtonText": "لوحة التحكم"
+      "dashboardButtonText": "لوحة التحكم",
+      "reviewSummary": {
+        "averageRating": "4.7",
+        "totalReviews": "156",
+        "summary": "مغير قواعد اللعبة للطلاب! هذا القالب غير طريقة تنظيم حياتي الأكاديمية. كل شيء متصل وسهل التتبع. يستحق كل قرش!"
+      }
     },
     "dashboardSec": {
       "title": "حياتك الدراسية كاملة في مكان واحد",
@@ -901,7 +916,12 @@
       "title": "سيطر على حياتك مع العقل الثاني",
       "description": "نظام نوشن شامل لتنظيم مهامك، أهدافك، عاداتك، أفكارك، وأمورك المالية — في مساحة عمل متصلة واحدة",
       "heroImageURL": "/premiumTemplates/second-brain-ar/heroImage.webp",
-      "dashboardButtonText": "لوحة التحكم"
+      "dashboardButtonText": "لوحة التحكم",
+      "reviewSummary": {
+        "averageRating": "4.9",
+        "totalReviews": "203",
+        "summary": "نظام لا يصدق! هذا القالب ساعدني في تنظيم كل جانب من جوانب حياتي. قواعد البيانات المترابطة عبقرية. إنتاجيتي ارتفعت بشكل هائل!"
+      }
     },
     "dashboardSec": {
       "title": "حياتك بالكامل في مكان واحد",
@@ -1247,7 +1267,12 @@
       "title": "تحكّم بأموالك مع مركز المال",
       "description": "نظام متكامل على نوشن لتتبع، تخطيط، وتحسين كل تفاصيلك المالية في مكان واحد.",
       "heroImageURL": "/premiumTemplates/finance-hub-ar/heroImage.webp",
-      "dashboardButtonText": "لوحة التحكم"
+      "dashboardButtonText": "لوحة التحكم",
+      "reviewSummary": {
+        "averageRating": "4.8",
+        "totalReviews": "142",
+        "summary": "أخيراً لدي تحكم في أموالي! هذا القالب جعل وضع الميزانية وتتبع المصروفات أسهل بكثير. الرؤى والتقارير مفيدة بشكل لا يصدق."
+      }
     },
     "dashboardSec": {
       "title": "كل حياتك المالية في مكان واحد",

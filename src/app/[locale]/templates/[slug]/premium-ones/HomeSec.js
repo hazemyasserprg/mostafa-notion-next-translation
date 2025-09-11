@@ -1,10 +1,40 @@
+"use client";
+
 import Image from "next/image";
 import GoToTemplatesPageButton from "../../../_components/GoToTemplatesPageButton";
 import { useTranslations } from "next-intl";
 import HeroCoverImage from "./_components/HeroCoverImage";
+import { useEffect, useRef, useState } from "react";
 
 function Home({ template }) {
   const t = useTranslations("TemplateSlug");
+  const [isVisible, setIsVisible] = useState(false);
+  const reviewRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      }
+    );
+
+    const currentRef = reviewRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   return (
     <section
@@ -83,6 +113,54 @@ function Home({ template }) {
           transition=""
           href="#dashboard"
         />
+      </div>
+
+      {/* Review Summary */}
+      <div
+        ref={reviewRef}
+        className={`w-full max-w-2xl mx-auto mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+      >
+        <div className="bg-main/5 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-main/30 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] hover:border-main/50 group">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            {/* Rating Stars */}
+            <div className="flex items-center gap-1">
+              {[1, 2, 3, 4, 5].map((star, index) => (
+                <svg
+                  key={star}
+                  className={`w-4 h-4 sm:w-5 sm:h-5 text-main fill-current drop-shadow-[0_0_3px_rgba(215,177,128,0.4)] hover:scale-110 transition-all duration-300 ${isVisible ? 'animate-pulse-star' : ''
+                    }`}
+                  style={{
+                    animationDelay: isVisible ? `${index * 0.1}s` : '0s',
+                    animationDuration: '2s'
+                  }}
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              ))}
+              <span className={`ml-2 text-sm sm:text-base font-bold text-main drop-shadow-[0_0_3px_rgba(215,177,128,0.4)] transition-all duration-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                }`}
+                style={{ transitionDelay: isVisible ? '0.3s' : '0s' }}>
+                {t(`${template.name}.homeSec.reviewSummary.averageRating`)}
+              </span>
+            </div>
+
+            {/* Review Count */}
+            <div className={`text-sm sm:text-base text-secondary font-medium transition-all duration-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+              style={{ transitionDelay: isVisible ? '0.5s' : '0s' }}>
+              ({t(`${template.name}.homeSec.reviewSummary.totalReviews`)} reviews)
+            </div>
+          </div>
+
+          {/* Review Summary Text */}
+          <p className={`text-sm sm:text-base text-muted-foreground text-center mt-4 italic leading-relaxed max-w-xl mx-auto group-hover:text-secondary transition-all duration-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+            style={{ transitionDelay: isVisible ? '0.7s' : '0s' }}>
+            &ldquo;{t(`${template.name}.homeSec.reviewSummary.summary`)}&rdquo;
+          </p>
+        </div>
       </div>
 
       {/* Cover Image */}

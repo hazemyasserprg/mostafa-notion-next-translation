@@ -16,7 +16,12 @@
       "title": "Stay Consistent on Your Quran Path with Quran Tracker",
       "description": "The all-in-one Notion system to track your recitation, memorization, tafsir, and progress — all in one connected workspace.",
       "heroImageURL": "/premiumTemplates/quran-tracker/heroImage.webp",
-      "dashboardButtonText": "Dashboard"
+      "dashboardButtonText": "Dashboard",
+      "reviewSummary": {
+        "averageRating": "4.9",
+        "totalReviews": "127",
+        "summary": "Amazing template! Finally found a way to track my Quran progress systematically. The organization is perfect and it's so easy to use."
+      }
     },
     "dashboardSec": {
       "title": "A Clear View of Your Quran Journey",
@@ -357,7 +362,12 @@
       "title": "Stay Connected to Your Ibadat",
       "description": "A spiritual productivity system in Notion designed to track and motivate your daily acts of worship.",
       "heroImageURL": "/premiumTemplates/ibadat-hub/heroImage.webp",
-      "dashboardButtonText": "Dashboard"
+      "dashboardButtonText": "Dashboard",
+      "reviewSummary": {
+        "averageRating": "4.8",
+        "totalReviews": "89",
+        "summary": "Perfect for maintaining spiritual consistency! The tracking system helps me stay motivated in my daily worship. Highly recommended for Muslims seeking better ibadat organization."
+      }
     },
     "dashboardSec": {
       "title": "Your Entire Worship in One View",
@@ -574,7 +584,12 @@
       "title": "Master your student life with StudyHub",
       "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
       "heroImageURL": "/premiumTemplates/study-hub/heroImage.webp",
-      "dashboardButtonText": "Dashboard"
+      "dashboardButtonText": "Dashboard",
+      "reviewSummary": {
+        "averageRating": "4.7",
+        "totalReviews": "156",
+        "summary": "Game-changer for students! This template transformed how I organize my academic life. Everything is connected and easy to track. Worth every penny!"
+      }
     },
     "dashboardSec": {
       "title": "Your Entire Student Life in One View",
@@ -887,7 +902,12 @@
       "title": "Master your life with Second Brain",
       "description": "The all-in-one Notion system to organize your tasks, goals, habits, ideas, and finances — all in one connected workspace",
       "heroImageURL": "/premiumTemplates/second-brain/heroImage.webp",
-      "dashboardButtonText": "Dashboard"
+      "dashboardButtonText": "Dashboard",
+      "reviewSummary": {
+        "averageRating": "4.9",
+        "totalReviews": "203",
+        "summary": "Incredible system! This template helped me organize every aspect of my life. The interconnected databases are genius. My productivity has skyrocketed!"
+      }
     },
     "dashboardSec": {
       "title": "Your Entire Life in One View",
@@ -1232,7 +1252,12 @@
       "title": "Take control of your money with FinanceHub",
       "description": "Your complete Notion system for tracking, planning, and optimizing every financial detail in one place.",
       "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp",
-      "dashboardButtonText": "Dashboard"
+      "dashboardButtonText": "Dashboard",
+      "reviewSummary": {
+        "averageRating": "4.8",
+        "totalReviews": "142",
+        "summary": "Finally have control over my finances! This template made budgeting and tracking expenses so much easier. The insights and reports are incredibly helpful."
+      }
     },
     "dashboardSec": {
       "title": "Your Whole Financial Life, One View",
