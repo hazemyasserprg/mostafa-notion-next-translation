@@ -37,7 +37,7 @@ export default function PremiumOfferPopup({ template, isOpen, onClose }) {
           animate={{ opacity: 1, x: 0, y: 0 }}
           exit={{ opacity: 0, x: 100, y: 100 }}
           transition={{ type: "spring", damping: 20, stiffness: 300 }}
-          className="fixed bottom-4 right-4 z-50 max-w-sm w-full"
+          className="fixed bottom-2 left-2 right-2 sm:bottom-3 sm:right-3 sm:left-auto md:bottom-4 md:right-4 lg:bottom-5 lg:right-5 z-50 w-auto sm:w-80 md:w-80 lg:w-80 xl:w-80 sm:max-w-80"
         >
           {/* Popup Content */}
           <motion.div
@@ -46,28 +46,28 @@ export default function PremiumOfferPopup({ template, isOpen, onClose }) {
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
+              className="absolute top-2 right-2 z-10 p-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
             >
-              <X className="w-5 h-5 text-neutral-600 dark:text-neutral-400" />
+              <X className="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
             </button>
 
-            {/* Header with Gift Icon */}
-            <div className="relative bg-gradient-to-r from-main to-main/80 p-4 text-center">
+            {/* Header with Gift Icon - Hidden on small screens */}
+            <div className="hidden sm:block relative bg-gradient-to-r from-main to-main/80 p-3 text-center">
               <div className="absolute inset-0 bg-black/10" />
-              <div className="relative flex items-center gap-3">
+              <div className="relative flex items-center gap-2">
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.2, type: "spring", damping: 10 }}
-                  className="flex items-center justify-center w-10 h-10 bg-white/20 rounded-full"
+                  className="flex items-center justify-center w-8 h-8 bg-white/20 rounded-full flex-shrink-0"
                 >
-                  <Gift className="w-5 h-5 text-white" />
+                  <Gift className="w-4 h-4 text-white" />
                 </motion.div>
-                <div className="flex-1 text-left">
-                  <h2 className="text-lg font-bold text-white">
+                <div className="flex-1 text-left min-w-0">
+                  <h2 className="text-sm font-bold text-white truncate">
                     {t("premiumOffer.title")}
                   </h2>
-                  <p className="text-white/90 text-xs">
+                  <p className="text-white/90 text-xs line-clamp-2">
                     {t("premiumOffer.subtitle")}
                   </p>
                 </div>
@@ -75,34 +75,34 @@ export default function PremiumOfferPopup({ template, isOpen, onClose }) {
             </div>
 
             {/* Content */}
-            <div className="p-4 space-y-4">
+            <div className="p-3 space-y-3">
               {/* Discount Badge */}
               <div className="text-center">
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.3, type: "spring", damping: 10 }}
-                  className="inline-flex items-center gap-2 bg-main/10 text-main px-3 py-1 rounded-full text-sm font-bold"
+                  className="inline-flex items-center gap-1 bg-main/10 text-main px-2 py-1 rounded-full text-xs font-bold"
                 >
-                  <Percent className="w-4 h-4" />
+                  <Percent className="w-3 h-3" />
                   30% OFF
                 </motion.div>
               </div>
 
               {/* Coupon Code Section */}
               <div className="space-y-2">
-                <p className="text-center text-neutral-600 dark:text-neutral-400 text-xs">
+                <p className="hidden sm:block text-center text-neutral-600 dark:text-neutral-400 text-xs leading-relaxed">
                   {t("premiumOffer.couponDescription")}
                 </p>
 
-                <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-3 border-2 border-dashed border-main/30">
-                  <div className="flex items-center justify-between gap-2">
-                    <code className="flex-1 font-mono text-base font-bold text-main bg-white dark:bg-neutral-700 px-2 py-1 rounded">
+                <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-2 border-2 border-dashed border-main/30">
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                    <code className="flex-1 font-mono text-sm font-bold text-main bg-white dark:bg-neutral-700 px-2 py-1.5 sm:py-1 rounded text-center sm:text-left">
                       {couponCode}
                     </code>
                     <button
                       onClick={handleCopyCoupon}
-                      className={`flex items-center gap-1 px-3 py-1 rounded text-xs font-medium transition-all cursor-pointer ${copied
+                      className={`flex items-center justify-center gap-1 px-3 py-1.5 sm:py-1 rounded text-xs font-medium transition-all cursor-pointer whitespace-nowrap ${copied
                         ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
                         : "bg-main text-black hover:bg-main/80"
                         }`}
@@ -123,8 +123,8 @@ export default function PremiumOfferPopup({ template, isOpen, onClose }) {
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex gap-2">
+              {/* Action Buttons - Hidden on small screens */}
+              <div className="hidden sm:flex gap-2">
                 <button
                   onClick={onClose}
                   className="flex-1 px-3 py-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-lg text-sm font-medium hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
