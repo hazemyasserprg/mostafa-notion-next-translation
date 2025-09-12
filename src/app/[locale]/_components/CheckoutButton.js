@@ -92,13 +92,13 @@ function CheckoutButton({
   }
 
   return (
-    <div className="relative inline-flex" ref={dropdownRef}>
+    <div className="relative inline-flex group" ref={dropdownRef}>
       {/* Main Checkout Button */}
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className={`relative inline-block overflow-hidden px-6 py-4 sm:px-6 sm:py-3 font-normal text-black bg-white group shadow-lg hover:shadow-gray-300/50 active:scale-95 hover:scale-105 transition-all duration-300 ease-in-out w-full sm:w-auto text-center touch-manipulation ${locale === 'ar' ? 'rounded-r-full' : 'rounded-l-full'
+        className={`relative inline-block overflow-hidden px-6 py-4 sm:px-6 sm:py-3 font-normal text-black bg-white shadow-lg group-hover:shadow-gray-300/50 active:scale-95 group-hover:scale-[1.02] transition-all duration-300 ease-in-out w-full sm:w-auto text-center touch-manipulation ${locale === 'ar' ? 'rounded-r-full' : 'rounded-l-full'
           }`}
       >
         <span className="absolute top-0 left-0 w-full h-full bg-main transform scale-x-0 group-hover:scale-x-100 transition-all duration-500 ease-in-out origin-left" />
@@ -112,7 +112,7 @@ function CheckoutButton({
       {/* Dropdown Toggle Button */}
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className={`relative inline-flex items-center justify-center px-3 py-4 sm:py-3 bg-white border-gray-200 shadow-lg hover:shadow-gray-300/50 active:scale-95 hover:scale-105 transition-all duration-300 ease-in-out touch-manipulation group cursor-pointer ${locale === 'ar'
+        className={`relative inline-flex items-center justify-center px-3 py-4 sm:py-3 bg-white border-gray-200 shadow-lg group-hover:shadow-gray-300/50 active:scale-95 group-hover:scale-[1.02] transition-all duration-300 ease-in-out touch-manipulation cursor-pointer ${locale === 'ar'
           ? 'border-r rounded-l-full'
           : 'border-l rounded-r-full'
           }`}
