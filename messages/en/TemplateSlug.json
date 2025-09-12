@@ -16,12 +16,7 @@
       "title": "Stay Consistent on Your Quran Path with Quran Tracker",
       "description": "The all-in-one Notion system to track your recitation, memorization, tafsir, and progress — all in one connected workspace.",
       "heroImageURL": "/premiumTemplates/quran-tracker/heroImage.webp",
-      "dashboardButtonText": "Dashboard",
-      "reviewSummary": {
-        "averageRating": "4.9",
-        "totalReviews": "127",
-        "summary": "Amazing template! Finally found a way to track my Quran progress systematically. The organization is perfect and it's so easy to use."
-      }
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "A Clear View of Your Quran Journey",
@@ -362,12 +357,7 @@
       "title": "Stay Connected to Your Ibadat",
       "description": "A spiritual productivity system in Notion designed to track and motivate your daily acts of worship.",
       "heroImageURL": "/premiumTemplates/ibadat-hub/heroImage.webp",
-      "dashboardButtonText": "Dashboard",
-      "reviewSummary": {
-        "averageRating": "4.8",
-        "totalReviews": "89",
-        "summary": "Perfect for maintaining spiritual consistency! The tracking system helps me stay motivated in my daily worship. Highly recommended for Muslims seeking better ibadat organization."
-      }
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "Your Entire Worship in One View",
@@ -584,12 +574,7 @@
       "title": "Master your student life with StudyHub",
       "description": "the all-in-one Notion template for tracking everything from classes and tasks to habits and goals.",
       "heroImageURL": "/premiumTemplates/study-hub/heroImage.webp",
-      "dashboardButtonText": "Dashboard",
-      "reviewSummary": {
-        "averageRating": "4.7",
-        "totalReviews": "156",
-        "summary": "Game-changer for students! This template transformed how I organize my academic life. Everything is connected and easy to track. Worth every penny!"
-      }
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "Your Entire Student Life in One View",
@@ -905,8 +890,34 @@
       "dashboardButtonText": "Dashboard",
       "reviewSummary": {
         "averageRating": "4.9",
-        "totalReviews": "203",
-        "summary": "Incredible system! This template helped me organize every aspect of my life. The interconnected databases are genius. My productivity has skyrocketed!"
+        "totalReviews": "100+",
+        "individualReviews": [
+          {
+            "text": "Very good for my use case! And it's free! Thanks to the author for sharing this.",
+            "author": "Rix",
+            "date": "Sep 9, 2025"
+          },
+          {
+            "text": "honestly, this project is very helpful. I hope I can buy one of yours as soon as I can. Thank you very much for your hard and beautiful work.",
+            "author": "Yousef Ahmed",
+            "date": "Aug 30, 2025"
+          },
+          {
+            "text": "Very useful and well-constructed. I loved it and will use it a lot.",
+            "author": "Vene",
+            "date": "Aug 29, 2025"
+          },
+          {
+            "text": "This template is useful for developing a comprehensive overview of individual goals. One can identify, sequence, and prioritize Goals-Plans-Nudges --all on the same page.",
+            "author": "ELLENMARIE MCPHILLIP",
+            "date": "Jul 28, 2025"
+          },
+          {
+            "text": "I love this template, but i had to make some adjustments: i was missing a feature to assign my tasks to certain projects or areas, so maybe i can suggest it for improvement. But otherwise i love it!",
+            "author": "Rose M",
+            "date": "Jul 28, 2025"
+          }
+        ]
       }
     },
     "dashboardSec": {
@@ -1252,12 +1263,7 @@
       "title": "Take control of your money with FinanceHub",
       "description": "Your complete Notion system for tracking, planning, and optimizing every financial detail in one place.",
       "heroImageURL": "/premiumTemplates/finance-hub/heroImage.webp",
-      "dashboardButtonText": "Dashboard",
-      "reviewSummary": {
-        "averageRating": "4.8",
-        "totalReviews": "142",
-        "summary": "Finally have control over my finances! This template made budgeting and tracking expenses so much easier. The insights and reports are incredibly helpful."
-      }
+      "dashboardButtonText": "Dashboard"
     },
     "dashboardSec": {
       "title": "Your Whole Financial Life, One View",
