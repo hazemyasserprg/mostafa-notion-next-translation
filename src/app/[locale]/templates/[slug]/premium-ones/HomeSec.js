@@ -165,11 +165,13 @@ function Home({ template }) {
                 </span>
               </div>
 
-              {/* Review Count */}
-              <div className={`text-sm sm:text-base text-secondary font-medium transition-all duration-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              {/* Review Count and Download Count */}
+              <div className={`flex items-center gap-3 text-sm sm:text-base text-secondary font-medium transition-all duration-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{ transitionDelay: isVisible ? '0.5s' : '0s' }}>
-                ({t(`${template.name}.homeSec.reviewSummary.totalReviews`)} reviews)
+                <span>({t(`${template.name}.homeSec.reviewSummary.totalReviews`)} reviews)</span>
+                <span className="hidden sm:inline">•</span>
+                <span className="text-main font-semibold">{t(`${template.name}.homeSec.reviewSummary.downloadCount`)} downloads</span>
               </div>
             </div>
 
