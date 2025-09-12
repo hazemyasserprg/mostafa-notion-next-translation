@@ -1,7 +1,11 @@
+"use client";
+
 import { notFound } from "next/navigation";
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import BlurText from "../../_components/BlurText";
 import FloatingNav from "./premium-ones/FloatingNav";
+import PremiumOfferPopup from "../../_components/PremiumOfferPopup";
 
 // Lazy load heavy sections for better performance
 const Home = dynamic(() => import("./premium-ones/HomeSec"), {
@@ -27,9 +31,24 @@ const FAQ = dynamic(() => import("./premium-ones/FAQSec"), {
 });
 
 export default function PremiumPage({ template }) {
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Show popup after 3 seconds for premium templates
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   if (!template) {
     return notFound();
   }
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <>
@@ -60,6 +79,13 @@ export default function PremiumPage({ template }) {
           </div>
         </div>
       </BlurText>
+
+      {/* Premium Offer Popup */}
+      <PremiumOfferPopup
+        template={template}
+        isOpen={showPopup}
+        onClose={handleClosePopup}
+      />
     </>
   );
 }
