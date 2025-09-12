@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState, useEffect, useRef } from "react";
 
 function CheckoutButton({
@@ -12,6 +12,7 @@ function CheckoutButton({
   englishCheckoutText
 }) {
   const locale = useLocale();
+  const t = useTranslations("TemplateSlug");
   const [isClient, setIsClient] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(locale === 'ar' ? 'ar' : 'en');
@@ -42,12 +43,12 @@ function CheckoutButton({
     if (selectedLanguage === 'ar' && arabicCheckoutLink) {
       return {
         link: arabicCheckoutLink,
-        text: arabicCheckoutText || 'العربية'
+        text: checkoutText // Always use the current locale's text
       };
     } else if (englishCheckoutLink) {
       return {
         link: englishCheckoutLink,
-        text: englishCheckoutText || checkoutText
+        text: checkoutText // Always use the current locale's text
       };
     } else {
       return {
@@ -147,37 +148,53 @@ function CheckoutButton({
         <div className={`absolute top-full mt-2 w-full bg-white rounded-xl shadow-xl border border-gray-100 z-50 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200 ${locale === 'ar' ? 'right-0' : 'left-0'
           }`}>
           <div className="py-2">
+            {/* Language Selection Label */}
+            <div className="px-6 py-2 text-center">
+              <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+                {t("templateLanguage")}
+              </span>
+            </div>
             <button
               onClick={() => handleLanguageSelect('ar')}
-              className={`w-full px-6 py-3 text-right text-sm font-medium hover:bg-main/5 transition-all duration-200 group cursor-pointer ${selectedLanguage === 'ar'
-                ? 'bg-main/10 text-main border-r-2 border-main'
+              className={`w-full px-4 py-3 text-right text-sm font-medium transition-all duration-200 group cursor-pointer border border-transparent hover:border-gray-200 hover:bg-gray-50 ${selectedLanguage === 'ar'
+                ? 'bg-main/10 text-main border-main shadow-sm'
                 : 'text-gray-700 hover:text-main'
                 }`}
             >
-              <span className="flex items-center justify-end gap-2">
+              <span className="flex items-center justify-end gap-3">
                 <span>العربية</span>
-                {selectedLanguage === 'ar' && (
-                  <svg className="w-4 h-4 text-main" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                )}
+                <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${selectedLanguage === 'ar'
+                  ? 'border-main bg-main'
+                  : 'border-gray-300 group-hover:border-main'
+                  }`}>
+                  {selectedLanguage === 'ar' && (
+                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  )}
+                </div>
               </span>
             </button>
             <div className="border-t border-gray-100 my-1"></div>
             <button
               onClick={() => handleLanguageSelect('en')}
-              className={`w-full px-6 py-3 text-left text-sm font-medium hover:bg-main/5 transition-all duration-200 group cursor-pointer ${selectedLanguage === 'en'
-                ? 'bg-main/10 text-main border-l-2 border-main'
+              className={`w-full px-4 py-3 text-left text-sm font-medium transition-all duration-200 group cursor-pointer border border-transparent hover:border-gray-200 hover:bg-gray-50 ${selectedLanguage === 'en'
+                ? 'bg-main/10 text-main border-main shadow-sm'
                 : 'text-gray-700 hover:text-main'
                 }`}
             >
-              <span className="flex items-center justify-start gap-2">
+              <span className="flex items-center justify-start gap-3">
+                <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${selectedLanguage === 'en'
+                  ? 'border-main bg-main'
+                  : 'border-gray-300 group-hover:border-main'
+                  }`}>
+                  {selectedLanguage === 'en' && (
+                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  )}
+                </div>
                 <span>English</span>
-                {selectedLanguage === 'en' && (
-                  <svg className="w-4 h-4 text-main" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                )}
               </span>
             </button>
           </div>
