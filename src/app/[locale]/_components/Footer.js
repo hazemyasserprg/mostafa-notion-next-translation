@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FilloutSlider from "@/src/app/[locale]/_components/FilloutSliderEmbed";
 import AnimatedInView from "./AnimatedInView";
+import FooterSubscriptionForm from "./FooterSubscriptionForm";
 
 function Footer() {
   const t = useTranslations("Footer");
@@ -32,27 +33,7 @@ function Footer() {
           </div>
 
           <div className="space-y-10">
-            <form
-              action="https://app.gumroad.com/follow_from_embed_form"
-              method="POST"
-              target="_blank"
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <input type="hidden" name="seller_id" value="1089014516697" />
-              <input
-                type="email"
-                name="email"
-                placeholder={t("emailPlaceholder")}
-                required
-                className="flex-1 px-5 py-3 rounded-lg bg-white/5 text-white placeholder:text-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-main transition"
-              />
-              <button
-                type="submit"
-                className="cursor-pointer px-6 py-3 bg-main text-black font-semibold rounded-lg hover:bg-transparent hover:text-white border border-main transition-all duration-300"
-              >
-                {t("subscribe")}
-              </button>
-            </form>
+            <FooterSubscriptionForm />
             <div className="flex space-x-5">
               {[
                 {
