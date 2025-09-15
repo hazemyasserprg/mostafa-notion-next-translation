@@ -5,7 +5,7 @@ const NOTION_DB_ID = process.env.NOTION_DB_ID;
 
 export async function POST(request) {
   try {
-    const { email } = await request.json();
+    const { email, language } = await request.json();
 
     if (!email || !/\S+@\S+\.\S+/.test(email)) {
       return NextResponse.json(
@@ -15,6 +15,7 @@ export async function POST(request) {
     }
 
     console.log('📧 New subscription request for:', email);
+    console.log('🌐 Language:', language || 'Not specified');
     console.log('🗄️ Using Notion database ID:', NOTION_DB_ID);
     console.log('📅 Subscription date:', new Date().toISOString());
 
@@ -39,7 +40,6 @@ export async function POST(request) {
 
     const dbData = await dbResponse.json();
     console.log('Database properties:', Object.keys(dbData.properties));
-    console.log('Available properties:', dbData.properties);
 
     // Get available properties for duplicate check
     const availableProps = Object.keys(dbData.properties);
@@ -133,6 +133,57 @@ export async function POST(request) {
       console.log(`✅ Using status property: "${statusProp}"`);
     } else {
       console.log('⚠️ No status property found');
+    }
+
+    // Check for Language property
+    const languageProp = availableProps.find(prop =>
+      prop.toLowerCase() === 'language'
+    );
+
+    if (languageProp && language) {
+      const propType = dbData.properties[languageProp].type;
+
+      // Handle different property types
+      if (propType === 'select') {
+        properties[languageProp] = {
+          select: {
+            name: language,
+          },
+        };
+      } else if (propType === 'rich_text') {
+        properties[languageProp] = {
+          rich_text: [
+            {
+              text: {
+                content: language,
+              },
+            },
+          ],
+        };
+      } else if (propType === 'title') {
+        properties[languageProp] = {
+          title: [
+            {
+              text: {
+                content: language,
+              },
+            },
+          ],
+        };
+      } else {
+        // Fallback to rich text for other types
+        properties[languageProp] = {
+          rich_text: [
+            {
+              text: {
+                content: language,
+              },
+            },
+          ],
+        };
+      }
+
+      console.log(`✅ Language set: "${language}" in property "${languageProp}"`);
     }
 
     // Check for title property (optional)

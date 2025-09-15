@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import BlurText from "@/src/app/[locale]/_components/BlurText";
 
 function SubscriptionForm({ children, className }) {
@@ -11,6 +11,7 @@ function SubscriptionForm({ children, className }) {
   const [isMounted, setIsMounted] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const t = useTranslations("Subscription");
+  const locale = useLocale();
 
   useEffect(() => {
     setIsMounted(true);
@@ -50,7 +51,10 @@ function SubscriptionForm({ children, className }) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          email,
+          language: locale === 'ar' ? 'Arabic' : 'English'
+        }),
       });
 
       const data = await response.json();
