@@ -1,5 +1,0 @@
-[33m3e2b43e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update dropdown background to white - remove dark mode styling for consistent white background
-[33m6692f37[m Add toggle functionality to category buttons - users can now click active category to deselect it
-[33mbe92ecf[m Add AdvancedFilter component and update template filtering functionality
-[33m132261f[m Update template translations and data
-[33md42c3a4[m Add new premium templates: ibadat-hub and quran-tracker with Arabic and English versions, update translations and template data
