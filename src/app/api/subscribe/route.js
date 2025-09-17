@@ -186,6 +186,59 @@ export async function POST(request) {
       console.log(`✅ Language set: "${language}" in property "${languageProp}"`);
     }
 
+    // Check for Source property
+    const sourceProp = availableProps.find(prop =>
+      prop.toLowerCase().includes('source')
+    );
+
+    if (sourceProp) {
+      const propType = dbData.properties[sourceProp].type;
+
+      // Handle different property types for Source
+      if (propType === 'select') {
+        properties[sourceProp] = {
+          select: {
+            name: 'Website',
+          },
+        };
+      } else if (propType === 'rich_text') {
+        properties[sourceProp] = {
+          rich_text: [
+            {
+              text: {
+                content: 'Website',
+              },
+            },
+          ],
+        };
+      } else if (propType === 'title') {
+        properties[sourceProp] = {
+          title: [
+            {
+              text: {
+                content: 'Website',
+              },
+            },
+          ],
+        };
+      } else {
+        // Fallback to rich text for other types
+        properties[sourceProp] = {
+          rich_text: [
+            {
+              text: {
+                content: 'Website',
+              },
+            },
+          ],
+        };
+      }
+
+      console.log(`✅ Source set to "Website" in property "${sourceProp}"`);
+    } else {
+      console.log('ℹ️ No source property found - continuing without source');
+    }
+
     // Check for title property (optional)
     const titleProp = availableProps.find(prop =>
       dbData.properties[prop].type === 'title'
