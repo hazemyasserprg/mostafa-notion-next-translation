@@ -203,7 +203,7 @@ function Footer() {
         <p className="text-center md:text-right">
           {t("developedBy")}{" "}
           <a
-            href="https://hazemyasser.netlify.app"
+            href="https://laptop-portfolio-three.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white font-medium hover:text-main transition"
