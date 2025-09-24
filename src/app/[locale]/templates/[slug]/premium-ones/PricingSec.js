@@ -1,20 +1,31 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { CheckCircle, XCircle } from "lucide-react";
+import enMessages from "@/messages/en/TemplateSlug.json";
 
 export default function PricingSec({ template }) {
   const t = useTranslations("TemplateSlug");
 
+  // Always use English messages for button links (Arabic links are disabled)
   const basic = t.raw(`${template.name}.pricingSec.plans.basic`);
+  if (basic && enMessages[template.name]?.pricingSec?.plans?.basic) {
+    basic.buttonLink = enMessages[template.name].pricingSec.plans.basic.buttonLink;
+  }
 
   let advanced = null;
   if (t.has(`${template.name}.pricingSec.plans.advanced`)) {
     advanced = t.raw(`${template.name}.pricingSec.plans.advanced`);
+    if (advanced && enMessages[template.name]?.pricingSec?.plans?.advanced) {
+      advanced.buttonLink = enMessages[template.name].pricingSec.plans.advanced.buttonLink;
+    }
   }
 
   let more_advanced = null;
   if (t.has(`${template.name}.pricingSec.plans.more-advanced`)) {
     more_advanced = t.raw(`${template.name}.pricingSec.plans.more-advanced`);
+    if (more_advanced && enMessages[template.name]?.pricingSec?.plans?.['more-advanced']) {
+      more_advanced.buttonLink = enMessages[template.name].pricingSec.plans['more-advanced'].buttonLink;
+    }
   }
 
   const plans = [
@@ -69,8 +80,8 @@ export default function PricingSec({ template }) {
 
       <div
         className={`grid grid-cols-1 ${plans.filter((plan) => plan.data).length === 2
-            ? "md:grid-cols-2 max-w-4xl"
-            : "md:grid-cols-3 max-w-7xl"
+          ? "md:grid-cols-2 max-w-4xl"
+          : "md:grid-cols-3 max-w-7xl"
           } gap-10  mx-auto`}
       >
         {plans.map((plan, idx) => {
@@ -94,8 +105,8 @@ export default function PricingSec({ template }) {
                 </h3>
                 <p
                   className={`text-sm sm:text-base mb-4 ${idx === 2
-                      ? "text-neutral-800"
-                      : "text-neutral-600 dark:text-neutral-300"
+                    ? "text-neutral-800"
+                    : "text-neutral-600 dark:text-neutral-300"
                     }`}
                 >
                   {plan.data.description}
@@ -110,8 +121,8 @@ export default function PricingSec({ template }) {
                 </div>
                 <ul
                   className={`text-sm sm:text-base space-y-2 mb-6 ${idx === 2
-                      ? "text-black"
-                      : "text-neutral-800 dark:text-neutral-300"
+                    ? "text-black"
+                    : "text-neutral-800 dark:text-neutral-300"
                     }`}
                 >
                   {plan.data.features.map((item) => (

@@ -15,7 +15,7 @@ function CheckoutButton({
   const t = useTranslations("TemplateSlug");
   const [isClient, setIsClient] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(locale === 'ar' ? 'ar' : 'en');
+  const [selectedLanguage, setSelectedLanguage] = useState('en'); // Always start with English since Arabic is disabled
   const [isTextTransitioning, setIsTextTransitioning] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -39,13 +39,9 @@ function CheckoutButton({
   }, []);
 
   // Determine which link and text to use based on selected language
+  // Arabic links are disabled, so always use English or default
   const getLinkAndText = () => {
-    if (selectedLanguage === 'ar' && arabicCheckoutLink) {
-      return {
-        link: arabicCheckoutLink,
-        text: checkoutText // Always use the current locale's text
-      };
-    } else if (englishCheckoutLink) {
+    if (englishCheckoutLink) {
       return {
         link: englishCheckoutLink,
         text: checkoutText // Always use the current locale's text
@@ -61,6 +57,12 @@ function CheckoutButton({
   const { link, text } = getLinkAndText();
 
   const handleLanguageSelect = (lang) => {
+    // Prevent selection of Arabic language (disabled)
+    if (lang === 'ar') {
+      setIsDropdownOpen(false);
+      return;
+    }
+
     if (lang === selectedLanguage) {
       setIsDropdownOpen(false);
       return;
@@ -156,22 +158,13 @@ function CheckoutButton({
             </div>
             <button
               onClick={() => handleLanguageSelect('ar')}
-              className={`w-full px-4 py-3 text-right text-sm font-medium transition-all duration-200 group cursor-pointer border border-transparent hover:border-gray-200 hover:bg-gray-50 ${selectedLanguage === 'ar'
-                ? 'bg-main/10 text-main border-main shadow-sm'
-                : 'text-gray-700 hover:text-main'
-                }`}
+              className="w-full px-4 py-3 text-right text-sm font-medium transition-all duration-200 group cursor-not-allowed border border-transparent opacity-50 text-gray-500"
+              disabled
             >
               <span className="flex items-center justify-end gap-3">
-                <span>العربية</span>
-                <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${selectedLanguage === 'ar'
-                  ? 'border-main bg-main'
-                  : 'border-gray-300 group-hover:border-main'
-                  }`}>
-                  {selectedLanguage === 'ar' && (
-                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  )}
+                <span className="text-gray-500">العربية</span>
+                <div className="w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all duration-200 border-gray-300">
+                  {/* No checkmark for disabled Arabic option */}
                 </div>
               </span>
             </button>
