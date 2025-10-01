@@ -37,6 +37,8 @@ export async function generateMetadata({ params }) {
     faviconPath = "/favicons/study-hub.webp";
   } else if (slug === "second-brain") {
     faviconPath = "/favicons/second-brain.webp";
+  } else if (slug === "second-brain-muslim-edition") {
+    faviconPath = "/favicons/second-brain.webp";
   } else if (slug === "finance-hub") {
     faviconPath = "/favicons/finance-hub.webp";
   } else if (slug === "quran-tracker") {
@@ -120,6 +122,7 @@ export default async function TemplateDetails({ params }) {
   if (
     template.slug === "study-hub" ||
     template.slug === "second-brain" ||
+    template.slug === "second-brain-muslim-edition" ||
     template.slug === "finance-hub" ||
     template.slug === "quran-tracker" ||
     template.slug === "ibadat-hub"
