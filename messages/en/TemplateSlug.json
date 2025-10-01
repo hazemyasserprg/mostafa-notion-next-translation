@@ -1872,6 +1872,30 @@
         "13": {
           "title": "Fully Customizable",
           "description": "Everything is linked, automated, and easy to customize to match your workflow and lifestyle while maintaining Islamic principles."
+        },
+        "14": {
+          "title": "Fard Prayer Tracking",
+          "description": "Never miss a prayer again with comprehensive tracking of your five daily prayers including jama'ah, on-time, qada', and missed status with progress points."
+        },
+        "15": {
+          "title": "Nafl & Sunnah Worship",
+          "description": "Track sunnah prayers, qiyam, fasting, and extra worship activities with organized progress tracking to stay consistent with your spiritual goals."
+        },
+        "16": {
+          "title": "Adhkar System",
+          "description": "Access morning, evening, sleep, and daily adhkar with repetition counts, translations, occasions, and audio recitations all in one place."
+        },
+        "17": {
+          "title": "Quran Integration",
+          "description": "Complete Quran system within Ibadat Hub featuring recitation tracking, memorization progress, tafsir notes, and comprehensive monitoring."
+        },
+        "18": {
+          "title": "Prayer Times Widget",
+          "description": "View today's salah timings, countdown to the next prayer, and stay aligned with your daily schedule with live prayer time updates."
+        },
+        "19": {
+          "title": "Spiritual Dashboard",
+          "description": "Get a complete overview of your worship with detailed stats, progress insights, and trends across prayers, Quran, and adhkar activities."
         }
       }
     },

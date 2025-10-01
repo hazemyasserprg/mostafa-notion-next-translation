@@ -113,6 +113,28 @@ const iconsMap = {
     Users,           // Profile & Stats
     Database,        // Pre-built Database System
   ],
+  "second-brain-muslim-edition": [
+    Target,          // Goals
+    ClipboardList,   // Projects
+    CheckSquare,     // Tasks
+    Repeat,          // Recurring Tasks
+    Lightbulb,       // Ideas
+    Notebook,        // Notes
+    BookMarked,      // Resources
+    Repeat,          // Habits
+    NotebookPen,     // Journalling
+    LayoutDashboard, // Dashboard
+    ClipboardList,   // Smart Filters
+    BrainCircuit,    // Linked System
+    LayoutDashboard, // Profile Overview
+    BrainCircuit,    // Fully Customizable
+    Calendar,        // Fard Prayer Tracking
+    BookOpen,        // Nafl & Sunnah Worship
+    Notebook,        // Adhkar System
+    FileText,        // Quran Integration
+    Calendar,        // Prayer Times Widget
+    BarChart3,       // Spiritual Dashboard
+  ],
 };
 
 function Essentials({ template }) {
