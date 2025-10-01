@@ -2063,7 +2063,7 @@
             "FinanceHub"
           ],
           "button": "احصل عليه مجانًا",
-          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-muslim-edition"
+          "buttonLink": "https://www.notion.so/marketplace/templates/second-brain-muslim-edition?checkout=true"
         },
         "advanced": {
           "label": "متقدم",
@@ -2093,7 +2093,7 @@
           ],
           "missingFeatures": ["FinanceHub"],
           "button": "اشترِ الآن",
-          "buttonLink": "https://www.notion.so/marketplace/templates/muslims-second-brain",
+          "buttonLink": "https://www.notion.so/marketplace/templates/muslims-second-brain?checkout=true",
           "badge": "الأكثر قيمة"
         },
         "more-advanced": {
@@ -2124,7 +2124,7 @@
             "FinanceHub"
           ],
           "button": "اشترِ مع مركز المال",
-          "buttonLink": "https://www.notion.so/marketplace/templates/muslim-second-brain",
+          "buttonLink": "https://www.notion.so/marketplace/templates/muslim-second-brain?checkout=true",
           "badge": "شامل"
         }
       }
