@@ -2041,6 +2041,8 @@
             "Watchlist",
             "Contacts",
             "Charts",
+            "Quran Tracker",
+            "IbadatHub",
             "FinanceHub"
           ],
           "button": "Get for Free",
@@ -2070,7 +2072,9 @@
             "Advanced Views & Layouts",
             "Watchlist",
             "Contacts",
-            "Charts"
+            "Charts",
+            "Quran Tracker",
+            "IbadatHub"
           ],
           "missingFeatures": ["FinanceHub"],
           "button": "Buy Now",
@@ -2102,6 +2106,8 @@
             "Watchlist",
             "Contacts",
             "Charts",
+            "Quran Tracker",
+            "IbadatHub",
             "FinanceHub"
           ],
           "button": "Buy with FinanceHub",
