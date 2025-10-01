@@ -1815,26 +1815,26 @@
   "Second Brain - Muslim Edition": {
     "name": "العقل الثاني - النسخة الإسلامية",
     "description": "نظام نوشن شامل لتنظيم مهامك، أهدافك، عاداتك، أفكارك، وأمورك المالية — في مساحة عمل متصلة واحدة، مصمم خصيصًا للمسلمين مع تكامل التقويم الإسلامي وتذكيرات أوقات الصلاة وتتبع النمو الروحي.",
-    "price": "$79",
+    "price": "$89.99",
     "checkout": "احصل على العقل الثاني - النسخة الإسلامية",
     "checkoutLink": "https://www.notion.com/templates/second-brain-muslim-edition",
     "moreDetails": "مزيد من التفاصيل",
-    "image": "/thumbnails/ARThumbnails/20.webp",
+    "image": "/thumbnails/ARThumbnails/41.webp",
     "homeSec": {
       "logoURL": "/premiumTemplates/second-brain-muslim-edition-ar/SecondBrain.webp",
-      "title": "سيطر على دينك ودنياك مع العقل الثاني | النسخة الإسلامية",
+      "title": "سيطر على دينك ودنياك مع العقل الثاني - النسخة الإسلامية",
       "description": "نظام نوشن شامل لتنظيم مهامك، أهدافك، عاداتك، أفكارك، وأمورك المالية، وعباداتك اليومية — في مساحة عمل متصلة واحدة",
       "heroImageURL": "/premiumTemplates/second-brain-muslim-edition-ar/heroImage.webp",
       "dashboardButtonText": "لوحة التحكم"
     },
     "dashboardSec": {
       "title": "دينك ودنياك في مكان واحد",
-      "description": "شاهد كيف يجمع العقل الثاني | النسخة الإسلامية أهدافك ومهامك وعاداتك وأمورك المالية وعباداتك في لوحة تحكم قوية واحدة.",
+      "description": "شاهد كيف يجمع العقل الثاني - النسخة الإسلامية أهدافك ومهامك وعاداتك وأمورك المالية وعباداتك في لوحة تحكم قوية واحدة.",
       "dashboardImageURL": "/premiumTemplates/second-brain-muslim-edition-ar/Dashboard.webp"
     },
     "essentialsSec": {
       "title": "كل ما تحتاجه — في مكان واحد",
-      "description": "اكتشف الميزات الأساسية التي تجعل العقل الثاني | النسخة الإسلامية نظامك المثالي للحياة والعمل والمال والعبادة.",
+      "description": "اكتشف الميزات الأساسية التي تجعل العقل الثاني - النسخة الإسلامية نظامك المثالي للحياة والعمل والمال والعبادة.",
       "features": {
         "0": {
           "title": "الأهداف",
@@ -1895,7 +1895,7 @@
       }
     },
     "walkthroughSec": {
-      "title": "نظرة بصرية داخل العقل الثاني | النسخة الإسلامية",
+      "title": "نظرة بصرية داخل العقل الثاني - النسخة الإسلامية",
       "description": "ألقِ نظرة أقرب على كيفية مساعدتك العقل الثاني في إدارة حياتك بالكامل — من تنظيم المهام والأهداف والأمور المالية إلى تتبع عباداتك والقرآن وعاداتك اليومية.",
       "rowBlocks": {
         "0": {
@@ -1905,34 +1905,40 @@
           "reverse": false
         },
         "1": {
-          "title": "سهولة المهام المتكررة",
-          "description": "أتمت سير عملك باستخدام خيارات تكرار مرنة — يومية أو أسبوعية أو شهرية أو مخصصة بالكامل، بما في ذلك الممارسات والالتزامات الإسلامية.",
-          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/2.webp",
+          "title": "مركز العبادات ومتتبع القرآن — مدمج في العقل الثاني - النسخة الإسلامية",
+          "description": "ابق متصلاً بإيمانك أثناء تنظيم حياتك. تتبع صلواتك وتلاوة القرآن وحفظه وتفسيره — كلها مدمجة بسلاسة في نظام العقل الثاني",
+          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/9.webp",
           "reverse": true
         },
         "2": {
-          "title": "مركز المراجعة",
-          "description": "راجع ملاحظاتك ومواردك باستخدام التكرار المتباعد — ابقَ حادًا ولا تنسَ ما يهمك، بما في ذلك المعرفة والتأملات الإسلامية.",
-          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/3.webp",
+          "title": "سهولة المهام المتكررة",
+          "description": "أتمت سير عملك باستخدام خيارات تكرار مرنة — يومية أو أسبوعية أو شهرية أو مخصصة بالكامل، بما في ذلك الممارسات والالتزامات الإسلامية.",
+          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/2.webp",
           "reverse": false
         },
         "3": {
-          "title": "محرك الأفكار",
-          "description": "التقط الأفكار، لخصها، وحولها فورًا إلى مهام أو مشاريع قابلة للتنفيذ — مدعوم بالذكاء الاصطناعي، مع الحفاظ على القيم والمبادئ الإسلامية.",
-          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/4.webp",
+          "title": "مركز المراجعة",
+          "description": "راجع ملاحظاتك ومواردك باستخدام التكرار المتباعد — ابقَ حادًا ولا تنسَ ما يهمك، بما في ذلك المعرفة والتأملات الإسلامية.",
+          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/3.webp",
           "reverse": true
         },
         "4": {
-          "title": "تدفق الصحة",
-          "description": "تابع عاداتك، ودوّن يومياتك، وتابع حالتك المزاجية — في مساحة واحدة مليئة بالوعي الذاتي، بما في ذلك الممارسات الإسلامية والنمو الروحي.",
-          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/5.webp",
+          "title": "محرك الأفكار",
+          "description": "التقط الأفكار، لخصها، وحولها فورًا إلى مهام أو مشاريع قابلة للتنفيذ — مدعوم بالذكاء الاصطناعي، مع الحفاظ على القيم والمبادئ الإسلامية.",
+          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/4.webp",
           "reverse": false
         },
         "5": {
+          "title": "تدفق الصحة",
+          "description": "تابع عاداتك، ودوّن يومياتك، وتابع حالتك المزاجية — في مساحة واحدة مليئة بالوعي الذاتي، بما في ذلك الممارسات الإسلامية والنمو الروحي.",
+          "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/5.webp",
+          "reverse": true
+        },
+        "6": {
           "title": "مركز التحكم",
           "description": "تصور تقدمك الكامل عبر الأهداف والمشاريع والمهام — مع تفاصيل لكل هدف، بما في ذلك الإنجازات الروحية والدنيوية.",
           "image": "/premiumTemplates/second-brain-muslim-edition-ar/designs/6.webp",
-          "reverse": true
+          "reverse": false
         }
       },
       "columnBlocks": {
@@ -1950,7 +1956,7 @@
     },
     "databasesSec": {
       "title": "قلب نظام دينك ودنياك",
-      "description": "العقل الثاني | النسخة الإسلامية مدعوم بقواعد بيانات مترابطة — مصممة لجلب الوضوح والتوازن لمهامك وأهدافك وأمورك المالية وعباداتك.",
+      "description": "العقل الثاني - النسخة الإسلامية مدعوم بقواعد بيانات مترابطة — مصممة لجلب الوضوح والتوازن لمهامك وأهدافك وأمورك المالية وعباداتك.",
       "features": {
         "0": {
           "title": "الملف الشخصي",
